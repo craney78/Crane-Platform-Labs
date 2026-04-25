@@ -126,7 +126,7 @@ NAVBAR CLEAN FIX
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 80px; /* was 70 */
 }
 
 /* LEFT */
@@ -137,7 +137,7 @@ NAVBAR CLEAN FIX
 
 /* LOGO */
 .nav-logo {
-  height: 42px;
+  height: 50px; /* was 42 */
   width: auto;
 }
 
