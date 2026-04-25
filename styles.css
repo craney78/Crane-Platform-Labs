@@ -253,3 +253,149 @@ MOBILE
     display: flex;
   }
 }
+
+/* =========================
+NAVBAR
+========================= */
+
+.nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgba(5,7,13,0.95);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  position: relative;
+}
+
+/* YOUR GLOW LINE */
+.nav::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(124,58,237,0.8),
+    rgba(6,182,212,0.8),
+    transparent
+  );
+}
+
+/* INNER */
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+/* LOGO */
+.nav-logo {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
+/* RIGHT SIDE */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/* LINKS */
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  margin-right: 22px;
+  font-size: 15px;
+  color: rgba(255,255,255,0.85);
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #7c3aed;
+}
+
+/* CTA */
+.nav-btn {
+  padding: 12px 22px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #7c3aed, #06b6d4);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.nav-btn:hover {
+  box-shadow: 0 0 18px rgba(124,58,237,0.6);
+  transform: translateY(-1px);
+}
+
+/* =========================
+HAMBURGER
+========================= */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 26px;
+  height: 3px;
+  background: white;
+  margin: 4px 0;
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-right {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    background: #05070d;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    display: none;
+  }
+
+  .nav-right.active {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  .nav-btn {
+    margin-top: 15px;
+  }
+}
