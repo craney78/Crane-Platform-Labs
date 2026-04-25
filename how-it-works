@@ -14,34 +14,37 @@
 
 <body>
 
-<!-- NAV -->
 <div class="nav">
   <div class="container nav-inner">
-    <img src="images/logo.png" class="logo">
 
-    <div>
-      <span class="nav-links">
+    <!-- LOGO -->
+    <a href="index.html">
+      <img src="images/crane-logo.png" class="nav-logo">
+    </a>
+
+    <!-- HAMBURGER -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- NAV CONTENT -->
+    <div class="nav-right" id="navMenu">
+
+      <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="how-it-works.html">How It Works</a>
-        <a href="#">Services</a>
-        <a href="#">Who It’s For</a>
-        <a href="#">SEO Results</a>
-        <a href="#">Contact</a>
-      </span>
-      <a href="#" class="nav-btn">Get a Free Quote</a>
+        <a href="services.html">Services</a>
+        <a href="who-its-for.html">Who It’s For</a>
+        <a href="seo-results.html">SEO Results</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <a href="contact.html" class="nav-btn">Get a Free Quote</a>
+
     </div>
-  </div>
-</div>
 
-<!-- HERO -->
-<div class="hero">
-  <div class="container">
-    <h1>A Simple, Personal Approach</h1>
-
-    <p>
-      No confusing tech, no guesswork.  
-      Just a clear process focused on understanding your business and getting results.
-    </p>
   </div>
 </div>
 
