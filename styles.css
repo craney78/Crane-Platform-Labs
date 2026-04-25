@@ -297,7 +297,8 @@ FOOTER CLEAN FIX
 .footer-left {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  align-items: flex-start; /* default desktop */
+  gap: 8px;
 }
 
 .footer-logo {
@@ -312,17 +313,9 @@ FOOTER CLEAN FIX
   }
 }
 
-.footer-tag {
-  font-size: 13px;
-  margin: 8px 0 12px;
-  color: rgba(255,255,255,0.7);
-}
-
-/* BUSINESS INFO */
-.footer-business p {
-  font-size: 12px;
-  color: rgba(255,255,255,0.5);
-  margin: 2px 0;
+.footer-tag,
+.footer-business {
+  max-width: 220px;
 }
 
 /* LINKS */
