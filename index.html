@@ -8,193 +8,38 @@
 
 <meta name="description" content="SEO-focused websites for rural small businesses. We come to you, understand your business, and build websites that bring real customers.">
 
-<style>
 
-/* =========================
-GLOBAL
-========================= */
-
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: radial-gradient(circle at top, #0b0f1a, #05070d);
-  color: white;
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-}
-
-h1, h2 {
-  margin-bottom: 10px;
-}
-
-p {
-  opacity: 0.85;
-  line-height: 1.6;
-}
-
-/* =========================
-NAV
-========================= */
-
-.nav {
-  padding: 20px 0;
-}
-
-.nav-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  height: 40px;
-}
-
-.nav-links a {
-  color: white;
-  margin-left: 25px;
-  text-decoration: none;
-  opacity: 0.8;
-}
-
-.nav-btn {
-  background: linear-gradient(90deg, #7c3aed, #06b6d4);
-  padding: 10px 20px;
-  border-radius: 8px;
-  color: white;
-  text-decoration: none;
-}
-
-/* =========================
-HERO
-========================= */
-
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 100px 0;
-  flex-wrap: wrap;
-}
-
-.hero-left {
-  max-width: 550px;
-}
-
-.hero h1 {
-  font-size: 48px;
-}
-
-.hero p {
-  margin: 20px 0;
-}
-
-.btn-main {
-  background: linear-gradient(90deg, #7c3aed, #06b6d4);
-  padding: 14px 30px;
-  border-radius: 10px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-.btn-secondary {
-  border: 1px solid #444;
-  padding: 14px 30px;
-  border-radius: 10px;
-  text-decoration: none;
-  color: white;
-  margin-left: 10px;
-}
-
-.hero-right img {
-  width: 420px;
-  filter: drop-shadow(0 0 25px #7c3aed);
-}
-
-/* =========================
-FEATURE BAR
-========================= */
-
-.feature-bar {
-  background: #0f1424;
-  border-radius: 12px;
-  padding: 25px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.feature {
-  flex: 1;
-  min-width: 180px;
-  text-align: center;
-}
-
-/* =========================
-SECTIONS
-========================= */
-
-.section {
-  padding: 80px 0;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-  margin-top: 40px;
-}
-
-.card {
-  background: #0f1424;
-  padding: 30px;
-  border-radius: 12px;
-}
-
-/* =========================
-CTA
-========================= */
-
-.cta {
-  background: linear-gradient(90deg, #7c3aed, #06b6d4);
-  padding: 60px;
-  border-radius: 12px;
-  text-align: center;
-}
-
-.footer {
-  text-align: center;
-  padding: 40px;
-  opacity: 0.6;
-}
-
-</style>
-
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<!-- NAV -->
 <div class="nav">
   <div class="container nav-inner">
-    <img src="images/logo.png" class="logo">
 
-    <div>
-      <span class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">How It Works</a>
-        <a href="#">Services</a>
-        <a href="#">Who It’s For</a>
-        <a href="#">SEO Results</a>
-        <a href="#">Contact</a>
-      </span>
-      <a href="#" class="nav-btn">Get a Free Quote</a>
+    <!-- LEFT: LOGO -->
+    <div class="nav-left">
+      <a href="index.html">
+        <img src="images/logo.png" class="nav-logo">
+      </a>
     </div>
+
+    <!-- RIGHT: LINKS -->
+    <div class="nav-right">
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="services.html">Services</a>
+        <a href="who-its-for.html">Who It’s For</a>
+        <a href="seo-results.html">SEO Results</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <a href="contact.html" class="nav-btn">Get a Free Quote</a>
+
+    </div>
+
   </div>
 </div>
 
