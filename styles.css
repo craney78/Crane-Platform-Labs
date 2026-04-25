@@ -112,16 +112,6 @@ SECTION SPACING
 NAVBAR (FULL SYSTEM)
 ========================= */
 
-.nav {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  background: rgba(5,7,13,0.95);
-  backdrop-filter: blur(10px);
-  z-index: 1000;
-  border-bottom: 1px solid rgba(124,58,237,0.2);
-}
-
 .nav-inner {
   display: flex;
   justify-content: space-between;
@@ -174,6 +164,17 @@ NAVBAR (FULL SYSTEM)
 .nav-btn:hover {
   box-shadow: 0 0 18px var(--primary);
   transform: translateY(-1px);
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgba(5,7,13,0.95);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+
+  border-bottom: 1px solid rgba(124,58,237,0.35); /* stronger */
 }
 
 /* =========================
