@@ -301,9 +301,15 @@ FOOTER CLEAN FIX
 }
 
 .footer-logo {
-  height: 80px;
+  height: 80px; /* mobile */
   width: auto;
-  display: block;
+}
+
+/* DESKTOP ONLY */
+@media (min-width: 900px) {
+  .footer-logo {
+    height: 110px;
+  }
 }
 
 .footer-tag {
