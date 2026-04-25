@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>How It Works | Crane Platform Labs</title>
+
+<meta name="description" content="Learn how Crane Platform Labs builds websites for rural small businesses through a simple, personal process that brings real customers.">
+
+<style>
+
+/* =========================
+GLOBAL
+========================= */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top, #0b0f1a, #05070d);
+  color: white;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h1, h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+/* =========================
+NAV
+========================= */
+
+.nav {
+  padding: 20px 0;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 25px;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.nav-btn {
+  background: linear-gradient(90deg, #7c3aed, #06b6d4);
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero {
+  text-align: center;
+  padding: 80px 0 40px;
+}
+
+.hero h1 {
+  font-size: 42px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* =========================
+STEPS
+========================= */
+
+.section {
+  padding: 60px 0;
+}
+
+.step {
+  background: #0f1424;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  transition: 0.3s;
+}
+
+.step:hover {
+  box-shadow: 0 0 20px rgba(124,58,237,0.3);
+  transform: translateY(-3px);
+}
+
+.step h3 {
+  margin-bottom: 10px;
+}
+
+/* =========================
+CTA
+========================= */
+
+.cta {
+  background: linear-gradient(90deg, #7c3aed, #06b6d4);
+  padding: 50px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.btn {
+  background: black;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+.footer {
+  text-align: center;
+  padding: 40px;
+  opacity: 0.6;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="nav">
+  <div class="container nav-inner">
+    <img src="images/logo.png" class="logo">
+
+    <div>
+      <span class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="#">Services</a>
+        <a href="#">Who It’s For</a>
+        <a href="#">SEO Results</a>
+        <a href="#">Contact</a>
+      </span>
+      <a href="#" class="nav-btn">Get a Free Quote</a>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="container">
+    <h1>A Simple, Personal Approach</h1>
+
+    <p>
+      No confusing tech, no guesswork.  
+      Just a clear process focused on understanding your business and getting results.
+    </p>
+  </div>
+</div>
+
+<!-- INTRO -->
+<div class="section container">
+  <h2>How It Works</h2>
+
+  <p>
+    Every business is different — especially in rural areas.  
+    That’s why I take the time to understand how you operate before building anything.
+  </p>
+</div>
+
+<!-- STEPS -->
+
+<div class="section container">
+
+  <div class="step">
+    <h3>1. I Come to You</h3>
+    <p>
+      I visit your business, see how you operate, and understand your customers.  
+      This means no guessing — everything is based on your real business.
+    </p>
+  </div>
+
+  <div class="step">
+    <h3>2. We Plan Your Website</h3>
+    <p>
+      We map out what your website needs to say, how it should look, and how it will attract customers.
+    </p>
+  </div>
+
+  <div class="step">
+    <h3>3. I Build It</h3>
+    <p>
+      I design and build a clean, modern website that is fast, mobile-friendly, and SEO-focused.
+    </p>
+  </div>
+
+  <div class="step">
+    <h3>4. You Start Getting Found</h3>
+    <p>
+      Your business is now visible online — helping new customers find and contact you.
+    </p>
+  </div>
+
+  <div class="step">
+    <h3>5. Ongoing Support</h3>
+    <p>
+      I’m here if you need updates, changes, or improvements as your business grows.
+    </p>
+  </div>
+
+</div>
+
+<!-- WHY DIFFERENT -->
+
+<div class="section container">
+  <h2>Why This Works</h2>
+
+  <p>
+    Most websites are built without ever understanding the business behind them.  
+    That’s why they fail.
+  </p>
+
+  <p>
+    By working directly with you and seeing your business in person,  
+    I build something that actually reflects what you do — and attracts the right customers.
+  </p>
+</div>
+
+<!-- CTA -->
+
+<div class="section container">
+  <div class="cta">
+    <h2>Let’s Build Something That Works</h2>
+    <p>
+      Get a website that represents your business properly and brings in customers.
+    </p>
+
+    <a href="#" class="btn">Get a Free Quote</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+  © 2026 Crane Platform Labs
+</div>
+
+</body>
+</html>

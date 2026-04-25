@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Services | Crane Platform Labs</title>
+
+<meta name="description" content="Website services for rural small businesses. SEO websites, mobile optimisation, and lead generation built to bring customers.">
+
+<style>
+
+/* =========================
+GLOBAL
+========================= */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top, #0b0f1a, #05070d);
+  color: white;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h1, h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+/* =========================
+NAV
+========================= */
+
+.nav {
+  padding: 20px 0;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 25px;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.nav-btn {
+  background: linear-gradient(90deg, #7c3aed, #06b6d4);
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero {
+  text-align: center;
+  padding: 80px 0 40px;
+}
+
+.hero h1 {
+  font-size: 42px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* =========================
+SERVICES GRID
+========================= */
+
+.section {
+  padding: 60px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #0f1424;
+  padding: 30px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(124,58,237,0.3);
+}
+
+/* =========================
+FEATURE LIST
+========================= */
+
+.features {
+  margin-top: 40px;
+}
+
+.features p {
+  margin: 10px 0;
+}
+
+/* =========================
+CTA
+========================= */
+
+.cta {
+  background: linear-gradient(90deg, #7c3aed, #06b6d4);
+  padding: 50px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.btn {
+  background: black;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+.footer {
+  text-align: center;
+  padding: 40px;
+  opacity: 0.6;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="nav">
+  <div class="container nav-inner">
+    <img src="images/logo.png" class="logo">
+
+    <div>
+      <span class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="services.html">Services</a>
+        <a href="#">Who It’s For</a>
+        <a href="#">SEO Results</a>
+        <a href="#">Contact</a>
+      </span>
+      <a href="#" class="nav-btn">Get a Free Quote</a>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="container">
+    <h1>Websites Built to Bring You Customers</h1>
+
+    <p>
+      Everything is designed around one goal — helping your business get found and generate enquiries.
+    </p>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<div class="section container">
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Custom Website Design</h3>
+      <p>
+        A clean, modern website built specifically for your business — no templates, no shortcuts.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>SEO Setup</h3>
+      <p>
+        Structured so your business can show up on Google when customers are searching.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Mobile Optimisation</h3>
+      <p>
+        Your website will look and work perfectly on phones, where most customers are searching.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Lead Generation</h3>
+      <p>
+        Built to turn visitors into calls, messages, and enquiries.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Fast Performance</h3>
+      <p>
+        Speed matters — faster websites rank better and keep customers engaged.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Ongoing Support</h3>
+      <p>
+        Need changes later? I’m here to help as your business grows.
+      </p>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- WHAT YOU ACTUALLY GET -->
+<div class="section container">
+  <h2>What You Actually Get</h2>
+
+  <div class="features">
+    <p>✔ A professional website that reflects your business</p>
+    <p>✔ Setup to help you appear on Google</p>
+    <p>✔ A site that works on all devices</p>
+    <p>✔ A structure designed to bring enquiries</p>
+    <p>✔ Personal service from start to finish</p>
+  </div>
+</div>
+
+<!-- WHY IT MATTERS -->
+<div class="section container">
+  <h2>Why This Matters</h2>
+
+  <p>
+    A website isn’t just something to have — it’s one of your most important business tools.
+  </p>
+
+  <p>
+    When built properly, it works 24/7 to attract customers, build trust, and grow your business.
+  </p>
+</div>
+
+<!-- CTA -->
+<div class="section container">
+  <div class="cta">
+    <h2>Let’s Build a Website That Works</h2>
+
+    <p>
+      Get a website designed to bring real customers to your business.
+    </p>
+
+    <a href="#" class="btn">Get a Free Quote</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  © 2026 Crane Platform Labs
+</div>
+
+</body>
+</html>

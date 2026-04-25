@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SEO Results | Crane Platform Labs</title>
+
+<meta name="description" content="See how SEO websites help rural small businesses get found on Google and convert more customers.">
+
+<style>
+
+/* =========================
+GLOBAL
+========================= */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top, #0b0f1a, #05070d);
+  color: white;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h1, h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+/* =========================
+NAV
+========================= */
+
+.nav {
+  padding: 20px 0;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 25px;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.nav-btn {
+  background: linear-gradient(90deg, #7c3aed, #06b6d4);
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero {
+  text-align: center;
+  padding: 80px 0 40px;
+}
+
+.hero h1 {
+  font-size: 42px;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: 20px auto;
+}
+
+/* =========================
+STATS GRID
+========================= */
+
+.section {
+  padding: 60px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.stat {
+  background: #0f1424;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.stat:hover {
+  box-shadow: 0 0 20px rgba(124,58,237,0.3);
+}
+
+.stat h2 {
+  font-size: 36px;
+  color: #7c3aed;
+}
+
+/* =========================
+TEXT BLOCKS
+========================= */
+
+.block {
+  background: #0f1424;
+  padding: 30px;
+  border-radius: 12px;
+  margin-top: 30px;
+}
+
+/* =========================
+CTA
+========================= */
+
+.cta {
+  background: linear-gradient(90deg, #7c3aed, #06b6d4);
+  padding: 50px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.btn {
+  background: black;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+.footer {
+  text-align: center;
+  padding: 40px;
+  opacity: 0.6;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="nav">
+  <div class="container nav-inner">
+    <img src="images/logo.png" class="logo">
+
+    <div>
+      <span class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="services.html">Services</a>
+        <a href="who-its-for.html">Who It’s For</a>
+        <a href="seo-results.html">SEO Results</a>
+        <a href="#">Contact</a>
+      </span>
+      <a href="#" class="nav-btn">Get a Free Quote</a>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="container">
+    <h1>If You’re Not Showing on Google, You’re Losing Customers</h1>
+
+    <p>
+      Most customers search online before choosing a business.  
+      If you're not visible, you're missing real opportunities every day.
+    </p>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="section container">
+
+  <h2>The Reality</h2>
+
+  <div class="grid">
+
+    <div class="stat">
+      <h2>90%</h2>
+      <p>of customers use Google to find businesses</p>
+    </div>
+
+    <div class="stat">
+      <h2>75%</h2>
+      <p>never go past page one</p>
+    </div>
+
+    <div class="stat">
+      <h2>76%</h2>
+      <p>take action within 24 hours</p>
+    </div>
+
+    <div class="stat">
+      <h2>28%</h2>
+      <p>of searches lead to a purchase</p>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- LOST CUSTOMERS -->
+<div class="section container">
+
+  <div class="block">
+    <h2>How Many Customers Are You Missing?</h2>
+
+    <p>
+      Every time someone searches for a service you offer, they are choosing from the businesses they see.
+    </p>
+
+    <p>
+      If your business isn’t there — you’re not even in the running.
+    </p>
+  </div>
+
+</div>
+
+<!-- REAL WORLD -->
+<div class="section container">
+
+  <h2>What This Looks Like in Real Life</h2>
+
+  <div class="grid">
+
+    <div class="stat">
+      <p>New residents searching for tradies and services</p>
+    </div>
+
+    <div class="stat">
+      <p>Travellers looking for food, coffee, and shops</p>
+    </div>
+
+    <div class="stat">
+      <p>Locals comparing businesses before choosing</p>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- SOLUTION -->
+<div class="section container">
+
+  <div class="block">
+    <h2>A Website That Works Changes Everything</h2>
+
+    <p>
+      When your website is built properly and shows up on Google:
+    </p>
+
+    <p>
+      • More people find your business  
+      • More visitors turn into enquiries  
+      • More enquiries turn into customers  
+    </p>
+
+    <p>
+      It’s not just about having a website — it’s about having one that actually works.
+    </p>
+  </div>
+
+</div>
+
+<!-- CTA -->
+<div class="section container">
+  <div class="cta">
+    <h2>Start Getting Found by Customers</h2>
+
+    <p>
+      Let’s build a website that helps your business show up and grow.
+    </p>
+
+    <a href="#" class="btn">Get a Free Quote</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  © 2026 Crane Platform Labs
+</div>
+
+</body>
+</html>
