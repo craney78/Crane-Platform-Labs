@@ -109,19 +109,19 @@ SECTION SPACING
 }
 
 /* =========================
-NAVBAR
+NAVBAR CLEAN FIX
 ========================= */
 
 .nav {
   position: sticky;
   top: 0;
   width: 100%;
-  background: rgba(5,7,13,0.85);
+  background: rgba(5,7,13,0.9);
   backdrop-filter: blur(10px);
   z-index: 1000;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
+/* MAIN LAYOUT */
 .nav-inner {
   display: flex;
   justify-content: space-between;
@@ -129,16 +129,23 @@ NAVBAR
   height: 70px;
 }
 
-/* LEFT (LOGO) */
+/* LEFT */
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+/* LOGO */
 .nav-logo {
   height: 42px;
+  width: auto;
 }
 
 /* RIGHT GROUP */
 .nav-right {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 20px;
 }
 
 /* LINKS */
@@ -148,26 +155,28 @@ NAVBAR
 }
 
 .nav-links a {
-  margin-right: 20px;
+  margin-right: 18px;
   font-size: 14px;
-  color: var(--text-muted);
+  color: rgba(255,255,255,0.7);
 }
 
 .nav-links a:hover {
-  color: var(--primary);
+  color: #7c3aed;
 }
 
-/* CTA BUTTON */
+/* BUTTON */
 .nav-btn {
   padding: 10px 18px;
   border-radius: 8px;
-  background: var(--gradient);
+  background: linear-gradient(90deg, #7c3aed, #06b6d4);
   color: white;
   font-size: 14px;
   font-weight: 600;
   white-space: nowrap;
 }
 
-.nav-btn:hover {
-  box-shadow: 0 0 12px var(--primary);
+.nav-logo {
+  height: 42px;
+  width: auto;
+  display: block;
 }
