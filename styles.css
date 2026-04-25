@@ -255,18 +255,17 @@ MOBILE
 }
 
 /* =========================
-FOOTER (MATCH NAV)
+FOOTER CLEAN FIX
 ========================= */
 
 .footer {
   position: relative;
-  width: 100%;
   background: rgba(5,7,13,0.95);
   backdrop-filter: blur(10px);
   margin-top: 80px;
 }
 
-/* GLOW LINE (TOP - MIRROR OF NAV) */
+/* glow line */
 .footer::before {
   content: "";
   position: absolute;
@@ -284,56 +283,62 @@ FOOTER (MATCH NAV)
   );
 }
 
-/* INNER LAYOUT */
+/* LAYOUT */
 .footer-inner {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 40px 0;
-  gap: 30px;
+  gap: 40px;
   flex-wrap: wrap;
 }
 
-/* LEFT (LOGO) */
+/* LEFT */
 .footer-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 6px;
+  max-width: 250px;
 }
 
 .footer-logo {
-  height: 28px;   /* tighter than before */
+  height: 28px;
   width: auto;
-  display: block;
-  object-fit: contain;
 }
 
 .footer-tag {
+  font-size: 13px;
+  margin: 8px 0 12px;
+  color: rgba(255,255,255,0.7);
+}
+
+/* BUSINESS INFO */
+.footer-business p {
   font-size: 12px;
-  color: rgba(255,255,255,0.6);
-  margin: 0;
+  color: rgba(255,255,255,0.5);
+  margin: 2px 0;
 }
 
 /* LINKS */
 .footer-links {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
+  gap: 18px;
+  max-width: 400px;
 }
 
 .footer-links a {
-  margin-right: 22px;
   font-size: 14px;
   color: rgba(255,255,255,0.75);
-  transition: 0.3s;
 }
 
 .footer-links a:hover {
   color: #7c3aed;
 }
 
-/* CTA BUTTON (MATCH NAV STYLE) */
+/* CTA */
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
 .footer-btn {
   padding: 12px 22px;
   border-radius: 10px;
@@ -341,20 +346,16 @@ FOOTER (MATCH NAV)
   color: white;
   font-size: 14px;
   font-weight: 600;
-  text-decoration: none;
-  white-space: nowrap;
-  transition: 0.3s;
 }
 
 .footer-btn:hover {
   box-shadow: 0 0 18px rgba(124,58,237,0.6);
-  transform: translateY(-1px);
 }
 
-/* BOTTOM BAR */
+/* BOTTOM */
 .footer-bottom {
   text-align: center;
-  padding: 20px 0;
+  padding: 18px 0;
   border-top: 1px solid rgba(255,255,255,0.05);
 }
 
@@ -363,30 +364,24 @@ FOOTER (MATCH NAV)
   color: rgba(255,255,255,0.5);
 }
 
-/* =========================
-MOBILE
-========================= */
-
+/* MOBILE */
 @media (max-width: 900px) {
 
   .footer-inner {
     flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
   .footer-left {
-    align-items: center;
+    max-width: 100%;
   }
 
   .footer-links {
     justify-content: center;
   }
 
-  .footer-links a {
-    margin: 10px;
-  }
-
-  .footer-btn {
+  .footer-right {
     margin-top: 15px;
   }
 }
