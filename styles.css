@@ -409,7 +409,21 @@ FOOTER CLEAN FIX
   .footer-business {
     max-width: 100%;
     text-align: center;
-}  
+} 
+
+@media (min-width: 900px) {
+
+  .footer-left {
+    align-items: center;   /* center the whole block */
+    text-align: center;
+  }
+
+  .footer-tag,
+  .footer-business {
+    max-width: 260px;      /* slightly wider than before */
+  }
+
+}
 
 /* =========================
 BACKGROUND DEPTH
