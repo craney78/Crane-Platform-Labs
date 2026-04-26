@@ -313,9 +313,11 @@ FOOTER CLEAN FIX
   }
 }
 
-.footer-tag,
-.footer-business {
-  max-width: 220px;
+@media (min-width: 900px) {
+  .footer-tag,
+  .footer-business {
+    max-width: 220px;
+  }
 }
 
 /* LINKS */
@@ -397,4 +399,24 @@ FOOTER CLEAN FIX
 
 .footer-logo {
   margin-bottom: 4px;
+}
+
+@media (max-width: 900px) {
+
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin: 0 auto;
+  }
+
+  .footer-tag,
+  .footer-business {
+    max-width: 100%;
+    text-align: center;
+  }
 }
