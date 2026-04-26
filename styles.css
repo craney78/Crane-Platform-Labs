@@ -420,3 +420,72 @@ MOBILE
   }
 
 }
+
+/* =========================
+HERO
+========================= */
+
+.hero {
+  padding: 120px 0 80px;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* LEFT CONTENT */
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-sub {
+  font-size: 18px;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 30px;
+}
+
+/* BUTTONS */
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.btn-secondary {
+  padding: 12px 22px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: white;
+}
+
+.btn-secondary:hover {
+  border-color: #7c3aed;
+}
+
+/* TRUST LINE */
+.hero-trust {
+  font-size: 14px;
+  color: rgba(255,255,255,0.6);
+}
+
+/* RIGHT VISUAL */
+.hero-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img {
+  width: 320px;
+  max-width: 100%;
+  filter: drop-shadow(0 0 40px rgba(124,58,237,0.4));
+}
