@@ -485,8 +485,9 @@ HERO
 }
 
 .hero-img {
-  width: 320px;
+  width: 240px;       /* was 320px → too big */
   max-width: 100%;
+  height: auto;
   filter: drop-shadow(0 0 40px rgba(124,58,237,0.4));
 }
 
@@ -514,4 +515,11 @@ HERO
     margin-top: 30px;
   }
 
+}
+
+@media (max-width: 900px) {
+  .hero-img {
+    width: 180px;
+    margin-top: 25px;
+  }
 }
