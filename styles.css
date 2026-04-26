@@ -258,6 +258,7 @@ MOBILE
 FOOTER CLEAN FIX
 ========================= */
 
+
 .footer {
   position: relative;
   background: rgba(5,7,13,0.95);
@@ -265,7 +266,7 @@ FOOTER CLEAN FIX
   margin-top: 80px;
 }
 
-/* glow line */
+/* TOP GLOW LINE (MATCH NAV) */
 .footer::before {
   content: "";
   position: absolute;
@@ -293,25 +294,37 @@ FOOTER CLEAN FIX
   flex-wrap: wrap;
 }
 
+/* LEFT */
 .footer-left {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
+/* LOGO */
+.footer-logo {
+  width: 95px; /* mobile */
+  height: auto;
+  display: block;
+}
 
-/* DESKTOP ONLY */
+/* DESKTOP LOGO */
 @media (min-width: 900px) {
   .footer-logo {
-    height: 110px;
+    width: 110px;
   }
 }
 
-@media (min-width: 900px) {
-  .footer-tag,
-  .footer-business {
-    max-width: 220px;
-  }
+/* TEXT */
+.footer-tag {
+  font-size: 13px;
+  color: rgba(255,255,255,0.7);
+}
+
+.footer-business p {
+  font-size: 12px;
+  color: rgba(255,255,255,0.5);
+  margin: 2px 0;
 }
 
 /* LINKS */
@@ -325,6 +338,7 @@ FOOTER CLEAN FIX
 .footer-links a {
   font-size: 14px;
   color: rgba(255,255,255,0.75);
+  transition: 0.3s;
 }
 
 .footer-links a:hover {
@@ -344,6 +358,7 @@ FOOTER CLEAN FIX
   color: white;
   font-size: 14px;
   font-weight: 600;
+  text-decoration: none;
 }
 
 .footer-btn:hover {
@@ -362,6 +377,10 @@ FOOTER CLEAN FIX
   color: rgba(255,255,255,0.5);
 }
 
+/* =========================
+MOBILE
+========================= */
+
 @media (max-width: 900px) {
 
   .footer-inner {
@@ -374,16 +393,6 @@ FOOTER CLEAN FIX
     align-items: center;
   }
 
-  .footer-logo {
-    margin: 0 auto;
-  }
-
-  .footer-tag,
-  .footer-business {
-    max-width: 100%;
-    text-align: center;
-  }
-
   .footer-links {
     justify-content: center;
   }
@@ -391,57 +400,5 @@ FOOTER CLEAN FIX
   .footer-right {
     margin-top: 15px;
   }
-}
-.footer-logo {
-  width: 95px;  /* was 110 → now slightly smaller */
-  height: auto;
-}
-/* =========================
-BACKGROUND DEPTH
-========================= */
 
-body {
-  background: radial-gradient(circle at 20% 0%, rgba(124,58,237,0.15), transparent 40%),
-              radial-gradient(circle at 80% 0%, rgba(6,182,212,0.15), transparent 40%),
-              radial-gradient(circle at top, #0b0f1a, #05070d);
-}
-
-.section-card {
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.05);
-  border-radius: 14px;
-  padding: 40px;
-  backdrop-filter: blur(6px);
-}
-
-.gradient-text {
-  background: linear-gradient(90deg, #7c3aed, #06b6d4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.btn-primary {
-  background: linear-gradient(90deg, #7c3aed, #06b6d4);
-  box-shadow: 0 0 20px rgba(124,58,237,0.3);
-}
-
-.btn-primary:hover {
-  box-shadow: 0 0 30px rgba(124,58,237,0.6);
-}
-
-.section-divider {
-  height: 1px;
-  margin: 60px 0;
-
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(124,58,237,0.6),
-    rgba(6,182,212,0.6),
-    transparent
-  );
-}
-
-.hero-img {
-  filter: drop-shadow(0 0 40px rgba(124,58,237,0.4));
 }
