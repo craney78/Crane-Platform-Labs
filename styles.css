@@ -392,7 +392,10 @@ FOOTER CLEAN FIX
     margin-top: 15px;
   }
 }
-
+.footer-logo {
+  width: 95px;  /* was 110 → now slightly smaller */
+  height: auto;
+}
 /* =========================
 BACKGROUND DEPTH
 ========================= */
