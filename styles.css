@@ -489,3 +489,29 @@ HERO
   max-width: 100%;
   filter: drop-shadow(0 0 40px rgba(124,58,237,0.4));
 }
+
+@media (max-width: 900px) {
+
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero-img {
+    width: 220px;
+    margin-top: 30px;
+  }
+
+}
