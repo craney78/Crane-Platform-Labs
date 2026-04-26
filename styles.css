@@ -387,3 +387,14 @@ FOOTER CLEAN FIX
     margin-top: 15px;
   }
 }
+
+@media (max-width: 900px) {
+  .footer-left {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.footer-logo {
+  margin-bottom: 4px;
+}
