@@ -858,3 +858,9 @@ FEATURE BAR (FINAL)
   font-size: 13px;
   color: rgba(255,255,255,0.65);
 }
+
+@media (max-width: 900px) {
+  .feature-bar {
+    grid-template-columns: 1fr 1fr;
+  }
+}
