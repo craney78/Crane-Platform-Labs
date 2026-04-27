@@ -527,19 +527,19 @@ PRIMARY BUTTON (GLOBAL)
     font-size: 34px;
   }
 
-  .hero-img {
-    width: 220px;
-    margin-top: 30px;
-  }
-
+.hero-img {
+  width: 240px;   /* mobile base */
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0 40px rgba(124,58,237,0.4));
 }
 
-@media (max-width: 900px) {
+/* DESKTOP */
+@media (min-width: 900px) {
   .hero-img {
-    width: 180px;
-    margin-top: 25px;
+    width: 360px;   /* increase for desktop */
   }
-}
+}  
 
 /* =========================
 CARDS (GLOBAL UPGRADE)
