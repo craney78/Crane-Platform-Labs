@@ -810,13 +810,15 @@ img.feature-icon {
   margin: 40px auto;
 }
 
-/* ===== FINAL ICON SIZE (LARGE) ===== */
-/* ===== HARD LOCK ICON SIZE ===== */
+/* ===== RESPONSIVE ICON SIZE (FITS PAGE) ===== */
 img.feature-icon {
-  width: 140px !important;
-  max-width: 140px !important;
-  height: auto !important;
-  display: block !important;
-  margin: 80px auto !important;
-  filter: none !important;
+  width: 8vw;          /* scales with screen */
+  max-width: 120px;    /* stops getting too big */
+  min-width: 60px;     /* stops getting too small */
+
+  height: auto;
+  display: block;
+  margin: 70px auto;
+
+  filter: none;
 }
