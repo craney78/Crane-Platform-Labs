@@ -1281,3 +1281,35 @@ MOBILE OPTIMISATION
 .panel p {
   margin-bottom: 20px;
 }
+
+/* ===== ICON SPACING FIX ===== */
+.icon-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 20px 0;  /* was 40px */
+}
+
+/* tighten relationship */
+.section + .icon-section {
+  margin-top: 10px;
+}
+
+.icon-section + .section {
+  margin-top: 10px;
+}
+
+.grid,
+.problem-grid {
+  gap: 18px;   /* was 24px */
+}
+
+.feature-bar {
+  gap: 14px;       /* tighter */
+  margin-top: 10px;
+}
+
+.feature {
+  padding: 10px 0; /* less vertical space */
+}
