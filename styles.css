@@ -829,3 +829,17 @@ img.feature-icon {
   min-width: 100px;
   margin: 90px auto;
 }
+
+/* ===== ICON SYSTEM (FINAL) ===== */
+img.feature-icon {
+  width: 12vw;
+  max-width: 180px;
+  min-width: 100px;
+
+  height: auto;
+  display: block;
+  margin: 80px auto;
+
+  /* keep your glow effect from the image */
+  filter: none;
+}
