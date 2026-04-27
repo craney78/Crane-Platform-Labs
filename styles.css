@@ -1095,63 +1095,117 @@ body > * {
 }
 
 /* ===== SUBTLE GLASS SECTIONS ===== */
-.section-card {
-  background: rgba(255,255,255,0.02);
-  backdrop-filter: blur(6px);
+
+/* =========================
+FINAL PANEL SYSTEM (OVERRIDE EVERYTHING)
+========================= */
+
+/* ===== RESET ALL OLD BOX STYLES ===== */
+.section-card,
+.card,
+.problem-item,
+.feature {
+  background: none !important;
+  backdrop-filter: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* ===== CLEAN PANEL (MAIN SYSTEM) ===== */
+.panel {
+  background: rgba(255,255,255,0.02) !important;
 
   border-radius: 16px;
-  padding: 50px 40px;
-  margin: 60px auto;
+  padding: 32px;
 
   position: relative;
   overflow: hidden;
+
+  transition: all 0.3s ease;
 }
 
-.section-card::before {
+/* ===== SUBTLE GLOW EDGE ===== */
+.panel::before {
   content: "";
   position: absolute;
   inset: 0;
-
   border-radius: 16px;
 
   background: linear-gradient(
     120deg,
-    rgba(124,58,237,0.15),
-    rgba(6,182,212,0.15)
+    rgba(124,58,237,0.2),
+    rgba(6,182,212,0.2)
   );
 
-  opacity: 0.3;
+  opacity: 0.15;
   pointer-events: none;
 }
 
-.section-card > * {
+/* ===== CONTENT ABOVE ===== */
+.panel > * {
   position: relative;
   z-index: 1;
 }
 
-.card,
-.problem-item {
-  background: rgba(255,255,255,0.015);
-  backdrop-filter: blur(4px);
+/* ===== HOVER (SUBTLE LIFT) ===== */
+.panel:hover {
+  transform: translateY(-4px);
+}
+
+/* =========================
+LIGHT PANEL (FOR SMALL ITEMS)
+========================= */
+.panel-light {
+  background: rgba(255,255,255,0.015) !important;
 
   border-radius: 14px;
-  padding: 20px;
+  padding: 22px;
+
+  position: relative;
 }
 
+/* =========================
+FEATURES (NO BOX — CLEAN)
+========================= */
+.feature {
+  background: transparent !important;
+  border: none !important;
+  padding: 10px 0 !important;
+}
+
+/* =========================
+ICON SYSTEM (FINAL FIX)
+========================= */
+.feature-icon {
+  width: 80px !important;
+  max-width: 80px !important;
+  min-width: 80px !important;
+
+  height: auto;
+  display: block;
+  margin: 0 auto 15px;
+
+  filter: drop-shadow(0 0 12px rgba(6,182,212,0.4));
+}
+
+/* =========================
+MOBILE OPTIMISATION
+========================= */
 @media (max-width: 900px) {
 
-  .section-card {
-    background: rgba(255,255,255,0.01);
-    backdrop-filter: blur(2px);
-
-    padding: 40px 20px;
-    margin: 40px auto;
+  .panel {
+    padding: 24px;
+    background: rgba(255,255,255,0.015) !important;
   }
 
-  .card,
-  .problem-item {
-    background: rgba(255,255,255,0.01);
-    backdrop-filter: blur(2px);
+  .panel-light {
+    padding: 18px;
   }
 
+  .feature-icon {
+    width: 65px !important;
+    max-width: 65px !important;
+    min-width: 65px !important;
+  }
 }
+
