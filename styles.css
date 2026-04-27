@@ -809,3 +809,15 @@ img.feature-icon {
   display: block;
   margin: 40px auto;
 }
+
+/* ===== ICON FIX (OVERRIDE EVERYTHING) ===== */
+img.feature-icon {
+  width: 28px !important;
+  height: auto !important;
+  max-width: 28px !important;
+  display: block !important;
+  margin: 40px auto !important;
+
+  /* 🔥 kill any filters causing white squares */
+  filter: none !important;
+}
