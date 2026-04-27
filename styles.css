@@ -1039,3 +1039,47 @@ body::before {
   from { background-size: 100%; }
   to { background-size: 110%; }
 }
+
+/* ===== PARTICLES ===== */
+
+.particles {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.particles::before,
+.particles::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+
+  background-image:
+    radial-gradient(rgba(6,182,212,0.6) 1px, transparent 1px),
+    radial-gradient(rgba(124,58,237,0.5) 1px, transparent 1px);
+
+  background-size: 80px 80px, 120px 120px;
+
+  animation: particlesMove 40s linear infinite;
+}
+
+.particles::after {
+  animation-duration: 60s;
+  opacity: 0.4;
+}
+
+@keyframes particlesMove {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-200px, -200px);
+  }
+}
+
+.hero-overlay { z-index: 1; }
+.particles { z-index: 2; }
+.hero-inner { z-index: 3; position: relative; }
