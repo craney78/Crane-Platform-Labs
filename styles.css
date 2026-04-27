@@ -1209,3 +1209,75 @@ MOBILE OPTIMISATION
   }
 }
 
+/* ===== GLOBAL SPACING SYSTEM ===== */
+
+/* standard section spacing */
+.section {
+  padding: 100px 0;
+}
+
+/* tighter sections (feature + icons) */
+.section-tight {
+  padding: 60px 0;
+}
+
+/* consistent gap after panels */
+.panel {
+  margin: 40px auto;
+}
+
+/* ===== ICON SECTIONS (CLEAN + ALIGNED) ===== */
+
+.icon-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 40px 0;
+}
+
+/* tighter spacing above icons */
+.section + .icon-section {
+  margin-top: 20px;
+}
+
+/* tighter spacing below icons */
+.icon-section + .section {
+  margin-top: 20px;
+}
+
+/* ===== FINAL ICON SYSTEM ===== */
+
+.feature-icon {
+  width: 90px;
+  height: auto;
+
+  display: block;
+
+  filter: drop-shadow(0 0 14px rgba(6,182,212,0.4));
+}
+
+/* ===== GRID BALANCE ===== */
+
+.grid {
+  display: grid;
+  gap: 24px;
+}
+
+.problem-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.feature-bar {
+  margin-top: 20px;
+  gap: 18px;
+}
+
+.panel h2 {
+  margin-bottom: 15px;
+}
+
+.panel p {
+  margin-bottom: 20px;
+}
