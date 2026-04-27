@@ -802,3 +802,10 @@ FEATURE BAR (FINAL)
   }
 }
 
+/* ===== FINAL ICON FIX ===== */
+img.feature-icon {
+  width: 28px;
+  height: auto;
+  display: block;
+  margin: 40px auto;
+}
