@@ -822,3 +822,10 @@ img.feature-icon {
 
   filter: none;
 }
+
+img.feature-icon {
+  width: 14vw;
+  max-width: 220px;
+  min-width: 100px;
+  margin: 90px auto;
+}
