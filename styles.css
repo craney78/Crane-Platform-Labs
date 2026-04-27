@@ -528,7 +528,7 @@ PRIMARY BUTTON (GLOBAL)
   }
 
 .hero-img {
-  width: 260px;   /* mobile base */
+  width: 300px;   /* mobile base */
   max-width: 100%;
   height: auto;
   filter: drop-shadow(0 0 40px rgba(124,58,237,0.4));
