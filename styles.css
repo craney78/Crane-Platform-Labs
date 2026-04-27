@@ -811,13 +811,11 @@ img.feature-icon {
 }
 
 /* ===== ICON FIX (OVERRIDE EVERYTHING) ===== */
+/* ===== FINAL ICON SIZE ===== */
 img.feature-icon {
-  width: 28px !important;
-  height: auto !important;
-  max-width: 28px !important;
-  display: block !important;
-  margin: 40px auto !important;
-
-  /* 🔥 kill any filters causing white squares */
-  filter: none !important;
+  width: 48px;
+  height: auto;
+  display: block;
+  margin: 50px auto;
+  filter: none;
 }
