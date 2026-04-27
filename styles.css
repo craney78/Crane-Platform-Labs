@@ -843,3 +843,71 @@ img.feature-icon {
   /* keep your glow effect from the image */
   filter: none;
 }
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 80px 5%;
+
+  background:
+    radial-gradient(circle at top, #0b0f1a, #05070d),
+    radial-gradient(circle at 80% 20%, rgba(124,58,237,0.2), transparent 40%),
+    radial-gradient(circle at 20% 80%, rgba(6,182,212,0.15), transparent 40%);
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  width: 100%;
+}
+
+.hero-content {
+  max-width: 550px;
+}
+
+.hero-logo {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #7c3aed, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-sub {
+  margin: 20px 0;
+  color: rgba(255,255,255,0.7);
+}
+
+.hero-visual img {
+  width: 600px;
+  max-width: 100%;
+  filter: drop-shadow(0 30px 80px rgba(0,0,0,0.8));
+}
+
+/* FEATURES */
+.hero-features {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.hero-features div {
+  font-size: 14px;
+}
+
+.hero-features span {
+  color: rgba(255,255,255,0.6);
+  font-size: 12px;
+}
