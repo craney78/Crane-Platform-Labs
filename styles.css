@@ -454,10 +454,27 @@ HERO
 }
 
 /* BUTTONS */
-.hero-buttons {
-  display: flex;
-  gap: 16px;
-  margin-bottom: 20px;
+/* =========================
+PRIMARY BUTTON (GLOBAL)
+========================= */
+
+.btn-primary {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 10px;
+
+  background: linear-gradient(90deg, #7c3aed, #06b6d4);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 20px rgba(124,58,237,0.6);
+  transform: translateY(-1px);
 }
 
 .btn-secondary {
