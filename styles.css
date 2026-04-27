@@ -868,3 +868,12 @@ FEATURE ICONS
   width: 40px;
   height: auto;
 }
+
+/* ===== FORCE ICON SIZE (FINAL FIX) ===== */
+img.feature-icon {
+  width: 32px !important;
+  height: auto !important;
+  max-width: 32px !important;
+  display: block;
+  margin: 40px auto !important;
+}
