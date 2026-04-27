@@ -453,7 +453,6 @@ HERO
   margin-bottom: 30px;
 }
 
-/* BUTTONS */
 /* =========================
 PRIMARY BUTTON (GLOBAL)
 ========================= */
@@ -508,13 +507,10 @@ PRIMARY BUTTON (GLOBAL)
   filter: drop-shadow(0 0 40px rgba(124,58,237,0.4));
 }
 
+
 @media (max-width: 900px) {
-
-  .hero-inner {
-    flex-direction: column;
-    text-align: center;
-  }
-
+  /* your mobile styles here */
+}
   .hero-buttons {
     justify-content: center;
   }
