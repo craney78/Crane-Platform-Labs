@@ -1209,21 +1209,19 @@ MOBILE OPTIMISATION
   }
 }
 
-/* ===== GLOBAL SPACING SYSTEM ===== */
 
-/* standard section spacing */
+/* ===== TIGHTER SECTION SPACING ===== */
 .section {
-  padding: 100px 0;
+  padding: 70px 0;   /* was 100px */
 }
 
-/* tighter sections (feature + icons) */
 .section-tight {
-  padding: 60px 0;
+  padding: 40px 0;   /* was 60px */
 }
 
-/* consistent gap after panels */
+/* panels shouldn’t add extra gap */
 .panel {
-  margin: 40px auto;
+  margin: 20px auto; /* was 40px */
 }
 
 /* ===== ICON SECTIONS (CLEAN + ALIGNED) ===== */
@@ -1248,13 +1246,15 @@ MOBILE OPTIMISATION
 
 /* ===== FINAL ICON SYSTEM ===== */
 
+/* ===== STRONG ICON SIZE ===== */
 .feature-icon {
-  width: 90px;
+  width: 120px;      /* was ~90px */
+  max-width: 120px;
+  min-width: 120px;
+
   height: auto;
 
-  display: block;
-
-  filter: drop-shadow(0 0 14px rgba(6,182,212,0.4));
+  filter: drop-shadow(0 0 18px rgba(6,182,212,0.45));
 }
 
 /* ===== GRID BALANCE ===== */
