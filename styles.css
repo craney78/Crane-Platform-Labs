@@ -810,12 +810,11 @@ img.feature-icon {
   margin: 40px auto;
 }
 
-/* ===== ICON FIX (OVERRIDE EVERYTHING) ===== */
-/* ===== FINAL ICON SIZE ===== */
+/* ===== FINAL ICON SIZE (LARGE) ===== */
 img.feature-icon {
-  width: 48px;
+  width: 80px;
   height: auto;
   display: block;
-  margin: 50px auto;
+  margin: 60px auto;
   filter: none;
 }
