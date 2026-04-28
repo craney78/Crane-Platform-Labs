@@ -272,6 +272,44 @@ HERO
   margin-bottom: 30px;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+body {
+  padding-top: 80px; /* adjust to your nav height */
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  position: relative;
+  z-index: 2;
+}
+
+.hero {
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
 /* =========================
 PRIMARY BUTTON (GLOBAL)
 ========================= */
@@ -1548,4 +1586,70 @@ TRUST STRIP
 
 .highlight-card p:first-child {
   margin-bottom: 6px;
+}
+
+@media (max-width: 900px) {
+
+  .location-grid {
+    grid-template-columns: 1fr; /* stack */
+    gap: 30px;
+  }
+
+  .map-wrap {
+    min-height: 260px;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  .business-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .business-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .town-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .trust-strip {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .section-header h2 {
+    font-size: 26px;
+  }
+
+  .location-content h3 {
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .section {
+    padding: 60px 0;
+  }
+
 }
