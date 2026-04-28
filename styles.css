@@ -1144,6 +1144,12 @@ MOBILE
   filter: none;
 }
 
+.icon-break {
+  text-align: center;
+  margin: 18px 0;
+  opacity: 0.85;
+}
+
 /* =========================
 FOOTER (FINAL CLEAN SYSTEM)
 ========================= */
