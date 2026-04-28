@@ -1357,3 +1357,8 @@ MOBILE
   opacity: 0.6;
   margin-top: 5px;
 }
+
+.bottom-brand h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
