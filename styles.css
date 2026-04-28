@@ -1339,3 +1339,12 @@ MOBILE OPTIMISATION
   display: block;
   margin: 0 auto;
 }
+
+.icon-section .feature-icon {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.feature-bar .feature-icon {
+  width: 60px;
+}
