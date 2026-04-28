@@ -1208,3 +1208,18 @@ FOOTER (CLEAN WORKING VERSION)
     margin: 0 auto;
   }
 }
+
+.footer-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+
+  background: url('images/footer.png') no-repeat center 115%;
+  background-size: cover;
+
+  opacity: 0.4;
+}
+
+.footer {
+  padding: 80px 0 260px;
+}
