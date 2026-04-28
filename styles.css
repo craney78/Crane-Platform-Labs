@@ -1261,3 +1261,38 @@ MOBILE
   display: block;
   margin: 0 auto 12px;
 }
+
+.feature-bar .feature-icon {
+  width: 50px;
+  height: 50px;              /* force square box */
+  object-fit: contain;       /* keeps proportions clean */
+
+  display: block;
+  margin: 0 auto 12px;
+}
+
+.feature-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: start;
+  text-align: center;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 140px;   /* THIS fixes uneven boxes */
+}
+
+.feature h3 {
+  margin-bottom: 8px;
+}
+
+.feature p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
