@@ -1457,3 +1457,9 @@ MOBILE
 
   z-index: -1;
 }
+
+.bottom-brand h2 {
+  text-shadow:
+    0 0 6px rgba(255,255,255,0.2),
+    0 0 20px rgba(6,182,212,0.2);
+}
