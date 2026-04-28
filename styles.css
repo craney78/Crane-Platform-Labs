@@ -1429,15 +1429,6 @@ MAP + LOCATION
 
 /* MAP */
 
-/* Marker positions */
-.map-marker.wagga   { top: 55%; left: 55%; }
-.map-marker.albury  { top: 75%; left: 70%; }
-.map-marker.junee   { top: 60%; left: 58%; }
-.map-marker.griffith{ top: 50%; left: 45%; }
-.map-marker.tumut   { top: 70%; left: 60%; }
-
-/* Radius */
-
 /* RIGHT SIDE */
 
 .location-content h3 {
@@ -1513,3 +1504,22 @@ TRUST STRIP
   opacity: 0.9;        /* show the detail */
   filter: none;        /* remove old dimming */
 }
+
+.map-marker {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #00cfff;
+  border-radius: 50%;
+  box-shadow: 
+    0 0 10px #00cfff,
+    0 0 20px #00cfff,
+    0 0 40px rgba(0,200,255,0.6);
+}
+
+/* UPDATED POSITIONS */
+.map-marker.junee   { top: 55%; left: 58%; }
+.map-marker.wagga   { top: 52%; left: 63%; }
+.map-marker.albury  { top: 72%; left: 68%; }
+.map-marker.griffith{ top: 48%; left: 50%; }
+.map-marker.tumut   { top: 65%; left: 66%; }
