@@ -1429,18 +1429,6 @@ MAP + LOCATION
 
 /* MAP */
 
-.map-wrap {
-  position: relative;
-  border-radius: 16px;
-  overflow: hidden;
-}
-
-.map-base {
-  width: 100%;
-  opacity: 0.85;
-  filter: brightness(0.8);
-}
-
 .map-marker {
   position: absolute;
   width: 10px;
@@ -1544,4 +1532,16 @@ TRUST STRIP
   object-fit: contain;
   opacity: 0.25;       /* dims the map */
   filter: brightness(0.6) contrast(1.2);
+}
+
+.map-marker {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #00cfff;
+  border-radius: 50%;
+  box-shadow: 
+    0 0 10px #00cfff,
+    0 0 20px #00cfff,
+    0 0 40px rgba(0,200,255,0.6);
 }
