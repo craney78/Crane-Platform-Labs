@@ -1283,3 +1283,31 @@ FOOTER (FINAL WITH YOUR NEW IMAGE)
   grid-template-columns: repeat(4, 1fr);
   gap: 50px;
 }
+
+/* =========================
+FOOTER (FORCED IMAGE - WORKING)
+========================= */
+
+.footer {
+  position: relative;
+  margin-top: 80px;
+
+  padding: 80px 0 380px;
+
+  /* FORCE IMAGE DIRECTLY */
+  background: 
+    linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.9),
+      rgba(0,0,0,0.7),
+      rgba(0,0,0,0.3)
+    ),
+    url('images/footer.png') center bottom / cover no-repeat !important;
+}
+
+/* remove ALL old layers */
+.footer::before,
+.footer::after,
+.footer-bg {
+  display: none !important;
+}
