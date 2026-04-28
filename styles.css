@@ -1319,6 +1319,8 @@ FOOTER (FINAL - CLEAN + STABLE)
   display: block;
 }
 
+
+
 /* =========================
 FOOTER (FINAL WITH YOUR NEW IMAGE)
 ========================= */
@@ -1406,6 +1408,58 @@ FOOTER (FORCED IMAGE - WORKING)
 .footer::after,
 .footer-bg {
   display: none !important;
+}
+
+@media (max-width: 600px) {
+
+  /* FORCE STACK (TEXT ABOVE IMAGE) */
+  .hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  /* FIX HEADING SIZE */
+  .hero h1 {
+    font-size: 26px;
+    line-height: 1.2;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  /* SUB TEXT */
+  .hero p {
+    font-size: 14px;
+    max-width: 85%;
+    margin: 0 auto;
+  }
+
+  /* IMAGE UNDER TEXT */
+  .hero img {
+    max-width: 80%;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  /* REDUCE HERO HEIGHT */
+  .hero {
+    padding: 40px 0;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .footer img {
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
 }
 
 /* =========================
