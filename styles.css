@@ -1427,10 +1427,6 @@ MAP + LOCATION
   align-items: center;
 }
 
-/* MAP */
-
-/* RIGHT SIDE */
-
 .location-content h3 {
   font-size: 22px;
   margin-bottom: 10px;
@@ -1517,26 +1513,22 @@ TRUST STRIP
     0 0 40px rgba(0,200,255,0.6);
 }
 
-/* UPDATED POSITIONS */
-.map-marker.junee   { top: 55%; left: 58%; }
-.map-marker.wagga   { top: 52%; left: 63%; }
-.map-marker.albury  { top: 72%; left: 68%; }
-.map-marker.griffith{ top: 48%; left: 50%; }
-.map-marker.tumut   { top: 65%; left: 66%; }
-
-.map-marker.gundagai { 
-  top: 62%; 
-  left: 60%; 
-}
-
-.map-label {
+.map-marker {
   position: absolute;
-  font-size: 12px;
-  color: #fff;
-  opacity: 0.8;
+  width: 10px;
+  height: 10px;
+  background: #00cfff;
+  border-radius: 50%;
+  box-shadow: 
+    0 0 10px #00cfff,
+    0 0 20px #00cfff,
+    0 0 40px rgba(0,200,255,0.6);
 }
 
-.map-label.junee {
-  top: 58%;
-  left: 60%;
-}
+/* VISUALLY CORRECT POSITIONS */
+.map-marker.junee   { top: 55%; left: 58%; }
+.map-marker.wagga   { top: 53%; left: 62%; }
+.map-marker.gundagai{ top: 60%; left: 60%; }
+.map-marker.tumut   { top: 66%; left: 65%; }
+.map-marker.albury  { top: 75%; left: 70%; }
+.map-marker.griffith{ top: 48%; left: 50%; }
