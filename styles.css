@@ -1706,3 +1706,167 @@ RESPONSIVE
   background: rgba(0,200,255,0.05);
   text-align: center;
 }
+
+.section {
+  padding: 80px 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-tag {
+  font-size: 12px;
+  letter-spacing: 1px;
+  opacity: 0.6;
+  margin-bottom: 10px;
+}
+
+.section-sub {
+  opacity: 0.7;
+}
+
+/* BUSINESS GRID */
+.business-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.business-card {
+  padding: 24px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: all 0.3s ease;
+}
+
+.business-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0,200,255,0.4);
+  box-shadow: 0 0 20px rgba(0,200,255,0.15);
+}
+
+/* ICONS */
+.icon-wrap img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+  filter: drop-shadow(0 0 6px rgba(0,200,255,0.4));
+}
+
+.business-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.business-card p {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* LOCATION GRID */
+.location-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  margin-top: 60px;
+  align-items: center;
+}
+
+/* MAP */
+.map-wrap {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.map-base {
+  width: 100%;
+  opacity: 0.85;
+  filter: brightness(0.8);
+}
+
+.map-marker {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #00cfff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #00cfff, 0 0 20px #00cfff;
+}
+
+.map-marker.wagga   { top: 55%; left: 55%; }
+.map-marker.albury  { top: 75%; left: 70%; }
+.map-marker.junee   { top: 60%; left: 58%; }
+.map-marker.griffith{ top: 50%; left: 45%; }
+.map-marker.tumut   { top: 70%; left: 60%; }
+
+.map-radius {
+  position: absolute;
+  top: 60%;
+  left: 58%;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(rgba(0,200,255,0.2), transparent 70%);
+  transform: translate(-50%, -50%);
+}
+
+/* LOCATION CONTENT */
+.location-content h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.location-content p {
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+.town-list {
+  columns: 2;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.town-list li {
+  margin-bottom: 6px;
+  opacity: 0.85;
+}
+
+/* REMOTE CARD */
+.remote-card {
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,200,255,0.3);
+  background: rgba(0,200,255,0.05);
+  text-align: center;
+}
+
+/* TRUST STRIP */
+.trust-strip {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  gap: 20px;
+}
+
+.trust-item {
+  text-align: center;
+  flex: 1;
+}
+
+.trust-item img {
+  width: 32px;
+  margin-bottom: 8px;
+  filter: brightness(0) invert(1);
+}
+
+.trust-item p {
+  font-size: 14px;
+  opacity: 0.7;
+}
