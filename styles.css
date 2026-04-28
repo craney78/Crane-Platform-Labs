@@ -1489,18 +1489,19 @@ TRUST STRIP
   position: relative;
   border-radius: 16px;
   overflow: hidden;
-  background: #0a0f1a; /* forces dark background */
-  min-height: 320px;   /* ensures it actually shows */
+  background: #0a0f1a;
+  min-height: 320px;
 }
 
 .map-base {
   width: 100%;
   height: 100%;
-  object-fit: cover;   /* fills nicely */
-  opacity: 0.9;        /* show the detail */
-  filter: none;        /* remove old dimming */
+  object-fit: cover;
+  opacity: 0.25;
+  filter: brightness(0.7);
 }
 
+/* MARKERS */
 .map-marker {
   position: absolute;
   width: 10px;
@@ -1513,19 +1514,7 @@ TRUST STRIP
     0 0 40px rgba(0,200,255,0.6);
 }
 
-.map-marker {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background: #00cfff;
-  border-radius: 50%;
-  box-shadow: 
-    0 0 10px #00cfff,
-    0 0 20px #00cfff,
-    0 0 40px rgba(0,200,255,0.6);
-}
-
-/* VISUALLY CORRECT POSITIONS */
+/* VISUAL POSITIONS (BALANCED) */
 .map-marker.junee   { top: 56%; left: 58%; }
 .map-marker.wagga   { top: 53%; left: 63%; }
 .map-marker.gundagai{ top: 61%; left: 60%; }
