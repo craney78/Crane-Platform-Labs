@@ -1,7 +1,6 @@
 /* =========================
 RESET
 ========================= */
-
 * {
   margin: 0;
   padding: 0;
@@ -9,20 +8,14 @@ RESET
 }
 
 /* =========================
-ROOT (BRAND SYSTEM)
+ROOT VARIABLES
 ========================= */
-
 :root {
-  --bg-dark: #05070d;
-  --bg-light: #0b0f1a;
-
-  --primary: #7c3aed;   /* purple */
-  --secondary: #06b6d4; /* cyan */
+  --primary: #7c3aed;
+  --secondary: #06b6d4;
 
   --text-main: #ffffff;
   --text-muted: rgba(255,255,255,0.7);
-
-  --gradient: linear-gradient(90deg, #7c3aed, #06b6d4);
 }
 
 
@@ -1137,31 +1130,18 @@ MOBILE
 
 .icon-break {
   text-align: center;
-  margin: 10px 0;   /* tight spacing */
+  margin: 12px 0;
 }
 
 .break-icon {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-  opacity: 0.9;
-}
-
-.icon-break {
-  text-align: center;
-  margin: 10px 0;
-}
-
-.break-icon {
-  width: 35px !important;
-  height: 35px !important;
+  width: 35px;
+  height: 35px;
   object-fit: contain;
 
   display: block;
   margin: 0 auto;
 
-  filter: none !important;   /* removes glow */
-  transform: none !important;
+  filter: none;
 }
 
 /* =========================
