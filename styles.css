@@ -1526,9 +1526,9 @@ TRUST STRIP
 }
 
 /* VISUALLY CORRECT POSITIONS */
-.map-marker.junee   { top: 55%; left: 58%; }
-.map-marker.wagga   { top: 53%; left: 62%; }
-.map-marker.gundagai{ top: 60%; left: 60%; }
-.map-marker.tumut   { top: 66%; left: 65%; }
-.map-marker.albury  { top: 75%; left: 70%; }
+.map-marker.junee   { top: 56%; left: 58%; }
+.map-marker.wagga   { top: 53%; left: 63%; }
+.map-marker.gundagai{ top: 61%; left: 60%; }
+.map-marker.tumut   { top: 66%; left: 66%; }
+.map-marker.albury  { top: 74%; left: 70%; }
 .map-marker.griffith{ top: 48%; left: 50%; }
