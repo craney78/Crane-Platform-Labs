@@ -1313,3 +1313,21 @@ MOBILE OPTIMISATION
 .feature {
   padding: 10px 0; /* less vertical space */
 }
+
+/* ===== FINAL ICON SYSTEM (FORCE LARGE + IMPACT) ===== */
+.feature-icon {
+  width: 180px !important;
+  max-width: none !important;
+  min-width: 0 !important;
+
+  height: auto;
+
+  display: block;
+  margin: 30px auto;
+
+  filter: drop-shadow(0 0 25px rgba(6,182,212,0.6));
+}
+
+.feature-icon {
+  transform: scale(1.1);
+}
