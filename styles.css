@@ -1127,7 +1127,7 @@ FOOTER (CLEAN WORKING VERSION)
   inset: 0;
   z-index: 0;
 
-  background: url('images/footer.png') no-repeat center bottom;
+  background: url('images/footer.png') no-repeat center 110%;
   background-size: cover;
 
   opacity: 0.4; /* stops text clash */
