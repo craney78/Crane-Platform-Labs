@@ -1325,3 +1325,35 @@ MOBILE
   filter: none !important;   /* removes glow */
   transform: none !important;
 }
+
+.bottom-fade {
+  height: 220px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,0.6) 50%,
+    rgba(0,0,0,0) 100%
+  );
+}
+
+.bottom-brand {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.bottom-brand h3 {
+  font-size: 18px;
+  letter-spacing: 1px;
+  opacity: 0.85;
+}
+
+.bottom-brand p {
+  font-size: 13px;
+  opacity: 0.6;
+  margin-top: 5px;
+}
