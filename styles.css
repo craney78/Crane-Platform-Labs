@@ -1254,3 +1254,17 @@ FOOTER (FINAL CLEAN SYSTEM)
     margin: 0 auto;
   }
 }
+
+/* HARD STOP DUPLICATE FOOTER TEXT */
+.footer-links {
+  display: none !important;
+}
+
+.footer a {
+  position: relative;
+  z-index: 2;
+}
+
+.footer * {
+  transform: none !important;
+}
