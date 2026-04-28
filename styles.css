@@ -618,12 +618,7 @@ FEATURE BAR (FINAL)
 }
 
 /* ===== FINAL ICON FIX ===== */
-img.feature-icon {
-  width: 28px;
-  height: auto;
-  display: block;
-  margin: 40px auto;
-}
+
 
 /* ===== LARGE ICONS (FINAL) ===== */
 img.feature-icon {
@@ -635,27 +630,6 @@ img.feature-icon {
   display: block;
   margin: 80px auto;
 
-  filter: none;
-}
-
-img.feature-icon {
-  width: 14vw;
-  max-width: 220px;
-  min-width: 100px;
-  margin: 90px auto;
-}
-
-/* ===== ICON SYSTEM (FINAL) ===== */
-img.feature-icon {
-  width: 12vw;
-  max-width: 180px;
-  min-width: 100px;
-
-  height: auto;
-  display: block;
-  margin: 80px auto;
-
-  /* keep your glow effect from the image */
   filter: none;
 }
 
@@ -1125,17 +1099,6 @@ MOBILE
 .icon-break {
   text-align: center;
   margin: 12px 0;
-}
-
-.break-icon {
-  width: 35px;
-  height: 35px;
-  object-fit: contain;
-
-  display: block;
-  margin: 0 auto;
-
-  filter: none;
 }
 
 .icon-break {
