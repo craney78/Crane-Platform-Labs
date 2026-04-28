@@ -1110,27 +1110,27 @@ MOBILE
 }
 
 /* =========================
-FOOTER (CLEAN WORKING VERSION)
+FOOTER (FINAL - CLEAN + LOWERED BRAND)
 ========================= */
 
 .footer {
   position: relative;
   overflow: hidden;
   margin-top: 80px;
-  padding: 80px 0 180px;
+  padding: 80px 0 320px; /* extra bottom space so branding sits below */
   background: transparent;
 }
 
-/* BACKGROUND IMAGE */
+/* BACKGROUND IMAGE (CRANE BRANDING) */
 .footer-bg {
   position: absolute;
   inset: 0;
   z-index: 0;
 
-  background: url('images/footer.png') no-repeat center 110%;
+  background: url('images/footer.png') no-repeat center 130%;
   background-size: cover;
 
-  opacity: 0.4; /* stops text clash */
+  opacity: 0.4; /* reduces clash with text */
 }
 
 /* CONTENT WRAPPER */
@@ -1166,7 +1166,7 @@ FOOTER (CLEAN WORKING VERSION)
   margin: 4px 0;
 }
 
-/* RIGHT COLUMNS */
+/* RIGHT SIDE COLUMNS */
 .footer-columns {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1207,19 +1207,4 @@ FOOTER (CLEAN WORKING VERSION)
   .footer-left {
     margin: 0 auto;
   }
-}
-
-.footer-bg {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-
-  background: url('images/footer.png') no-repeat center 115%;
-  background-size: cover;
-
-  opacity: 0.4;
-}
-
-.footer {
-  padding: 80px 0 260px;
 }
