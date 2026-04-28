@@ -1396,3 +1396,7 @@ MOBILE
     margin: 0 auto;
   }
 }
+
+.footer-links {
+  display: none !important;
+}
