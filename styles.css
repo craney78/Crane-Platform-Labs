@@ -1523,3 +1523,20 @@ TRUST STRIP
 .map-marker.albury  { top: 72%; left: 68%; }
 .map-marker.griffith{ top: 48%; left: 50%; }
 .map-marker.tumut   { top: 65%; left: 66%; }
+
+.map-marker.gundagai { 
+  top: 62%; 
+  left: 60%; 
+}
+
+.map-label {
+  position: absolute;
+  font-size: 12px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.map-label.junee {
+  top: 58%;
+  left: 60%;
+}
