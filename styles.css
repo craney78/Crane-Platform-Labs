@@ -1311,3 +1311,26 @@ FOOTER (FORCED IMAGE - WORKING)
 .footer-bg {
   display: none !important;
 }
+
+/* =========================
+LIGHTWEIGHT PANELS (CLEAN)
+========================= */
+
+.panel {
+  background: rgba(255,255,255,0.03);   /* much lighter */
+  border: 1px solid rgba(255,255,255,0.04); /* barely visible */
+  border-radius: 14px;
+
+  padding: 28px;
+
+  backdrop-filter: blur(6px); /* subtle glass effect */
+}
+
+/* lighter inner cards */
+.panel-light {
+  background: rgba(255,255,255,0.015);
+  border: 1px solid rgba(255,255,255,0.03);
+  border-radius: 12px;
+
+  padding: 20px;
+}
