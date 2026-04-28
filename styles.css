@@ -1308,3 +1308,20 @@ MOBILE
   object-fit: contain;
   opacity: 0.9;
 }
+
+.icon-break {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.break-icon {
+  width: 35px !important;
+  height: 35px !important;
+  object-fit: contain;
+
+  display: block;
+  margin: 0 auto;
+
+  filter: none !important;   /* removes glow */
+  transform: none !important;
+}
