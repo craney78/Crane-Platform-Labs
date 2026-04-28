@@ -1408,3 +1408,25 @@ MOBILE
   opacity: 0.7;
   margin-top: 5px;
 }
+
+/* MAIN FOOTER TEXT */
+.footer-left,
+.footer-links,
+.footer-right {
+  color: #ffffff;
+}
+
+/* LINKS (BRIGHTER) */
+.footer-links a {
+  opacity: 0.95;   /* was ~0.8 */
+}
+
+.footer-links a:hover {
+  opacity: 1;
+}
+
+/* SMALL TEXT */
+.footer-tag,
+.footer-business p {
+  opacity: 0.85;   /* was lower */
+}
