@@ -1333,14 +1333,12 @@ MOBILE
   align-items: flex-end;
   justify-content: center;
 
-  background:
-    linear-gradient(
-      to bottom,
-      rgba(0,0,0,1) 0%,
-      rgba(0,0,0,0.6) 50%,
-      rgba(0,0,0,0) 100%
-    ),
-    url('images/your-background.jpg') center/cover no-repeat;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,0.6) 50%,
+    rgba(0,0,0,0) 100%
+  );
 }
 
 .bottom-brand {
