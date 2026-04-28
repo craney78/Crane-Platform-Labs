@@ -1165,186 +1165,92 @@ LIGHT PANEL (FOR SMALL ITEMS)
 }
 
 /* =========================
-FEATURES (NO BOX — CLEAN)
+FEATURES (CLEAN BASE)
 ========================= */
 .feature {
-  background: transparent !important;
-  border: none !important;
-  padding: 10px 0 !important;
+  background: transparent;
+  border: none;
+  padding: 10px 0;
 }
 
-/* =========================
-ICON SYSTEM (FINAL FIX)
-========================= */
-.feature-icon {
-  width: 80px !important;
-  max-width: 80px !important;
-  min-width: 80px !important;
 
+/* =========================
+FEATURE BAR ICONS (INSIDE BOXES)
+========================= */
+.feature-bar .feature-icon {
+  width: 50px;
   height: auto;
   display: block;
-  margin: 0 auto 15px;
-
-  filter: drop-shadow(0 0 12px rgba(6,182,212,0.4));
+  margin: 0 auto 12px;
 }
 
+
 /* =========================
-MOBILE OPTIMISATION
+ICON SECTIONS (BETWEEN SECTIONS)
+========================= */
+.icon-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.icon-section .feature-icon {
+  width: 90px;
+  height: auto;
+}
+
+
+/* =========================
+GRID + SPACING
+========================= */
+.grid,
+.problem-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.feature-bar {
+  margin-top: 20px;
+  gap: 16px;
+}
+
+.panel {
+  margin: 20px auto;
+}
+
+
+/* =========================
+SECTIONS
+========================= */
+.section {
+  padding: 70px 0;
+}
+
+.section-tight {
+  padding: 40px 0;
+}
+
+
+/* =========================
+MOBILE
 ========================= */
 @media (max-width: 900px) {
 
+  .feature-bar .feature-icon {
+    width: 45px;
+  }
+
+  .icon-section .feature-icon {
+    width: 70px;
+  }
+
   .panel {
     padding: 24px;
-    background: rgba(255,255,255,0.015) !important;
+    background: rgba(255,255,255,0.015);
   }
 
   .panel-light {
     padding: 18px;
   }
-
-  .feature-icon {
-    width: 65px !important;
-    max-width: 65px !important;
-    min-width: 65px !important;
-  }
-}
-
-
-/* ===== TIGHTER SECTION SPACING ===== */
-.section {
-  padding: 70px 0;   /* was 100px */
-}
-
-.section-tight {
-  padding: 40px 0;   /* was 60px */
-}
-
-/* panels shouldn’t add extra gap */
-.panel {
-  margin: 20px auto; /* was 40px */
-}
-
-/* ===== ICON SECTIONS (CLEAN + ALIGNED) ===== */
-
-.icon-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  margin: 40px 0;
-}
-
-/* tighter spacing above icons */
-.section + .icon-section {
-  margin-top: 20px;
-}
-
-/* tighter spacing below icons */
-.icon-section + .section {
-  margin-top: 20px;
-}
-
-/* ===== FINAL ICON SYSTEM ===== */
-
-/* ===== STRONG ICON SIZE ===== */
-.feature-icon {
-  width: 120px;      /* was ~90px */
-  max-width: 120px;
-  min-width: 120px;
-
-  height: auto;
-
-  filter: drop-shadow(0 0 18px rgba(6,182,212,0.45));
-}
-
-/* ===== GRID BALANCE ===== */
-
-.grid {
-  display: grid;
-  gap: 24px;
-}
-
-.problem-grid {
-  display: grid;
-  gap: 24px;
-}
-
-.feature-bar {
-  margin-top: 20px;
-  gap: 18px;
-}
-
-.panel h2 {
-  margin-bottom: 15px;
-}
-
-.panel p {
-  margin-bottom: 20px;
-}
-
-/* ===== ICON SPACING FIX ===== */
-.icon-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  margin: 20px 0;  /* was 40px */
-}
-
-/* tighten relationship */
-.section + .icon-section {
-  margin-top: 10px;
-}
-
-.icon-section + .section {
-  margin-top: 10px;
-}
-
-.grid,
-.problem-grid {
-  gap: 18px;   /* was 24px */
-}
-
-.feature-bar {
-  gap: 14px;       /* tighter */
-  margin-top: 10px;
-}
-
-.feature {
-  padding: 10px 0; /* less vertical space */
-}
-
-/* ===== FINAL ICON SYSTEM (FORCE LARGE + IMPACT) ===== */
-/* ===== FINAL ICON SIZE (BALANCED IMPACT) ===== */
-.feature-icon {
-  width: 220px !important;   /* increased from 180 */
-  max-width: 220px !important;
-  min-width: 220px !important;
-
-  height: auto;
-
-  display: block;
-  margin: 40px auto;
-
-  filter: drop-shadow(0 0 28px rgba(6,182,212,0.6));
-}
-
-.feature-icon {
-  transform: scale(1.08);
-}
-
-.feature-icon {
-  width: 90px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-.icon-section .feature-icon {
-  width: 100px;
-  margin-bottom: 20px;
-}
-
-.feature-bar .feature-icon {
-  width: 60px;
 }
