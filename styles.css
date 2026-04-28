@@ -1338,7 +1338,7 @@ MOBILE
   position: absolute;
   inset: 0;
 
-  background: url('images/footer.png') center bottom / cover no-repeat;
+  background: url('images/footer.png') center 80% / cover no-repeat;
 
   z-index: 0;
 }
@@ -1351,10 +1351,10 @@ MOBILE
 
   background: linear-gradient(
     to bottom,
-    rgba(0,0,0,0.65) 0%,
-    rgba(0,0,0,0.45) 40%,
-    rgba(0,0,0,0.2) 70%,
-    rgba(0,0,0,0.05) 100%
+    rgba(0,0,0,0.55) 0%,   /* top darker */
+    rgba(0,0,0,0.35) 35%,
+    rgba(0,0,0,0.15) 65%,
+    rgba(0,0,0,0.0) 100%   /* bottom fully visible */
   );
 
   z-index: 1;
