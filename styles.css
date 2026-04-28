@@ -92,9 +92,7 @@ html, body {
 SECTION SPACING
 ========================= */
 
-.section {
-  padding: 80px 0;
-}
+
 
 /* =========================
 NAVBAR (FULL SYSTEM)
@@ -475,10 +473,6 @@ html {
 /* =========================
 GLOBAL SPACING SYSTEM
 ========================= */
-
-.section {
-  padding: 100px 0;
-}
 
 .section-tight {
   padding: 60px 0;
@@ -1171,13 +1165,16 @@ FOOTER (FINAL CLEAN SYSTEM)
   background:
     linear-gradient(
       to bottom,
-      rgba(0,0,0,0.45),
-      rgba(0,0,0,0.2),
+      rgba(0,0,0,0.3),
+      rgba(0,0,0,0.1),
       rgba(0,0,0,0)
     ),
-    url('images/footer.png') center 72% / cover no-repeat;
+    url('images/footer.png') center bottom / contain no-repeat;
 
-  filter: brightness(1.25) contrast(1.1);
+  background-size: contain;
+  background-position: center bottom;
+
+  filter: brightness(1.4) contrast(1.05);
 }
 
 /* CONTENT */
@@ -1255,16 +1252,8 @@ FOOTER (FINAL CLEAN SYSTEM)
   }
 }
 
-/* HARD STOP DUPLICATE FOOTER TEXT */
-.footer-links {
-  display: none !important;
-}
-
 .footer a {
   position: relative;
   z-index: 2;
 }
 
-.footer * {
-  transform: none !important;
-}
