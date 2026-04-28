@@ -1327,7 +1327,7 @@ MOBILE
 }
 
 .bottom-brand {
-  height: 180px;
+  height: 220px;
 
   display: flex;
   flex-direction: column;
@@ -1337,16 +1337,6 @@ MOBILE
   text-align: center;
   padding-bottom: 30px;
 
-  background: transparent; /* THIS IS THE KEY */
-}
-
-.bottom-brand h3 {
-  font-size: 18px;
-  opacity: 0.85;
-}
-
-.bottom-brand p {
-  font-size: 13px;
-  opacity: 0.6;
-  margin-top: 5px;
+  /* THIS IS THE KEY */
+  background: url('images/your-background.jpg') center/cover no-repeat;
 }
