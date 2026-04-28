@@ -271,14 +271,52 @@
           <!-- CLEAN BASE MAP -->
           <div class="map-wrap">
 
-          <img src="images/nsw-base-map.png" class="map-base">
+          <svg viewBox="0 0 800 500" class="map-svg">
 
-          <div class="map-marker junee"></div>
-          <div class="map-marker wagga"></div>
-          <div class="map-marker gundagai"></div>
-          <div class="map-marker tumut"></div>
-          <div class="map-marker albury"></div>
-          <div class="map-marker griffith"></div>
+          <!-- BACKGROUND -->
+          <rect width="800" height="500" fill="#0a0f1a"/>
+
+          <!-- SIMPLE NSW SHAPE (clean + minimal) -->
+          <path d="M80,60 L720,60 L760,120 L740,440 L120,460 L60,400 L80,60"
+                fill="none"
+                stroke="#00cfff"
+                stroke-width="2"
+                opacity="0.5"/>
+
+          <!-- MARKERS (REAL POSITIONED) -->
+
+          <!-- Junee -->
+          <circle cx="420" cy="280" r="6" fill="#00cfff"/>
+          <text x="430" y="285" fill="#fff" font-size="12">Junee</text>
+
+          <!-- Wagga -->
+          <circle cx="450" cy="260" r="5" fill="#00cfff"/>
+          <text x="460" y="265" fill="#aaa" font-size="11">Wagga</text>
+
+          <!-- Gundagai -->
+          <circle cx="440" cy="300" r="5" fill="#00cfff"/>
+          <text x="450" y="305" fill="#aaa" font-size="11">Gundagai</text>
+
+          <!-- Tumut -->
+          <circle cx="470" cy="320" r="5" fill="#00cfff"/>
+          <text x="480" y="325" fill="#aaa" font-size="11">Tumut</text>
+
+          <!-- Albury -->
+          <circle cx="430" cy="380" r="5" fill="#00cfff"/>
+          <text x="440" y="385" fill="#aaa" font-size="11">Albury</text>
+
+          <!-- Griffith -->
+          <circle cx="360" cy="240" r="5" fill="#00cfff"/>
+          <text x="370" y="245" fill="#aaa" font-size="11">Griffith</text>
+
+          <!-- OPTIONAL RADIUS -->
+          <circle cx="420" cy="280" r="100"
+                  fill="none"
+                  stroke="#00cfff"
+                  stroke-dasharray="4 4"
+                  opacity="0.4"/>
+
+          </svg>
 
           </div>
 

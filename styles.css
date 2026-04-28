@@ -1485,38 +1485,14 @@ TRUST STRIP
   opacity: 0.7;
 }
 
+.map-svg {
+  width: 100%;
+  height: 100%;
+}
+
 .map-wrap {
   position: relative;
   border-radius: 16px;
   overflow: hidden;
   background: #0a0f1a;
-  min-height: 320px;
 }
-
-.map-base {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.25;
-}
-
-/* markers */
-.map-marker {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background: #00cfff;
-  border-radius: 50%;
-  box-shadow:
-    0 0 10px #00cfff,
-    0 0 20px #00cfff,
-    0 0 40px rgba(0,200,255,0.6);
-}
-
-/* COORDINATE-BASED POSITIONS */
-.map-marker.junee   { top: 58%; left: 60%; }
-.map-marker.wagga   { top: 56%; left: 62%; }
-.map-marker.gundagai{ top: 59%; left: 63%; }
-.map-marker.tumut   { top: 62%; left: 64%; }
-.map-marker.albury  { top: 70%; left: 60%; }
-.map-marker.griffith{ top: 50%; left: 54%; }
