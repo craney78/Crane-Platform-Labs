@@ -1332,3 +1332,10 @@ MOBILE OPTIMISATION
 .feature-icon {
   transform: scale(1.08);
 }
+
+.feature-icon {
+  width: 90px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
