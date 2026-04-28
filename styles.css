@@ -322,6 +322,44 @@ body {
   padding-top: 100px; /* adjust to your nav height */
 }
 
+@media (max-width: 768px) {
+
+  .hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+  }
+
+  /* TEXT SIZE */
+  .hero h1 {
+    font-size: 30px;   /* 👈 smaller */
+    line-height: 1.2;
+    max-width: 90%;
+  }
+
+  .hero p {
+    font-size: 14px;
+    max-width: 85%;
+  }
+
+  /* IMAGE */
+  .hero img {
+    max-width: 85%;
+    height: auto;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .hero {
+    padding: 50px 0;
+  }
+
+}
+
 /* =========================
 PRIMARY BUTTON (GLOBAL)
 ========================= */
@@ -1271,6 +1309,14 @@ FOOTER (FINAL - CLEAN + STABLE)
   .footer-left {
     margin: 0 auto;
   }
+}
+
+.footer img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
 }
 
 /* =========================
