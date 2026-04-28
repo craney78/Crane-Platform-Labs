@@ -1315,17 +1315,18 @@ MOBILE OPTIMISATION
 }
 
 /* ===== FINAL ICON SYSTEM (FORCE LARGE + IMPACT) ===== */
+/* ===== FINAL ICON SIZE (BALANCED IMPACT) ===== */
 .feature-icon {
-  width: 180px !important;
-  max-width: none !important;
-  min-width: 0 !important;
+  width: 220px !important;   /* increased from 180 */
+  max-width: 220px !important;
+  min-width: 220px !important;
 
   height: auto;
 
   display: block;
-  margin: 30px auto;
+  margin: 40px auto;
 
-  filter: drop-shadow(0 0 25px rgba(6,182,212,0.6));
+  filter: drop-shadow(0 0 28px rgba(6,182,212,0.6));
 }
 
 .feature-icon {
