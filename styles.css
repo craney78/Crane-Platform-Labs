@@ -1127,10 +1127,16 @@ FOOTER (FINAL - CLEAN + LOWERED BRAND)
   inset: 0;
   z-index: 0;
 
-  background: url('images/footer.png') no-repeat center 130%;
-  background-size: cover;
+  background-image: url('images/footer.png') !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center 140% !important; /* BIG push down */
 
-  opacity: 0.4; /* reduces clash with text */
+  opacity: 0.4;
+}
+
+.footer {
+  padding: 80px 0 360px !important;
 }
 
 /* CONTENT WRAPPER */
