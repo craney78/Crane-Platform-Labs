@@ -1254,3 +1254,10 @@ MOBILE
     padding: 18px;
   }
 }
+
+.feature-bar .feature-icon {
+  width: 50px;
+  height: auto;
+  display: block;
+  margin: 0 auto 12px;
+}
