@@ -108,20 +108,28 @@ body {
 
 /* ================= DESKTOP ================= */
 
-@media (min-width: 768px) {
-
-  .nav-links {
-    display: block;
+@media (max-width: 768px) {
+  .logo img {
+    height: 38px;
   }
+}
 
   .nav-toggle {
     display: none;
   }
 
   .logo img {
-  height: 32px;
+  height: 44px;
   width: auto;
   display: block;
+
+  opacity: 0.95;
+  transition: all 0.2s ease;
+}
+
+.logo img:hover {
+  opacity: 1;
+  transform: translateY(-1px);
 }
 
 /* ================= HERO ================= */
