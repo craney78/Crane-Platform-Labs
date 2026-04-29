@@ -1727,3 +1727,17 @@ TRUST STRIP
   }
 
 }
+
+/* ===== DESKTOP HERO RESET ===== */
+.hero {
+  height: 100vh;
+  position: relative;
+
+  background: url("images/hero.png") no-repeat center right;
+  background-size: cover;
+  background-position: 85% center;
+
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+}
