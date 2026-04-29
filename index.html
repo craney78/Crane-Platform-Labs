@@ -70,16 +70,19 @@
     <div class="features-grid">
 
       <div class="card">
+        <img src="images/search.png" class="icon" alt="">
         <h3>Built for Google</h3>
         <p>Designed to help your business get found by local customers.</p>
       </div>
 
       <div class="card">
+        <img src="images/phone.png" class="icon" alt="">
         <h3>Mobile First</h3>
         <p>Optimised for how people actually search on their phones.</p>
       </div>
 
       <div class="card">
+        <img src="images/speed.png" class="icon" alt="">
         <h3>Fast & Reliable</h3>
         <p>Clean, lightweight websites that load quickly.</p>
       </div>
@@ -207,7 +210,7 @@ function toggleMenu() {
   nav.classList.toggle("active");
 }
 
-/* CLOSE MENU WHEN LINK CLICKED (better UX) */
+/* CLOSE MENU WHEN LINK CLICKED */
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => {
     document.getElementById("navLinks").classList.remove("active");

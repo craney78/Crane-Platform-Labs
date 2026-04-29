@@ -13,6 +13,11 @@ body {
   padding: 0 20px;
 }
 
+/* remove default spacing issues */
+h1, h2, h3, p {
+  margin-top: 0;
+}
+
 
 /* ================= NAV ================= */
 .nav {
@@ -46,11 +51,24 @@ body {
   font-size: 14px;
   color: #333;
   text-decoration: none;
+  position: relative;
   transition: 0.2s;
 }
 
-.nav-links a:hover {
-  color: #000;
+/* subtle underline animation */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #111;
+  transition: 0.2s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
 }
 
 .nav-toggle {
@@ -95,11 +113,12 @@ body {
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
-  transition: 0.2s;
+  transition: all 0.2s ease;
 }
 
 .btn-primary:hover {
-  background: #000;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
 }
 
 .btn-secondary {
@@ -110,6 +129,12 @@ body {
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  transform: translateY(-1px);
+  background: #e7eaf0;
 }
 
 .hero-image {
@@ -119,6 +144,7 @@ body {
 .hero-image img {
   width: 100%;
   border-radius: 18px;
+  border: 1px solid rgba(0,0,0,0.04);
   box-shadow:
     0 20px 40px rgba(0,0,0,0.06),
     0 4px 10px rgba(0,0,0,0.04);
@@ -135,11 +161,23 @@ body {
   background: #fff;
 }
 
+/* TITLE REFINEMENT */
 .section-title {
   font-size: 26px;
   font-weight: 600;
   letter-spacing: -0.3px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+}
+
+/* subtle divider under titles */
+.section-title::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #111;
+  margin-top: 10px;
+  opacity: 0.08;
 }
 
 .section-sub {
@@ -157,7 +195,7 @@ body {
 }
 
 
-/* subtle separator */
+/* subtle separator between sections */
 .section::after {
   content: "";
   position: absolute;
@@ -183,6 +221,9 @@ body {
   padding: 24px;
   border-radius: 16px;
   border: 1px solid rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   transition: all 0.2s ease;
 }
 
@@ -205,10 +246,19 @@ body {
 }
 
 
+/* ================= ICONS ================= */
+.icon {
+  width: 34px;
+  height: 34px;
+  margin-bottom: 12px;
+  opacity: 0.9;
+}
+
+
 /* ================= CTA ================= */
 .cta {
   text-align: center;
-  padding: 90px 0;
+  padding: 100px 0;
 }
 
 .cta h2 {
