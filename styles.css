@@ -264,9 +264,7 @@ h1, h2, h3, p {
     0 4px 10px rgba(0,0,0,0.04);
 }
 
-
-/* ================= ICON SYSTEM ================= */
-/* ================= ICON SYSTEM (UPGRADED) ================= */
+/* ================= COLOURED ICON SYSTEM ================= */
 
 .icon {
   width: 52px;
@@ -279,32 +277,24 @@ h1, h2, h3, p {
 
   border-radius: 14px;
 
-  /* subtle colour background */
   background: linear-gradient(135deg, #eef2ff, #f5f7fb);
-
   box-shadow: 0 6px 16px rgba(0,0,0,0.06);
 }
 
-/* SVG styling */
+/* SVG size */
 .icon svg {
   width: 26px;
   height: 26px;
   stroke-width: 2.2;
 }
 
-/* individual colours */
-.icon-search svg {
-  stroke: #4f46e5; /* blue */
-}
-
-.icon-phone svg {
-  stroke: #16a34a; /* green */
-}
-
-.icon-speed svg {
-  stroke: #f59e0b; /* orange */
-}
-
+/* COLOUR VARIANTS */
+.icon-blue svg { stroke: #4f46e5; }
+.icon-green svg { stroke: #16a34a; }
+.icon-orange svg { stroke: #f59e0b; }
+.icon-purple svg { stroke: #7c3aed; }
+.icon-red svg { stroke: #ef4444; }
+.icon-teal svg { stroke: #0d9488; }
 
 /* ================= FOOTER ================= */
 .footer {
