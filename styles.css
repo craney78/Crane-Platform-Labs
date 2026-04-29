@@ -15,28 +15,26 @@ body {
   color: #111;
   -webkit-font-smoothing: antialiased;
 
-  /* layered premium background */
   background:
-    radial-gradient(circle at 20% 10%, rgba(99,102,241,0.08), transparent 40%),
-    radial-gradient(circle at 80% 90%, rgba(16,185,129,0.08), transparent 40%),
     linear-gradient(180deg, #f5f7fb 0%, #eef2f7 100%),
 
-    repeating-linear-gradient(
-      0deg,
-      rgba(0,0,0,0.02),
-      rgba(0,0,0,0.02) 1px,
-      transparent 1px,
-      transparent 44px
-    ),
+    /* vertical grid */
     repeating-linear-gradient(
       90deg,
-      rgba(0,0,0,0.02),
-      rgba(0,0,0,0.02) 1px,
+      rgba(0,0,0,0.025),
+      rgba(0,0,0,0.025) 1px,
       transparent 1px,
-      transparent 44px
-    );
+      transparent 60px
+    ),
 
-  background-attachment: scroll;
+    /* horizontal grid */
+    repeating-linear-gradient(
+      0deg,
+      rgba(0,0,0,0.025),
+      rgba(0,0,0,0.025) 1px,
+      transparent 1px,
+      transparent 60px
+    );
 }
 
 /* ================= NAV ================= */
