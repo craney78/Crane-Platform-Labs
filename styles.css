@@ -898,8 +898,8 @@ SECTIONS
   padding: 70px 0;
 }
 
-.section-tight {
-  padding: 40px 0;
+.section-tight .container {
+  max-width: 1400px; /* 👈 bigger than default */
 }
 
 
@@ -1195,6 +1195,50 @@ LIGHTWEIGHT PANELS (CLEAN)
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.feature-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;              /* 👈 more breathing room */
+  margin-top: 50px;
+}
+
+.feature {
+  padding: 30px 20px;     /* 👈 bigger cards */
+  min-height: 220px;      /* 👈 more presence */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.feature-icon {
+  width: 60px;   /* bigger icon */
+  margin-bottom: 16px;
+}
+
+.feature h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 14px;
+  max-width: 260px;
+}
+
+@media (max-width: 900px) {
+  .feature-bar {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .feature-bar {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* =========================
