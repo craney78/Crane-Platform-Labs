@@ -24,16 +24,7 @@ body {
     linear-gradient(180deg, #f5f7fb 0%, #eef2f7 100%);
 }
 
-    /* horizontal grid */
-    repeating-linear-gradient(
-      0deg,
-      rgba(0,0,0,0.025),
-      rgba(0,0,0,0.025) 1px,
-      transparent 1px,
-      transparent 60px
-    );
-
-
+   
 /* ================= NAV ================= */
 
 .nav {
@@ -161,10 +152,12 @@ body {
   position: absolute;
   inset: 0;
 
-  background: linear-gradient(180deg, #f5f7fb 0%, #eef2f7 100%);
-  opacity: 0.95;
+  background: linear-gradient(
+    rgba(245,247,251,0.88),
+    rgba(238,242,247,0.88)
+  );
 
-  z-index: 0;
+  z-index: 1;
 }
 
 /* Content sits on top */
