@@ -138,11 +138,11 @@ body {
   position: absolute;
   inset: 0;
 
-  background-image: url("/images/hero.jpg");
+  background: url("images/hero.jpg");
   background-size: cover;
   background-position: center;
 
-  opacity: 0.08; /* VERY subtle */
+  opacity: 0.15; /* boost temporarily */
   z-index: 0;
 }
 
