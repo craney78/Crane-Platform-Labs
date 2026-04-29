@@ -1639,13 +1639,25 @@ TRUST STRIP
   }
 
   /* =========================
-  HERO (FINAL WORKING VERSION)
+  HERO (TEXT + IMAGE STACK)
   ========================= */
   .hero {
+    /* ONLY affects mobile */
     background: none !important;
-    padding: 30px 20px 10px; /* 👈 pulls text UP */
+    height: auto !important;
+    min-height: auto !important;
+    animation: none !important;
+
+    padding: 30px 20px 10px;
   }
 
+  /* REMOVE HERO EFFECT LAYERS (mobile only) */
+  .hero-overlay,
+  .hero::after {
+    display: none !important;
+  }
+
+  /* TEXT */
   .hero h1 {
     font-size: 26px;
     line-height: 1.2;
@@ -1657,41 +1669,28 @@ TRUST STRIP
     margin-bottom: 10px;
   }
 
-  /* FULL WIDTH IMAGE (REAL FIX) */
+  /* MOBILE IMAGE BELOW TEXT */
   .hero-mobile-image {
-    margin-top: 15px;
-
+    display: block;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
+    margin-top: 15px;
   }
 
   .hero-mobile-image img {
     width: 100%;
     height: auto;
-    max-width: none;
     display: block;
   }
 
   /* =========================
-  HERO FEATURES
-  ========================= */
-  .hero-features {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    text-align: center;
-  }
-
-  /* =========================
-  FEATURE BAR
+  FEATURES
   ========================= */
   .feature-bar {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
     text-align: center;
-    margin-top: 20px;
   }
 
   .feature {
@@ -1721,71 +1720,10 @@ TRUST STRIP
     text-align: center;
   }
 
-  .footer .container {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-  }
-
   .footer-columns {
     display: flex;
     flex-direction: column;
     gap: 20px;
-  }
-
-  .footer img {
-    width: 140px;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-  }
-
-}
-
-@media (max-width: 600px) {
-
-  /* HERO TEXT SPACING */
-  .hero {
-    padding: 30px 20px 10px;
-    min-height: auto;
-  }
-
-  /* REMOVE BACKGROUND IMAGE (SAFE WAY) */
-  .hero::before,
-  .hero::after {
-    display: none !important;
-  }
-
-  /* THIS is safer than background:none */
-  .hero {
-    background-image: none !important;
-  }
-
-  /* TEXT */
-  .hero h1 {
-    font-size: 26px;
-    line-height: 1.2;
-    margin-bottom: 10px;
-  }
-
-  .hero-sub {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-
-  /* MOBILE IMAGE FULL WIDTH */
-  .hero-mobile-image {
-    display: block;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    margin-top: 15px;
-  }
-
-  .hero-mobile-image img {
-    width: 100%;
-    height: auto;
-    display: block;
   }
 
 }
