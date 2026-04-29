@@ -204,32 +204,6 @@ body {
   margin-bottom: var(--space-md);
 }
 
-/* ================= HERO BACKGROUND IMAGE ================= */
-
-.hero {
-  position: relative;
-  overflow: hidden;
-}
-
-/* Background Image Layer */
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  background: 
-    linear-gradient(rgba(245,247,251,0.85), rgba(245,247,251,0.9)),
-    url("images/hero-bg.jpg") center/cover no-repeat;
-
-  z-index: 0;
-}
-
-/* Keep content above */
-.hero .container {
-  position: relative;
-  z-index: 1;
-}
-
 /* ================= HERO BUTTONS ================= */
 
 .hero-buttons {
@@ -290,19 +264,30 @@ body {
   transform: translateY(0);
 }
 
-/* ================= HERO IMAGE ================= */
-.hero-image {
-  margin-top: 40px;
-  max-width: 420px;
+/* ================= HERO BACKGROUND IMAGE ================= */
+
+.hero {
+  position: relative;
+  overflow: hidden;
 }
 
-.hero-image img {
-  width: 100%;
-  border-radius: 18px;
-  border: 1px solid rgba(0,0,0,0.05);
-  box-shadow:
-    0 25px 50px rgba(0,0,0,0.08),
-    0 6px 14px rgba(0,0,0,0.05);
+/* Background Image Layer */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: 
+    linear-gradient(rgba(245,247,251,0.85), rgba(245,247,251,0.9)),
+    url("images/hero.png") center/cover no-repeat;
+
+  z-index: 0;
+}
+
+/* Keep content above */
+.hero .container {
+  position: relative;
+  z-index: 1;
 }
 
 
