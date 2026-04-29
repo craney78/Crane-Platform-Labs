@@ -32,7 +32,7 @@ body {
       transparent 1px,
       transparent 60px
     );
-}
+
 
 /* ================= NAV ================= */
 
@@ -202,6 +202,32 @@ body {
   font-size: 16px;
   color: #666;
   margin-bottom: var(--space-md);
+}
+
+/* ================= HERO BACKGROUND IMAGE ================= */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background Image Layer */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: 
+    linear-gradient(rgba(245,247,251,0.85), rgba(245,247,251,0.9)),
+    url("images/hero-bg.jpg") center/cover no-repeat;
+
+  z-index: 0;
+}
+
+/* Keep content above */
+.hero .container {
+  position: relative;
+  z-index: 1;
 }
 
 /* ================= HERO BUTTONS ================= */
