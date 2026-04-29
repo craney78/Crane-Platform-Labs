@@ -486,7 +486,7 @@
     <p>© Crane Platform Labs</p>
   </div>
 </footer>
-
+<div class="snow"></div>
 <script>
 /* ================= NAV MENU ================= */
 
@@ -535,7 +535,7 @@ window.addEventListener("scroll", function() {
 const snowContainer = document.querySelector('.snow');
 
 if (snowContainer) {
-  for (let i = 0; i < 40; i++) {
+  for (let i = 0; i < 35; i++) {
     const snowflake = document.createElement('span');
 
     snowflake.style.left = Math.random() * 100 + 'vw';
@@ -545,8 +545,6 @@ if (snowContainer) {
     snowContainer.appendChild(snowflake);
   }
 }
-
 </script>
-<div class="snow"></div>
 </body>
 </html>
