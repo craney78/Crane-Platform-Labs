@@ -1621,3 +1621,109 @@ TRUST STRIP
   margin-bottom: 6px;
 }
 
+@media (max-width: 600px) {
+
+  /* =========================
+  GLOBAL
+  ========================= */
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  /* =========================
+  NAV
+  ========================= */
+  .nav-logo {
+    max-width: 140px;
+  }
+
+  /* =========================
+  HERO (TEXT + IMAGE STACK)
+  ========================= */
+  .hero {
+    /* ONLY affects mobile */
+    background: none !important;
+    height: auto !important;
+    min-height: auto !important;
+    animation: none !important;
+
+    padding: 30px 20px 10px;
+  }
+
+  /* REMOVE HERO EFFECT LAYERS (mobile only) */
+  .hero-overlay,
+  .hero::after {
+    display: none !important;
+  }
+
+  /* TEXT */
+  .hero h1 {
+    font-size: 26px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .hero-sub {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  /* MOBILE IMAGE BELOW TEXT */
+  .hero-mobile-image {
+    display: block;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-top: 15px;
+  }
+
+  .hero-mobile-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* =========================
+  FEATURES
+  ========================= */
+  .feature-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .feature {
+    padding: 15px;
+  }
+
+  /* =========================
+  BUSINESS GRID
+  ========================= */
+  .business-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* =========================
+  MAP
+  ========================= */
+  .location-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  /* =========================
+  FOOTER
+  ========================= */
+  .footer {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .footer-columns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+}
