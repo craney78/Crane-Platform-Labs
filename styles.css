@@ -1849,3 +1849,35 @@ TRUST STRIP
   }
 
 }
+
+@media (max-width: 600px) {
+
+  /* STOP OVERLAY BEHAVIOUR */
+  .hero-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+
+  /* IF YOU HAVE A HERO IMAGE (VERY IMPORTANT) */
+  .hero-image,
+  .hero img {
+    position: relative !important;
+    width: 100%;
+    max-width: 320px;
+    margin: 20px auto 0;
+    display: block;
+  }
+
+  /* REMOVE OVERLAY STACKING */
+  .hero-overlay {
+    opacity: 0.4; /* keeps style but stops hiding image */
+  }
+
+}
