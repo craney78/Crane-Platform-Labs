@@ -1742,3 +1742,8 @@ TRUST STRIP
   }
 
 }
+
+
+.hero-mobile-image {
+  display: none;
+}
