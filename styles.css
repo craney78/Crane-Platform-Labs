@@ -1487,3 +1487,19 @@ TRUST STRIP
   from { background-position: 80% center; }
   to   { background-position: 90% center; }
 }
+
+@media (max-width: 600px) {
+  .hero {
+    background-size: cover;        /* 👈 fixes giant zoom */
+    background-position: center;   /* 👈 centers phone */
+    padding: 100px 20px 60px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero-sub {
+    font-size: 15px;
+  }
+}
