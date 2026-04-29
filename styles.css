@@ -1881,3 +1881,41 @@ TRUST STRIP
   }
 
 }
+
+@media (max-width: 600px) {
+
+  .hero {
+    min-height: 90vh; /* 👈 makes space for text */
+    padding: 80px 20px 60px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .hero-inner {
+    width: 100%;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+    line-height: 1.2;
+    max-width: 100%;
+  }
+
+  .hero-sub {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .hero {
+    background-position: center top;  /* 👈 moves image down */
+    background-size: cover;
+  }
+
+}
