@@ -197,26 +197,45 @@ body {
   gap: 15px;
 }
 
-/* ================= IMAGE ================= */
+/* ================= HERO IMAGE (UPGRADED) ================= */
 
 .hero-image {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  position: relative;
 }
 
 .hero-image img {
-  width: 100%;
-  max-width: 520px;
+  width: 110%;
+  max-width: 560px;
 
-  border-radius: 12px;
+  border-radius: 16px;
 
-  /* 🔥 THIS MAKES IT FEEL PREMIUM */
   box-shadow:
-    0 20px 60px rgba(0,0,0,0.08),
-    0 8px 20px rgba(0,0,0,0.05);
+    0 30px 80px rgba(0,0,0,0.10),
+    0 10px 30px rgba(0,0,0,0.06);
 
-  transform: translateY(10px);
+  transform: translateX(20px) translateY(10px);
+}
+
+/* subtle glow behind image */
+.hero-image::before {
+  content: "";
+  position: absolute;
+  width: 380px;
+  height: 380px;
+
+  background: radial-gradient(
+    circle,
+    rgba(0,0,0,0.05),
+    transparent 70%
+  );
+
+  top: 50%;
+  right: 20%;
+  transform: translateY(-50%);
+  z-index: -1;
 }
 
 /* ================= BUTTONS (PREMIUM) ================= */
@@ -446,10 +465,6 @@ body {
 
   .hero-text h1 {
     font-size: 42px;
-  }
-
-  .hero-image {
-    max-width: 520px;
   }
 
   .section-title {
