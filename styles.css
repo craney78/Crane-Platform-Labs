@@ -1781,13 +1781,24 @@ HARD HERO RESET (DESKTOP ONLY)
   height: 100vh;
   position: relative;
 
-  background: url("images/hero.png") no-repeat center right;
+  background: url("images/hero.png") no-repeat;
   background-size: cover;
   background-position: 85% center;
 
   display: flex;
   align-items: center;
   padding: 0 8%;
+
+  animation: heroMove 25s ease-in-out infinite alternate;
+}
+
+@keyframes heroMove {
+  from {
+    background-position: 80% center;
+  }
+  to {
+    background-position: 90% center;
+  }
 }
 
 .hero-features-section {
