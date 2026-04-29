@@ -1639,43 +1639,37 @@ TRUST STRIP
   }
 
   /* =========================
-  HERO (FIXED)
+  HERO (FINAL WORKING VERSION)
   ========================= */
   .hero {
-    background-image: none !important; /* 🔥 removes desktop background */
     background: none !important;
-    min-height: auto;
-    padding: 60px 20px;
-  }
-
-  .hero-inner {
-    width: 100%;
-  }
-
-  .hero-content {
-    max-width: 100%;
+    padding: 30px 20px 10px; /* 👈 pulls text UP */
   }
 
   .hero h1 {
     font-size: 26px;
     line-height: 1.2;
+    margin-bottom: 10px;
   }
 
   .hero-sub {
     font-size: 14px;
+    margin-bottom: 10px;
   }
 
-  /* MOBILE IMAGE (ONLY ONE IMAGE NOW) */
+  /* FULL WIDTH IMAGE (REAL FIX) */
   .hero-mobile-image {
-    display: block;
-    margin-top: 25px;
-    text-align: center;
+    margin-top: 15px;
+
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
   }
 
   .hero-mobile-image img {
     width: 100%;
-    max-width: 320px;
     height: auto;
+    max-width: none;
+    display: block;
   }
 
   /* =========================
@@ -1688,43 +1682,6 @@ TRUST STRIP
     padding: 20px;
     text-align: center;
   }
-
-  @media (max-width: 600px) {
-
-  /* HERO */
-  .hero {
-    background: none !important;
-    padding: 40px 20px 20px; /* 👈 less top padding = moves text up */
-  }
-
-  .hero h1 {
-    font-size: 26px;
-    line-height: 1.2;
-    margin-bottom: 10px;
-  }
-
-  .hero-sub {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-
-  /* FULL WIDTH IMAGE */
-  .hero-mobile-image {
-    margin-top: 20px;
-
-    /* 👇 THIS BREAKS OUT OF CONTAINER */
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-  }
-
-  .hero-mobile-image img {
-    width: 100%;
-    height: auto;
-    max-width: none; /* 👈 removes restriction */
-    display: block;
-  }
-
-}
 
   /* =========================
   FEATURE BAR
@@ -1749,7 +1706,7 @@ TRUST STRIP
   }
 
   /* =========================
-  MAP SECTION
+  MAP
   ========================= */
   .location-grid {
     grid-template-columns: 1fr;
