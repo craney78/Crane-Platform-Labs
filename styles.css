@@ -1639,16 +1639,13 @@ TRUST STRIP
   }
 
   /* =========================
-  HERO (BACKGROUND STYLE FIX)
+  HERO (FIXED)
   ========================= */
   .hero {
-    min-height: 90vh;
-    padding: 80px 20px 60px;
-    display: flex;
-    align-items: flex-start;
-
-    background-position: center top;
-    background-size: cover;
+    background-image: none !important; /* 🔥 removes desktop background */
+    background: none !important;
+    min-height: auto;
+    padding: 60px 20px;
   }
 
   .hero-inner {
@@ -1668,8 +1665,21 @@ TRUST STRIP
     font-size: 14px;
   }
 
+  /* MOBILE IMAGE (ONLY ONE IMAGE NOW) */
+  .hero-mobile-image {
+    display: block;
+    margin-top: 25px;
+    text-align: center;
+  }
+
+  .hero-mobile-image img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
   /* =========================
-  HERO FEATURES (NOW BELOW HERO)
+  HERO FEATURES
   ========================= */
   .hero-features {
     display: flex;
@@ -1680,7 +1690,7 @@ TRUST STRIP
   }
 
   /* =========================
-  FEATURE BAR (NEXT SECTION)
+  FEATURE BAR
   ========================= */
   .feature-bar {
     display: flex;
@@ -1735,62 +1745,6 @@ TRUST STRIP
     height: auto;
     margin: 0 auto;
     display: block;
-  }
-
-}
-
-@media (max-width: 600px) {
-
-  .hero {
-    background-position: center 80%; /* 👈 THIS IS THE FIX */
-  }
-
-}
-
-.hero-overlay {
-  background: linear-gradient(
-    to bottom,
-    rgba(10,15,26,0.95) 0%,
-    rgba(10,15,26,0.7) 40%,
-    rgba(10,15,26,0.2) 100%
-  );
-}
-
-/* DESKTOP — HIDE MOBILE IMAGE */
-.hero-mobile-image {
-  display: none;
-}
-
-/* MOBILE ONLY */
-@media (max-width: 600px) {
-
-  /* REMOVE BACKGROUND IMAGE */
-  .hero {
-    background: none !important;
-    padding: 60px 20px;
-  }
-
-  /* SHOW IMAGE */
-  .hero-mobile-image {
-    display: block;
-    margin-top: 25px;
-    text-align: center;
-  }
-
-  .hero-mobile-image img {
-    width: 100%;
-    max-width: 320px;
-    height: auto;
-  }
-
-  /* TEXT SCALE */
-  .hero h1 {
-    font-size: 26px;
-    line-height: 1.2;
-  }
-
-  .hero-sub {
-    font-size: 14px;
   }
 
 }
