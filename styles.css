@@ -1738,3 +1738,20 @@ TRUST STRIP
   }
 
 }
+
+@media (max-width: 600px) {
+
+  .hero {
+    background-position: center 80%; /* 👈 THIS IS THE FIX */
+  }
+
+}
+
+.hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(10,15,26,0.95) 0%,
+    rgba(10,15,26,0.7) 40%,
+    rgba(10,15,26,0.2) 100%
+  );
+}
