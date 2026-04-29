@@ -395,3 +395,17 @@ h1, h2, h3, p {
 .how-we-work .section-text {
   margin-top: 32px; /* tighter close spacing */
 }
+
+/* ================= STEP NUMBERS ================= */
+
+.how-we-work .card {
+  position: relative;
+}
+
+.step {
+  font-size: 12px;
+  font-weight: 600;
+  color: #999;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
