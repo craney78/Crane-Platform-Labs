@@ -1466,3 +1466,24 @@ TRUST STRIP
 
 }
 
+.hero {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+
+  background: url("images/hero.png") no-repeat;
+  background-size: 110%; /* 👈 slightly zoomed for movement */
+  background-position: 85% center;
+
+  animation: heroMove 20s ease-in-out infinite alternate;
+}
+
+/* smooth movement */
+@keyframes heroMove {
+  from { background-position: 80% center; }
+  to   { background-position: 90% center; }
+}
