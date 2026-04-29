@@ -1875,3 +1875,34 @@ TRUST STRIP
   }
 
 }
+
+@media (max-width: 600px) {
+
+  .hero {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 40px; /* 👈 gives breathing room */
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .feature-bar {
+    position: relative;
+    margin-top: 30px; /* 👈 pushes it below hero */
+    z-index: 2;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .feature-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+}
