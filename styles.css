@@ -1765,3 +1765,52 @@ TRUST STRIP
   }
 
 }
+
+@media (max-width: 600px) {
+
+  /* FORCE FULL RESET */
+  .hero,
+  .hero .container {
+    display: block !important;
+    text-align: center !important;
+    padding: 40px 20px !important;
+  }
+
+  /* TEXT */
+  .hero h1 {
+    font-size: 24px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 12px !important;
+  }
+
+  .hero p {
+    font-size: 14px !important;
+    margin-bottom: 16px !important;
+  }
+
+  /* IMAGE */
+  .hero img {
+    display: block !important;
+    max-width: 75% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .footer {
+    padding: 40px 20px !important;
+    text-align: center !important;
+  }
+
+  .footer img {
+    display: block !important;
+    max-width: 200px !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 auto 15px !important;
+  }
+
+}
