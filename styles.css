@@ -16,16 +16,13 @@ body {
   -webkit-font-smoothing: antialiased;
 
   background:
-    linear-gradient(180deg, #f5f7fb 0%, #eef2f7 100%),
+    /* soft colour glow */
+    radial-gradient(circle at 15% 20%, rgba(99,102,241,0.06), transparent 40%),
+    radial-gradient(circle at 85% 80%, rgba(16,185,129,0.06), transparent 40%),
 
-    /* vertical grid */
-    repeating-linear-gradient(
-      90deg,
-      rgba(0,0,0,0.025),
-      rgba(0,0,0,0.025) 1px,
-      transparent 1px,
-      transparent 60px
-    ),
+    /* clean base gradient */
+    linear-gradient(180deg, #f5f7fb 0%, #eef2f7 100%);
+}
 
     /* horizontal grid */
     repeating-linear-gradient(
