@@ -17,21 +17,28 @@ NAV
 <nav class="nav">
   <div class="container nav-inner">
 
-    <!-- LOGO -->
-    <div class="logo">
-      CRANE
+    <!-- LEFT -->
+    <div class="nav-left">
+      <div class="logo">CRANE</div>
     </div>
 
-    <!-- LINKS -->
-    <div class="nav-links">
+    <!-- CENTER LINKS -->
+    <div class="nav-links" id="navLinks">
       <a href="#">Home</a>
       <a href="#">Services</a>
       <a href="#">Contact</a>
     </div>
 
-    <!-- CTA -->
+    <!-- RIGHT CTA -->
     <div class="nav-right">
       <a href="#" class="btn">Get a Quote</a>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
 
   </div>
@@ -90,6 +97,10 @@ FOOTER
 
   </div>
 </footer>
-
+<script>
+function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
 </body>
 </html>
