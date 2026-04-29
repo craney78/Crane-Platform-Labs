@@ -1689,6 +1689,43 @@ TRUST STRIP
     text-align: center;
   }
 
+  @media (max-width: 600px) {
+
+  /* HERO */
+  .hero {
+    background: none !important;
+    padding: 40px 20px 20px; /* 👈 less top padding = moves text up */
+  }
+
+  .hero h1 {
+    font-size: 26px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .hero-sub {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  /* FULL WIDTH IMAGE */
+  .hero-mobile-image {
+    margin-top: 20px;
+
+    /* 👇 THIS BREAKS OUT OF CONTAINER */
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
+
+  .hero-mobile-image img {
+    width: 100%;
+    height: auto;
+    max-width: none; /* 👈 removes restriction */
+    display: block;
+  }
+
+}
+
   /* =========================
   FEATURE BAR
   ========================= */
