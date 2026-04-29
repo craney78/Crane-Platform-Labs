@@ -1595,3 +1595,108 @@ TRUST STRIP
     grid-template-columns: 1fr;
   }
 }
+
+.section .container {
+  max-width: 1400px;
+}
+
+.business-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.business-card {
+  padding: 30px 20px;
+  min-height: 220px;
+  text-align: center;
+
+  border-radius: 16px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.05);
+
+  transition: 0.3s ease;
+}
+
+.business-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(0,200,255,0.4);
+  box-shadow: 0 0 25px rgba(0,200,255,0.15);
+}
+
+.icon-wrap img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 16px;
+}
+
+.business-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.business-card p {
+  font-size: 14px;
+  opacity: 0.7;
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+.location-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  margin-top: 70px;
+  align-items: center;
+}
+
+.map-wrap {
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 360px;
+
+  border: 1px solid rgba(255,255,255,0.05);
+  background: #0a0f1a;
+
+  box-shadow: 0 0 30px rgba(0,0,0,0.4);
+}
+
+.town-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.town-grid span {
+  padding: 10px;
+  border-radius: 10px;
+
+  background: rgba(0,200,255,0.08);
+  border: 1px solid rgba(0,200,255,0.2);
+
+  font-size: 13px;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+
+  .business-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .location-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .business-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
