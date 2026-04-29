@@ -11,20 +11,24 @@
 <body>
 
 <!-- ================= NAV ================= -->
-<header class="nav">
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
   <div class="container nav-inner">
 
+    <!-- LOGO -->
     <div class="logo">
-      Crane Platform Labs
+      <img src="images/logo-nav.png" alt="Crane Platform Labs">
     </div>
 
+    <!-- NAV LINKS -->
     <nav class="nav-links" id="navLinks">
-      <a href="#">Home</a>
+      <a href="#" class="active">Home</a>
       <a href="#">Services</a>
       <a href="#">Who We Help</a>
       <a href="#">Contact</a>
     </nav>
 
+    <!-- MOBILE TOGGLE -->
     <div class="nav-toggle" onclick="toggleMenu()">
       ☰
     </div>
@@ -500,13 +504,15 @@
   </div>
 </footer>
 
-
-<!-- ================= JS ================= -->
 <script>
+/* ================= NAV MENU ================= */
+
 function toggleMenu() {
   const nav = document.getElementById("navLinks");
   nav.classList.toggle("active");
 }
+
+/* ================= CLOSE MENU ON LINK CLICK ================= */
 
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => {
@@ -514,15 +520,32 @@ document.querySelectorAll('.nav-links a').forEach(link => {
   });
 });
 
+/* ================= CLOSE MENU ON OUTSIDE CLICK ================= */
+
 document.addEventListener('click', function(e) {
   const nav = document.getElementById("navLinks");
   const toggle = document.querySelector('.nav-toggle');
+
+  if (!nav || !toggle) return;
 
   if (!nav.contains(e.target) && !toggle.contains(e.target)) {
     nav.classList.remove("active");
   }
 });
-</script>
 
+/* ================= SCROLL EFFECT ================= */
+
+window.addEventListener("scroll", function() {
+  const nav = document.getElementById("nav");
+
+  if (!nav) return;
+
+  if (window.scrollY > 40) {
+    nav.classList.add("scrolled");
+  } else {
+    nav.classList.remove("scrolled");
+  }
+});
+</script>
 </body>
 </html>
