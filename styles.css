@@ -1755,3 +1755,42 @@ TRUST STRIP
     rgba(10,15,26,0.2) 100%
   );
 }
+
+/* DESKTOP — HIDE MOBILE IMAGE */
+.hero-mobile-image {
+  display: none;
+}
+
+/* MOBILE ONLY */
+@media (max-width: 600px) {
+
+  /* REMOVE BACKGROUND IMAGE */
+  .hero {
+    background: none !important;
+    padding: 60px 20px;
+  }
+
+  /* SHOW IMAGE */
+  .hero-mobile-image {
+    display: block;
+    margin-top: 25px;
+    text-align: center;
+  }
+
+  .hero-mobile-image img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  /* TEXT SCALE */
+  .hero h1 {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .hero-sub {
+    font-size: 14px;
+  }
+
+}
