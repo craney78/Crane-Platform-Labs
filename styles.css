@@ -144,67 +144,6 @@ body {
   transform: translateY(-1px);
 }
 
-/* ================= HERO ================= */
-
-.hero {
-  position: relative;
-  padding: 100px 0 80px;
-  overflow: hidden;
-}
-
-.hero-image {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.hero-image img {
-  width: 105%;
-  max-width: 560px;
-
-  border-radius: 16px;
-
-  box-shadow:
-    0 40px 100px rgba(0,0,0,0.12),
-    0 20px 40px rgba(0,0,0,0.08);
-
-  transform: translateX(20px);
-}
-
-/* Content sits on top */
-.hero .container {
-  position: relative;
-  z-index: 2;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 60px;
-}
-
-@media (max-width: 768px) {
-  .hero-image img {
-    width: 100%;
-    transform: none;
-  }
-}
-
-.hero {
-  padding: 110px 0 90px;
-}
-
-.hero .container {
-  background: rgba(255,255,255,0.7);
-  backdrop-filter: blur(10px);
-
-  border-radius: 20px;
-  padding: 50px;
-
-  box-shadow:
-    0 20px 60px rgba(0,0,0,0.05),
-    inset 0 1px 0 rgba(255,255,255,0.6);
-}
-
 /* ================= TEXT ================= */
 
 .hero-text {
@@ -590,7 +529,11 @@ body {
 }
 
 /* ================= CONTAINER ================= */
-/* ================= PANEL SECTION (CONTAINED) ================= */
+/* ================= PANELS ================= */
+
+.panel {
+  padding: 80px 0;
+}
 
 .panel-inner {
   display: grid;
@@ -609,29 +552,12 @@ body {
     inset 0 1px 0 rgba(255,255,255,0.6);
 }
 
-/* text */
+/* TEXT SIDE */
 .panel-text {
   max-width: 520px;
 }
 
-.panel-text h2 {
-  font-size: 30px;
-  margin-bottom: 12px;
-}
-
-.panel-text .section-sub {
-  margin-bottom: 25px;
-  color: #666;
-}
-
-/* features */
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-/* image */
+/* IMAGE SIDE */
 .panel-image {
   display: flex;
   align-items: center;
@@ -646,19 +572,29 @@ body {
     0 10px 25px rgba(0,0,0,0.05);
 }
 
-/* mobile */
+/* GRID INSIDE PANELS */
+.panel-inner .features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
+
   .panel-inner {
     grid-template-columns: 1fr;
     gap: 35px;
     text-align: center;
   }
 
-  .features-grid {
-    grid-template-columns: 1fr;
-  }
-
   .panel-text {
     max-width: 100%;
   }
+
+  .panel-inner .features-grid {
+    grid-template-columns: 1fr;
+  }
+
 }
