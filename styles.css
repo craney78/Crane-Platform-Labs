@@ -123,8 +123,7 @@ body {
 }
 
 .hero-text h1 {
-  line-height: 1.1;
-  margin-bottom: 15px;
+  max-width: 480px;
 }
 
 .hero-text p {
@@ -133,8 +132,16 @@ body {
 }
 
 .hero-buttons {
+  margin-top: 25px;
+}
+
+.hero-buttons {
   display: flex;
   gap: 12px;
+}
+
+.hero-image img {
+  max-width: 600px;
 }
 
 .hero-image img {
@@ -218,14 +225,14 @@ body {
 }
 
 .hero-trust {
-  margin-top: 25px;
+  margin-top: 30px;
   font-size: 14px;
-  color: #555;
+  color: #444;
 }
 
 .hero-trust .stars {
-  margin-top: 5px;
-  font-size: 14px;
+  margin-top: 6px;
+  color: #f5a623;
 }
 
 /* ================= SECTIONS ================= */
@@ -308,6 +315,10 @@ body {
 .panel-image img {
   width: 100%;
   border-radius: 16px;
+}
+
+.panel-inner {
+  padding: 50px;
 }
 
 /* ================= MOBILE ================= */
