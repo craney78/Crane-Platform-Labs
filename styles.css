@@ -953,3 +953,39 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* ================= SERVICES FULL WIDTH FIX ================= */
+
+/* Let the section breathe full width */
+.services-full {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* GRID FILLS SPACE PROPERLY */
+.services-full .features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* MAKE CARDS FILL EVENLY */
+.services-full .card {
+  width: 100%;
+  height: 100%;
+  padding: 30px 20px;
+}
+
+/* CLEAN ICON SPACING */
+.services-full .icon-wrap {
+  margin-bottom: 14px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .services-full .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
