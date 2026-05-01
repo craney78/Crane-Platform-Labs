@@ -22,14 +22,15 @@
 
 /* FIX CARD SIZE + ALIGNMENT */
 .section.panel .contact-card {
-  width: 100%;
-  max-width: 260px;
-  margin: 0 auto;
+  padding: 35px 25px;
+  min-height: 180px; /* 🔥 fills space evenly */
+  border-radius: 12px;
+}
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+.section.panel .contact-highlight {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
 }
 
 /* STOP TEXT BREAKING */
