@@ -791,30 +791,47 @@ body {
 }
 
 /* CARD CLICK FEEL */
+/* CONTACT CARD ALIGNMENT FIX */
 .contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
   text-decoration: none;
   color: inherit;
+  padding: 30px 20px;
+
   transition: all 0.2s ease;
-  text-align: center;
-  padding: 25px;
+  cursor: pointer;
 }
 
-.contact-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+/* ICON */
+.contact-card .icon-wrap {
+  margin-bottom: 12px;
 }
 
-/* BIG CONTACT TEXT */
+/* HEADING */
+.contact-card h3 {
+  margin-bottom: 8px;
+}
+
+/* MAIN TEXT */
 .contact-highlight {
   font-size: 18px;
   font-weight: 600;
-  margin: 10px 0;
-  color: #000;
-  word-break: break-word;
+  margin: 6px 0;
 }
 
-/* SMALL ACTION TEXT */
+/* SMALL TEXT */
 .contact-action {
   font-size: 13px;
   opacity: 0.6;
+}
+
+/* HOVER */
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
