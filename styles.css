@@ -793,46 +793,30 @@ body {
 /* CARD CLICK FEEL */
 /* ================= FORCE CONTACT CARD CENTER ================= */
 
+/* FORCE CENTER EVERYTHING INSIDE CONTACT CARDS */
 .contact-card {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
+  text-align: center;
+}
 
+/* THIS IS THE KEY FIX */
+.contact-card * {
   text-align: center !important;
-
-  padding: 30px 20px !important;
-  text-decoration: none;
-  color: inherit;
-
-  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* ICON */
+/* ICON CENTER */
 .contact-card .icon-wrap {
-  margin-bottom: 12px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* HEADING */
+/* OPTIONAL: tighten spacing */
 .contact-card h3 {
-  margin-bottom: 8px !important;
+  margin-top: 10px;
 }
 
-/* MAIN TEXT */
-.contact-card .contact-highlight {
-  font-size: 18px;
-  font-weight: 600;
-  margin: 6px 0;
-}
-
-/* SMALL TEXT */
-.contact-card .contact-action {
-  font-size: 13px;
-  opacity: 0.6;
-}
-
-/* HOVER */
-.contact-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+.contact-highlight {
+  margin: 8px 0;
 }
