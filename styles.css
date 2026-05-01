@@ -828,21 +828,21 @@ body {
   text-align: center;
 }
 
-/* ================= SERVICES – PERFECT CENTERED GRID ================= */
+/* ================= SERVICES – CLEAN CENTERED GRID ================= */
 
-/* center everything inside the panel */
-.services-full {
-  display: flex;
-  flex-direction: column;
-  align-items: center;   /* 🔥 THIS centers the grid block */
-  text-align: center;
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+  max-width: 1000px;   /* keeps it neat inside container */
+  margin: 40px auto;   /* 🔥 centers the grid */
 }
 
-/* GRID */
+/* MAKE ALL CARDS SAME HEIGHT */
 .features-grid .feature-card {
-  width: 260px;
-  height: 260px;
-
+  height: 240px;       /* 🔥 THIS is the fix */
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -852,22 +852,9 @@ body {
   padding: 20px;
 }
 
-/* CARDS */
-.features-grid .feature-card {
-  aspect-ratio: 1 / 1;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;   /* vertical center */
-  align-items: center;       /* horizontal center */
-
-  padding: 20px;
-  text-align: center;
-}
-
-/* CONTENT INSIDE CARDS */
+/* KEEP TEXT NEAT */
 .features-grid .feature-card p {
-  max-width: 200px;
+  max-width: 220px;
   margin: 0 auto;
 }
 
@@ -875,10 +862,11 @@ body {
 @media (max-width: 768px) {
   .features-grid {
     grid-template-columns: 1fr;
-    max-width: 100%;
   }
 
   .features-grid .feature-card {
-    aspect-ratio: auto;
+    height: auto;
   }
 }
+
+
