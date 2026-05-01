@@ -828,151 +828,27 @@ body {
   text-align: center;
 }
 
-/* ================= PROCESS STEPS ================= */
+/* ================= SERVICES FINAL (NO CONFLICTS) ================= */
 
-.process-steps {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  margin-top: 40px;
+/* REMOVE WIDTH LIMIT FROM OLD PANEL */
+.panel-text.services-full {
+  max-width: 100% !important;
+  width: 100%;
+  margin: 0;
 }
 
-/* STEP CARD */
-.process-steps .step {
-  text-align: center;
-  padding: 25px 20px;
-}
-
-/* NUMBER */
-.step-number {
-  font-size: 12px;
-  font-weight: 700;
-  color: #2d6cdf; /* your blue */
-  margin-bottom: 8px;
-  letter-spacing: 1px;
-}
-
-/* TITLE */
-.process-steps .step h3 {
-  font-size: 16px;
-  margin-bottom: 8px;
-}
-
-/* TEXT */
-.process-steps .step p {
-  font-size: 14px;
-  opacity: 0.7;
-  line-height: 1.5;
-}
-
-/* ALIGN LAST ROW (5 ITEMS FIX) */
-.process-steps .step:nth-child(4) {
-  grid-column: 1 / 2;
-}
-
-.process-steps .step:nth-child(5) {
-  grid-column: 2 / 3;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .process-steps {
-    grid-template-columns: 1fr;
-  }
-
-  .process-steps .step:nth-child(4),
-  .process-steps .step:nth-child(5) {
-    grid-column: auto;
-  }
-}
-
-/* ================= MATCH ICON STYLE ================= */
-
-/* Use SAME sizing as your feature icons */
-.services-flow .icon-wrap {
-  width: 48px;
-  height: 48px;
-  margin: 0 auto 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Force SVGs to match your system */
-.services-flow .icon-wrap svg {
-  width: 24px;
-  height: 24px;
-
-  stroke: currentColor;   /* 🔥 matches your theme colour */
-  stroke-width: 2;        /* 🔥 same thickness as other icons */
-  fill: none;
-}
-
-/* Match your blue accent */
-.services-flow {
-  color: #2d6cdf; /* same blue you're already using */
-}
-
-/* BUT keep text dark like rest of site */
-.services-flow h4,
-.services-flow p {
-  color: #111;
-}
-
-/* Subtle arrow styling */
-.flow-arrow {
-  color: #2d6cdf;
-  opacity: 0.6;
-}
-
-/* ================= SERVICES GRID FINAL ================= */
-
+/* FULL WIDTH GRID */
 .features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
-  margin-top: 30px;
-}
-
-/* MAKE CARDS FILL SPACE EVENLY */
-.features-grid .card {
-  width: 100%;
-  height: 100%;
-  padding: 25px;
-  text-align: center;
-}
-
-/* ICON SPACING */
-.icon-wrap {
-  margin-bottom: 12px;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .features-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* ================= FULL WIDTH SQUARE GRID ================= */
-
-.services-full {
-  width: 100%;
-}
-
-/* FORCE GRID TO FILL PANEL */
-.services-full .features-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
 
   width: 100%;
 }
 
-/* PERFECT SQUARE BOXES */
-.services-full .feature-card {
+/* PERFECT SQUARE CARDS */
+.features-grid .feature-card {
   aspect-ratio: 1 / 1;
-  width: 100%;
 
   display: flex;
   flex-direction: column;
@@ -983,19 +859,19 @@ body {
   padding: 20px;
 }
 
-/* TIGHTEN TEXT SO IT FITS NICELY */
-.services-full .feature-card p {
+/* TEXT CONTROL */
+.features-grid .feature-card p {
   max-width: 220px;
   font-size: 13px;
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
-  .services-full .features-grid {
+  .features-grid {
     grid-template-columns: 1fr;
   }
 
-  .services-full .feature-card {
+  .features-grid .feature-card {
     aspect-ratio: auto;
   }
 }
