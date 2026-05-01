@@ -901,3 +901,25 @@ body {
     padding: 26px 20px;
   }
 }
+
+/* ================= PANEL INNER CENTERING FIX ================= */
+
+.panel-inner {
+  max-width: 1100px;   /* controls content width */
+  margin: 0 auto;      /* THIS is what centres it */
+  width: 100%;
+}
+
+/* ================= TEXT BLOCK ALIGNMENT ================= */
+
+.panel-text {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* ================= GRID CENTER CONTROL ================= */
+
+.features-grid {
+  justify-content: center;
+}
