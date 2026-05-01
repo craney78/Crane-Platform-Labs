@@ -885,3 +885,42 @@ body {
     grid-column: auto;
   }
 }
+
+/* ================= MATCH ICON STYLE ================= */
+
+/* Use SAME sizing as your feature icons */
+.services-flow .icon-wrap {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Force SVGs to match your system */
+.services-flow .icon-wrap svg {
+  width: 24px;
+  height: 24px;
+
+  stroke: currentColor;   /* 🔥 matches your theme colour */
+  stroke-width: 2;        /* 🔥 same thickness as other icons */
+  fill: none;
+}
+
+/* Match your blue accent */
+.services-flow {
+  color: #2d6cdf; /* same blue you're already using */
+}
+
+/* BUT keep text dark like rest of site */
+.services-flow h4,
+.services-flow p {
+  color: #111;
+}
+
+/* Subtle arrow styling */
+.flow-arrow {
+  color: #2d6cdf;
+  opacity: 0.6;
+}
