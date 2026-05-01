@@ -828,44 +828,53 @@ body {
   text-align: center;
 }
 
-/* ================= SERVICES – FIT INSIDE CONTAINER ================= */
+/* ================= SERVICES – SMALL SQUARES THAT FIT ================= */
 
 .services-full {
-  width: 100%;
   text-align: center;
 }
 
-/* GRID FILLS CONTAINER PROPERLY */
+/* GRID */
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(280px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
 
-  width: 100%;
-  max-width: 1000px;   /* 🔥 keeps it balanced inside container */
-  margin: 40px auto 0; /* 🔥 centres the whole grid */
+  max-width: 900px;        /* 🔥 keeps grid nicely contained */
+  margin: 40px auto 0;     /* 🔥 centers the whole grid */
 }
 
-/* CLEAN EVEN CARDS */
+/* PERFECT SMALL SQUARES */
 .features-grid .feature-card {
   width: 100%;
-  padding: 30px 20px;
-  text-align: center;
+  aspect-ratio: 1 / 1;     /* 🔥 square */
+
+  max-width: 260px;        /* 🔥 makes them smaller */
+  margin: 0 auto;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+  text-align: center;
 }
 
-/* TEXT BALANCE */
+/* TEXT TIGHT */
 .features-grid .feature-card p {
-  max-width: 240px;
-  margin: 0 auto;
+  font-size: 13px;
+  max-width: 200px;
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
   .features-grid {
     grid-template-columns: 1fr;
+  }
+
+  .features-grid .feature-card {
+    aspect-ratio: auto;
+    max-width: 100%;
   }
 }
