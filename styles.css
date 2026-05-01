@@ -942,3 +942,30 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* ================= HERO CENTER BOOST ================= */
+
+.hero-center {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* tighten hierarchy */
+.hero-center h1 {
+  margin-bottom: 16px;
+}
+
+.hero-center .section-sub {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+/* new supporting line */
+.hero-support {
+  font-size: 0.95rem;
+  opacity: 0.75;
+  max-width: 600px;
+  margin: 0 auto;
+}
