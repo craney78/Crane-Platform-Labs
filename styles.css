@@ -820,3 +820,10 @@ body {
 .contact-highlight {
   margin: 8px 0;
 }
+
+.footer-abn {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 15px;
+  text-align: center;
+}
