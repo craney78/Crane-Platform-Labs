@@ -774,3 +774,47 @@ body {
   height: 20px;
   stroke: #2f6fed;
 }
+
+/* ================= contact box ================= */
+/* GRID FIX */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* MOBILE STACK */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CARD CLICK FEEL */
+.contact-card {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+  text-align: center;
+  padding: 25px;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* BIG CONTACT TEXT */
+.contact-highlight {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #000;
+  word-break: break-word;
+}
+
+/* SMALL ACTION TEXT */
+.contact-action {
+  font-size: 13px;
+  opacity: 0.6;
+}
