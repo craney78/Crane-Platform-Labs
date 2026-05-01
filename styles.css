@@ -654,3 +654,34 @@ body {
 .contact-form button {
   margin-top: 10px;
 }
+
+/* ================= services ================= */
+.service-card {
+  padding: 22px;
+  border-radius: 14px;
+  background: #fff;
+
+  transition: all 0.25s ease;
+}
+
+.icon-wrap {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 12px;
+}
+
+.icon-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+.service-card h3 {
+  margin-top: 8px;
+  margin-bottom: 6px;
+}
