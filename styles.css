@@ -735,37 +735,128 @@ body {
   color: #f59e0b;
 }
 
-/* ================= SMALL FEATURE ICONS (HERO ONLY) ================= */
-
-.feature-card.small {
+.feature-card {
   padding: 20px;
 }
 
-.feature-card.small .icon-wrap {
+.feature-card .icon-wrap {
   width: 32px;
   height: 32px;
   margin-bottom: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.feature-card.small svg {
+.feature-card svg {
   width: 20px;
   height: 20px;
   stroke: #2f6fed;
 }
 
-/* ================= CARD (MAIN) ================= */
+.feature-card {
+  padding: 20px;
+}
+
+.feature-card .icon-wrap {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-card svg {
+  width: 20px;
+  height: 20px;
+  stroke: #2f6fed;
+}
+
+/* ================= contact box ================= */
+/* ================= SERVICES HARD FIX ================= */
+
+/* override panel layout ONLY here */
+.panel-inner:has(.services-full) {
+  display: flex;
+  justify-content: center;
+}
+
+/* center the whole block */
+.services-full {
+  width: 100%;
+  max-width: 760px;   /* controls total width */
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* clean 3x2 grid */
+.services-full .features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* square cards */
+.services-full .feature-card {
+  aspect-ratio: 1 / 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+}
+
+/* tighten text */
+.services-full .feature-card p {
+  max-width: 180px;
+  font-size: 13px;
+}
+
+/* CTA */
+.services-cta {
+  margin-top: 30px;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .services-full .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-full .feature-card {
+    aspect-ratio: auto;
+  }
+}
+
+/* ================= FEATURE GRID FIX ================= */
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+}
+
+/* ================= CARD ================= */
 
 .feature-card {
   text-align: center;
   padding: 32px 24px;
   border-radius: 14px;
 
+  /* subtle depth */
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.06);
 
   transition: all 0.3s ease;
 }
 
+/* hover lift */
 .feature-card:hover {
   transform: translateY(-4px);
   border-color: rgba(255, 255, 255, 0.12);
@@ -783,11 +874,11 @@ body {
   justify-content: center;
 }
 
+/* SVG itself */
 .icon-wrap svg {
   width: 34px;
   height: 34px;
   stroke-width: 2.2;
-  stroke: #2f6fed;
 }
 
 /* ================= TEXT ================= */
@@ -803,96 +894,26 @@ body {
   line-height: 1.5;
 }
 
-/* ================= PANEL STRUCTURE ================= */
-
-.panel-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.panel-text {
-  text-align: center;
-  margin: 0 auto;
-  max-width: 900px;
-}
-
-/* ================= FEATURES GRID (FINAL — ONLY ONE VERSION) ================= */
-
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 280px);
-  gap: 24px;
-
-  width: fit-content;
-  margin: 30px auto 0;
-}
-
-/* ================= RESPONSIVE ================= */
-
-@media (max-width: 900px) {
-  .features-grid {
-    grid-template-columns: repeat(2, 260px);
-  }
-}
+/* ================= MOBILE TIGHTEN ================= */
 
 @media (max-width: 600px) {
-  .features-grid {
-    grid-template-columns: 1fr;
-    width: 100%;
-  }
-
   .feature-card {
     padding: 26px 20px;
   }
 }
 
-/* ================= SERVICES (ISOLATED — NO CONFLICT) ================= */
+/* ================= PANEL INNER CENTERING FIX ================= */
 
-.panel-inner:has(.services-full) {
-  display: flex;
-  justify-content: center;
-}
-
-.services-full {
+.panel-inner {
+  max-width: 1100px;   /* controls content width */
+  margin: 0 auto;      /* THIS is what centres it */
   width: 100%;
-  max-width: 760px;
-  margin: 0 auto;
+}
+
+/* ================= TEXT BLOCK ALIGNMENT ================= */
+
+.panel-text {
   text-align: center;
-}
-
-.services-full .features-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.services-full .feature-card {
-  aspect-ratio: 1 / 1;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  padding: 20px;
-}
-
-.services-full .feature-card p {
-  max-width: 180px;
-  font-size: 13px;
-}
-
-.services-cta {
-  margin-top: 30px;
-}
-
-@media (max-width: 768px) {
-  .services-full .features-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .services-full .feature-card {
-    aspect-ratio: auto;
-  }
+  margin: 0 auto;
+  max-width: 800px;
 }
