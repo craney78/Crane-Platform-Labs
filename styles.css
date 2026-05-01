@@ -734,3 +734,43 @@ body {
   font-size: 14px;
   color: #f59e0b;
 }
+
+.feature-card {
+  padding: 20px;
+}
+
+.feature-card .icon-wrap {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-card svg {
+  width: 20px;
+  height: 20px;
+  stroke: #2f6fed;
+}
+
+.feature-card {
+  padding: 20px;
+}
+
+.feature-card .icon-wrap {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-card svg {
+  width: 20px;
+  height: 20px;
+  stroke: #2f6fed;
+}
