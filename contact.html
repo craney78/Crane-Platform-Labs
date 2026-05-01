@@ -61,6 +61,34 @@
 .section.panel .contact-card:first-child {
   border: 2px solid #2d6cdf;
 }
+
+.section.panel .contact-highlight {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0;
+
+  word-break: break-word;   /* 🔥 instead of nowrap */
+  text-align: center;
+}
+
+.section.panel .contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  align-items: stretch; /* 🔥 key fix */
+}
+
+.section.panel .contact-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 🔥 centers content vertically */
+  align-items: center;
+
+  text-align: center;
+  padding: 30px 20px;
+  min-height: 200px; /* 🔥 forces consistency */
+}
+
 </style>
 <body>
 
@@ -126,6 +154,7 @@
 </section>
 
 <!-- ================= CONTACT OPTIONS ================= -->
+ 
 <section class="section panel">
   <div class="container">
 
