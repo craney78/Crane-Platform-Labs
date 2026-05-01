@@ -791,62 +791,28 @@ body {
 }
 
 /* CARD CLICK FEEL */
-/* ================= FORCE CONTACT CARD CENTER ================= */
-
-/* FORCE CENTER EVERYTHING INSIDE CONTACT CARDS */
-.contact-card {
-  text-align: center;
-}
-
-/* THIS IS THE KEY FIX */
-.contact-card * {
-  text-align: center !important;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* ICON CENTER */
-.contact-card .icon-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* OPTIONAL: tighten spacing */
-.contact-card h3 {
-  margin-top: 10px;
-}
-
-.contact-highlight {
-  margin: 8px 0;
-}
-
-.footer-abn {
-  font-size: 12px;
-  opacity: 0.6;
-  margin-top: 15px;
-  text-align: center;
-}
-
-/* ================= SERVICES FINAL ================= */
-
 .services-full {
-  text-align: center;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center EVERYTHING */
 }
 
-/* GRID */
-.features-grid {
+/* FORCE GRID TO SIT IN TRUE CENTER */
+.services-full .features-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(3, 220px);
+  gap: 25px;
 
-  max-width: 900px;     /* keeps it inside panel */
-  margin: 40px auto;    /* 🔥 centers the whole grid */
+  justify-content: center;
+  margin: 30px auto 0 auto; /* 🔥 THIS is key */
 }
 
-/* CARDS */
-.features-grid .feature-card {
-  height: 240px;
+/* SQUARE CARDS */
+.services-full .feature-card {
+  width: 220px;
+  height: 220px;
 
   display: flex;
   flex-direction: column;
@@ -857,19 +823,9 @@ body {
   padding: 20px;
 }
 
-/* TEXT */
-.features-grid .feature-card p {
-  max-width: 220px;
-  margin: 0 auto;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .features-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .features-grid .feature-card {
-    height: auto;
-  }
+/* FIX PANEL WIDTH (THIS IS THE REAL ISSUE) */
+.panel-text.services-full {
+  max-width: 900px;   /* 🔥 stops it stretching left */
+  margin: 0 auto;     /* 🔥 centers the whole block */
+  text-align: center;
 }
