@@ -89,6 +89,20 @@
   min-height: 200px; /* 🔥 forces consistency */
 }
 
+/* ================= CENTER ENTIRE CONTACT PANEL ================= */
+
+.section.panel .panel-inner {
+  display: flex;
+  justify-content: center;   /* 🔥 centers whole content block */
+}
+
+.section.panel .panel-text {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  max-width: 700px;          /* keeps it tight + centred */
+}
+
 </style>
 <body>
 
@@ -154,7 +168,7 @@
 </section>
 
 <!-- ================= CONTACT OPTIONS ================= -->
- 
+
 <section class="section panel">
   <div class="container">
 
