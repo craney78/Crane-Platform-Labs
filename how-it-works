@@ -59,12 +59,13 @@
   </p>
 </div>
 
-<!-- STEPS -->
+<!-- ================= STEPS ================= -->
 
-<div class="section container">
+<div class="section container process-steps">
 
   <div class="step">
-    <h3>1. I Come to You</h3>
+    <div class="step-number">01</div>
+    <h3>I Come to You</h3>
     <p>
       I visit your business, see how you operate, and understand your customers.  
       This means no guessing — everything is based on your real business.
@@ -72,28 +73,32 @@
   </div>
 
   <div class="step">
-    <h3>2. We Plan Your Website</h3>
+    <div class="step-number">02</div>
+    <h3>We Plan Your Website</h3>
     <p>
       We map out what your website needs to say, how it should look, and how it will attract customers.
     </p>
   </div>
 
   <div class="step">
-    <h3>3. I Build It</h3>
+    <div class="step-number">03</div>
+    <h3>I Build It</h3>
     <p>
       I design and build a clean, modern website that is fast, mobile-friendly, and SEO-focused.
     </p>
   </div>
 
   <div class="step">
-    <h3>4. You Start Getting Found</h3>
+    <div class="step-number">04</div>
+    <h3>You Start Getting Found</h3>
     <p>
       Your business is now visible online — helping new customers find and contact you.
     </p>
   </div>
 
   <div class="step">
-    <h3>5. Ongoing Support</h3>
+    <div class="step-number">05</div>
+    <h3>Ongoing Support</h3>
     <p>
       I’m here if you need updates, changes, or improvements as your business grows.
     </p>
