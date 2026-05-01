@@ -688,6 +688,8 @@ body {
 
 
 /* ================= hero icons ================= */
+/* ================= HERO ICONS ================= */
+
 .hero-feature {
   display: flex;
   align-items: center;
@@ -706,4 +708,29 @@ body {
   width: 20px;
   height: 20px;
   stroke: #2f6fed;
+}
+
+/* ================= HERO SPACING ================= */
+
+.hero-features {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.hero-trust {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.stars {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #f59e0b;
 }
