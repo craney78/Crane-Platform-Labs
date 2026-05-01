@@ -917,3 +917,28 @@ body {
   margin: 0 auto;
   max-width: 800px;
 }
+
+/* ================= CENTER THIS SECTION ONLY (SAFE) ================= */
+
+.panel-inner:has(.centered-features) {
+  display: flex;
+  justify-content: center;
+}
+
+/* match services structure */
+.centered-features {
+  width: 100%;
+  max-width: 900px;
+  margin: 30px auto 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .centered-features {
+    grid-template-columns: 1fr;
+  }
+}
