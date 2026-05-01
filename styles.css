@@ -776,56 +776,59 @@ body {
 }
 
 /* ================= contact box ================= */
-/* GRID FIX */
-.contact-grid {
+/* ================= SERVICES HARD FIX ================= */
+
+/* override panel layout ONLY here */
+.panel-inner:has(.services-full) {
+  display: flex;
+  justify-content: center;
+}
+
+/* center the whole block */
+.services-full {
+  width: 100%;
+  max-width: 760px;   /* controls total width */
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* clean 3x2 grid */
+.services-full .features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-/* MOBILE STACK */
-@media (max-width: 768px) {
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* CARD CLICK FEEL */
-.services-full {
-  width: 100%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* center EVERYTHING */
-}
-
-/* FORCE GRID TO SIT IN TRUE CENTER */
-.services-full .features-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 220px);
-  gap: 25px;
-
-  justify-content: center;
-  margin: 30px auto 0 auto; /* 🔥 THIS is key */
-}
-
-/* SQUARE CARDS */
+/* square cards */
 .services-full .feature-card {
-  width: 220px;
-  height: 220px;
+  aspect-ratio: 1 / 1;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  text-align: center;
   padding: 20px;
 }
 
-/* FIX PANEL WIDTH (THIS IS THE REAL ISSUE) */
-.panel-text.services-full {
-  max-width: 900px;   /* 🔥 stops it stretching left */
-  margin: 0 auto;     /* 🔥 centers the whole block */
-  text-align: center;
+/* tighten text */
+.services-full .feature-card p {
+  max-width: 180px;
+  font-size: 13px;
+}
+
+/* CTA */
+.services-cta {
+  margin-top: 30px;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .services-full .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-full .feature-card {
+    aspect-ratio: auto;
+  }
 }
