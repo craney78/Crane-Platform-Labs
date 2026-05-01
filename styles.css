@@ -839,13 +839,17 @@ body {
 }
 
 /* GRID */
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+.features-grid .feature-card {
+  width: 260px;
+  height: 260px;
 
-  max-width: 900px;      /* 🔥 controls total width */
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 20px;
 }
 
 /* CARDS */
