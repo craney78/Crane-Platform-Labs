@@ -918,8 +918,24 @@ body {
   max-width: 800px;
 }
 
-/* ================= GRID CENTER CONTROL ================= */
+/* ================= HARD CENTER FIX (LIKE LAST TIME) ================= */
 
 .features-grid {
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 280px); /* fixed card width */
+  justify-content: center;                 /* THIS centres the grid */
+  gap: 24px;
+  margin: 30px auto 0;
+}
+
+@media (max-width: 900px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 260px);
+  }
+}
+
+@media (max-width: 600px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
 }
