@@ -9,7 +9,48 @@
 
   <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+/* ================= CONTACT PAGE ONLY FIX ================= */
 
+/* TARGET ONLY THIS SECTION */
+.section.panel .contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+
+/* FIX CARD SIZE + ALIGNMENT */
+.section.panel .contact-card {
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* STOP TEXT BREAKING */
+.section.panel .contact-highlight {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0;
+  white-space: nowrap;
+}
+
+/* MOBILE ONLY */
+@media (max-width: 768px) {
+  .section.panel .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section.panel .contact-highlight {
+    white-space: normal;
+  }
+}
+</style>
 <body>
 
 <!-- ================= NAV ================= -->
