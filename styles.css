@@ -828,50 +828,44 @@ body {
   text-align: center;
 }
 
-/* ================= SERVICES FINAL (NO CONFLICTS) ================= */
+/* ================= SERVICES – FIT INSIDE CONTAINER ================= */
 
-/* REMOVE WIDTH LIMIT FROM OLD PANEL */
-.panel-text.services-full {
-  max-width: 100% !important;
+.services-full {
   width: 100%;
-  margin: 0;
+  text-align: center;
 }
 
-/* FULL WIDTH GRID */
+/* GRID FILLS CONTAINER PROPERLY */
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+  grid-template-columns: repeat(3, minmax(280px, 1fr));
+  gap: 30px;
 
   width: 100%;
+  max-width: 1000px;   /* 🔥 keeps it balanced inside container */
+  margin: 40px auto 0; /* 🔥 centres the whole grid */
 }
 
-/* PERFECT SQUARE CARDS */
+/* CLEAN EVEN CARDS */
 .features-grid .feature-card {
-  aspect-ratio: 1 / 1;
+  width: 100%;
+  padding: 30px 20px;
+  text-align: center;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-
-  text-align: center;
-  padding: 20px;
 }
 
-/* TEXT CONTROL */
+/* TEXT BALANCE */
 .features-grid .feature-card p {
-  max-width: 220px;
-  font-size: 13px;
+  max-width: 240px;
+  margin: 0 auto;
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
   .features-grid {
     grid-template-columns: 1fr;
-  }
-
-  .features-grid .feature-card {
-    aspect-ratio: auto;
   }
 }
