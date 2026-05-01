@@ -59,13 +59,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
+
+  height: 84px; /* gives logo room to breathe */
 }
 
 /* LOGO */
 .nav-logo img {
-  height: 44px;
-  display: block;
+  height: 56px;
 }
 
 /* RIGHT SIDE */
