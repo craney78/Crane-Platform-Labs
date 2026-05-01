@@ -978,3 +978,17 @@ body {
     grid-column: auto;
   }
 }
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(260px, 1fr));
+  gap: 25px;
+
+  justify-content: center;   /* centers grid */
+  justify-items: center;     /* centers items inside grid */
+}
+
+.features-grid .card {
+  width: 100%;
+  max-width: 300px;
+}
