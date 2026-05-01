@@ -925,37 +925,21 @@ body {
   opacity: 0.6;
 }
 
-/* ================= SERVICES SECTION (CLEAN FIX) ================= */
+/* ================= SERVICES GRID FINAL ================= */
 
-/* CONTAINER WIDTH */
-.panel-text {
-  max-width: 1100px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-/* GRID */
 .features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
-  justify-content: center;
+  margin-top: 30px;
 }
 
-/* CARDS */
+/* MAKE CARDS FILL SPACE EVENLY */
 .features-grid .card {
   width: 100%;
-  max-width: 320px;
-  margin: 0 auto;
-}
-
-/* CENTER LAST ROW (5 CARDS) */
-.features-grid .card:nth-child(4) {
-  grid-column: 1 / 2;
-}
-
-.features-grid .card:nth-child(5) {
-  grid-column: 2 / 3;
+  height: 100%;
+  padding: 25px;
+  text-align: center;
 }
 
 /* ICON SPACING */
@@ -963,20 +947,9 @@ body {
   margin-bottom: 12px;
 }
 
-/* CTA */
-.panel-text > div[style] {
-  margin-top: 50px !important;
-}
-
-/* ================= MOBILE ================= */
-
+/* MOBILE */
 @media (max-width: 768px) {
   .features-grid {
     grid-template-columns: 1fr;
-  }
-
-  .features-grid .card:nth-child(4),
-  .features-grid .card:nth-child(5) {
-    grid-column: auto;
   }
 }
