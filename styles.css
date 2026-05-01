@@ -828,21 +828,26 @@ body {
   text-align: center;
 }
 
-/* ================= SERVICES – CLEAN CENTERED GRID ================= */
+/* ================= SERVICES FINAL ================= */
 
+.services-full {
+  text-align: center;
+}
+
+/* GRID */
 .features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 
-  max-width: 1000px;   /* keeps it neat inside container */
-  margin: 40px auto;   /* 🔥 centers the grid */
+  max-width: 900px;     /* keeps it inside panel */
+  margin: 40px auto;    /* 🔥 centers the whole grid */
 }
 
-/* MAKE ALL CARDS SAME HEIGHT */
+/* CARDS */
 .features-grid .feature-card {
-  height: 240px;       /* 🔥 THIS is the fix */
-  
+  height: 240px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -852,7 +857,7 @@ body {
   padding: 20px;
 }
 
-/* KEEP TEXT NEAT */
+/* TEXT */
 .features-grid .feature-card p {
   max-width: 220px;
   margin: 0 auto;
@@ -868,5 +873,3 @@ body {
     height: auto;
   }
 }
-
-
