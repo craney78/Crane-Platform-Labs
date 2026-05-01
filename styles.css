@@ -685,3 +685,25 @@ body {
   margin-top: 8px;
   margin-bottom: 6px;
 }
+
+
+/* ================= hero icons ================= */
+.hero-feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-feature .icon-wrap {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-feature svg {
+  width: 20px;
+  height: 20px;
+  stroke: #2f6fed;
+}
