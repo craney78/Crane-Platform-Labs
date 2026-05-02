@@ -1175,20 +1175,20 @@ body {
   }
 }
 
-/* ================= CONTACT SECTION (CLEAN RESET) ================= */
+/* ================= CONTACT SECTION ================= */
 
 .contact-actions {
   margin-top: 25px;
 }
 
 .contact-action-row {
-  display: block;              /* 🔥 key change */
+  display: block;              /* 🔥 key fix */
   padding: 10px 0;
   text-decoration: none;
   line-height: 1.6;
 }
 
-/* label (icon + word) */
+/* label (icon + text) */
 .contact-label {
   display: inline-flex;
   align-items: center;
