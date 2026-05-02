@@ -17,7 +17,71 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<style>
+
+/* ================= COOTAMUNDRA PAGE ================= */
+
+/* Center all panel layouts */
+.cootamundra-page .panel-inner {
+  display: flex;
+  justify-content: center;
+}
+
+/* Center all text blocks */
+.cootamundra-page .panel-text {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 750px;
+  width: 100%;
+}
+
+/* Feature grids */
+.cootamundra-page .features-grid {
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Cards */
+.cootamundra-page .feature-card {
+  text-align: center;
+  align-items: center;
+}
+
+/* Icons (important fix — overrides global conflicts) */
+.cootamundra-page .feature-card .icon-wrap {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cootamundra-page .feature-card svg {
+  width: 22px;
+  height: 22px;
+}
+
+/* CTA sections */
+.cootamundra-page .services-cta,
+.cootamundra-page .cta-box {
+  text-align: center;
+  margin: 30px auto 0;
+}
+
+/* Optional: tighten spacing */
+.cootamundra-page h2 {
+  margin-bottom: 20px;
+}
+
+.cootamundra-page .section-sub {
+  margin-bottom: 25px;
+}
+
+</style>
+
+<body class="cootamundra-page">
 
 <!-- ================= HERO ================= -->
 <section class="section panel">
@@ -86,16 +150,36 @@
         <div class="features-grid">
 
           <div class="card feature-card">
+            <div class="icon-wrap">
+              <!-- tools -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14.7 6.3a4 4 0 1 0 3 3l-7.4 7.4a2 2 0 0 1-2.8-2.8l7.4-7.4z"/>
+              </svg>
+            </div>
             <h3>Tradies</h3>
             <p>Local trades and contractors who rely on being found quickly.</p>
           </div>
 
           <div class="card feature-card">
+            <div class="icon-wrap">
+              <!-- shop -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l1-5h16l1 5"/>
+                <path d="M4 9h16v11H4z"/>
+              </svg>
+            </div>
             <h3>Local Businesses</h3>
-            <p>Retail, service and small businesses across Cootamundra.</p>
+            <p>Retail, service and small businesses across Cootamundra and surrounding areas.</p>
           </div>
 
           <div class="card feature-card">
+            <div class="icon-wrap">
+              <!-- users -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="7" r="4"/>
+                <path d="M5.5 21a6.5 6.5 0 0 1 13 0"/>
+              </svg>
+            </div>
             <h3>Service Providers</h3>
             <p>Mechanics, cleaners, health services and other local providers.</p>
           </div>
@@ -118,16 +202,37 @@
         <div class="features-grid">
 
           <div class="card feature-card">
+            <div class="icon-wrap">
+              <!-- search -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              </svg>
+            </div>
             <h3>Built for Google</h3>
             <p>Structured to help your business appear in Cootamundra searches.</p>
           </div>
 
           <div class="card feature-card">
+            <div class="icon-wrap">
+              <!-- phone -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="5" y="2" width="14" height="20" rx="2"/>
+                <line x1="12" y1="18" x2="12" y2="18"/>
+              </svg>
+            </div>
             <h3>Mobile First</h3>
             <p>Designed for phones, where most customers are searching.</p>
           </div>
 
           <div class="card feature-card">
+            <div class="icon-wrap">
+              <!-- speed -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 12a9 9 0 1 1 18 0"/>
+                <line x1="12" y1="12" x2="16" y2="8"/>
+              </svg>
+            </div>
             <h3>Fast & Clean</h3>
             <p>Lightweight websites that load quickly and keep visitors engaged.</p>
           </div>
