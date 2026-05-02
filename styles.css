@@ -1101,64 +1101,55 @@ body {
   }
 }
 
-/* ================= CONTACT LIST ================= */
-
 .contact-center {
   text-align: center;
-  max-width: 700px;
+  max-width: 650px;
   margin: 0 auto;
 }
 
-.contact-list {
+.contact-actions {
   margin-top: 30px;
-  border-top: 1px solid rgba(255,255,255,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
-.contact-row {
+/* rows now feel like buttons */
+.contact-action-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  padding: 16px 0;
+  padding: 16px 20px;
+  border-radius: 10px;
+
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.06);
+
   text-decoration: none;
-
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  transition: all 0.2s ease;
 }
 
-.contact-row.static {
-  cursor: default;
-}
-
-.contact-label {
-  font-weight: 500;
-  opacity: 0.8;
-}
-
-.contact-value {
+.contact-action-row strong {
   font-weight: 600;
 }
 
-/* hover (desktop only feel) */
-.contact-row:hover {
-  opacity: 0.8;
+/* hover */
+.contact-action-row:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255,255,255,0.12);
 }
 
-/* ================= CTA ================= */
-
-.contact-cta {
-  margin-top: 30px;
+/* static row */
+.contact-action-row.static {
+  cursor: default;
 }
 
-/* ================= MOBILE ================= */
-
+/* mobile tweak */
 @media (max-width: 600px) {
-  .contact-row {
+  .contact-action-row {
     flex-direction: column;
     align-items: flex-start;
     gap: 6px;
-  }
-
-  .contact-value {
-    font-size: 1.05rem;
   }
 }
