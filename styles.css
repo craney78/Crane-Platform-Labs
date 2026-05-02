@@ -1174,3 +1174,52 @@ body {
     min-width: auto;
   }
 }
+
+/* ================= CONTACT SECTION (CLEAN RESET) ================= */
+
+.contact-actions {
+  margin-top: 25px;
+}
+
+.contact-action-row {
+  display: block;              /* 🔥 key change */
+  padding: 10px 0;
+  text-decoration: none;
+  line-height: 1.6;
+}
+
+/* label (icon + word) */
+.contact-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 6px;
+  opacity: 0.7;
+}
+
+/* icon */
+.contact-label .icon-wrap {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-label svg {
+  width: 16px;
+  height: 16px;
+  stroke: #2f6fed;
+}
+
+/* value */
+.contact-value {
+  font-weight: 600;
+}
+
+/* hover */
+@media (hover: hover) {
+  .contact-action-row:hover {
+    opacity: 0.8;
+  }
+}
