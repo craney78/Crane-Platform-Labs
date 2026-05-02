@@ -122,6 +122,32 @@
     white-space: normal;
   }
 }
+
+/* ================= CONTACT ICON ALIGN FIX ================= */
+
+.contact-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.contact-label .icon-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 18px;
+  height: 18px;
+}
+
+.contact-label svg {
+  width: 16px;
+  height: 16px;
+
+  position: relative;
+  top: 2px; /* 🔥 THIS is the fix */
+}
+
 </style>
 
 <body>
