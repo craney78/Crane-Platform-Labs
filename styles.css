@@ -1160,3 +1160,20 @@ body {
     font-size: 1.05rem;
   }
 }
+
+.contact-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.contact-label .icon-wrap {
+  width: 18px;
+  height: 18px;
+}
+
+.contact-label svg {
+  width: 16px;
+  height: 16px;
+  stroke: #2f6fed;
+}
