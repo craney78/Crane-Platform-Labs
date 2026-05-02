@@ -1101,55 +1101,62 @@ body {
   }
 }
 
+/* ================= CONTACT SECTION ================= */
+
 .contact-center {
   text-align: center;
   max-width: 650px;
   margin: 0 auto;
 }
 
+/* container */
 .contact-actions {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 10px; /* tighter vertical spacing */
 }
 
-/* rows now feel like buttons */
+/* rows */
 .contact-action-row {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 10px; /* 🔥 THIS controls spacing between label + value */
 
-  padding: 16px 20px;
-  border-radius: 10px;
-
-  background: rgba(255,255,255,0.02);
-  border: 1px solid rgba(255,255,255,0.06);
+  padding: 12px 0;
 
   text-decoration: none;
   transition: all 0.2s ease;
 }
 
-.contact-action-row strong {
+/* label */
+.contact-label {
+  opacity: 0.7;
+}
+
+/* value */
+.contact-value {
   font-weight: 600;
 }
 
-/* hover */
+/* subtle hover (desktop only feel) */
 .contact-action-row:hover {
-  transform: translateY(-2px);
-  border-color: rgba(255,255,255,0.12);
+  opacity: 0.8;
 }
 
-/* static row */
+/* static row (location) */
 .contact-action-row.static {
   cursor: default;
 }
 
-/* mobile tweak */
+/* ================= MOBILE ================= */
+
 @media (max-width: 600px) {
   .contact-action-row {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 6px;
+    flex-wrap: wrap; /* allows email to wrap nicely */
+  }
+
+  .contact-value {
+    font-size: 1.05rem;
   }
 }
