@@ -388,5 +388,44 @@
 
   </div>
 </footer>
+<script>
+/* ================= NAV TOGGLE ================= */
+
+function toggleMenu() {
+  const nav = document.getElementById("navLinks");
+  if (nav) nav.classList.toggle("active");
+}
+
+/* ================= CLOSE ON LINK CLICK ================= */
+
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    const nav = document.getElementById("navLinks");
+    if (nav) nav.classList.remove("active");
+  });
+});
+
+/* ================= CLOSE ON OUTSIDE CLICK ================= */
+
+document.addEventListener('click', function(e) {
+  const nav = document.getElementById("navLinks");
+  const toggle = document.querySelector('.nav-toggle');
+
+  if (!nav || !toggle) return;
+
+  if (!nav.contains(e.target) && !toggle.contains(e.target)) {
+    nav.classList.remove("active");
+  }
+});
+
+/* ================= OPTIONAL: CLOSE ON RESIZE ================= */
+
+window.addEventListener('resize', () => {
+  const nav = document.getElementById("navLinks");
+  if (window.innerWidth > 768 && nav) {
+    nav.classList.remove("active");
+  }
+});
+</script>
 </body>
 </html>
