@@ -16,8 +16,53 @@
 
   <link rel="stylesheet" href="styles.css">
 </head>
+<style>
 
-<body>
+/* ================= JUNEE PAGE CENTER SYSTEM ================= */
+
+/* Center all panel layouts */
+.junee-page .panel-inner {
+  display: flex;
+  justify-content: center;
+}
+
+/* Center all text blocks */
+.junee-page .panel-text {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 750px;
+  width: 100%;
+}
+
+/* Center grids (who we work with, what you get, why) */
+.junee-page .features-grid {
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Make cards centered */
+.junee-page .feature-card {
+  text-align: center;
+  align-items: center;
+}
+
+/* Fix icon alignment */
+.junee-page .feature-card .icon-wrap {
+  margin: 0 auto 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CTA center */
+.junee-page .services-cta,
+.junee-page .cta-box {
+  text-align: center;
+  margin: 30px auto 0;
+}
+
+</style>
+<body class="junee-page">
 
 <!-- ================= HERO ================= -->
 <section class="section panel">
