@@ -1164,7 +1164,28 @@ body {
 .contact-label {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
+  opacity: 0.7;
+  line-height: 1; /* 🔥 fixes vertical drift */
+}
+
+.contact-label .icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 18px;
+  height: 18px;
+}
+
+.contact-label svg {
+  width: 16px;
+  height: 16px;
+
+  stroke: #2f6fed;
+
+  position: relative;
+  top: 1px; 
 }
 
 .contact-label .icon-wrap {
