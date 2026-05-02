@@ -33,81 +33,93 @@
 </head>
 
 <style>
-/* ================= CONTACT PAGE CENTER FIX ================= */
+/* ================= CONTACT PAGE ONLY FIX ================= */
 
-.contact-page .panel-inner {
-  max-width: 1100px;
-  margin: 0 auto;
+/* GRID LAYOUT */
+.section.panel .contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 25px;
+  justify-content: center;
 }
 
-.contact-page .panel-text {
-  max-width: 700px;
-  margin: 0 auto;
+/* CARD SIZE + ALIGNMENT */
+.section.panel .contact-card {
+  padding: 35px 25px;
+  min-height: 180px;
+  border-radius: 12px;
+}
+
+/* TEXT STYLING */
+.section.panel .contact-highlight {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0;
+  word-break: break-word;
   text-align: center;
-  width: 100%;             
 }
 
-/* ================= CONTACT ACTIONS ================= */
-
-.contact-center {
-  text-align: center;
+/* ACTION TEXT */
+.section.panel .contact-action {
+  font-size: 13px;
+  opacity: 0.6;
+  margin-top: 4px;
 }
 
-.contact-actions {
-  margin-top: 30px;
+/* HIGHLIGHT FIRST CARD */
+.section.panel .contact-card:first-child {
+  border: 2px solid #2d6cdf;
+}
+
+/* FORCE GRID ALIGNMENT */
+.section.panel .contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  align-items: stretch;
+}
+
+/* CENTER CARD CONTENT */
+.section.panel .contact-card {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 30px 20px;
+  min-height: 200px;
 }
 
-.contact-action-row {
+/* ================= CENTER ENTIRE CONTACT PANEL ================= */
+
+.section.panel .panel-inner {
   display: flex;
-  align-items: center;
-  gap: 10px;
-
-  padding: 12px 0;
-  text-decoration: none;
-  transition: all 0.2s ease;
+  justify-content: center;
 }
 
-.contact-label {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  opacity: 0.7;
+.section.panel .panel-text {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
 }
 
-.contact-label .icon-wrap {
-  width: 18px;
-  height: 18px;
+/* ENSURE GRID IS CENTERED */
+.section.panel .contact-grid {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.contact-label svg {
-  width: 16px;
-  height: 16px;
-  stroke: #2f6fed;
-}
+/* ================= MOBILE ================= */
 
-.contact-value {
-  font-weight: 600;
-}
-
-.contact-action-row:hover {
-  opacity: 0.8;
-}
-
-.contact-action-row.static {
-  cursor: default;
-}
-
-/* MOBILE */
-@media (max-width: 600px) {
-  .contact-action-row {
-    flex-wrap: wrap;
+@media (max-width: 768px) {
+  .section.panel .contact-grid {
+    grid-template-columns: 1fr;
   }
 
-  .contact-value {
-    font-size: 1.05rem;
+  .section.panel .contact-highlight {
+    white-space: normal;
   }
 }
 </style>
