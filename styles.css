@@ -1161,3 +1161,34 @@ body {
   font-size: 16px;
   font-weight: 600;
 }
+
+/* ================= MOBILE FIX — TOWN PAGES ================= */
+
+@media (max-width: 768px) {
+
+  /* force vertical stack */
+  .panel-inner {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  /* text first */
+  .panel-text {
+    order: 1;
+    width: 100%;
+  }
+
+  /* image second */
+  .panel-image {
+    order: 2;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* clean image sizing */
+  .panel-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
