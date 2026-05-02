@@ -1100,3 +1100,65 @@ body {
     margin: 20px auto 0;
   }
 }
+
+/* ================= CONTACT LIST ================= */
+
+.contact-center {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact-list {
+  margin-top: 30px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.contact-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 16px 0;
+  text-decoration: none;
+
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.contact-row.static {
+  cursor: default;
+}
+
+.contact-label {
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.contact-value {
+  font-weight: 600;
+}
+
+/* hover (desktop only feel) */
+.contact-row:hover {
+  opacity: 0.8;
+}
+
+/* ================= CTA ================= */
+
+.contact-cta {
+  margin-top: 30px;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+  .contact-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .contact-value {
+    font-size: 1.05rem;
+  }
+}
