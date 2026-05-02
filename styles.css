@@ -1114,61 +1114,33 @@ body {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
-  gap: 10px; /* tighter vertical spacing */
+  gap: 10px;
 }
 
 /* rows */
 .contact-action-row {
   display: flex;
   align-items: center;
-  gap: 10px; /* 🔥 THIS controls spacing between label + value */
+  gap: 12px;
 
   padding: 12px 0;
-
   text-decoration: none;
   transition: all 0.2s ease;
+
+  line-height: 1.2;
 }
 
-/* label */
-.contact-label {
-  opacity: 0.7;
-}
-
-/* value */
-.contact-value {
-  font-weight: 600;
-}
-
-/* subtle hover (desktop only feel) */
-.contact-action-row:hover {
-  opacity: 0.8;
-}
-
-/* static row (location) */
-.contact-action-row.static {
-  cursor: default;
-}
-
-/* ================= MOBILE ================= */
-
-@media (max-width: 600px) {
-  .contact-action-row {
-    flex-wrap: wrap; /* allows email to wrap nicely */
-  }
-
-  .contact-value {
-    font-size: 1.05rem;
-  }
-}
-
+/* label (icon + text) */
 .contact-label {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+
   opacity: 0.7;
-  line-height: 1; /* 🔥 fixes vertical drift */
+  line-height: 1;
 }
 
+/* icon container */
 .contact-label .icon-wrap {
   display: flex;
   align-items: center;
@@ -1178,23 +1150,41 @@ body {
   height: 18px;
 }
 
+/* icon */
 .contact-label svg {
   width: 16px;
   height: 16px;
-
   stroke: #2f6fed;
 
   position: relative;
-  top: 1px; 
+  top: 1px; /* micro-adjust for perfect alignment */
 }
 
-.contact-label .icon-wrap {
-  width: 18px;
-  height: 18px;
+/* value */
+.contact-value {
+  font-weight: 600;
 }
 
-.contact-label svg {
-  width: 16px;
-  height: 16px;
-  stroke: #2f6fed;
+/* hover */
+@media (hover: hover) {
+  .contact-action-row:hover {
+    opacity: 0.8;
+  }
+}
+
+/* static row */
+.contact-action-row.static {
+  cursor: default;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+  .contact-action-row {
+    flex-wrap: wrap;
+  }
+
+  .contact-value {
+    font-size: 1.05rem;
+  }
 }
