@@ -1113,81 +1113,51 @@ body {
   margin-bottom: 25px;
 }
 
-/* ================= CONTACT SECTION ================= */
+/* ================= CONTACT SECTION CLEAN ================= */
 
 .contact-actions {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  align-items: center;
+  gap: 20px;
 }
 
-/* ROW */
+/* EACH ITEM */
 .contact-action-row {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 14px;
+  text-align: center;
+  gap: 6px;
 
-  padding: 12px 0;
   text-decoration: none;
-
-  line-height: 1.2;
 }
 
-/* LABEL GROUP (icon + text) */
-.contact-label {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  min-width: 120px; /* keeps all rows aligned */
-}
-
-/* LABEL TEXT */
-.label-text {
-  opacity: 0.7;
-  font-size: 14px;
-}
-
-/* ICON WRAP */
+/* ICON */
 .icon-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  width: 18px;
-  height: 18px;
-  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
 }
 
-/* ICON */
 .icon-wrap svg {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   stroke: #2f6fed;
 }
 
-/* VALUE (PHONE / EMAIL / LOCATION) */
+/* LABEL */
+.contact-label {
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+/* VALUE */
 .contact-value {
-  font-weight: 600;
   font-size: 16px;
-  line-height: 1.2;
-}
-
-/* STATIC */
-.contact-action-row.static {
-  cursor: default;
-}
-
-/* MOBILE */
-@media (max-width: 600px) {
-  .contact-action-row {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 6px;
-  }
-
-  .contact-label {
-    min-width: auto;
-  }
+  font-weight: 600;
 }
