@@ -1193,37 +1193,56 @@ body {
   }
 }
 
-/* ================= PRICING (LIGHT CLEAN) ================= */
+/* ================= PRICING SECTION ================= */
+
+/* LAYOUT (LEFT TEXT + RIGHT CARDS) */
+.pricing-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+/* LEFT TEXT WIDTH CONTROL */
+.pricing-text {
+  max-width: 420px;
+}
+
+/* ================= GRID ================= */
 
 .pricing-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(260px, 320px));
-  gap: 30px;
-  justify-content: center;
-  margin-top: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 900px;
+  margin: 40px auto 0;
 }
 
-/* CARD BASE */
+/* ================= CARD BASE ================= */
+
 .pricing-card {
+  position: relative;
   background: #ffffff;
   border: 1px solid #e5e7eb;
   border-radius: 16px;
-  padding: 30px 25px;
+  padding: 28px 22px;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 520px;
-  text-align: left;
+
+  height: 100%;
   transition: all 0.2s ease;
 }
 
-/* HOVER (SUBTLE PREMIUM FEEL) */
+/* HOVER */
 .pricing-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
 }
 
-/* PLAN LABEL */
+/* ================= TEXT ================= */
+
 .plan {
   font-size: 12px;
   letter-spacing: 1px;
@@ -1231,26 +1250,25 @@ body {
   margin-bottom: 10px;
 }
 
-/* PRICE */
 .pricing-card h3 {
   font-size: 34px;
-  margin-bottom: 10px;
+  font-weight: 700;
   color: #111827;
+  margin-bottom: 10px;
 }
 
-/* DESCRIPTION */
 .desc {
   font-size: 14px;
   color: #6b7280;
   margin-bottom: 20px;
 }
 
-/* FEATURES */
+/* ================= FEATURES ================= */
+
 .pricing-card ul {
   list-style: none;
   padding: 0;
-  margin-top: 10px;
-  margin-bottom: 25px;
+  margin: 15px 0 25px 0;
 }
 
 .pricing-card ul li {
@@ -1269,7 +1287,8 @@ body {
   font-weight: bold;
 }
 
-/* FEATURED (MIDDLE CARD) */
+/* ================= FEATURED CARD ================= */
+
 .pricing-card.featured {
   border: 2px solid #3b82f6;
   background: #f9fbff;
@@ -1284,11 +1303,12 @@ body {
   padding: 5px 10px;
   border-radius: 20px;
   background: #3b82f6;
-  color: white;
+  color: #ffffff;
   font-weight: 600;
 }
 
-/* BUTTONS */
+/* ================= BUTTONS ================= */
+
 .btn-primary,
 .btn-outline {
   display: block;
@@ -1299,20 +1319,31 @@ body {
   text-decoration: none;
 }
 
+/* PRIMARY */
 .btn-primary {
   background: #3b82f6;
-  color: white;
+  color: #ffffff;
 }
 
+/* OUTLINE */
 .btn-outline {
   border: 1px solid #d1d5db;
   color: #111827;
-  background: white;
+  background: #ffffff;
 }
 
-/* MOBILE */
+/* ================= MOBILE ================= */
+
 @media (max-width: 900px) {
+
+  .pricing-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
   .pricing-grid {
     grid-template-columns: 1fr;
+    max-width: 100%;
   }
+
 }
