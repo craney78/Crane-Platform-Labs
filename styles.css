@@ -1438,3 +1438,25 @@ body {
     display: block;
   }
 }
+
+/* ================= HERO BUTTON FIX ================= */
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.hero-buttons a {
+  min-width: 170px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  box-sizing: border-box;
+}
