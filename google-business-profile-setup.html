@@ -66,36 +66,81 @@
   <link rel="stylesheet" href="styles.css">
 
   <!-- LOCAL BUSINESS SCHEMA -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Crane Platform Labs",
-    "image": "https://www.craneplatformlabs.com.au/images/logo.png",
-    "url": "https://www.craneplatformlabs.com.au/",
-    "telephone": "+61448244223",
-    "email": "info@craneplatformlabs.com.au",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Junee",
-      "addressRegion": "NSW",
-      "addressCountry": "AU"
+  <!-- ================= LOCAL BUSINESS SCHEMA ================= -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Crane Platform Labs",
+  "image": "https://www.craneplatformlabs.com.au/images/logo.png",
+  "url": "https://www.craneplatformlabs.com.au/",
+  "telephone": "+61448244223",
+  "email": "info@craneplatformlabs.com.au",
+
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Junee",
+    "addressRegion": "NSW",
+    "addressCountry": "AU"
+  },
+
+  "areaServed": [
+    "Junee",
+    "Wagga Wagga",
+    "Albury",
+    "Cootamundra",
+    "Temora",
+    "Griffith",
+    "Young",
+    "Tumut"
+  ],
+
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=61589315729346"
+  ]
+}
+</script>
+
+
+
+<!-- ================= FAQ STRUCTURED DATA ================= -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+
+  "mainEntity": [
+
+    {
+      "@type": "Question",
+      "name": "Why isn’t my business showing up on Google?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Businesses often struggle to appear on Google because they have weak local SEO, incomplete Google Business Profiles, poor website structure, slow website speed or limited local relevance."
+      }
     },
-    "areaServed": [
-      "Junee",
-      "Wagga Wagga",
-      "Albury",
-      "Cootamundra",
-      "Temora",
-      "Griffith",
-      "Young",
-      "Tumut"
-    ],
-    "sameAs": [
-      "https://www.facebook.com/profile.php?id=61589315729346"
-    ]
-  }
-  </script>
+
+    {
+      "@type": "Question",
+      "name": "How do I rank higher on Google Maps?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Improving your Google Business Profile, customer reviews, website SEO, local relevance and business information consistency can help improve Google Maps visibility and rankings."
+      }
+    },
+
+    {
+      "@type": "Question",
+      "name": "Why is my website not generating enquiries?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Many websites fail to generate enquiries because they are difficult to use, slow to load, poorly optimised for mobile phones or unclear about their services and contact information."
+      }
+    }
+
+  ]
+}
+</script>
 
 </head>
 <style>

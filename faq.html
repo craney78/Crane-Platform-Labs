@@ -134,48 +134,211 @@
     href="styles.css"
   >
 
-  <!-- ================= FAQ SCHEMA ================= -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How much does a small business website cost?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Website pricing depends on the size and features required. Crane Platform Labs builds clean, fast and SEO-focused websites for small businesses across regional NSW."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you build websites for businesses in regional NSW?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Crane Platform Labs works with businesses across Junee, Wagga Wagga, Albury, Griffith, Temora, Cootamundra and surrounding regional NSW areas."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can you help improve my Google Business Profile?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Google Business Profile setup and optimisation is part of helping local businesses improve visibility on Google Maps and local search."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Will my website work on mobile phones?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. All websites are designed to work properly across phones, tablets and desktop devices."
-        }
-      }
-    ]
-  }
-  </script>
+<!-- ================= FAQ STRUCTURED DATA ================= -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
 
+  "mainEntity": [
+
+    {
+      "@type": "Question",
+      "name": "Why isn’t my business showing up on Google?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Businesses often struggle to appear on Google because they have weak local SEO, incomplete Google Business Profiles, poor website structure, slow website speed or limited local relevance."
+      }
+    },
+
+    {
+      "@type": "Question",
+      "name": "How do I rank higher on Google Maps?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Improving your Google Business Profile, customer reviews, website SEO, local relevance and business information consistency can help improve Google Maps visibility and rankings."
+      }
+    },
+
+    {
+      "@type": "Question",
+      "name": "Why is my website not generating enquiries?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Many websites fail to generate enquiries because they are difficult to use, slow to load, poorly optimised for mobile phones or unclear about their services and contact information."
+      }
+    },
+
+    {
+      "@type": "Question",
+      "name": "Does local SEO help small businesses?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Local SEO helps small businesses appear in Google Search, Google Maps and local 'near me' searches when customers look for nearby services."
+      }
+    },
+
+    {
+      "@type": "Question",
+      "name": "What is local SEO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Local SEO is the process of improving a business’s visibility in local Google Search and Google Maps results through website optimisation, local relevance and Google Business Profile optimisation."
+      }
+    },
+
+    {
+      "@type": "Question",
+      "name": "Do reviews help Google rankings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Customer reviews help build trust and can improve local Google visibility by strengthening a business’s credibility and engagement signals."
+      }
+    },
+
+    {
+      "@type": "Question",
+      "name": "Why do mobile-friendly websites rank better on Google?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Google prioritises mobile-friendly websites because most searches now happen on phones and tablets. Responsive websites improve user experience and help reduce visitor drop-off."
+      }
+    },
+
+    {
+      "@type": "Question",
+      "name": "Can a regional NSW business compete online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Regional NSW businesses often have strong opportunities to compete online because local competition is lower and strong SEO foundations can significantly improve visibility."
+      }
+    },
+
+    {
+      "@type": "Question",
+      "name": "Do I need a Google Business Profile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. A Google Business Profile is one of the most important tools for improving Google Maps visibility, local search rankings and customer trust."
+      }
+    },
+
+    {
+      "@type": "Question",
+      "name": "Will my website work properly on mobile phones?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Crane Platform Labs builds mobile-friendly websites designed to work across phones, tablets, laptops and desktop computers."
+      }
+    }
+
+  ]
+}
+</script>  
+<!-- ================= LOCAL BUSINESS SCHEMA ================= -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+
+  "@type": "LocalBusiness",
+
+  "name": "Crane Platform Labs",
+
+  "url": "https://www.craneplatformlabs.com.au/",
+
+  "image": "https://www.craneplatformlabs.com.au/images/logo.png",
+
+  "logo": "https://www.craneplatformlabs.com.au/images/logo.png",
+
+  "telephone": "+61448244223",
+
+  "email": "info@craneplatformlabs.com.au",
+
+  "priceRange": "$$",
+
+  "description": "Crane Platform Labs builds fast, mobile-friendly and SEO-focused websites for small businesses across regional NSW.",
+
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Junee",
+    "addressRegion": "NSW",
+    "postalCode": "2663",
+    "addressCountry": "AU"
+  },
+
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "-34.865",
+    "longitude": "147.585"
+  },
+
+  "areaServed": [
+
+    {
+      "@type": "City",
+      "name": "Junee"
+    },
+
+    {
+      "@type": "City",
+      "name": "Wagga Wagga"
+    },
+
+    {
+      "@type": "City",
+      "name": "Albury"
+    },
+
+    {
+      "@type": "City",
+      "name": "Griffith"
+    },
+
+    {
+      "@type": "City",
+      "name": "Temora"
+    },
+
+    {
+      "@type": "City",
+      "name": "Cootamundra"
+    },
+
+    {
+      "@type": "City",
+      "name": "Young"
+    },
+
+    {
+      "@type": "City",
+      "name": "Tumut"
+    }
+
+  ],
+
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=61589315729346"
+  ],
+
+  "serviceType": [
+    "Website Design",
+    "Small Business Websites",
+    "Local SEO",
+    "Google Business Profile Optimisation",
+    "Mobile-Friendly Website Design",
+    "Regional NSW Website Design"
+  ],
+
+  "knowsAbout": [
+    "Local SEO",
+    "Google Maps Rankings",
+    "Website Design",
+    "Mobile-Friendly Websites",
+    "Google Business Profiles",
+    "Regional NSW Business Websites"
+  ]
+}
+</script>
 </head>
 
 <body>
