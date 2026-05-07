@@ -145,7 +145,14 @@
     "Regional NSW Business Websites"
   ]
 }
-</script>  
+</script> 
+
+<!-- HERO IMAGE PRELOAD -->
+<link
+  rel="preload"
+  as="image"
+  href="images/hero.webp"
+>
 </head>
 
 <body>
@@ -226,20 +233,24 @@
       <div class="hero-text">
 
         <!-- TAG -->
-        <p class="hero-tag">WEBSITES THAT BRING YOU CUSTOMERS</p>
+        <p class="hero-tag">
+          WEBSITES THAT BRING YOU CUSTOMERS
+        </p>
 
         <!-- HEADLINE -->
         <h1>
           Websites That Bring You<br>
-          <span class="gradient-text">More Local Customers</span>
+          <span class="gradient-text">
+            More Local Customers
+          </span>
         </h1>
 
-        <!-- SUBTEXT (SEO BOOSTED) -->
+        <!-- SUBTEXT -->
         <p class="hero-sub">
           Website design for businesses in Junee, Wagga Wagga, Albury and regional NSW — built to help you get found on Google and turn visitors into real enquiries.
         </p>
 
-        <!-- SUPPORT LINE (TRUST + CLARITY) -->
+        <!-- SUPPORT -->
         <p class="hero-support">
           We work with tradies, cafés and service businesses across regional NSW, building websites that actually bring in customers.
         </p>
@@ -249,54 +260,89 @@
 
           <!-- GOOGLE -->
           <div class="hero-feature">
+
             <div class="icon-wrap">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <circle cx="11" cy="11" r="7"/>
                 <line x1="16.5" y1="16.5" x2="21" y2="21"/>
               </svg>
             </div>
-            <span>Built to rank on Google</span>
+
+            <span>
+              Built to rank on Google
+            </span>
+
           </div>
 
           <!-- MOBILE -->
           <div class="hero-feature">
+
             <div class="icon-wrap">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <rect x="7" y="2" width="10" height="20" rx="2"/>
                 <circle cx="12" cy="18" r="1"/>
               </svg>
             </div>
-            <span>Mobile-first design</span>
+
+            <span>
+              Mobile-first design
+            </span>
+
           </div>
 
           <!-- SPEED -->
           <div class="hero-feature">
+
             <div class="icon-wrap">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polygon points="13 2 3 14 12 14 11 22 21 10 12 10"/>
               </svg>
             </div>
-            <span>Fast & reliable</span>
+
+            <span>
+              Fast & reliable
+            </span>
+
           </div>
 
         </div>
 
         <!-- BUTTONS -->
         <div class="hero-buttons">
-          <a href="contact.html" class="btn-primary">Get a Quote</a>
-          <a href="tel:+61448244223" class="btn-secondary">Call Now</a>
+
+          <a href="contact.html" class="btn-primary">
+            Get a Quote
+          </a>
+
+          <a href="tel:+61448244223" class="btn-secondary">
+            Call Now
+          </a>
+
         </div>
 
-        <!-- TRUST (LOCATION REINFORCED) -->
+        <!-- TRUST -->
         <div class="hero-trust">
-          <p>Serving Junee, Wagga Wagga, Albury, Griffith and regional NSW</p>
+
+          <p>
+            Serving Junee, Wagga Wagga, Albury, Griffith and regional NSW
+          </p>
+
         </div>
 
       </div>
 
       <!-- RIGHT -->
       <div class="hero-image">
-        <img src="images/hero.jpg" alt="Website design preview on laptop and mobile for a local business in regional NSW">
+
+        <img
+          src="images/hero.webp"
+          alt="Professional website design preview on desktop and mobile devices for a regional NSW business"
+          width="1400"
+          height="1000"
+          fetchpriority="high"
+          decoding="async"
+        >
+
       </div>
 
     </div>
