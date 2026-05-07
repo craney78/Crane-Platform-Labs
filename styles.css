@@ -1472,18 +1472,37 @@ body {
   box-sizing: border-box;
 }
 
-/* ================= ICON ALIGNMENT FIX ================= */
+/* ================= FINAL ICON ALIGNMENT FIX ================= */
 
 .icon-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
-  line-height: 0;
+
   flex-shrink: 0;
+  line-height: 1;
 }
 
+/* SVG */
 .icon-wrap svg {
   display: block;
-  width: 24px;
-  height: 24px;
+
+  width: 22px;
+  height: 22px;
+
+  position: relative;
+  top: 1px; /* optical correction */
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .icon-wrap svg {
+    width: 20px;
+    height: 20px;
+  }
+
 }
