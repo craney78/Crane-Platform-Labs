@@ -1517,3 +1517,36 @@ body {
 
 }
 
+/* ================= FAQ HERO ================= */
+
+.hero-split{
+  display:grid;
+  grid-template-columns:1.1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+.hero-image img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+/* MOBILE */
+@media (max-width: 900px){
+
+  .hero-split{
+    grid-template-columns:1fr;
+    gap:40px;
+  }
+
+  .hero-image{
+    order:-1;
+  }
+
+  .hero-image img{
+    max-width:600px;
+    margin:0 auto;
+  }
+
+}
