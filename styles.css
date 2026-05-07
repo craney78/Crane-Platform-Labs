@@ -1516,3 +1516,163 @@ body {
   }
 
 }
+
+/* ================= FAQ HERO ENHANCEMENTS ================= */
+
+.faq-highlight-grid{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:18px;
+  margin:35px 0;
+}
+
+.faq-highlight{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  padding:18px;
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:14px;
+  background:rgba(255,255,255,0.02);
+}
+
+.faq-highlight span{
+  font-size:14px;
+  font-weight:600;
+  color:white;
+}
+
+.faq-highlight .icon-wrap{
+  width:42px;
+  height:42px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.faq-highlight img{
+  width:22px;
+  height:auto;
+  opacity:0.9;
+}
+
+.faq-searches{
+  margin-top:10px;
+  margin-bottom:28px;
+}
+
+.faq-search-title{
+  font-size:14px;
+  font-weight:600;
+  opacity:0.7;
+  margin-bottom:12px;
+}
+
+/* MOBILE */
+@media (max-width: 800px){
+
+  .faq-highlight-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+}
+
+@media (max-width: 520px){
+
+  .faq-highlight-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+/* ================= FAQ AUTHORITY CARDS ================= */
+
+.featured-faq{
+  position:relative;
+  border:1px solid rgba(255,255,255,0.08);
+  background:rgba(255,255,255,0.02);
+  overflow:hidden;
+}
+
+/* TOP AREA */
+.faq-top{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:18px;
+  flex-wrap:wrap;
+}
+
+/* CATEGORY CHIP */
+.faq-chip{
+  padding:6px 12px;
+  border-radius:999px;
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.08);
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:0.4px;
+  text-transform:uppercase;
+  color:white;
+}
+
+/* BADGE */
+.faq-badge{
+  padding:6px 12px;
+  border-radius:999px;
+  background:rgba(59,130,246,0.15);
+  border:1px solid rgba(59,130,246,0.25);
+  font-size:12px;
+  font-weight:700;
+  color:#93c5fd;
+}
+
+/* TRUST TEXT */
+.faq-trust{
+  margin-top:18px;
+  font-size:14px;
+  opacity:0.7;
+  font-weight:500;
+}
+
+/* RELATED QUESTIONS */
+.related-questions{
+  margin-top:22px;
+  padding-top:18px;
+  border-top:1px solid rgba(255,255,255,0.08);
+}
+
+.related-questions p{
+  margin-bottom:12px;
+  font-size:13px;
+  font-weight:600;
+  opacity:0.7;
+}
+
+.related-questions a{
+  display:block;
+  margin-bottom:10px;
+  font-size:14px;
+  text-decoration:none;
+  color:#93c5fd;
+  transition:0.2s ease;
+}
+
+.related-questions a:hover{
+  opacity:0.8;
+  transform:translateX(3px);
+}
+
+/* FEATURED CARD GLOW */
+.featured-faq::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    180deg,
+    rgba(255,255,255,0.03),
+    transparent
+  );
+  pointer-events:none;
+}
