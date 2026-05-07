@@ -1,16 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <url><loc>https://www.craneplatformlabs.com.au/</loc></url>
-  <url><loc>https://www.craneplatformlabs.com.au/services.html</loc></url>
-  <url><loc>https://www.craneplatformlabs.com.au/about.html</loc></url>
-  <url><loc>https://www.craneplatformlabs.com.au/contact.html</loc></url>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+>
 
-  <url><loc>https://www.craneplatformlabs.com.au/website-design-junee.html</loc></url>
-  <url><loc>https://www.craneplatformlabs.com.au/website-design-wagga-wagga.html</loc></url>
-  <url><loc>https://www.craneplatformlabs.com.au/website-design-albury.html</loc></url>
-  <url><loc>https://www.craneplatformlabs.com.au/website-design-griffith.html</loc></url>
-  <url><loc>https://www.craneplatformlabs.com.au/website-design-temora.html</loc></url>
-  <url><loc>https://www.craneplatformlabs.com.au/website-design-cootamundra.html</loc></url>
+  <!-- ================= HOME ================= -->
+  <url>
+    <loc>https://www.craneplatformlabs.com.au/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+
+    <image:image>
+      <image:loc>
+        https://www.craneplatformlabs.com.au/images/hero.jpg
+      </image:loc>
+      <image:title>
+        Crane Platform Labs Website Design Regional NSW
+      </image:title>
+    </image:image>
+
+  </url>
+
+  <!-- ================= SERVICES ================= -->
+  <url>
+    <loc>https://www.craneplatformlabs.com.au/services.html</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+
+    <image:image>
+      <image:loc>
+        https://www.craneplatformlabs.com.au/images/services-showcase.png
+      </image:loc>
+      <image:title>
+        Website Design Services Regional NSW
+      </image:title>
+    </image:image>
+
+  </url>
+
+  <!-- ================= ABOUT ================= -->
+  <url>
+    <loc>https://www.craneplatformlabs.com.au/about.html</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- ================= CONTACT ================= -->
+  <url>
+    <loc>https://www.craneplatformlabs.com.au/contact.html</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- ================= FAQ ================= -->
+  <url>
+    <loc>https://www.craneplatformlabs.com.au/faq.html</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+
+    <image:image>
+      <image:loc>
+        https://www.craneplatformlabs.com.au/images/local-seo-regional-nsw-hero.png
+      </image:loc>
+      <image:title>
+        Website FAQ and Local SEO Questions
+      </image:title>
+    </image:image>
+
+  </url>
+
+  <!-- ================= GOOGLE BUSINESS PROFILE ================= -->
+  <url>
+    <loc>https://www.craneplatformlabs.com.au/google-business-profile-setup.html</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+
+    <image:image>
+      <image:loc>
+        https://www.craneplatformlabs.com.au/images/google-business-profile-setup.png
+      </image:loc>
+      <image:title>
+        Google Business Profile Setup Regional NSW
+      </image:title>
+    </image:image>
+
+  </url>
+
+  <!-- ================= LOCAL SEO ================= -->
+  <url>
+    <loc>https://www.craneplatformlabs.com.au/local-seo-regional-nsw.html</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+
+    <image:image>
+      <image:loc>
+        https://www.craneplatformlabs.com.au/images/local-seo-regional-nsw-hero.png
+      </image:loc>
+      <image:title>
+        Local SEO Regional NSW
+      </image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>
+        https://www.craneplatformlabs.com.au/images/regional-nsw-local-seo-google-maps.png
+      </image:loc>
+      <image:title>
+        Regional NSW Google Maps Visibility
+      </image:title>
+    </image:image>
+
+  </url>
+
+  <!-- ================= LOCATION PAGES ================= -->
+
+  <url>
+    <loc>https://www.craneplatformlabs.com.au/website-design-junee.html</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.craneplatformlabs.com.au/website-design-wagga-wagga.html</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://www.craneplatformlabs.com.au/website-design-albury.html</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://www.craneplatformlabs.com.au/website-design-griffith.html</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.craneplatformlabs.com.au/website-design-temora.html</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.craneplatformlabs.com.au/website-design-cootamundra.html</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
 
 </urlset>
