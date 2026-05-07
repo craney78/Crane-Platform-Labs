@@ -1471,3 +1471,19 @@ body {
 
   box-sizing: border-box;
 }
+
+/* ================= ICON ALIGNMENT FIX ================= */
+
+.icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  flex-shrink: 0;
+}
+
+.icon-wrap svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
