@@ -1506,3 +1506,13 @@ body {
   }
 
 }
+
+/* ================= WORKFLOW SECTION ================= */
+
+@media (max-width: 768px) {
+
+  .section.panel img {
+    border-radius: 14px !important;
+  }
+
+}
