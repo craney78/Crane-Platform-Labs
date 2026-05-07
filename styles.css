@@ -1676,3 +1676,71 @@ body {
   );
   pointer-events:none;
 }
+
+/* ================= AUTHORITY CTA ================= */
+
+.authority-cta .cta-box{
+  position:relative;
+  overflow:hidden;
+}
+
+/* TOP ALIGNMENT */
+.center-top{
+  justify-content:center;
+  margin-bottom:22px;
+}
+
+/* CTA HIGHLIGHTS */
+.cta-highlights{
+  margin:35px 0;
+}
+
+/* SEARCH TOPICS */
+.cta-search-topics{
+  margin-top:28px;
+}
+
+/* RELATED QUESTIONS */
+.cta-related{
+  max-width:700px;
+  margin:28px auto 10px;
+}
+
+/* TRUST TEXT */
+.authority-cta .faq-trust{
+  margin-top:24px;
+  margin-bottom:30px;
+  text-align:center;
+}
+
+/* BOTTOM LINKS */
+.bottom-links{
+  margin-top:28px;
+}
+
+/* SUBTLE TOP GLOW */
+.authority-cta .cta-box::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:50%;
+  transform:translateX(-50%);
+  width:500px;
+  height:220px;
+  background:radial-gradient(
+    circle,
+    rgba(59,130,246,0.10),
+    transparent 70%
+  );
+  pointer-events:none;
+}
+
+/* MOBILE */
+@media (max-width: 700px){
+
+  .center-top{
+    flex-direction:column;
+    gap:10px;
+  }
+
+}
