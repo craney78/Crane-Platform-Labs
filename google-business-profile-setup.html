@@ -98,7 +98,65 @@
   </script>
 
 </head>
+<style>
 
+/* ================= GOOGLE BUSINESS PAGE FIXES ================= */
+
+.google-business-page .panel-inner {
+  align-items: center;
+}
+
+.google-business-page .panel-text {
+  max-width: 620px;
+}
+
+.google-business-page .panel-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.google-business-page .panel-image img {
+  width: 100%;
+  max-width: 540px;
+  height: auto;
+  display: block;
+}
+
+.google-business-page .hero-buttons {
+  justify-content: flex-start;
+}
+
+.google-business-page .hero-points {
+  justify-content: flex-start;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+  .google-business-page .panel-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .google-business-page .panel-text {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .google-business-page .hero-buttons,
+  .google-business-page .hero-points {
+    justify-content: center;
+  }
+
+  .google-business-page .panel-image {
+    margin-top: 30px;
+  }
+
+}
+
+</style>
 <body> 
 <!-- ================= NAV ================= -->
 <header class="nav" id="nav">
@@ -137,7 +195,7 @@
 
 <!-- ================= HERO ================= -->
 
-<section class="section panel">
+<section class="section panel google-business-page">
   <div class="container">
 
     <div class="panel-inner">
@@ -206,7 +264,7 @@
 </section>
 <!-- ================= WHY IT MATTERS ================= -->
 
-<section class="section panel">
+<section class="section panel google-business-page"></section>
   <div class="container">
 
     <div class="panel-inner">
@@ -256,7 +314,7 @@
 
 <!-- ================= WHAT'S INCLUDED ================= -->
 
-<section class="section panel">
+<section class="section panel google-business-page"></section>
   <div class="container">
 
     <div class="panel-inner">
@@ -415,7 +473,7 @@
 
 <!-- ================= PRICING ================= -->
 
-<section class="section panel">
+<section class="section panel google-business-page"></section>
   <div class="container">
 
     <div class="panel-inner">
