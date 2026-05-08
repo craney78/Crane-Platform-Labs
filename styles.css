@@ -1624,3 +1624,23 @@ img{
 
 }
 
+/* =========================================================
+   HEADER LOGO FIX
+========================================================= */
+
+.header-logo img{
+  width:220px !important;
+  max-width:220px !important;
+  height:auto !important;
+  object-fit:contain;
+}
+
+/* MOBILE */
+@media (max-width: 768px){
+
+  .header-logo img{
+    width:170px !important;
+    max-width:170px !important;
+  }
+
+}
