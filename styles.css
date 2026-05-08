@@ -1567,103 +1567,51 @@ body {
 }
 
 /* =========================================================
-   HOMEPAGE IMAGE GRID FIX
-========================================================= */
-
-.home-grid .feature-card{
-  display:block !important;
-  text-align:left !important;
-}
-
-.home-grid .feature-card img{
-  width:100%;
-  height:auto;
-  object-fit:cover;
-  display:block;
-}
-
-/* =========================================================
-   GLOBAL IMAGE FIX
+   SAFE GLOBAL IMAGE RULE
 ========================================================= */
 
 img{
   max-width:100%;
-  height:auto;
   display:block;
 }
 
 /* =========================================================
-   GLOBAL MOBILE IMAGE FIX
-========================================================= */
-
-img{
-  max-width:100%;
-  height:auto !important;
-  display:block;
-}
-
-/* =========================================================
-   MOBILE IMAGE SAFETY
-========================================================= */
-
-@media (max-width: 768px){
-
-  img{
-    max-width:100%;
-    height:auto !important;
-  }
-
-  .panel-image img,
-  .feature-card img,
-  .hero-image img,
-  .industry-image{
-    width:100%;
-    height:auto !important;
-    object-fit:cover;
-  }
-
-}
-
-/* =========================================================
-   HEADER LOGO FIX
+   HEADER LOGO
 ========================================================= */
 
 .header-logo img{
-  width:220px !important;
-  max-width:220px !important;
-  height:auto !important;
-  object-fit:contain;
+  width:220px;
+  height:auto;
+  max-width:none;
 }
 
 /* MOBILE */
 @media (max-width: 768px){
 
   .header-logo img{
-    width:170px !important;
-    max-width:170px !important;
+    width:170px;
   }
 
 }
 
 /* =========================================================
-   INDUSTRY MINI IMAGE GRID FIX
+   INDUSTRY MINI GRID IMAGES
 ========================================================= */
 
 .industry-mini-grid img{
-  width:180px !important;
-  height:130px !important;
-  object-fit:cover !important;
+  width:220px;
+  height:150px;
+  object-fit:cover;
   border-radius:18px;
-  display:block;
 }
 
 /* MOBILE */
 @media (max-width: 768px){
 
   .industry-mini-grid img{
-    width:100% !important;
-    max-width:160px;
-    height:120px !important;
+    width:100%;
+    max-width:180px;
+    height:130px;
   }
 
 }
