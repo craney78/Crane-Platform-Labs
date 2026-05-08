@@ -1605,24 +1605,16 @@ img {
   border-radius: 16px;
 }
 
-/* ================= INDUSTRIES CARD TEXT CENTER ================= */
+/* ================= FORCE INDUSTRIES TEXT CENTER ================= */
 
-.industries-grid{
-  text-align:center;
+.industries-grid .feature-card h3{
+  text-align:center !important;
+}
+
+.industries-grid .feature-card p{
+  text-align:center !important;
 }
 
 .industries-grid .feature-card{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:flex-start;
-  text-align:center !important;
-}
-
-.industries-grid .feature-card h3,
-.industries-grid .feature-card p{
-  width:100%;
-  text-align:center !important;
-  margin-left:auto;
-  margin-right:auto;
+  align-items:center !important;
 }
