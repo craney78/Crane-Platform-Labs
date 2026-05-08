@@ -47,7 +47,7 @@
 
   <meta
     property="og:image"
-    content="https://www.craneplatformlabs.com.au/images/preview.jpg"
+    content="https://www.craneplatformlabs.com.au/images/preview.webp"
   >
 
   <!-- TRUST -->
@@ -57,8 +57,8 @@
   <!-- FAVICON -->
   <link
     rel="icon"
-    href="images/favicon.png"
-    type="image/png"
+    href="images/favicon.webp"
+    type="image/webp"
   >
 
   <!-- CSS -->
@@ -74,9 +74,9 @@
 
   "url": "https://www.craneplatformlabs.com.au/",
 
-  "image": "https://www.craneplatformlabs.com.au/images/logo.png",
+  "image": "https://www.craneplatformlabs.com.au/images/logo.webp",
 
-  "logo": "https://www.craneplatformlabs.com.au/images/logo.png",
+  "logo": "https://www.craneplatformlabs.com.au/images/logo.webp",
 
   "telephone": "+61448244223",
 
@@ -188,9 +188,9 @@
 
     "url": "https://www.craneplatformlabs.com.au/",
 
-    "image": "https://www.craneplatformlabs.com.au/images/logo.png",
+    "image": "https://www.craneplatformlabs.com.au/images/logo.webp",
 
-    "logo": "https://www.craneplatformlabs.com.au/images/logo.png",
+    "logo": "https://www.craneplatformlabs.com.au/images/logo.webp",
 
     "telephone": "+61448244223",
 
@@ -253,7 +253,7 @@
 
 </style>
 <body>
-
+<main>
 <!-- ================= NAV ================= -->
 <header class="nav" id="nav">
 
@@ -264,7 +264,7 @@
 
       <a href="index.html">
         <img 
-          src="images/logo.png" 
+          src="images/logo.webp" 
           alt="Crane Platform Labs logo"
         >
       </a>
@@ -594,7 +594,7 @@
 
   </div>
 </section>
-
+</main>
 <!-- ================= FOOTER ================= -->
 <footer class="footer">
   <div class="container">
@@ -604,12 +604,15 @@
       <!-- BRAND -->
       <div class="footer-col">
 
-        <a href="index.html">
+        <a href="index.html" aria-label="Crane Platform Labs Home">
           <img 
-            src="images/logo.png" 
+            src="images/logo.webp" 
             alt="Crane Platform Labs logo" 
             class="footer-logo"
             loading="lazy"
+            width="220"
+            height="50"
+            decoding="async"
           >
         </a>
 
@@ -631,7 +634,9 @@
       <!-- SERVICES -->
       <div class="footer-col">
 
-        <h4>Services</h4>
+        <p class="footer-heading">
+          Services
+        </p>
 
         <a href="services.html">
           Website Design
@@ -662,7 +667,9 @@
       <!-- COMPANY -->
       <div class="footer-col">
 
-        <h4>Company</h4>
+        <p class="footer-heading">
+          Company
+        </p>
 
         <a href="index.html">
           Home
@@ -689,7 +696,9 @@
       <!-- FAQ LINKS -->
       <div class="footer-col">
 
-        <h4>Popular Questions</h4>
+        <p class="footer-heading">
+          Popular Questions
+        </p>
 
         <a href="faq.html">
           Why isn’t my business showing on Google?
@@ -716,7 +725,9 @@
       <!-- AREAS -->
       <div class="footer-col">
 
-        <h4>Areas We Service</h4>
+        <p class="footer-heading">
+          Areas We Service
+        </p>
 
         <a href="website-design-junee.html">
           Junee
@@ -747,7 +758,9 @@
       <!-- CONTACT -->
       <div class="footer-col">
 
-        <h4>Contact</h4>
+        <p class="footer-heading">
+          Contact
+        </p>
 
         <a href="tel:+61448244223">
           0448 244 223
@@ -763,6 +776,7 @@
           target="_blank"
           rel="noopener noreferrer"
           class="footer-social"
+          aria-label="Visit Crane Platform Labs Facebook page"
         >
 
           <svg 
@@ -770,6 +784,7 @@
             fill="currentColor" 
             width="16" 
             height="16"
+            aria-hidden="true"
           >
             <path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0 0 22 12z"/>
           </svg>
