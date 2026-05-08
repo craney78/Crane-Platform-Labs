@@ -1605,3 +1605,16 @@ body {
   object-fit:cover !important;
   border-radius:18px;
 }
+
+/* =========================================================
+   MOBILE FIX — DOG GROOMER / PLUMBER IMAGES
+========================================================= */
+
+@media (max-width: 768px){
+
+  .industry-mini-grid img{
+    height:120px !important;
+    object-fit:cover;
+  }
+
+}
