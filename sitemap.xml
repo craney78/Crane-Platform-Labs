@@ -164,4 +164,118 @@
     <priority>0.80</priority>
   </url>
 
+    <!-- ================= INDUSTRIES ================= -->
+
+  <url>
+    <loc>https://www.craneplatformlabs.com.au/industries.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+
+    <image:image>
+      <image:loc>
+        https://www.craneplatformlabs.com.au/images/plumber-website.webp
+      </image:loc>
+      <image:title>
+        Tradie Website Design Regional NSW
+      </image:title>
+    </image:image>
+
+  </url>
+
+  <!-- ================= PLUMBER WEBSITES ================= -->
+
+  <url>
+    <loc>https://www.craneplatformlabs.com.au/plumber-websites.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+
+    <image:image>
+      <image:loc>
+        https://www.craneplatformlabs.com.au/images/plumber-website.webp
+      </image:loc>
+      <image:title>
+        Plumber Website Design Regional NSW
+      </image:title>
+    </image:image>
+
+  </url>
+
+  <!-- ================= ELECTRICIAN WEBSITES ================= -->
+
+  <url>
+    <loc>https://www.craneplatformlabs.com.au/electrician-websites.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+
+    <image:image>
+      <image:loc>
+        https://www.craneplatformlabs.com.au/images/electrician-website.webp
+      </image:loc>
+      <image:title>
+        Electrician Website Design Regional NSW
+      </image:title>
+    </image:image>
+
+  </url>
+
+  <!-- ================= BUILDER WEBSITES ================= -->
+
+  <url>
+    <loc>https://www.craneplatformlabs.com.au/builder-websites.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+
+    <image:image>
+      <image:loc>
+        https://www.craneplatformlabs.com.au/images/builder-website.webp
+      </image:loc>
+      <image:title>
+        Builder Website Design Regional NSW
+      </image:title>
+    </image:image>
+
+  </url>
+
+  <!-- ================= CAFE WEBSITES ================= -->
+
+  <url>
+    <loc>https://www.craneplatformlabs.com.au/cafe-websites.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+
+    <image:image>
+      <image:loc>
+        https://www.craneplatformlabs.com.au/images/cafe-website.webp
+      </image:loc>
+      <image:title>
+        Cafe Website Design Regional NSW
+      </image:title>
+    </image:image>
+
+  </url>
+
+  <!-- ================= MECHANIC WEBSITES ================= -->
+
+  <url>
+    <loc>https://www.craneplatformlabs.com.au/mechanic-websites.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+
+    <image:image>
+      <image:loc>
+        https://www.craneplatformlabs.com.au/images/mechanic-website.webp
+      </image:loc>
+      <image:title>
+        Mechanic Website Design Regional NSW
+      </image:title>
+    </image:image>
+
+  </url>
+
 </urlset>
