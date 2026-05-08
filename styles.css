@@ -1644,3 +1644,26 @@ img{
   }
 
 }
+
+/* =========================================================
+   INDUSTRY MINI IMAGE GRID FIX
+========================================================= */
+
+.industry-mini-grid img{
+  width:180px !important;
+  height:130px !important;
+  object-fit:cover !important;
+  border-radius:18px;
+  display:block;
+}
+
+/* MOBILE */
+@media (max-width: 768px){
+
+  .industry-mini-grid img{
+    width:100% !important;
+    max-width:160px;
+    height:120px !important;
+  }
+
+}
