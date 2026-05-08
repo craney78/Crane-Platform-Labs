@@ -1618,3 +1618,36 @@ body {
   }
 
 }
+
+/* ================= TRADIE GRID FIX ================= */
+
+.industries-grid{
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0, 1fr));
+  gap:40px;
+  align-items:start;
+}
+
+/* CARD */
+.industry-card{
+  max-width:380px;
+  margin:0 auto;
+  text-align:center;
+}
+
+/* IMAGE */
+.industry-card img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:18px;
+}
+
+/* MOBILE */
+@media (max-width: 900px){
+
+  .industries-grid{
+    grid-template-columns:1fr;
+  }
+
+}
