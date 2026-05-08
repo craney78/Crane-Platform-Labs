@@ -1558,3 +1558,10 @@ body {
   }
 
 }
+
+.footer-heading {
+  color: #ffffff;
+  margin-bottom: 12px;
+  font-size: 15px;
+  font-weight: 600;
+}
