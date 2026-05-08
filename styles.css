@@ -1604,3 +1604,22 @@ img {
   display: block;
   border-radius: 16px;
 }
+
+/* ================= INDUSTRIES PAGE CARD ALIGNMENT ================= */
+
+.industries-grid .feature-card{
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
+}
+
+.industries-grid .feature-card h3{
+  text-align:center;
+}
+
+.industries-grid .feature-card p{
+  text-align:center;
+  max-width:95%;
+}
