@@ -1249,5 +1249,49 @@
 
   </div>
 </footer>
+<script>
+/* ================= NAV MENU ================= */
+
+function toggleMenu() {
+  const nav = document.getElementById("navLinks");
+  if (!nav) return;
+  nav.classList.toggle("active");
+}
+
+/* ================= CLOSE MENU ON LINK CLICK ================= */
+
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    const nav = document.getElementById("navLinks");
+    if (nav) nav.classList.remove("active");
+  });
+});
+
+/* ================= CLOSE MENU ON OUTSIDE CLICK ================= */
+
+document.addEventListener('click', function(e) {
+  const nav = document.getElementById("navLinks");
+  const toggle = document.querySelector('.nav-toggle');
+
+  if (!nav || !toggle) return;
+
+  if (!nav.contains(e.target) && !toggle.contains(e.target)) {
+    nav.classList.remove("active");
+  }
+});
+
+/* ================= SCROLL EFFECT ================= */
+
+window.addEventListener("scroll", function() {
+  const nav = document.getElementById("nav");
+  if (!nav) return;
+
+  if (window.scrollY > 40) {
+    nav.classList.add("scrolled");
+  } else {
+    nav.classList.remove("scrolled");
+  }
+});
+</script>
 </body>
 </html>
