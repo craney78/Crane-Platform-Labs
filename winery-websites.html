@@ -187,6 +187,100 @@
     href="styles.css"
   >
 </head>
+<style>
+/* =========================================================
+CTA BUTTON FIX
+========================================================= */
+
+.contact-actions{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:16px;
+  flex-wrap:wrap;
+  margin-top:30px;
+}
+
+.contact-actions .primary-btn,
+.contact-actions .secondary-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:14px 26px;
+  border-radius:14px;
+  font-weight:600;
+  text-decoration:none;
+  transition:0.3s ease;
+}
+
+/* PRIMARY */
+.contact-actions .primary-btn{
+  background:#2563eb;
+  color:#fff;
+}
+
+.contact-actions .primary-btn:hover{
+  transform:translateY(-2px);
+}
+
+/* SECONDARY */
+.contact-actions .secondary-btn{
+  border:1px solid rgba(15,23,42,0.12);
+  background:#fff;
+  color:#0f172a;
+}
+
+.contact-actions .secondary-btn:hover{
+  background:#f8fafc;
+  transform:translateY(-2px);
+} 
+
+/* =========================================================
+HERO BUTTON FIX
+========================================================= */
+
+.hero-buttons{
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap;
+  margin-top:30px;
+}
+
+.hero-btn,
+.hero-btn-secondary{
+  display:inline-flex !important;
+  align-items:center;
+  justify-content:center;
+  padding:14px 26px;
+  border-radius:14px;
+  font-weight:600;
+  text-decoration:none !important;
+  transition:0.3s ease;
+}
+
+/* PRIMARY */
+.hero-btn{
+  background:#2563eb;
+  color:#fff !important;
+  box-shadow:0 10px 30px rgba(37,99,235,0.22);
+}
+
+.hero-btn:hover{
+  transform:translateY(-2px);
+}
+
+/* SECONDARY */
+.hero-btn-secondary{
+  border:1px solid rgba(15,23,42,0.12);
+  background:#fff;
+  color:#0f172a !important;
+}
+
+.hero-btn-secondary:hover{
+  background:#f8fafc;
+  transform:translateY(-2px);
+}
+</style>
 <!-- ================= NAV ================= -->
 <header class="nav" id="nav">
 
@@ -249,7 +343,7 @@
     </div>
 
   </div>
-
+<main>
 </header>
 <!-- ================= HERO ================= -->
 <section class="hero section">
