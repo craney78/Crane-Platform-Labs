@@ -1684,3 +1684,217 @@ body {
   }
 
 }
+
+/* =========================================================
+   WINERY PAGE MOBILE OPTIMISATION
+   Add at bottom of style.css
+========================================================= */
+
+@media (max-width: 768px) {
+
+  /* ================= HERO ================= */
+
+  .hero {
+    padding: 90px 0 60px;
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .hero-text {
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+
+  .hero-sub {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  .hero-support {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .hero-location-text {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 14px;
+  }
+
+  .hero-buttons a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-features {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .hero-feature {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 18px;
+  }
+
+  /* ================= PANELS ================= */
+
+  .panel-inner {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .panel-text {
+    text-align: center;
+  }
+
+  .panel-text h2 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .panel-text p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .panel-image img {
+    width: 100%;
+    border-radius: 18px;
+  }
+
+  /* ================= FEATURES ================= */
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-top: 30px;
+  }
+
+  .feature-card {
+    padding: 28px 22px;
+    text-align: center;
+  }
+
+  .feature-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .feature-card p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* ================= FAQ ================= */
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .faq-card {
+    padding: 28px 22px;
+  }
+
+  .faq-card h3 {
+    font-size: 19px;
+    line-height: 1.4;
+  }
+
+  .faq-card p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* ================= CTA ================= */
+
+  .cta-box {
+    padding: 45px 24px;
+    text-align: center;
+  }
+
+  .cta-box h2 {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .cta-box p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .cta-links {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  /* ================= SEO LIST ================= */
+
+  .seo-list {
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+  }
+
+  .seo-list li {
+    margin-bottom: 12px;
+    line-height: 1.7;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL PHONE FIXES
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .panel-text h2,
+  .cta-box h2 {
+    font-size: 28px;
+  }
+
+  .hero-sub,
+  .hero-support,
+  .panel-text p,
+  .feature-card p,
+  .faq-card p,
+  .cta-box p {
+    font-size: 15px;
+  }
+
+  .feature-card,
+  .faq-card {
+    padding: 24px 18px;
+  }
+
+  .cta-box {
+    padding: 40px 18px;
+  }
+
+}
