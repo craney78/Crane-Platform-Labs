@@ -430,38 +430,96 @@ MOBILE
 }
 
 /* =========================================================
-FAQ GRID
+FAQ SECTION
 ========================================================= */
 
 .faq-grid{
   display:grid;
+  grid-template-columns:repeat(2, 1fr);
   gap:24px;
   margin-top:50px;
 }
 
+/* FAQ CARD */
 .faq-card{
   background:#ffffff;
   border-radius:28px;
   padding:38px;
   box-shadow:0 1px 2px rgba(15,23,42,0.04);
+  transition:0.3s ease;
 }
 
+/* HOVER */
+.faq-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 12px 40px rgba(15,23,42,0.08);
+}
+
+/* TITLE */
 .faq-card h3{
-  margin-bottom:16px;
+  margin-bottom:18px;
+  font-size:22px;
+  line-height:1.35;
+  color:#0f172a;
 }
 
+/* TEXT */
 .faq-card p{
   margin:0;
   color:#475569;
   line-height:1.8;
+  font-size:16px;
 }
 
-/* MOBILE */
+/* LINKS */
+.faq-card a{
+  color:#2563eb;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.faq-card a:hover{
+  text-decoration:underline;
+}
+
+/* =========================================================
+FAQ INTRO SPACING
+========================================================= */
+
+.section.panel .panel-inner + .faq-grid{
+  margin-top:50px;
+}
+
+/* =========================================================
+TABLET
+========================================================= */
+
+@media (max-width:900px){
+
+  .faq-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+/* =========================================================
+MOBILE
+========================================================= */
+
 @media (max-width:768px){
 
   .faq-card{
     padding:28px;
     border-radius:22px;
+  }
+
+  .faq-card h3{
+    font-size:20px;
+  }
+
+  .faq-card p{
+    font-size:15px;
+    line-height:1.7;
   }
 
 }
@@ -1367,9 +1425,23 @@ FAQ GRID
     <!-- INTRO -->
     <!-- ========================================================= -->
 
-    <div class="panel-inner">
+    <div class="panel-inner reverse-mobile">
 
-      <div class="panel-text centered">
+      <!-- IMAGE -->
+      <div class="panel-image">
+
+        <img 
+          src="images/museum-hero.webp"
+          alt="Regional NSW museum tourism website design"
+          loading="lazy"
+          width="1400"
+          height="933"
+        >
+
+      </div>
+
+      <!-- TEXT -->
+      <div class="panel-text">
 
         <p class="section-tag">
           FAQ
@@ -1383,6 +1455,10 @@ FAQ GRID
           Common questions about museum websites, tourism SEO and improving visitor discovery online across regional NSW.
         </p>
 
+        <p>
+          Museums and heritage centres rely heavily on tourism visibility, Google Maps discovery and strong mobile usability to help travellers, families and schools discover regional cultural attractions online.
+        </p>
+
       </div>
 
     </div>
@@ -1393,11 +1469,8 @@ FAQ GRID
 
     <div class="faq-grid">
 
-      <!-- ========================================================= -->
       <!-- FAQ -->
-      <!-- ========================================================= -->
-
-      <div class="faq-card">
+      <div class="card faq-card">
 
         <h3>
           How do tourists discover museums online?
@@ -1409,11 +1482,8 @@ FAQ GRID
 
       </div>
 
-      <!-- ========================================================= -->
       <!-- FAQ -->
-      <!-- ========================================================= -->
-
-      <div class="faq-card">
+      <div class="card faq-card">
 
         <h3>
           Can museums benefit from SEO?
@@ -1425,11 +1495,8 @@ FAQ GRID
 
       </div>
 
-      <!-- ========================================================= -->
       <!-- FAQ -->
-      <!-- ========================================================= -->
-
-      <div class="faq-card">
+      <div class="card faq-card">
 
         <h3>
           Why is mobile-friendly design important for museums?
@@ -1441,11 +1508,8 @@ FAQ GRID
 
       </div>
 
-      <!-- ========================================================= -->
       <!-- FAQ -->
-      <!-- ========================================================= -->
-
-      <div class="faq-card">
+      <div class="card faq-card">
 
         <h3>
           Can a better museum website increase visitors?
@@ -1457,11 +1521,8 @@ FAQ GRID
 
       </div>
 
-      <!-- ========================================================= -->
       <!-- FAQ -->
-      <!-- ========================================================= -->
-
-      <div class="faq-card">
+      <div class="card faq-card">
 
         <h3>
           Why is Google Maps important for museums?
@@ -1473,11 +1534,8 @@ FAQ GRID
 
       </div>
 
-      <!-- ========================================================= -->
       <!-- FAQ -->
-      <!-- ========================================================= -->
-
-      <div class="faq-card">
+      <div class="card faq-card">
 
         <h3>
           Why do outdated museum websites lose visitors?
@@ -1489,11 +1547,8 @@ FAQ GRID
 
       </div>
 
-      <!-- ========================================================= -->
       <!-- FAQ -->
-      <!-- ========================================================= -->
-
-      <div class="faq-card">
+      <div class="card faq-card">
 
         <h3>
           Can museum websites support educational tourism?
@@ -1505,11 +1560,8 @@ FAQ GRID
 
       </div>
 
-      <!-- ========================================================= -->
       <!-- FAQ -->
-      <!-- ========================================================= -->
-
-      <div class="faq-card">
+      <div class="card faq-card">
 
         <h3>
           Why does website speed matter for tourism websites?
