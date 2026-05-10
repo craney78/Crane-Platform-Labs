@@ -279,3 +279,117 @@
   </url>
 
 </urlset>
+
+  <!-- ================= TOURISM WEBSITES ================= -->
+
+  <url>
+    <loc>https://www.craneplatformlabs.com.au/tourism-websites.html</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.98</priority>
+
+    <image:image>
+      <image:loc>
+        https://www.craneplatformlabs.com.au/images/tourism-hero.webp
+      </image:loc>
+      <image:title>
+        Tourism Website Design Regional NSW
+      </image:title>
+    </image:image>
+
+  </url>
+
+  <!-- ================= VISITOR ATTRACTION WEBSITES ================= -->
+
+  <url>
+    <loc>https://www.craneplatformlabs.com.au/visitor-attraction-websites.html</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.97</priority>
+
+    <image:image>
+      <image:loc>
+        https://www.craneplatformlabs.com.au/images/tourism-attraction-hero.webp
+      </image:loc>
+      <image:title>
+        Visitor Attraction Website Design Regional NSW
+      </image:title>
+    </image:image>
+
+  </url>
+
+  <!-- ================= WINERY WEBSITES ================= -->
+
+  <url>
+    <loc>https://www.craneplatformlabs.com.au/winery-websites.html</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.97</priority>
+
+    <image:image>
+      <image:loc>
+        https://www.craneplatformlabs.com.au/images/winery-website-design.webp
+      </image:loc>
+      <image:title>
+        Winery Website Design Regional NSW
+      </image:title>
+    </image:image>
+
+  </url>
+
+  <!-- ================= MUSEUM WEBSITES ================= -->
+
+  <url>
+    <loc>https://www.craneplatformlabs.com.au/museum-websites.html</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.96</priority>
+
+    <image:image>
+      <image:loc>
+        https://www.craneplatformlabs.com.au/images/museum-hero.webp
+      </image:loc>
+      <image:title>
+        Museum Website Design Regional NSW
+      </image:title>
+    </image:image>
+
+  </url>
+
+  <!-- ================= VISITOR CENTRE WEBSITES ================= -->
+
+  <url>
+    <loc>https://www.craneplatformlabs.com.au/visitor-centre-websites.html</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.96</priority>
+
+    <image:image>
+      <image:loc>
+        https://www.craneplatformlabs.com.au/images/visitor-centre-hero.webp
+      </image:loc>
+      <image:title>
+        Visitor Centre Website Design Regional NSW
+      </image:title>
+    </image:image>
+
+  </url>
+
+  <!-- ================= CARAVAN PARK WEBSITES ================= -->
+
+  <url>
+    <loc>https://www.craneplatformlabs.com.au/caravan-park-websites.html</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.97</priority>
+
+    <image:image>
+      <image:loc>
+        https://www.craneplatformlabs.com.au/images/caravan-park-hero.webp
+      </image:loc>
+      <image:title>
+        Caravan Park Website Design Regional NSW
+      </image:title>
+    </image:image>
+
+  </url>
