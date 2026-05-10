@@ -189,89 +189,72 @@
 </head>
 <style>
 /* =========================================================
-WINERY PAGE BUTTON FIX
+FORCE WINERY / TOURISM BUTTON FIX
 ========================================================= */
 
-/* HERO BUTTON WRAP */
 .hero-buttons{
   display:flex;
-  align-items:center;
   gap:16px;
+  margin-top:30px;
   flex-wrap:wrap;
-  margin-top:32px;
 }
 
-/* FORCE BUTTON STYLE */
-.hero-buttons a,
-.contact-actions a{
-  text-decoration:none !important;
-}
+/* FORCE BUTTON APPEARANCE */
+.hero-buttons .primary-btn,
+.hero-buttons .secondary-btn,
+.contact-actions .primary-btn,
+.contact-actions .secondary-btn{
 
-/* =========================================================
-PRIMARY BUTTON
-========================================================= */
-
-.hero-btn,
-.contact-actions .primary-btn{
   display:inline-flex !important;
-  align-items:center;
-  justify-content:center;
-  min-height:52px;
-  padding:14px 28px;
-  border-radius:14px;
+  align-items:center !important;
+  justify-content:center !important;
+
+  padding:14px 28px !important;
+
+  border-radius:14px !important;
+
+  font-size:15px !important;
+  font-weight:600 !important;
+
+  text-decoration:none !important;
+
+  width:auto !important;
+
+  transition:0.3s ease;
+
+  line-height:1 !important;
+}
+
+/* PRIMARY */
+.hero-buttons .primary-btn,
+.contact-actions .primary-btn{
+
   background:#2563eb !important;
   color:#ffffff !important;
-  font-size:15px;
-  font-weight:600;
-  line-height:1;
-  border:none;
-  text-decoration:none !important;
+  border:none !important;
+
   box-shadow:0 10px 30px rgba(37,99,235,0.22);
-  transition:all 0.3s ease;
-  cursor:pointer;
 }
 
-/* HOVER */
-.hero-btn:hover,
-.contact-actions .primary-btn:hover{
-  transform:translateY(-2px);
-  opacity:0.96;
-}
-
-/* =========================================================
-SECONDARY BUTTON
-========================================================= */
-
-.hero-btn-secondary,
+/* SECONDARY */
+.hero-buttons .secondary-btn,
 .contact-actions .secondary-btn{
-  display:inline-flex !important;
-  align-items:center;
-  justify-content:center;
-  min-height:52px;
-  padding:14px 28px;
-  border-radius:14px;
+
   background:#ffffff !important;
   color:#0f172a !important;
-  font-size:15px;
-  font-weight:600;
-  line-height:1;
-  border:1px solid rgba(15,23,42,0.12);
-  text-decoration:none !important;
-  transition:all 0.3s ease;
-  cursor:pointer;
+
+  border:1px solid rgba(15,23,42,0.12) !important;
 }
 
 /* HOVER */
-.hero-btn-secondary:hover,
+.hero-buttons .primary-btn:hover,
+.hero-buttons .secondary-btn:hover,
+.contact-actions .primary-btn:hover,
 .contact-actions .secondary-btn:hover{
-  background:#f8fafc !important;
   transform:translateY(-2px);
 }
 
-/* =========================================================
-MOBILE
-========================================================= */
-
+/* MOBILE */
 @media (max-width:768px){
 
   .hero-buttons,
@@ -280,11 +263,11 @@ MOBILE
     align-items:stretch;
   }
 
-  .hero-btn,
-  .hero-btn-secondary,
+  .hero-buttons .primary-btn,
+  .hero-buttons .secondary-btn,
   .contact-actions .primary-btn,
   .contact-actions .secondary-btn{
-    width:100%;
+    width:100% !important;
   }
 
 }
