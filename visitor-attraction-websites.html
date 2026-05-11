@@ -481,6 +481,48 @@ MOBILE
   }
 
 }
+
+/* ================= CTA MINI LINKS ================= */
+
+.cta-mini-links{
+  margin-top:40px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:14px;
+}
+
+.cta-mini-links a{
+  font-size:14px;
+  color:#7c3aed;
+  text-decoration:none;
+  padding:10px 16px;
+  border:1px solid rgba(124,58,237,0.15);
+  border-radius:999px;
+  background:rgba(124,58,237,0.04);
+  transition:all 0.2s ease;
+}
+
+.cta-mini-links a:hover{
+  background:rgba(124,58,237,0.08);
+  border-color:rgba(124,58,237,0.25);
+  transform:translateY(-1px);
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+  .cta-mini-links{
+    gap:10px;
+  }
+
+  .cta-mini-links a{
+    font-size:13px;
+    padding:9px 14px;
+  }
+
+}
 </style>
 <body>
 <!-- ================= NAV ================= -->
