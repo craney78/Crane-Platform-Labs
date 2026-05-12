@@ -468,23 +468,32 @@
 <!-- ================= HERO ================= -->
 
 <section class="section panel contact-page">
+
   <div class="container">
 
     <div class="panel-inner">
 
       <div class="panel-text hero-center">
 
-        <p class="section-tag">CONTACT</p>
+        <!-- TAG -->
+        <p class="section-tag">
+          CONTACT
+        </p>
 
+        <!-- HEADING -->
         <h1>
-          Let’s Talk About Your 
-          <span class="gradient-text">Business Website</span>
+          Let’s Talk About Your
+          <span class="gradient-text">
+            Business Website
+          </span>
         </h1>
 
+        <!-- SUBTEXT -->
         <p class="section-sub">
           Crane Platform Labs builds fast, mobile-friendly websites for businesses across Junee, Wagga Wagga, Albury, Cootamundra and regional NSW — designed to help local businesses get found on Google and generate real enquiries.
         </p>
 
+        <!-- SUPPORT -->
         <p class="hero-support">
           Whether you're starting fresh or replacing an outdated website, we keep the process simple, practical and focused on helping your business build a stronger online presence.
         </p>
@@ -493,19 +502,55 @@
           We work with tradies, cafés, service businesses and small local companies across regional NSW.
         </p>
 
+        <!-- SEO SUPPORT -->
+        <p class="hero-support" style="margin-top:14px;">
+          Our websites are built to improve Google visibility, mobile usability and customer trust while creating a clean and professional online presence for your business.
+        </p>
+
         <!-- BUTTONS -->
         <div class="hero-buttons">
 
-          <a href="#contact-form" class="btn-primary">
+          <a 
+            href="#contact-form" 
+            class="btn-primary"
+            aria-label="Scroll to website quote form"
+          >
             Get a Quote
           </a>
 
           <a 
             href="https://www.facebook.com/profile.php?id=61589315729346"
             target="_blank"
+            rel="noopener noreferrer"
             class="btn-secondary"
+            aria-label="Visit Crane Platform Labs Facebook page"
           >
             Visit Facebook
+          </a>
+
+        </div>
+
+        <!-- SEO LINKS -->
+        <div class="seo-links secondary-links">
+
+          <a href="services.html">
+            Website Services
+          </a>
+
+          <a href="local-seo.html">
+            Local SEO
+          </a>
+
+          <a href="google-business-profile.html">
+            Google Business Profile
+          </a>
+
+          <a href="tourism-websites.html">
+            Tourism Websites
+          </a>
+
+          <a href="faq.html">
+            FAQ
           </a>
 
         </div>
@@ -515,6 +560,96 @@
     </div>
 
   </div>
+
+</section>
+
+<!-- ================= CONTACT FORM ================= -->
+
+<section 
+  class="section panel" 
+  id="contact-form"
+>
+
+  <div class="container">
+
+    <div class="panel-inner">
+
+      <!-- ================= FORM WRAP ================= -->
+      <div class="contact-form-wrap">
+
+        <form
+          action="https://formspree.io/f/mrejjbpr"
+          method="POST"
+          class="contact-form"
+        >
+
+          <!-- REDIRECT -->
+          <input 
+            type="hidden" 
+            name="_redirect" 
+            value="https://www.craneplatformlabs.com.au/thank-you.html"
+          >
+
+          <!-- NAME -->
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+          >
+
+          <!-- BUSINESS -->
+          <input
+            type="text"
+            name="business"
+            placeholder="Business Name"
+          >
+
+          <!-- EMAIL -->
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          >
+
+          <!-- PHONE -->
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone Number"
+          >
+
+          <!-- SERVICE -->
+          <input
+            type="text"
+            name="service"
+            placeholder="What do you need help with?"
+          >
+
+          <!-- MESSAGE -->
+          <textarea
+            name="message"
+            rows="6"
+            placeholder="Tell us a little about your business and website goals"
+          ></textarea>
+
+          <!-- BUTTON -->
+          <button 
+            type="submit" 
+            class="primary-btn"
+          >
+            Send Enquiry
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
 
 <!-- ================= CONTACT OPTIONS ================= -->
