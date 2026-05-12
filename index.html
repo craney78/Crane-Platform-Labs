@@ -338,6 +338,172 @@
   }
   </script>
 
+<style>
+/* ================= MOBILE HERO FEATURES ================= */
+
+@media (max-width: 768px) {
+
+  /* HERO TEXT */
+  .hero-text {
+    text-align: center;
+  }
+
+  /* FEATURES WRAPPER */
+  .hero-features {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 22px;
+
+    margin-top: 34px;
+
+    width: 100%;
+
+    align-items: flex-start;
+  }
+
+  /* FEATURE ROW */
+  .hero-feature {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 16px;
+
+    width: 100%;
+
+    text-align: left;
+  }
+
+  /* ICON */
+  .hero-feature .icon-wrap {
+
+    width: 30px;
+    height: 30px;
+
+    min-width: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+  }
+
+  /* SVG */
+  .hero-feature svg {
+
+    width: 22px;
+    height: 22px;
+
+    stroke: #2563eb;
+  }
+
+  /* TEXT */
+  .hero-feature span {
+
+    font-size: 17px;
+    line-height: 1.4;
+
+    color: #111827;
+
+    font-weight: 500;
+  }
+
+  /* BUTTONS */
+  .hero-buttons {
+
+    width: 100%;
+
+    margin-top: 34px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+  }
+
+  .hero-buttons .btn-primary,
+  .hero-buttons .btn-secondary {
+
+    width: 100%;
+
+    min-height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    font-size: 16px;
+  }
+
+  /* TRUST TEXT */
+  .hero-trust {
+
+    margin-top: 22px;
+  }
+
+  .hero-trust p {
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    color: #64748b;
+  }
+
+}
+
+/* ================= MOBILE IMAGE GRID FIX ================= */
+
+@media (max-width: 768px) {
+
+  .panel-image-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+
+    width: 100%;
+  }
+
+  .image-card {
+
+    width: 100%;
+  }
+
+  .image-card img {
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    display: block;
+  }
+
+  .image-label {
+
+    margin-top: 10px;
+
+    text-align: center;
+
+    font-size: 15px;
+
+    line-height: 1.4;
+  }
+
+}
+</style>
+
 </head>
 
 <body>
