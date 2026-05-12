@@ -590,6 +590,277 @@
   margin-top:40px;
 }
 
+/* ================= REGIONAL NSW SECTION FIX ================= */
+
+.panel-text.centered{
+  width:100%;
+  max-width:1200px;
+
+  margin:0 auto;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+
+  text-align:center;
+}
+
+/* ================= TEXT ================= */
+
+.panel-text.centered .section-sub,
+.panel-text.centered .hero-support{
+  max-width:900px;
+
+  margin-left:auto;
+  margin-right:auto;
+
+  text-align:center;
+}
+
+/* ================= FEATURES GRID ================= */
+
+.panel-text.centered .features-grid{
+  width:100%;
+
+  margin-top:50px;
+
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+
+  gap:34px;
+
+  align-items:start;
+}
+
+/* ================= FEATURE CARDS ================= */
+
+.panel-text.centered .feature-card{
+  height:100%;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
+
+  text-align:center;
+}
+
+/* ================= ICONS ================= */
+
+.panel-text.centered .feature-card .icon-wrap{
+  margin-bottom:18px;
+}
+
+/* ================= IMAGE ================= */
+
+.regional-large-image{
+  width:100%;
+  max-width:1200px;
+
+  margin:70px auto 0 auto;
+}
+
+/* ================= LINKS ================= */
+
+.panel-text.centered .secondary-links{
+  justify-content:center;
+
+  margin-top:42px;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width:1100px){
+
+  .panel-text.centered .features-grid{
+    grid-template-columns:repeat(2, 1fr);
+  }
+
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:700px){
+
+  .panel-text.centered .features-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+/* ================= REGIONAL IMAGE FIX ================= */
+
+.regional-large-image{
+  position:relative;
+
+  width:100%;
+  max-width:1200px;
+
+  margin:70px auto 0 auto;
+
+  border-radius:32px;
+  overflow:hidden;
+
+  box-shadow:0 18px 50px rgba(0,0,0,0.10);
+}
+
+/* ================= IMAGE ================= */
+
+.regional-large-image img{
+  width:100%;
+  height:620px;
+
+  display:block;
+
+  object-fit:cover;
+  object-position:center center;
+}
+
+/* ================= OVERLAY ================= */
+
+.regional-image-overlay{
+  position:absolute;
+
+  inset:0;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+
+  text-align:center;
+
+  padding:40px;
+
+  background:linear-gradient(
+    to top,
+    rgba(0,0,0,0.62),
+    rgba(0,0,0,0.18)
+  );
+}
+
+.regional-image-overlay h3{
+  color:white;
+
+  font-size:clamp(30px,4vw,54px);
+  line-height:1.1;
+
+  margin:0 auto 18px auto;
+
+  max-width:900px;
+
+  text-align:center;
+}
+
+.regional-image-overlay p{
+  color:rgba(255,255,255,0.92);
+
+  font-size:18px;
+  line-height:1.7;
+
+  max-width:760px;
+
+  margin:0 auto;
+
+  text-align:center;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:980px){
+
+  .regional-large-image{
+    border-radius:24px;
+  }
+
+  .regional-large-image img{
+    height:420px;
+  }
+
+  .regional-image-overlay{
+    padding:28px;
+  }
+
+  .regional-image-overlay h3{
+    font-size:34px;
+  }
+
+  .regional-image-overlay p{
+    font-size:15px;
+    line-height:1.6;
+  }
+
+}
+
+/* ================= FIX STRETCHED SIDE IMAGES ================= */
+
+.diy-growth-images{
+  display:flex;
+  flex-direction:column;
+  gap:22px;
+
+  width:100%;
+}
+
+.growth-image-card{
+  position:relative;
+
+  width:100%;
+  height:320px;
+
+  overflow:hidden;
+  border-radius:24px;
+
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.growth-image-card img{
+  width:100%;
+  height:100%;
+
+  display:block;
+
+  object-fit:cover;
+  object-position:center center;
+}
+
+/* ================= OVERLAY ================= */
+
+.growth-overlay{
+  position:absolute;
+
+  left:0;
+  bottom:0;
+
+  width:100%;
+
+  padding:18px 20px;
+
+  background:linear-gradient(
+    to top,
+    rgba(0,0,0,0.72),
+    rgba(0,0,0,0)
+  );
+}
+
+.growth-overlay span{
+  color:white;
+
+  font-size:15px;
+  font-weight:600;
+  letter-spacing:0.2px;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:980px){
+
+  .growth-image-card{
+    height:240px;
+  }
+
+}
+
 </style>
 
 </header>  
