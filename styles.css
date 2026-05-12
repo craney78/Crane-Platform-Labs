@@ -2114,11 +2114,15 @@ body {
 /* ================= FORM BUTTON ================= */
 
 .form-submit-btn{
+
   width:100%;
+
   border:none;
   cursor:pointer;
 
   display:flex;
   align-items:center;
   justify-content:center;
+
+  text-align:center;
 }
