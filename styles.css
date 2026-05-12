@@ -2111,18 +2111,40 @@ body {
   margin-bottom:14px;
 }
 
-/* ================= FORM BUTTON ================= */
+/* ================= FORM SUBMIT BUTTON ================= */
 
 .form-submit-btn{
 
   width:100%;
 
+  background:#2563eb;
+  color:#ffffff;
+
   border:none;
+  border-radius:16px;
+
+  padding:18px 24px;
+
+  font-size:1rem;
+  font-weight:600;
+  font-family:inherit;
+
   cursor:pointer;
 
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  transition:all 0.25s ease;
 
-  text-align:center;
+  box-shadow:
+    0 10px 30px rgba(37,99,235,0.22);
+}
+
+/* HOVER */
+
+.form-submit-btn:hover{
+
+  transform:translateY(-2px);
+
+  background:#1d4ed8;
+
+  box-shadow:
+    0 14px 34px rgba(37,99,235,0.28);
 }
