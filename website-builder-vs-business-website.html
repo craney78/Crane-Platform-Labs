@@ -535,157 +535,59 @@
 
 <style>
 
-/* ================= WEBSITE BUILDER PAGE IMAGE FIX ================= */
+/* ================= REGIONAL NSW SECTION FIX ================= */
 
-.diy-growth-images{
-  display:flex;
-  flex-direction:column;
-  gap:22px;
+#regional-business-heading,
+.section-sub,
+.hero-support,
+.features-grid,
+.secondary-links{
+  text-align:center;
 }
 
-.growth-image-card{
-  position:relative;
-  overflow:hidden;
-  border-radius:24px;
-  min-height:320px;
-}
+/* ================= PANEL LAYOUT ================= */
 
-.growth-image-card img{
+.panel-text.centered{
   width:100%;
-  height:100%;
-  min-height:320px;
+  max-width:1100px;
 
-  object-fit:cover;
-  object-position:center;
-
-  display:block;
-}
-
-/* ================= DESKTOP ================= */
-
-@media (min-width:981px){
-
-  .growth-image-card{
-    height:340px;
-  }
-
-}
-
-/* ================= MOBILE ================= */
-
-@media (max-width:980px){
-
-  .growth-image-card{
-    height:260px;
-  }
-
-}
-
-/* ================= REGIONAL LARGE IMAGE ================= */
-
-.regional-large-image{
-  position:relative;
-
-  margin-top:60px;
-
-  border-radius:32px;
-  overflow:hidden;
-
-  box-shadow:0 18px 50px rgba(0,0,0,0.10);
-}
-
-.regional-large-image img{
-  width:100%;
-  height:620px;
-
-  object-fit:cover;
-  object-position:center;
-
-  display:block;
-}
-
-/* ================= CENTERED REGIONAL IMAGE OVERLAY ================= */
-
-.regional-image-overlay{
-  position:absolute;
-
-  inset:0;
+  margin:0 auto;
 
   display:flex;
   flex-direction:column;
   align-items:center;
+}
+
+/* ================= TEXT WIDTHS ================= */
+
+.panel-text.centered .section-sub,
+.panel-text.centered .hero-support{
+  max-width:900px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* ================= FEATURES ================= */
+
+.panel-text.centered .features-grid{
+  width:100%;
+  margin-top:40px;
+}
+
+/* ================= IMAGE ================= */
+
+.regional-large-image{
+  width:100%;
+  max-width:1200px;
+
+  margin:60px auto 0 auto;
+}
+
+/* ================= LINKS ================= */
+
+.panel-text.centered .secondary-links{
   justify-content:center;
-
-  text-align:center;
-
-  padding:40px;
-
-  background:linear-gradient(
-    to top,
-    rgba(0,0,0,0.68),
-    rgba(0,0,0,0.18)
-  );
-}
-
-.regional-image-overlay h3{
-  color:white;
-
-  font-size:clamp(30px,4vw,54px);
-  line-height:1.1;
-
-  margin:0 auto 18px auto;
-
-  max-width:900px;
-
-  text-align:center;
-}
-
-.regional-image-overlay p{
-  color:rgba(255,255,255,0.92);
-
-  font-size:18px;
-  line-height:1.7;
-
-  max-width:760px;
-
-  margin:0 auto;
-
-  text-align:center;
-}
-
-/* ================= MOBILE ================= */
-
-@media (max-width:980px){
-
-  .regional-image-overlay{
-    padding:28px;
-  }
-
-  .regional-image-overlay h3{
-    font-size:34px;
-  }
-
-  .regional-image-overlay p{
-    font-size:15px;
-    line-height:1.6;
-  }
-
-}
-
-/* ================= CENTER REGIONAL SECTION CONTENT ================= */
-
-#regional-business-heading,
-.regional-large-image,
-.regional-image-overlay,
-.regional-image-overlay h3,
-.regional-image-overlay p,
-.panel-text.centered{
-  text-align:center;
-}
-
-.panel-text.centered{
-  margin:0 auto;
-  max-width:900px;
+  margin-top:40px;
 }
 
 </style>
