@@ -2099,3 +2099,26 @@ body {
   }
 
 }
+
+/* ================= CONTACT FORM HEADING ================= */
+
+.contact-form-heading{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.contact-form-heading h2{
+  margin-bottom:14px;
+}
+
+/* ================= FORM BUTTON ================= */
+
+.form-submit-btn{
+  width:100%;
+  border:none;
+  cursor:pointer;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
