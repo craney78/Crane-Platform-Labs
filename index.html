@@ -502,6 +502,35 @@
   }
 
 }
+
+/* ================= MOBILE IMAGE GRID FIX ================= */
+
+@media (max-width: 768px) {
+
+  .panel-image-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+
+    width:100%;
+    max-width:520px;
+
+    margin:30px auto 0 auto; /* centres the whole grid */
+    justify-content:center;
+    align-items:center;
+  }
+
+  .image-card{
+    width:100%;
+    margin:0 auto;
+  }
+
+  .image-card img{
+    width:100%;
+    display:block;
+  }
+
+}
 </style>
 
 </head>
