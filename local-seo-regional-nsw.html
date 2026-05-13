@@ -310,6 +310,66 @@
   ]
 }
 </script>
+
+<style>
+<style>
+
+/* ================= PAGE ONLY HERO PILLS ================= */
+
+.hero-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:28px;
+}
+
+.hero-links span{
+  display:none;
+}
+
+.hero-links a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:10px 18px;
+
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.08);
+
+  border-radius:999px;
+
+  color:#ffffff;
+  text-decoration:none;
+  font-size:0.95rem;
+  font-weight:600;
+
+  transition:all 0.25s ease;
+  backdrop-filter:blur(10px);
+}
+
+.hero-links a:hover{
+  transform:translateY(-2px);
+
+  border-color:rgba(255,255,255,0.18);
+
+  background:rgba(255,255,255,0.1);
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+  .hero-links{
+    justify-content:center;
+  }
+
+}
+
+</style>
+
+</style>
+
 </head>
 
 <body>
