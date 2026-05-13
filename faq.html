@@ -451,6 +451,83 @@
 
 }
 
+<style>
+
+/* ================= FAQ PAGE LINK PILLS ================= */
+
+.faq-page .hero-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  margin-top:30px;
+}
+
+.faq-page .hero-links span{
+  display:none;
+}
+
+.faq-page .hero-links a{
+  display:inline-block;
+
+  padding:14px 22px;
+
+  background:#f8fafc;
+
+  border:1px solid #dbe2ea;
+  border-radius:999px;
+
+  color:#475569 !important;
+
+  text-decoration:none;
+
+  font-size:1rem;
+  font-weight:600;
+  line-height:1;
+
+  transition:all 0.25s ease;
+
+  box-shadow:
+    0 1px 2px rgba(0,0,0,0.04),
+    inset 0 1px 0 rgba(255,255,255,0.8);
+}
+
+.faq-page .hero-links a:hover{
+  background:#ffffff;
+
+  transform:translateY(-2px);
+
+  box-shadow:
+    0 8px 24px rgba(0,0,0,0.06);
+}
+
+/* ================= CTA BUTTON LAYOUT ================= */
+
+.faq-page .hero-buttons{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:14px;
+  margin-top:30px;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+  .faq-page .hero-links,
+  .faq-page .hero-buttons{
+    justify-content:center;
+  }
+
+  .faq-page .hero-links a{
+    padding:12px 18px;
+    font-size:0.95rem;
+  }
+
+}
+
+</style>
+
 </style>
 <body>
 
