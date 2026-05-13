@@ -312,23 +312,35 @@
 </script>
 <style>
 
-/* ================= FORCE SEO PILLS ================= */
+/* ================= HERO LINK PILLS ================= */
 
-.seo-links{
+.hero-links{
   display:flex !important;
   flex-wrap:wrap !important;
+  justify-content:flex-start !important;
   gap:14px !important;
-  justify-content:center !important;
-
-  margin:30px 0 !important;
+  margin-top:28px !important;
 }
 
-.seo-links a{
+/* HIDE DOTS */
+
+.hero-links span{
+  display:none !important;
+}
+
+/* FORCE ALL LINK STATES */
+
+.hero-links a,
+.hero-links a:link,
+.hero-links a:visited,
+.hero-links a:hover,
+.hero-links a:active{
+
   display:inline-flex !important;
   align-items:center !important;
   justify-content:center !important;
 
-  padding:14px 24px !important;
+  padding:14px 22px !important;
 
   background:#f8fafc !important;
 
@@ -344,14 +356,14 @@
   font-weight:600 !important;
   line-height:1 !important;
 
+  transition:all 0.25s ease !important;
+
   box-shadow:
     0 1px 2px rgba(0,0,0,0.04),
     inset 0 1px 0 rgba(255,255,255,0.8) !important;
-
-  transition:all 0.25s ease !important;
 }
 
-.seo-links a:hover{
+.hero-links a:hover{
   background:#ffffff !important;
 
   border-color:#cbd5e1 !important;
@@ -366,11 +378,11 @@
 
 @media (max-width:768px){
 
-  .seo-links{
-    gap:12px !important;
+  .hero-links{
+    justify-content:center !important;
   }
 
-  .seo-links a{
+  .hero-links a{
     padding:12px 18px !important;
     font-size:0.95rem !important;
   }
