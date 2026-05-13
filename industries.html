@@ -148,80 +148,67 @@
 </head>
 <style>
 
-/* ================= INDUSTRIES PAGE PILLS ================= */
+/* ================= CONSISTENT PILL STYLE ================= */
 
-/* HERO BUTTONS */
+/* BUTTON ROWS */
 
-.hero-buttons{
+.hero-buttons,
+.hero-features,
+.location-links,
+.seo-links{
   display:flex;
   flex-wrap:wrap;
   gap:14px;
   margin-top:30px;
 }
 
+/* BUTTONS + LINKS */
+
 .hero-buttons .btn,
-.hero-buttons .btn-primary,
-.hero-buttons .btn-secondary{
+.location-links a,
+.seo-links a{
   display:inline-flex !important;
   align-items:center;
   justify-content:center;
 
-  padding:14px 24px !important;
+  padding:14px 22px !important;
 
+  background:#f8fafc !important;
+
+  border:1px solid #dbe2ea !important;
   border-radius:999px !important;
+
+  color:#475569 !important;
 
   text-decoration:none !important;
 
   font-size:1rem !important;
   font-weight:600 !important;
+  line-height:1 !important;
 
   transition:all 0.25s ease !important;
-}
-
-/* PRIMARY */
-
-.hero-buttons .btn-primary{
-  background:#ffffff !important;
-  color:#111827 !important;
-
-  border:1px solid rgba(255,255,255,0.2) !important;
 
   box-shadow:
-    0 8px 24px rgba(0,0,0,0.12) !important;
+    0 1px 2px rgba(0,0,0,0.04),
+    inset 0 1px 0 rgba(255,255,255,0.8) !important;
 }
 
-.hero-buttons .btn-primary:hover{
-  transform:translateY(-2px);
-  background:#f8fafc !important;
-}
+/* HOVER */
 
-/* SECONDARY */
+.hero-buttons .btn:hover,
+.location-links a:hover,
+.seo-links a:hover{
+  background:#ffffff !important;
 
-.hero-buttons .btn-secondary{
-  background:rgba(255,255,255,0.08) !important;
+  border-color:#cbd5e1 !important;
 
-  border:1px solid rgba(255,255,255,0.12) !important;
+  transform:translateY(-2px) !important;
 
-  color:#ffffff !important;
-
-  backdrop-filter:blur(10px);
-}
-
-.hero-buttons .btn-secondary:hover{
-  background:rgba(255,255,255,0.14) !important;
-
-  transform:translateY(-2px);
+  box-shadow:
+    0 8px 24px rgba(0,0,0,0.06) !important;
 }
 
 /* FEATURE PILLS */
-
-.hero-features{
-  display:flex;
-  flex-wrap:wrap;
-  gap:12px;
-
-  margin-top:32px;
-}
 
 .hero-feature{
   display:flex;
@@ -230,67 +217,20 @@
 
   padding:12px 18px;
 
-  background:rgba(255,255,255,0.06);
-
-  border:1px solid rgba(255,255,255,0.08);
-
-  border-radius:999px;
-
-  backdrop-filter:blur(10px);
-}
-
-.hero-feature span{
-  color:#ffffff;
-  font-size:0.95rem;
-  font-weight:600;
-}
-
-/* LOCATION / SEO LINKS */
-
-.location-links,
-.seo-links{
-  display:flex;
-  flex-wrap:wrap;
-  gap:14px;
-
-  margin-top:30px;
-}
-
-.location-links a,
-.seo-links a{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-
-  padding:12px 20px;
-
   background:#f8fafc;
 
   border:1px solid #dbe2ea;
   border-radius:999px;
-
-  color:#475569 !important;
-
-  text-decoration:none !important;
-
-  font-size:0.95rem;
-  font-weight:600;
-
-  transition:all 0.25s ease;
 
   box-shadow:
     0 1px 2px rgba(0,0,0,0.04),
     inset 0 1px 0 rgba(255,255,255,0.8);
 }
 
-.location-links a:hover,
-.seo-links a:hover{
-  background:#ffffff;
-
-  transform:translateY(-2px);
-
-  box-shadow:
-    0 8px 24px rgba(0,0,0,0.06);
+.hero-feature span{
+  color:#475569;
+  font-size:0.95rem;
+  font-weight:600;
 }
 
 /* MOBILE */
@@ -302,11 +242,6 @@
   .location-links,
   .seo-links{
     justify-content:center;
-  }
-
-  .hero-buttons .btn{
-    width:100%;
-    max-width:280px;
   }
 
 }
