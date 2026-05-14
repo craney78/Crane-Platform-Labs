@@ -403,6 +403,88 @@ MOBILE
   }
 
 }
+
+/* =========================================================
+   VISITOR CENTRE MOBILE FEATURE FIX
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  /* FEATURES WRAP */
+  .hero-features {
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    align-items: flex-start !important;
+
+    gap: 22px !important;
+
+    width: 100% !important;
+
+    margin-top: 34px !important;
+  }
+
+  /* FEATURE ROW */
+  .hero-feature {
+
+    display: flex !important;
+    flex-direction: row !important;
+
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    gap: 16px !important;
+
+    width: 100% !important;
+
+    text-align: left !important;
+  }
+
+  /* ICON WRAP */
+  .hero-feature .icon-wrap {
+
+    width: 30px !important;
+    height: 30px !important;
+
+    min-width: 30px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    margin: 0 !important;
+  }
+
+  /* SVG */
+  .hero-feature svg {
+
+    width: 22px !important;
+    height: 22px !important;
+
+    stroke: #2563eb !important;
+
+    flex-shrink: 0 !important;
+  }
+
+  /* TEXT */
+  .hero-feature span {
+
+    display: block !important;
+
+    font-size: 17px !important;
+    line-height: 1.4 !important;
+
+    color: #111827 !important;
+
+    font-weight: 500 !important;
+
+    text-align: left !important;
+
+    margin: 0 !important;
+  }
+
+}
 </style>
 <body>
 
@@ -477,81 +559,179 @@ MOBILE
 
 <main>
 <!-- ================= HERO ================= -->
-<section class="hero section">
+
+<section
+  class="hero section"
+  aria-labelledby="tourism-main-hero-heading"
+>
 
   <div class="container">
 
     <div class="hero-inner">
 
-      <!-- LEFT -->
+      <!-- ================= LEFT ================= -->
       <div class="hero-text">
 
+        <!-- TAG -->
         <p class="hero-tag">
           AFFORDABLE TOURISM WEBSITE DESIGN
         </p>
 
-        <h1>
-          Tourism Websites Built to Help
+        <!-- MAIN H1 -->
+        <h1 id="tourism-main-hero-heading">
+          Tourism Websites Built to Help<br>
+
           <span class="gradient-text">
             Regional NSW Attractions Get Found
           </span>
         </h1>
 
+        <!-- SEO SUBTEXT -->
         <p class="hero-sub">
           Crane Platform Labs builds fast, affordable and mobile-friendly tourism websites for tourist attractions, museums, wineries, visitor centres, accommodation providers and tourism businesses across regional NSW.
         </p>
 
+        <!-- SUPPORT -->
         <p class="hero-support">
           Designed to help regional NSW tourism businesses improve Google visibility, attract more visitors and help travellers discover local attractions, experiences and destinations online.
         </p>
 
-        <p>
-          Many tourism businesses across regional NSW struggle to get found online because their websites are outdated, difficult to use on mobile devices or poorly optimised for Google searches. We build clean, modern tourism websites designed to help attractions appear more professional online and generate more visitor enquiries.
-        </p>
+        <!-- ================= FEATURES ================= -->
+        <div
+          class="hero-features"
+          aria-label="Tourism website benefits"
+        >
 
-        <p>
-          Based in regional NSW, we understand the importance of local tourism, visitor discovery and Google Maps visibility. We can work directly with tourism operators across Wagga Wagga, Young, Griffith, Junee, Temora, Albury and surrounding regional NSW communities.
-        </p>
+          <!-- GOOGLE -->
+          <div class="hero-feature">
 
+            <div class="icon-wrap" aria-hidden="true">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="11" cy="11" r="7"/>
+                <line x1="16.5" y1="16.5" x2="21" y2="21"/>
+              </svg>
+
+            </div>
+
+            <span>
+              Built for Google
+            </span>
+
+          </div>
+
+          <!-- AFFORDABLE -->
+          <div class="hero-feature">
+
+            <div class="icon-wrap" aria-hidden="true">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M12 8c-1.657 0-3 1.12-3 2.5S10.343 13 12 13s3 1.12 3 2.5S13.657 18 12 18m0-10V6m0 12v-2"/>
+              </svg>
+
+            </div>
+
+            <span>
+              Affordable & No-Fuss
+            </span>
+
+          </div>
+
+          <!-- MOBILE -->
+          <div class="hero-feature">
+
+            <div class="icon-wrap" aria-hidden="true">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="7" y="2" width="10" height="20" rx="2"/>
+                <circle cx="12" cy="18" r="1"/>
+              </svg>
+
+            </div>
+
+            <span>
+              Mobile-Friendly Design
+            </span>
+
+          </div>
+
+          <!-- REGIONAL -->
+          <div class="hero-feature">
+
+            <div class="icon-wrap" aria-hidden="true">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M3 7l9-4 9 4-9 4-9-4z"/>
+                <path d="M3 17l9 4 9-4"/>
+                <path d="M3 12l9 4 9-4"/>
+              </svg>
+
+            </div>
+
+            <span>
+              Regional NSW Focus
+            </span>
+
+          </div>
+
+        </div>
+
+        <!-- ================= BUTTONS ================= -->
         <div class="hero-buttons">
 
-          <a href="contact.html" class="btn btn-primary">
+          <a
+            href="contact.html"
+            class="btn-primary"
+            aria-label="Request a tourism website quote"
+          >
             Request a Quote
           </a>
 
-          <a href="services.html" class="btn btn-secondary">
+          <a
+            href="services.html"
+            class="btn-secondary"
+            aria-label="View tourism website services"
+          >
             View Services
           </a>
 
         </div>
 
-        <!-- ================= HERO FEATURES ================= -->
-        <div class="hero-features">
+        <!-- ================= TRUST ================= -->
+        <div class="hero-trust">
 
-          <div class="hero-feature">
-            <span>Built for Google</span>
-          </div>
-
-          <div class="hero-feature">
-            <span>Affordable & No-Fuss</span>
-          </div>
-
-          <div class="hero-feature">
-            <span>Mobile-Friendly Design</span>
-          </div>
-
-          <div class="hero-feature">
-            <span>Regional NSW Focus</span>
-          </div>
+          <p>
+            Supporting tourism operators, visitor attractions and regional tourism businesses across NSW
+          </p>
 
         </div>
 
       </div>
 
-      <!-- RIGHT -->
+      <!-- ================= RIGHT ================= -->
       <div class="hero-image">
 
-        <img 
+        <img
           src="images/tourism-websites-regional-nsw.webp"
           alt="Affordable tourism website design for regional NSW attractions and tourism businesses"
           class="hero-main-image"
