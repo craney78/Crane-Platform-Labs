@@ -292,7 +292,136 @@
   </script>
 
 </head>
+<style>
+/* ================= GLOBAL HERO LINK PILLS ================= */
 
+.hero-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  margin-top:30px;
+}
+
+.hero-links span{
+  display:none;
+}
+
+.hero-links a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:14px 22px;
+
+  background:#f8fafc;
+
+  border:1px solid #dbe2ea;
+  border-radius:999px;
+
+  color:#475569 !important;
+
+  text-decoration:none;
+
+  font-size:1rem;
+  font-weight:600;
+  line-height:1;
+
+  transition:all 0.25s ease;
+
+  box-shadow:
+    0 1px 2px rgba(0,0,0,0.04),
+    inset 0 1px 0 rgba(255,255,255,0.8);
+}
+
+.hero-links a:hover{
+  background:#ffffff;
+
+  border-color:#cbd5e1;
+
+  transform:translateY(-2px);
+
+  box-shadow:
+    0 8px 24px rgba(0,0,0,0.06);
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+  .hero-links{
+    justify-content:center;
+  }
+
+  .hero-links a{
+    padding:12px 18px;
+    font-size:0.95rem;
+  }
+
+}
+
+/* ================= LOCATION LINK PILLS ================= */
+
+.location-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  margin-top:30px;
+}
+
+.location-links a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:14px 22px;
+
+  background:#f8fafc;
+
+  border:1px solid #dbe2ea;
+  border-radius:999px;
+
+  color:#475569 !important;
+
+  text-decoration:none;
+
+  font-size:1rem;
+  font-weight:600;
+  line-height:1;
+
+  transition:all 0.25s ease;
+
+  box-shadow:
+    0 1px 2px rgba(0,0,0,0.04),
+    inset 0 1px 0 rgba(255,255,255,0.8);
+}
+
+.location-links a:hover{
+  background:#ffffff;
+
+  border-color:#cbd5e1;
+
+  transform:translateY(-2px);
+
+  box-shadow:
+    0 8px 24px rgba(0,0,0,0.06);
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+  .location-links{
+    justify-content:center;
+  }
+
+  .location-links a{
+    padding:12px 18px;
+    font-size:0.95rem;
+  }
+
+}
+</style>
+<body>
 <!-- ================= NAV ================= -->
 <header class="nav" id="nav">
 
@@ -363,7 +492,6 @@
 </header>
 
 <main>
-<body>
 
 <!-- ================= HERO ================= -->
 <section class="hero section">
