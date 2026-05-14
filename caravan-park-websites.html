@@ -477,6 +477,88 @@ MOBILE
   }
 
 }
+
+/* =========================================================
+   VISITOR CENTRE MOBILE FEATURE FIX
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  /* FEATURES WRAP */
+  .hero-features {
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    align-items: flex-start !important;
+
+    gap: 22px !important;
+
+    width: 100% !important;
+
+    margin-top: 34px !important;
+  }
+
+  /* FEATURE ROW */
+  .hero-feature {
+
+    display: flex !important;
+    flex-direction: row !important;
+
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    gap: 16px !important;
+
+    width: 100% !important;
+
+    text-align: left !important;
+  }
+
+  /* ICON WRAP */
+  .hero-feature .icon-wrap {
+
+    width: 30px !important;
+    height: 30px !important;
+
+    min-width: 30px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    margin: 0 !important;
+  }
+
+  /* SVG */
+  .hero-feature svg {
+
+    width: 22px !important;
+    height: 22px !important;
+
+    stroke: #2563eb !important;
+
+    flex-shrink: 0 !important;
+  }
+
+  /* TEXT */
+  .hero-feature span {
+
+    display: block !important;
+
+    font-size: 17px !important;
+    line-height: 1.4 !important;
+
+    color: #111827 !important;
+
+    font-weight: 500 !important;
+
+    text-align: left !important;
+
+    margin: 0 !important;
+  }
+
+}
 </style>
 
 <body>
@@ -551,33 +633,35 @@ MOBILE
 </header>
 
 <main>
-<!-- ========================================================= -->
-<!-- HERO -->
-<!-- ========================================================= -->
+<!-- ================= HERO ================= -->
 
-<section class="hero section panel">
+<section
+  class="hero section"
+  aria-labelledby="caravan-hero-heading"
+>
 
   <div class="container">
 
-    <div class="panel-inner hero-inner">
+    <div class="hero-inner">
 
-      <!-- ========================================================= -->
-      <!-- LEFT -->
-      <!-- ========================================================= -->
-
-      <div class="panel-text">
+      <!-- ================= LEFT ================= -->
+      <div class="hero-text">
 
         <!-- TAG -->
-        <p class="section-tag">
+        <p class="hero-tag">
           CARAVAN PARK WEBSITE DESIGN
         </p>
 
-        <!-- HEADING -->
-        <h1>
-          Caravan Park Website Design for Regional NSW
+        <!-- MAIN H1 -->
+        <h1 id="caravan-hero-heading">
+          Caravan Park Websites Built for<br>
+
+          <span class="gradient-text">
+            Regional NSW Tourism
+          </span>
         </h1>
 
-        <!-- SUBTEXT -->
+        <!-- SEO SUBTEXT -->
         <p class="hero-sub">
           Modern caravan park websites built to improve tourism discovery, Google visibility and booking enquiries across regional NSW.
         </p>
@@ -587,37 +671,25 @@ MOBILE
           Built for caravan parks, holiday parks and riverside accommodation wanting stronger online visibility, more direct bookings and better tourism discovery online.
         </p>
 
-        <!-- ========================================================= -->
-        <!-- FEATURES -->
-        <!-- ========================================================= -->
+        <!-- ================= FEATURES ================= -->
+        <div
+          class="hero-features"
+          aria-label="Caravan park website benefits"
+        >
 
-        <div class="hero-features">
-
-          <!-- FEATURE -->
+          <!-- MAPS -->
           <div class="hero-feature">
 
-            <div class="icon-wrap">
+            <div class="icon-wrap" aria-hidden="true">
 
-              <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                width="20" 
-                height="20" 
-                fill="none" 
-                viewBox="0 0 24 24" 
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
                 stroke="currentColor"
+                stroke-width="2"
               >
-                <path 
-                  stroke-linecap="round" 
-                  stroke-linejoin="round" 
-                  stroke-width="1.8" 
-                  d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.243-4.243a8 8 0 1111.313 0z"
-                />
-                <path 
-                  stroke-linecap="round" 
-                  stroke-linejoin="round" 
-                  stroke-width="1.8" 
-                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                />
+                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1118 0z"/>
+                <circle cx="12" cy="10" r="3"/>
               </svg>
 
             </div>
@@ -628,25 +700,19 @@ MOBILE
 
           </div>
 
-          <!-- FEATURE -->
+          <!-- MOBILE -->
           <div class="hero-feature">
 
-            <div class="icon-wrap">
+            <div class="icon-wrap" aria-hidden="true">
 
-              <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                width="20" 
-                height="20" 
-                fill="none" 
-                viewBox="0 0 24 24" 
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
                 stroke="currentColor"
+                stroke-width="2"
               >
-                <path 
-                  stroke-linecap="round" 
-                  stroke-linejoin="round" 
-                  stroke-width="1.8" 
-                  d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
-                />
+                <rect x="7" y="2" width="10" height="20" rx="2"/>
+                <circle cx="12" cy="18" r="1"/>
               </svg>
 
             </div>
@@ -657,25 +723,18 @@ MOBILE
 
           </div>
 
-          <!-- FEATURE -->
+          <!-- BOOKINGS -->
           <div class="hero-feature">
 
-            <div class="icon-wrap">
+            <div class="icon-wrap" aria-hidden="true">
 
-              <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                width="20" 
-                height="20" 
-                fill="none" 
-                viewBox="0 0 24 24" 
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
                 stroke="currentColor"
+                stroke-width="2"
               >
-                <path 
-                  stroke-linecap="round" 
-                  stroke-linejoin="round" 
-                  stroke-width="1.8" 
-                  d="M3 7h18M5 7l1 13h12l1-13M9 11v5M15 11v5M8 7V5a1 1 0 011-1h6a1 1 0 011 1v2"
-                />
+                <path d="M3 7h18M5 7l1 13h12l1-13M9 11v5M15 11v5M8 7V5a1 1 0 011-1h6a1 1 0 011 1v2"/>
               </svg>
 
             </div>
@@ -688,42 +747,47 @@ MOBILE
 
         </div>
 
-        <!-- ========================================================= -->
-        <!-- BUTTONS -->
-        <!-- ========================================================= -->
-
+        <!-- ================= BUTTONS ================= -->
         <div class="hero-buttons">
 
-          <a 
-            href="contact.html" 
-            class="primary-btn hero-btn"
+          <a
+            href="contact.html"
+            class="btn-primary"
+            aria-label="Request a quote for caravan park website design"
           >
             Request a Quote
           </a>
 
-          <a 
-            href="tourism-websites.html" 
-            class="secondary-btn hero-btn-secondary"
+          <a
+            href="tourism-websites.html"
+            class="btn-secondary"
+            aria-label="View tourism website services"
           >
             Tourism Websites
           </a>
 
         </div>
 
+        <!-- ================= TRUST ================= -->
+        <div class="hero-trust">
+
+          <p>
+            Supporting caravan parks, holiday parks and tourism accommodation providers across regional NSW
+          </p>
+
+        </div>
+
       </div>
 
-      <!-- ========================================================= -->
-      <!-- RIGHT -->
-      <!-- ========================================================= -->
+      <!-- ================= RIGHT ================= -->
+      <div class="hero-image">
 
-      <div class="panel-image">
-
-        <img 
+        <img
           src="images/caravan-park-hero.webp"
-          alt="Regional NSW caravan park website design"
+          alt="Regional NSW caravan park website design displayed on modern devices"
+          width="1400"
+          height="1000"
           loading="eager"
-          width="1200"
-          height="900"
           fetchpriority="high"
           decoding="async"
         >
