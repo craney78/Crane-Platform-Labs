@@ -587,128 +587,122 @@ TABLET
   flex-wrap:wrap;
 }
 
-/* =========================================================
-   MOBILE
-   ========================================================= */
+/* ================= MOBILE HERO FEATURES ================= */
 
-@media (max-width: 992px){
+@media (max-width: 768px) {
 
-  .visitor-hero-inner{
-    grid-template-columns:1fr;
-    gap:50px;
+  /* HERO TEXT */
+  .hero-text {
+    text-align: center;
   }
 
-  .visitor-hero-content{
-    text-align:center;
+  /* FEATURES WRAPPER */
+  .hero-features {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 22px;
+
+    margin-top: 34px;
+
+    width: 100%;
+
+    align-items: flex-start;
   }
 
-  .visitor-hero-content h1{
-    font-size:3.2rem;
-    line-height:1.05;
+  /* FEATURE ROW */
+  .hero-feature {
 
-    margin-left:auto;
-    margin-right:auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 16px;
+
+    width: 100%;
+
+    text-align: left;
   }
 
-  .visitor-hero-content .hero-sub,
-  .visitor-hero-content .hero-support{
-    margin-left:auto;
-    margin-right:auto;
+  /* ICON WRAP */
+  .hero-feature .icon-wrap {
+
+    width: 30px;
+    height: 30px;
+
+    min-width: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
   }
 
-  .visitor-feature-grid{
-    margin-top:32px;
+  /* SVG */
+  .hero-feature svg {
+
+    width: 22px;
+    height: 22px;
+
+    stroke: #2563eb;
   }
 
-  .visitor-feature-card{
-    text-align:left;
+  /* TEXT */
+  .hero-feature span {
+
+    font-size: 17px;
+    line-height: 1.4;
+
+    color: #111827;
+
+    font-weight: 500;
+
+    text-align: left;
   }
 
-  .visitor-hero .hero-buttons{
-    flex-direction:column;
-    gap:18px;
+  /* BUTTONS */
+  .hero-buttons {
+
+    width: 100%;
+
+    margin-top: 34px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
   }
 
-  .visitor-hero .hero-buttons a{
-    width:100%;
-    justify-content:center;
+  .hero-buttons .btn-primary,
+  .hero-buttons .btn-secondary {
+
+    width: 100%;
+
+    min-height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    font-size: 16px;
   }
 
-  .visitor-hero-image img{
-    height:520px;
+  /* TRUST TEXT */
+  .hero-trust {
+
+    margin-top: 22px;
   }
 
-}
+  .hero-trust p {
 
-@media (max-width: 768px){
+    font-size: 14px;
+    line-height: 1.6;
 
-  .visitor-hero-content h1{
-    font-size:2.7rem;
-    letter-spacing:-1.5px;
-  }
-
-  .visitor-hero-content .hero-sub{
-    font-size:1.05rem;
-    line-height:1.8;
-  }
-
-  .visitor-hero-content .hero-support{
-    font-size:1rem;
-    line-height:1.8;
-  }
-
-  .visitor-feature-card{
-    padding:16px 18px;
-  }
-
-  .visitor-hero-image img{
-    height:420px;
-    border-radius:28px;
-  }
-
-}
-
-/* =========================================================
-   MATCH OTHER SITE HERO HEADINGS
-   ========================================================= */
-
-.visitor-hero-content h1{
-  font-size:5.2rem !important;
-  line-height:0.95 !important;
-  letter-spacing:-3px !important;
-  font-weight:800 !important;
-
-  color:#111111 !important;
-
-  margin-bottom:28px !important;
-
-  max-width:700px !important;
-}
-
-/* =========================================================
-   TABLET
-   ========================================================= */
-
-@media (max-width:992px){
-
-  .visitor-hero-content h1{
-    font-size:4rem !important;
-    line-height:1 !important;
-    letter-spacing:-2px !important;
-  }
-
-}
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
-
-@media (max-width:768px){
-
-  .visitor-hero-content h1{
-    font-size:3.2rem !important;
-    line-height:1.02 !important;
-    letter-spacing:-1.8px !important;
+    color: #64748b;
   }
 
 }
