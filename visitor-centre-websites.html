@@ -455,6 +455,10 @@ TABLET
    VISITOR HERO
    ========================================================= */
 
+.visitor-hero{
+  overflow:hidden;
+}
+
 .visitor-hero-inner{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -462,49 +466,83 @@ TABLET
   align-items:center;
 }
 
+/* =========================================================
+   LEFT
+   ========================================================= */
+
 .visitor-hero-content{
   width:100%;
 }
 
 .visitor-hero-content h1{
-  font-size:4.2rem;
-  line-height:1.05;
-  letter-spacing:-2px;
-  margin-bottom:24px;
+  font-size:4.4rem;
+  line-height:1.02;
+  letter-spacing:-2.5px;
+  font-weight:800;
+
+  color:#111827;
+
+  margin-bottom:28px;
+
+  max-width:700px;
 }
+
+.visitor-hero-content .hero-sub{
+  font-size:1.15rem;
+  line-height:1.8;
+  color:#5b6472;
+
+  margin-bottom:24px;
+
+  max-width:620px;
+}
+
+.visitor-hero-content .hero-support{
+  font-size:1.05rem;
+  line-height:1.9;
+  color:#5b6472;
+
+  max-width:620px;
+}
+
+/* =========================================================
+   FEATURES
+   ========================================================= */
 
 .visitor-feature-grid{
   display:grid;
-  grid-template-columns:1fr;
   gap:18px;
-  margin-top:36px;
+
+  margin-top:38px;
+  margin-bottom:38px;
 }
 
 .visitor-feature-card{
   display:flex;
   align-items:center;
-  gap:16px;
+  gap:18px;
 
-  padding:18px 20px;
+  padding:18px 22px;
 
   background:#ffffff;
-  border:1px solid #e7edf5;
-  border-radius:20px;
 
-  box-shadow:0 4px 18px rgba(0,0,0,0.04);
+  border:1px solid #e8edf5;
+  border-radius:22px;
+
+  box-shadow:0 8px 30px rgba(15,23,42,0.05);
 }
 
 .visitor-feature-card span{
   font-size:1rem;
-  font-weight:500;
-  line-height:1.5;
+  font-weight:600;
+  color:#111827;
 }
 
 .visitor-icon{
-  width:46px;
-  height:46px;
+  width:48px;
+  height:48px;
 
-  min-width:46px;
+  min-width:48px;
 
   display:flex;
   align-items:center;
@@ -512,31 +550,52 @@ TABLET
 
   border-radius:14px;
 
-  background:#f4f7fc;
+  background:#f3f7ff;
 
   color:#2f66f6;
 }
 
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.visitor-hero-image{
+  width:100%;
+}
+
 .visitor-hero-image img{
   width:100%;
-  display:block;
-
-  border-radius:32px;
+  height:720px;
 
   object-fit:cover;
+  object-position:center;
 
-  box-shadow:0 18px 50px rgba(0,0,0,0.10);
+  display:block;
+
+  border-radius:34px;
+
+  box-shadow:0 20px 60px rgba(0,0,0,0.10);
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.visitor-hero .hero-buttons{
+  display:flex;
+  gap:18px;
+  flex-wrap:wrap;
 }
 
 /* =========================================================
    MOBILE
    ========================================================= */
 
-@media (max-width:768px){
+@media (max-width: 992px){
 
   .visitor-hero-inner{
     grid-template-columns:1fr;
-    gap:40px;
+    gap:50px;
   }
 
   .visitor-hero-content{
@@ -544,29 +603,67 @@ TABLET
   }
 
   .visitor-hero-content h1{
-    font-size:3rem;
-    line-height:1.08;
-    letter-spacing:-1.5px;
+    font-size:3.2rem;
+    line-height:1.05;
+
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .visitor-hero-content .hero-sub,
+  .visitor-hero-content .hero-support{
+    margin-left:auto;
+    margin-right:auto;
   }
 
   .visitor-feature-grid{
-    gap:16px;
-    margin-top:30px;
+    margin-top:32px;
   }
 
   .visitor-feature-card{
     text-align:left;
   }
 
-  .hero-buttons{
+  .visitor-hero .hero-buttons{
     flex-direction:column;
     gap:18px;
-    margin-top:36px;
   }
 
-  .hero-buttons a{
+  .visitor-hero .hero-buttons a{
     width:100%;
     justify-content:center;
+  }
+
+  .visitor-hero-image img{
+    height:520px;
+  }
+
+}
+
+@media (max-width: 768px){
+
+  .visitor-hero-content h1{
+    font-size:2.7rem;
+    letter-spacing:-1.5px;
+  }
+
+  .visitor-hero-content .hero-sub{
+    font-size:1.05rem;
+    line-height:1.8;
+  }
+
+  .visitor-hero-content .hero-support{
+    font-size:1rem;
+    line-height:1.8;
+  }
+
+  .visitor-feature-card{
+    padding:16px 18px;
+  }
+
+  .visitor-hero-image img{
+    height:420px;
+    border-radius:28px;
   }
 
 }
