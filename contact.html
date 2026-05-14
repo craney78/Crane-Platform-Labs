@@ -622,33 +622,28 @@
 }
 
 /* =========================================================
-   MOBILE CONTACT CARDS FIX
+   MOBILE CONTACT ACTIONS FIX
    ========================================================= */
 
-@media (max-width: 768px){
+@media (max-width:768px){
 
-  /* GRID */
-  .contact-grid{
+  /* WRAPPER */
+  .contact-actions{
 
     display:flex;
     flex-direction:column;
 
-    gap:28px;
+    gap:24px;
 
     width:100%;
+
+    margin-top:34px;
   }
 
   /* CARD */
-  .contact-card{
+  .contact-action-row{
 
     width:100% !important;
-    max-width:100% !important;
-
-    min-height:320px;
-
-    padding:42px 30px !important;
-
-    border-radius:34px;
 
     display:flex;
     flex-direction:column;
@@ -658,18 +653,22 @@
 
     text-align:center;
 
-    margin:0 auto;
+    padding:38px 28px !important;
+
+    border-radius:34px;
+
+    min-height:300px;
 
     box-sizing:border-box;
   }
 
-  /* ICON CIRCLE */
-  .contact-card .icon-wrap{
+  /* ICON */
+  .contact-icon{
 
-    width:96px;
-    height:96px;
+    width:92px;
+    height:92px;
 
-    min-width:96px;
+    min-width:92px;
 
     border-radius:50%;
 
@@ -677,55 +676,68 @@
     align-items:center;
     justify-content:center;
 
-    margin-bottom:28px;
-
     background:#f4f7ff;
+
+    margin-bottom:26px;
   }
 
-  /* ICON */
-  .contact-card svg{
+  .contact-icon svg{
 
-    width:40px;
-    height:40px;
+    width:38px;
+    height:38px;
 
     stroke:#2563eb;
   }
 
-  /* SMALL LABEL */
-  .contact-card .contact-label{
+  /* CONTENT */
+  .contact-content{
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+
+    width:100%;
+  }
+
+  /* LABEL */
+  .contact-label{
 
     font-size:16px;
+
     color:#94a3b8;
 
     margin-bottom:10px;
   }
 
-  /* MAIN TITLE */
-  .contact-card h3{
+  /* MAIN VALUE */
+  .contact-value{
 
     font-size:20px;
     line-height:1.4;
 
-    word-break:break-word;
-
-    margin-bottom:16px;
+    font-weight:700;
 
     color:#2563eb;
+
+    word-break:break-word;
+
+    margin-bottom:14px;
   }
 
-  /* TEXT */
-  .contact-card p{
+  /* SMALL TEXT */
+  .contact-small{
 
-    font-size:18px;
-    line-height:1.7;
+    font-size:17px;
+    line-height:1.6;
 
     color:#64748b;
-
-    margin-bottom:24px;
   }
 
   /* ARROW */
-  .contact-card .contact-arrow{
+  .contact-arrow{
+
+    margin-top:24px;
 
     font-size:42px;
     line-height:1;
