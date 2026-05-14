@@ -640,156 +640,88 @@
 
 }
 
-/* ================= REGIONAL NSW SECTION FIX ================= */
+/* ================= REGIONAL INTRO ================= */
 
-.hero-split{
-  display:grid !important;
-  grid-template-columns:1fr 1fr !important;
-  gap:70px !important;
-  align-items:center !important;
+.regional-intro{
+  display:flex;
+  flex-direction:column;
+  gap:50px;
 }
 
-/* ================= TEXT SIDE ================= */
-
-.hero-split .panel-text{
-  width:100% !important;
-  max-width:100% !important;
-
-  text-align:center !important;
-
-  margin:0 auto !important;
+.regional-intro-text{
+  max-width:900px;
+  margin:0 auto;
+  text-align:center;
 }
 
-.hero-split .section-sub,
-.hero-split .hero-support{
-  max-width:760px;
-
+.regional-intro-text .hero-support{
+  max-width:850px;
   margin-left:auto;
   margin-right:auto;
 }
 
-/* ================= IMAGE SIDE ================= */
+/* ================= IMAGE ================= */
 
-.hero-split .hero-image{
+.regional-image-full{
   width:100%;
-}
-
-/* IMAGE BOX */
-
-.regional-large-image{
-  position:relative;
-
-  width:100%;
-  height:620px;
-
-  border-radius:30px;
-
+  border-radius:28px;
   overflow:hidden;
 
   box-shadow:
-    0 20px 60px rgba(0,0,0,0.12);
+    0 20px 60px rgba(0,0,0,0.10);
 }
 
-/* IMAGE */
-
-.regional-large-image img{
+.regional-image-full img{
   width:100%;
-  height:100%;
+  height:650px;
 
   object-fit:cover;
-  object-position:center;
-
   display:block;
-}
-
-/* OVERLAY */
-
-.regional-image-overlay{
-  position:absolute;
-  inset:0;
-
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-end;
-
-  padding:40px;
-
-  text-align:left;
-
-  background:linear-gradient(
-    to top,
-    rgba(0,0,0,0.62),
-    rgba(0,0,0,0.12)
-  );
-}
-
-/* OVERLAY TEXT */
-
-.regional-image-overlay h3{
-  color:#ffffff;
-
-  font-size:clamp(30px,4vw,52px);
-
-  line-height:1.05;
-
-  margin-bottom:14px;
-
-  max-width:500px;
-}
-
-.regional-image-overlay p{
-  color:rgba(255,255,255,0.92);
-
-  font-size:1rem;
-  line-height:1.7;
-
-  max-width:520px;
 }
 
 /* ================= SECOND SECTION ================= */
 
-.centered{
-  text-align:center !important;
+.regional-features-wrap{
+  text-align:center;
 }
 
-.centered .hero-support{
-  max-width:920px;
-
-  margin-left:auto;
-  margin-right:auto;
+.regional-support-text{
+  max-width:950px;
+  margin:0 auto 60px auto;
 }
 
-/* FEATURES */
+.regional-support-text .hero-support{
+  margin-bottom:26px;
+}
 
-.centered .features-grid{
-  margin-top:60px;
+/* ================= FEATURES ================= */
 
+.regional-features-wrap .features-grid{
   display:grid;
   grid-template-columns:repeat(4,1fr);
 
-  gap:26px;
+  gap:24px;
+
+  margin-top:40px;
 }
 
-/* CARDS */
-
-.centered .feature-card{
-  text-align:center;
-
+.regional-features-wrap .feature-card{
   padding:34px 24px;
 
   background:#ffffff;
 
   border-radius:24px;
 
+  text-align:center;
+
   box-shadow:
     0 10px 30px rgba(0,0,0,0.05);
 }
 
-/* LINKS */
+/* ================= LINKS ================= */
 
 .secondary-links{
   justify-content:center;
-
   margin-top:50px;
 }
 
@@ -797,11 +729,7 @@
 
 @media (max-width:1100px){
 
-  .hero-split{
-    grid-template-columns:1fr !important;
-  }
-
-  .centered .features-grid{
+  .regional-features-wrap .features-grid{
     grid-template-columns:repeat(2,1fr);
   }
 
@@ -811,19 +739,11 @@
 
 @media (max-width:768px){
 
-  .regional-large-image{
+  .regional-image-full img{
     height:420px;
   }
 
-  .regional-image-overlay{
-    padding:26px;
-  }
-
-  .regional-image-overlay h3{
-    font-size:36px;
-  }
-
-  .centered .features-grid{
+  .regional-features-wrap .features-grid{
     grid-template-columns:1fr;
   }
 
@@ -2542,10 +2462,11 @@
 
   <div class="container">
 
-    <div class="panel-inner hero-split">
+    <div class="regional-intro">
 
-      <!-- LEFT -->
-      <div class="panel-text">
+      <!-- TEXT -->
+
+      <div class="regional-intro-text">
 
         <p class="section-tag">
           REGIONAL NSW
@@ -2567,36 +2488,17 @@
           Modern business websites should support accessibility, responsive mobile usability, semantic structure, website performance and strong local SEO foundations while helping businesses build trust and generate real customer enquiries online.
         </p>
 
-        <p class="hero-support">
-          Businesses across regional NSW often compete directly against larger metro businesses, national website builders and heavily templated websites — making strong website structure, Google visibility, customer experience and local search relevance increasingly important.
-        </p>
-
       </div>
 
-      <!-- RIGHT -->
-      <div class="hero-image">
+      <!-- IMAGE -->
 
-        <div class="regional-large-image">
+      <div class="regional-image-full">
 
-          <img
-            src="images/regional-business-growth.webp"
-            alt="Regional NSW business owner working inside a modern local business focused on customer growth, Google visibility and long-term business success"
-            loading="lazy"
-          >
-
-          <div class="regional-image-overlay">
-
-            <h3>
-              Helping Regional NSW Businesses Grow Online
-            </h3>
-
-            <p>
-              Modern business websites built for visibility, trust, accessibility and long-term customer enquiries across regional NSW.
-            </p>
-
-          </div>
-
-        </div>
+        <img
+          src="images/regional-business-growth.webp"
+          alt="Regional NSW businesses growing online with strong SEO and website visibility"
+          loading="lazy"
+        >
 
       </div>
 
@@ -2606,15 +2508,23 @@
 
 </section>
 
+
+
 <!-- ================= REGIONAL NSW FEATURES ================= -->
 
 <section class="section panel">
 
   <div class="container">
 
-    <div class="panel-inner">
+    <div class="regional-features-wrap">
 
-      <div class="panel-text centered">
+      <!-- SUPPORT -->
+
+      <div class="regional-support-text">
+
+        <p class="hero-support">
+          Businesses across regional NSW often compete directly against larger metro businesses, national website builders and heavily templated websites — making strong website structure, Google visibility, customer experience and local search relevance increasingly important.
+        </p>
 
         <p class="hero-support">
           Search engines increasingly analyse semantic structure, accessibility, internal linking, responsive usability, local relevance and overall website quality when evaluating modern business websites.
@@ -2628,90 +2538,98 @@
           From tradies and tourism operators to cafés, accommodation providers and regional service businesses, we help businesses improve online visibility, strengthen customer trust and support long-term enquiry generation through better website structure and SEO foundations.
         </p>
 
-        <!-- ================= FEATURES ================= -->
+      </div>
 
-        <div class="features-grid">
+      <!-- FEATURES -->
 
-          <article class="feature-card">
-            <div class="icon-wrap">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="11" cy="11" r="7"/>
-                <line x1="16.5" y1="16.5" x2="21" y2="21"/>
-              </svg>
-            </div>
+      <div class="features-grid">
 
-            <h3>Google Visibility</h3>
+        <article class="feature-card">
 
-            <p>
-              Strong SEO foundations, semantic structure and local relevance signals help businesses improve visibility across Google Search and Google Maps.
-            </p>
-          </article>
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="7"/>
+              <line x1="16.5" y1="16.5" x2="21" y2="21"/>
+            </svg>
+          </div>
 
-          <article class="feature-card">
-            <div class="icon-wrap">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="7" y="2" width="10" height="20" rx="2"/>
-                <circle cx="12" cy="18" r="1"/>
-              </svg>
-            </div>
+          <h3>Google Visibility</h3>
 
-            <h3>Mobile-First Design</h3>
+          <p>
+            Strong SEO foundations, semantic structure and local relevance signals help businesses improve visibility across Google Search and Google Maps.
+          </p>
 
-            <p>
-              Responsive layouts help websites function properly across phones and tablets where most regional search traffic now occurs.
-            </p>
-          </article>
+        </article>
 
-          <article class="feature-card">
-            <div class="icon-wrap">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10"/>
-              </svg>
-            </div>
+        <article class="feature-card">
 
-            <h3>Website Performance</h3>
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="7" y="2" width="10" height="20" rx="2"/>
+              <circle cx="12" cy="18" r="1"/>
+            </svg>
+          </div>
 
-            <p>
-              Lightweight code, optimised assets and clean layouts help improve loading speed, usability and customer experience across modern devices.
-            </p>
-          </article>
+          <h3>Mobile-First Design</h3>
 
-          <article class="feature-card">
-            <div class="icon-wrap">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 1 1 18 0z"/>
-                <circle cx="12" cy="10" r="3"/>
-              </svg>
-            </div>
+          <p>
+            Responsive layouts help websites function properly across phones and tablets where most regional search traffic now occurs.
+          </p>
 
-            <h3>Regional Local SEO</h3>
+        </article>
 
-            <p>
-              Local SEO foundations help businesses improve visibility across regional searches, Google Maps and location-based customer enquiries.
-            </p>
-          </article>
+        <article class="feature-card">
 
-        </div>
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10"/>
+            </svg>
+          </div>
 
-        <!-- ================= LINKS ================= -->
+          <h3>Website Performance</h3>
 
-        <nav class="seo-links secondary-links">
+          <p>
+            Lightweight code, optimised assets and clean layouts help improve loading speed, usability and customer experience across modern devices.
+          </p>
 
-          <a href="website-design-wagga-wagga.html">Wagga Wagga</a>
-          <a href="website-design-albury.html">Albury</a>
-          <a href="website-design-griffith.html">Griffith</a>
-          <a href="website-design-temora.html">Temora</a>
-          <a href="website-design-junee.html">Junee</a>
-          <a href="tourism-websites.html">Tourism Websites</a>
-          <a href="services.html">Website Services</a>
-          <a href="local-seo-regional-nsw.html">Local SEO</a>
-          <a href="websites-built-for-performance.html">Website Performance</a>
-          <a href="faq.html">FAQ</a>
-          <a href="contact.html">Contact</a>
+        </article>
 
-        </nav>
+        <article class="feature-card">
+
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 1 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+
+          <h3>Regional Local SEO</h3>
+
+          <p>
+            Local SEO foundations help businesses improve visibility across regional searches, Google Maps and location-based customer enquiries.
+          </p>
+
+        </article>
 
       </div>
+
+      <!-- LINKS -->
+
+      <nav class="seo-links secondary-links">
+
+        <a href="website-design-wagga-wagga.html">Wagga Wagga</a>
+        <a href="website-design-albury.html">Albury</a>
+        <a href="website-design-griffith.html">Griffith</a>
+        <a href="website-design-temora.html">Temora</a>
+        <a href="website-design-junee.html">Junee</a>
+        <a href="tourism-websites.html">Tourism Websites</a>
+        <a href="services.html">Website Services</a>
+        <a href="local-seo-regional-nsw.html">Local SEO</a>
+        <a href="websites-built-for-performance.html">Website Performance</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+
+      </nav>
 
     </div>
 
