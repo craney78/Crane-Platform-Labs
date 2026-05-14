@@ -474,110 +474,122 @@ MOBILE
 }
 
 /* =========================================================
-   VISITOR CENTRE PAGE MOBILE FIX
+   VISITOR CENTRE MOBILE FIX
    ========================================================= */
 
-@media (max-width: 768px){
+@media (max-width:768px){
 
   /* PANEL SPACING */
-  .visitor-centre-page .panel-inner{
-    padding: 40px 24px !important;
+  .hero.section.panel .panel-inner{
+    padding:40px 24px !important;
   }
 
   /* HERO TEXT */
-  .visitor-centre-page .panel-text{
-    text-align: center !important;
-    max-width: 100% !important;
-    margin: 0 auto !important;
+  .hero.section.panel .panel-text{
+    text-align:center !important;
+    max-width:100% !important;
+    margin:0 auto !important;
   }
 
-  /* FIX H1 */
-  .visitor-centre-page h1{
-    font-size: 3rem !important;
-    line-height: 1.05 !important;
-    letter-spacing: -1.5px !important;
-    margin-bottom: 24px !important;
+  /* HERO HEADING */
+  .hero.section.panel h1{
+    font-size:3rem !important;
+    line-height:1.05 !important;
+    letter-spacing:-1.5px !important;
+    margin-bottom:24px !important;
   }
 
   /* SUBTEXT */
-  .visitor-centre-page .section-sub,
-  .visitor-centre-page .hero-support{
-    font-size: 1.08rem !important;
-    line-height: 1.9 !important;
-    max-width: 100% !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+  .hero.section.panel .hero-sub,
+  .hero.section.panel .hero-support{
+    font-size:1.05rem !important;
+    line-height:1.9 !important;
+    max-width:100% !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
   }
 
-  /* FEATURE LIST */
-  .visitor-centre-page .hero-features{
-    width: 100% !important;
-    margin-top: 30px !important;
-    gap: 22px !important;
-  }
-
-  /* EACH FEATURE */
-  .visitor-centre-page .hero-feature{
-    justify-content: center !important;
-    text-align: left !important;
-    gap: 16px !important;
-  }
-
-  /* BUTTON AREA */
-  .visitor-centre-page .hero-buttons{
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 18px !important;
-    margin-top: 40px !important;
-  }
-
-  /* BUTTONS */
-  .visitor-centre-page .btn-primary,
-  .visitor-centre-page .btn-secondary{
-    width: 100% !important;
-    max-width: 100% !important;
-    justify-content: center !important;
-  }
-
-}
-
-/* =========================================================
-   VISITOR CENTRE FEATURE ROW FIX
-   ========================================================= */
-
-@media (max-width: 768px){
-
-  .visitor-centre-page .hero-features{
+  /* FEATURES WRAP */
+  .hero.section.panel .hero-features{
     display:flex !important;
     flex-direction:column !important;
     align-items:flex-start !important;
+
     gap:24px !important;
+
     width:100% !important;
+
     margin-top:32px !important;
   }
 
-  .visitor-centre-page .hero-feature{
+  /* FEATURE ROW */
+  .hero.section.panel .hero-feature{
     display:flex !important;
     align-items:center !important;
     justify-content:flex-start !important;
+
     gap:16px !important;
+
     width:100% !important;
+
     text-align:left !important;
   }
 
-  .visitor-centre-page .hero-feature svg,
-  .visitor-centre-page .hero-feature img{
+  /* ICON WRAP */
+  .hero.section.panel .icon-wrap{
+    width:24px !important;
+    min-width:24px !important;
+
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+  }
+
+  /* ICON */
+  .hero.section.panel .hero-feature svg,
+  .hero.section.panel .hero-feature img{
     width:24px !important;
     height:24px !important;
+
     flex-shrink:0 !important;
   }
 
-  .visitor-centre-page .hero-feature span,
-  .visitor-centre-page .hero-feature p{
+  /* FEATURE TEXT */
+  .hero.section.panel .hero-feature span,
+  .hero.section.panel .hero-feature p{
     margin:0 !important;
-    line-height:1.5 !important;
+
     font-size:1rem !important;
+    line-height:1.5 !important;
+
     text-align:left !important;
+  }
+
+  /* BUTTON AREA */
+  .hero.section.panel .hero-buttons{
+    flex-direction:column !important;
+    align-items:stretch !important;
+
+    gap:18px !important;
+
+    margin-top:40px !important;
+  }
+
+  /* BUTTONS */
+  .hero.section.panel .primary-btn,
+  .hero.section.panel .secondary-btn{
+    width:100% !important;
+    justify-content:center !important;
+  }
+
+  /* IMAGE */
+  .hero.section.panel .panel-image{
+    margin-top:40px !important;
+  }
+
+  .hero.section.panel .panel-image img{
+    width:100% !important;
+    border-radius:24px !important;
   }
 
 }
