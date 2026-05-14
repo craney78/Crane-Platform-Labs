@@ -389,7 +389,7 @@
 
   </url>
 
-  <!-- ================= CARAVAN PARK WEBSITES ================= -->
+    <!-- ================= CARAVAN PARK WEBSITES ================= -->
 
   <url>
     <loc>https://www.craneplatformlabs.com.au/caravan-park-websites.html</loc>
@@ -401,6 +401,7 @@
       <image:loc>
         https://www.craneplatformlabs.com.au/images/caravan-park-hero.webp
       </image:loc>
+
       <image:title>
         Caravan Park Website Design Regional NSW
       </image:title>
@@ -408,4 +409,4 @@
 
   </url>
 
-  </urlset>
+</urlset>
