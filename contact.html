@@ -797,14 +797,38 @@
 <!-- CONTACT FORM -->
 <!-- ========================================================= -->
 
-<div class="contact-form-wrap">
+<div class="panel-inner">
 
-  <form
-    id="contact-form"
-    action="https://formspree.io/f/mrejjbpr"
-    method="POST"
-    class="contact-form"
-  >
+  <div class="panel-text centered">
+
+    <!-- TAG -->
+    <p class="section-tag">
+      CONTACT CRANE PLATFORM LABS
+    </p>
+
+    <!-- HEADING -->
+    <h2>
+      Let’s Talk About Your Website
+    </h2>
+
+    <!-- SUBTEXT -->
+    <p class="section-sub">
+      Tell us about your business, website goals or what you need help with across regional NSW.
+    </p>
+
+  </div>
+
+</div>
+
+<form
+  id="contact-form"
+  action="https://formspree.io/f/mrejjbpr"
+  method="POST"
+  class="contact-form"
+>
+
+  <!-- ROW -->
+  <div class="contact-grid">
 
     <!-- NAME -->
     <div class="form-group">
@@ -839,6 +863,11 @@
 
     </div>
 
+  </div>
+
+  <!-- ROW -->
+  <div class="contact-grid">
+
     <!-- EMAIL -->
     <div class="form-group">
 
@@ -872,37 +901,41 @@
 
     </div>
 
-    <!-- MESSAGE -->
-    <div class="form-group">
+  </div>
 
-      <label for="message">
-        Tell Us About Your Project
-      </label>
+  <!-- MESSAGE -->
+  <div class="form-group">
 
-      <textarea
-        id="message"
-        name="message"
-        rows="7"
-        placeholder="Tell us about your business, website goals or what you need help with..."
-        required
-      ></textarea>
+    <label for="message">
+      Tell Us About Your Project
+    </label>
 
-    </div>
+    <textarea
+      id="message"
+      name="message"
+      rows="7"
+      placeholder="Tell us about your business, website goals or what you need help with..."
+      required
+    ></textarea>
 
-    <!-- BUTTON -->
+  </div>
+
+  <!-- BUTTON -->
+  <div class="hero-buttons">
+
     <button
       type="submit"
-      class="btn-primary contact-submit"
+      class="btn-primary"
     >
       Send Enquiry
     </button>
 
-  </form>
+  </div>
 
-</div>
+</form>
 
 <!-- ========================================================= -->
-<!-- FORM SUBMIT REDIRECT -->
+<!-- FORM REDIRECT -->
 <!-- ========================================================= -->
 
 <script>
