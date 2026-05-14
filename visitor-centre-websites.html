@@ -452,49 +452,121 @@ TABLET
 }
 
 /* =========================================================
-MOBILE
-========================================================= */
+   VISITOR HERO
+   ========================================================= */
 
-@media (max-width:768px){
-
-  .faq-card{
-    padding:28px;
-    border-radius:22px;
-  }
-
-  .faq-card h3{
-    font-size:20px;
-  }
-
-  .faq-card p{
-    font-size:15px;
-    line-height:1.7;
-  }
-
+.visitor-hero-inner{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
 }
 
+.visitor-hero-content{
+  width:100%;
+}
+
+.visitor-hero-content h1{
+  font-size:4.2rem;
+  line-height:1.05;
+  letter-spacing:-2px;
+  margin-bottom:24px;
+}
+
+.visitor-feature-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:18px;
+  margin-top:36px;
+}
+
+.visitor-feature-card{
+  display:flex;
+  align-items:center;
+  gap:16px;
+
+  padding:18px 20px;
+
+  background:#ffffff;
+  border:1px solid #e7edf5;
+  border-radius:20px;
+
+  box-shadow:0 4px 18px rgba(0,0,0,0.04);
+}
+
+.visitor-feature-card span{
+  font-size:1rem;
+  font-weight:500;
+  line-height:1.5;
+}
+
+.visitor-icon{
+  width:46px;
+  height:46px;
+
+  min-width:46px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:14px;
+
+  background:#f4f7fc;
+
+  color:#2f66f6;
+}
+
+.visitor-hero-image img{
+  width:100%;
+  display:block;
+
+  border-radius:32px;
+
+  object-fit:cover;
+
+  box-shadow:0 18px 50px rgba(0,0,0,0.10);
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
 @media (max-width:768px){
 
-  .hero-inner{
-    display:grid !important;
-    grid-template-columns:1fr !important;
-    gap:40px !important;
+  .visitor-hero-inner{
+    grid-template-columns:1fr;
+    gap:40px;
   }
 
-  .hero-feature{
-    display:flex !important;
-    flex-direction:row !important;
-    align-items:center !important;
-    justify-content:flex-start !important;
-    text-align:left !important;
-    gap:14px !important;
+  .visitor-hero-content{
+    text-align:center;
   }
 
-  .icon-wrap{
-    display:flex !important;
-    align-items:center !important;
-    justify-content:center !important;
-    flex-shrink:0 !important;
+  .visitor-hero-content h1{
+    font-size:3rem;
+    line-height:1.08;
+    letter-spacing:-1.5px;
+  }
+
+  .visitor-feature-grid{
+    gap:16px;
+    margin-top:30px;
+  }
+
+  .visitor-feature-card{
+    text-align:left;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+    gap:18px;
+    margin-top:36px;
+  }
+
+  .hero-buttons a{
+    width:100%;
+    justify-content:center;
   }
 
 }
@@ -574,17 +646,17 @@ MOBILE
 <!-- HERO -->
 <!-- ========================================================= -->
 
-<section class="hero section panel">
+<section class="hero section panel visitor-hero">
 
   <div class="container">
 
-    <div class="panel-inner hero-inner">
+    <div class="panel-inner visitor-hero-inner">
 
       <!-- ========================================================= -->
       <!-- LEFT -->
       <!-- ========================================================= -->
 
-      <div class="panel-text">
+      <div class="visitor-hero-content">
 
         <!-- TAG -->
         <p class="section-tag">
@@ -610,17 +682,17 @@ MOBILE
         <!-- FEATURES -->
         <!-- ========================================================= -->
 
-        <div class="hero-features">
+        <div class="visitor-feature-grid">
 
           <!-- FEATURE -->
-          <div class="hero-feature">
+          <div class="visitor-feature-card">
 
-            <div class="icon-wrap">
+            <div class="visitor-icon">
 
               <svg 
                 xmlns="http://www.w3.org/2000/svg" 
-                width="20" 
-                height="20" 
+                width="22" 
+                height="22" 
                 fill="none" 
                 viewBox="0 0 24 24" 
                 stroke="currentColor"
@@ -648,14 +720,14 @@ MOBILE
           </div>
 
           <!-- FEATURE -->
-          <div class="hero-feature">
+          <div class="visitor-feature-card">
 
-            <div class="icon-wrap">
+            <div class="visitor-icon">
 
               <svg 
                 xmlns="http://www.w3.org/2000/svg" 
-                width="20" 
-                height="20" 
+                width="22" 
+                height="22" 
                 fill="none" 
                 viewBox="0 0 24 24" 
                 stroke="currentColor"
@@ -677,14 +749,14 @@ MOBILE
           </div>
 
           <!-- FEATURE -->
-          <div class="hero-feature">
+          <div class="visitor-feature-card">
 
-            <div class="icon-wrap">
+            <div class="visitor-icon">
 
               <svg 
                 xmlns="http://www.w3.org/2000/svg" 
-                width="20" 
-                height="20" 
+                width="22" 
+                height="22" 
                 fill="none" 
                 viewBox="0 0 24 24" 
                 stroke="currentColor"
@@ -732,10 +804,10 @@ MOBILE
       </div>
 
       <!-- ========================================================= -->
-      <!-- RIGHT -->
+      <!-- IMAGE -->
       <!-- ========================================================= -->
 
-      <div class="panel-image">
+      <div class="visitor-hero-image">
 
         <img 
           src="images/visitor-centre-hero.webp"
