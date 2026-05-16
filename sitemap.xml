@@ -409,4 +409,34 @@
 
   </url>
 
+  <!-- ================= RESOURCE PAGES ================= -->
+
+<url>
+  <loc>https://craneplatformlabs.com.au/how-to-test-a-website-before-hiring-a-web-designer.html</loc>
+  <lastmod>2026-05-16</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.85</priority>
+</url>
+
+<url>
+  <loc>https://craneplatformlabs.com.au/website-design-wagga-wagga-guide.html</loc>
+  <lastmod>2026-05-16</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.90</priority>
+</url>
+
+<url>
+  <loc>https://craneplatformlabs.com.au/why-your-website-is-not-getting-enquiries.html</loc>
+  <lastmod>2026-05-16</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.88</priority>
+</url>
+
+<url>
+  <loc>https://craneplatformlabs.com.au/website-builder-wagga-wagga.html</loc>
+  <lastmod>2026-05-16</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.90</priority>
+</url>
+
 </urlset>
