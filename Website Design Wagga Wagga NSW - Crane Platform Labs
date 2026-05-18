@@ -1,0 +1,2420 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+
+<meta charset="UTF-8">
+
+<!-- ================= MOBILE ================= -->
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+>
+
+<meta
+  name="format-detection"
+  content="telephone=no"
+>
+
+<!-- ================= PRIMARY SEO ================= -->
+
+<title>
+Website Design Wagga Wagga NSW | Small Business Websites & Local SEO
+</title>
+
+<meta
+  name="description"
+  content="Professional website design in Wagga Wagga NSW for tradies, tourism operators and small businesses. Fast, mobile-friendly and SEO-focused websites built to improve Google visibility and generate real enquiries across regional NSW."
+>
+
+<meta
+  name="keywords"
+  content="website design Wagga Wagga, website designer Wagga Wagga, web design Wagga, small business websites Wagga Wagga, local SEO Wagga Wagga, SEO website design regional NSW, tradie website design Wagga, business websites regional NSW"
+>
+
+<meta
+  name="robots"
+  content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+>
+
+<meta
+  name="author"
+  content="Crane Platform Labs"
+>
+
+<meta
+  name="classification"
+  content="Website Design Services"
+>
+
+<meta
+  name="category"
+  content="Website Design"
+>
+
+<meta
+  name="subject"
+  content="Website Design Wagga Wagga NSW"
+>
+
+<meta
+  name="topic"
+  content="Website Design, Local SEO, Google Visibility and Small Business Websites"
+>
+
+<meta
+  name="summary"
+  content="Website design services for businesses across Wagga Wagga and regional NSW focused on Google visibility, mobile usability and customer enquiries."
+>
+
+<!-- ================= GEO ================= -->
+
+<meta
+  name="geo.region"
+  content="AU-NSW"
+>
+
+<meta
+  name="geo.placename"
+  content="Wagga Wagga"
+>
+
+<meta
+  name="geo.position"
+  content="-35.1082;147.3598"
+>
+
+<meta
+  name="ICBM"
+  content="-35.1082,147.3598"
+>
+
+<meta
+  name="coverage"
+  content="Wagga Wagga and Regional NSW"
+>
+
+<meta
+  name="target"
+  content="Tradies, Tourism Businesses, Small Businesses and Service Businesses"
+>
+
+<!-- ================= THEME ================= -->
+
+<meta
+  name="theme-color"
+  media="(prefers-color-scheme: light)"
+  content="#ffffff"
+>
+
+<meta
+  name="theme-color"
+  media="(prefers-color-scheme: dark)"
+  content="#0f172a"
+>
+
+<meta
+  name="color-scheme"
+  content="light dark"
+>
+
+<!-- ================= CANONICAL ================= -->
+
+<link
+  rel="canonical"
+  href="https://craneplatformlabs.com.au/website-design-wagga-wagga.html"
+>
+
+<!-- ================= PRECONNECT ================= -->
+
+<link
+  rel="preconnect"
+  href="https://fonts.gstatic.com"
+  crossorigin
+>
+
+<link
+  rel="preconnect"
+  href="https://craneplatformlabs.com.au"
+>
+
+<link
+  rel="dns-prefetch"
+  href="https://craneplatformlabs.com.au"
+>
+
+<!-- ================= OPEN GRAPH ================= -->
+
+<meta
+  property="og:type"
+  content="website"
+>
+
+<meta
+  property="og:title"
+  content="Website Design Wagga Wagga NSW | Crane Platform Labs"
+>
+
+<meta
+  property="og:description"
+  content="Fast, mobile-friendly and SEO-focused website design for tradies, tourism operators and businesses across Wagga Wagga and regional NSW."
+>
+
+<meta
+  property="og:url"
+  content="https://craneplatformlabs.com.au/website-design-wagga-wagga.html"
+>
+
+<meta
+  property="og:site_name"
+  content="Crane Platform Labs"
+>
+
+<meta
+  property="og:locale"
+  content="en_AU"
+>
+
+<meta
+  property="og:image"
+  content="https://craneplatformlabs.com.au/images/website-design-wagga-wagga.webp"
+>
+
+<meta
+  property="og:image:secure_url"
+  content="https://craneplatformlabs.com.au/images/website-design-wagga-wagga.webp"
+>
+
+<meta
+  property="og:image:type"
+  content="image/webp"
+>
+
+<meta
+  property="og:image:width"
+  content="1400"
+>
+
+<meta
+  property="og:image:height"
+  content="1000"
+>
+
+<meta
+  property="og:image:alt"
+  content="Website design services for businesses in Wagga Wagga NSW"
+>
+
+<!-- ================= TWITTER ================= -->
+
+<meta
+  name="twitter:card"
+  content="summary_large_image"
+>
+
+<meta
+  name="twitter:title"
+  content="Website Design Wagga Wagga NSW | Crane Platform Labs"
+>
+
+<meta
+  name="twitter:description"
+  content="SEO-focused website design for tradies, tourism operators and small businesses across Wagga Wagga and regional NSW."
+>
+
+<meta
+  name="twitter:image"
+  content="https://craneplatformlabs.com.au/images/website-design-wagga-wagga.webp"
+>
+
+<!-- ================= FAVICON ================= -->
+
+<link
+  rel="icon"
+  href="/favicon.ico"
+  sizes="any"
+>
+
+<!-- ================= PRELOAD ================= -->
+
+<link
+  rel="preload"
+  as="image"
+  href="images/website-design-wagga-wagga.webp"
+  type="image/webp"
+  fetchpriority="high"
+>
+
+<link
+  rel="preload"
+  as="image"
+  href="images/logo.webp"
+  type="image/webp"
+>
+
+<!-- ================= STYLES ================= -->
+
+<link
+  rel="stylesheet"
+  href="styles.css"
+  media="all"
+>
+
+<!-- ================= LOCAL BUSINESS SCHEMA ================= -->
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+
+  "@type":"LocalBusiness",
+
+  "name":"Crane Platform Labs",
+
+  "url":"https://craneplatformlabs.com.au",
+
+  "logo":"https://craneplatformlabs.com.au/images/logo.webp",
+
+  "image":"https://craneplatformlabs.com.au/images/website-design-wagga-wagga.webp",
+
+  "description":"Crane Platform Labs builds fast, mobile-friendly and SEO-focused websites for tradies, tourism operators and small businesses across Wagga Wagga and regional NSW.",
+
+  "telephone":"+61448244223",
+
+  "address":{
+    "@type":"PostalAddress",
+    "addressRegion":"NSW",
+    "addressCountry":"AU"
+  },
+
+  "areaServed":[
+    "Wagga Wagga",
+    "Junee",
+    "Albury",
+    "Griffith",
+    "Temora",
+    "Cootamundra",
+    "Riverina",
+    "Regional NSW"
+  ],
+
+  "sameAs":[
+    "https://www.facebook.com/profile.php?id=61589315729346"
+  ]
+}
+</script>
+
+<!-- ================= SERVICE SCHEMA ================= -->
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+
+  "@type":"Service",
+
+  "serviceType":"Website Design",
+
+  "provider":{
+    "@type":"LocalBusiness",
+    "name":"Crane Platform Labs",
+    "url":"https://craneplatformlabs.com.au"
+  },
+
+  "areaServed":{
+    "@type":"City",
+    "name":"Wagga Wagga"
+  },
+
+  "description":"Website design services for tradies, tourism operators and small businesses across Wagga Wagga and regional NSW."
+}
+</script>
+
+<!-- ================= WEBPAGE SCHEMA ================= -->
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+
+  "@type":"WebPage",
+
+  "name":"Website Design Wagga Wagga NSW",
+
+  "url":"https://craneplatformlabs.com.au/website-design-wagga-wagga.html",
+
+  "description":"Website design services in Wagga Wagga NSW focused on SEO, mobile usability and customer enquiries.",
+
+  "inLanguage":"en-AU",
+
+  "isPartOf":{
+    "@type":"WebSite",
+    "name":"Crane Platform Labs",
+    "url":"https://craneplatformlabs.com.au"
+  }
+}
+</script>
+
+<!-- ================= FAQ SCHEMA ================= -->
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+
+  "@type":"FAQPage",
+
+  "mainEntity":[
+
+    {
+      "@type":"Question",
+
+      "name":"Do you build websites for tradies in Wagga Wagga?",
+
+      "acceptedAnswer":{
+        "@type":"Answer",
+
+        "text":"Yes. Crane Platform Labs builds websites for plumbers, electricians, builders, landscapers and local service businesses across Wagga Wagga and regional NSW."
+      }
+    },
+
+    {
+      "@type":"Question",
+
+      "name":"Can you help my business rank on Google?",
+
+      "acceptedAnswer":{
+        "@type":"Answer",
+
+        "text":"Our websites are built with SEO-focused structure designed to improve Google visibility and help businesses generate more customer enquiries online."
+      }
+    },
+
+    {
+      "@type":"Question",
+
+      "name":"Do you work with businesses outside Wagga Wagga?",
+
+      "acceptedAnswer":{
+        "@type":"Answer",
+
+        "text":"Yes. We work with businesses across Junee, Albury, Griffith, Temora, Cootamundra and regional NSW."
+      }
+    }
+
+  ]
+}
+</script>
+
+<!-- ================= BREADCRUMB SCHEMA ================= -->
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+
+  "@type":"BreadcrumbList",
+
+  "itemListElement":[
+
+    {
+      "@type":"ListItem",
+      "position":1,
+      "name":"Home",
+      "item":"https://craneplatformlabs.com.au/"
+    },
+
+    {
+      "@type":"ListItem",
+      "position":2,
+      "name":"Website Design Wagga Wagga",
+      "item":"https://craneplatformlabs.com.au/website-design-wagga-wagga.html"
+    }
+
+  ]
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+
+  <div class="container nav-inner">
+
+    <!-- LOGO -->
+    <div class="nav-logo">
+
+      <a href="index.html">
+        <img 
+          src="images/logo.webp" 
+          alt="Crane Platform Labs logo"
+        >
+      </a>
+
+    </div>
+
+    <!-- NAV RIGHT -->
+    <div class="nav-right">
+
+      <!-- LINKS -->
+      <nav class="nav-links" id="navLinks">
+
+        <a href="index.html" class="active">
+          Home
+        </a>
+
+        <a href="services.html">
+          Services
+        </a>
+
+        <a href="local-seo-regional-nsw.html">
+          Local SEO
+        </a>
+
+        <a href="websites-built-for-performance.html">
+          Performance
+        </a>
+
+        <a href="faq.html">
+          FAQ
+        </a>
+
+        <a href="about.html">
+          About
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+      </nav>
+
+      <!-- CTA -->
+      <a href="contact.html" class="nav-cta">
+        Get a Quote
+      </a>
+
+      <!-- MOBILE TOGGLE -->
+      <div class="nav-toggle" onclick="toggleMenu()">
+        ☰
+      </div>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+<main>
+
+<!-- ================= HERO ================= -->
+
+<section
+  class="hero section"
+  role="banner"
+  id="main-content"
+  aria-labelledby="hero-heading"
+>
+
+  <div class="container">
+
+    <div class="hero-inner">
+
+      <!-- ================= LEFT ================= -->
+      <div class="hero-text">
+
+        <!-- TAG -->
+        <p class="hero-resource-label">
+          WEBSITE DESIGN WAGGA WAGGA NSW
+        </p>
+
+        <!-- H1 -->
+        <h1 id="hero-heading">
+
+          Website Design Wagga Wagga NSW
+
+          <span class="gradient-text">
+            Fast Websites Built To Generate Real Customer Enquiries
+          </span>
+
+        </h1>
+
+        <!-- SUB -->
+        <p class="hero-sub">
+          Crane Platform Labs builds fast, mobile-friendly and SEO-focused websites for tradies, tourism operators, cafes and small businesses across Wagga Wagga and regional NSW.
+        </p>
+
+        <!-- SUPPORT -->
+        <p class="hero-support">
+          Modern business websites should do more than simply look professional. They should help businesses improve Google visibility, support mobile usability and make it easier for customers to contact your business online.
+        </p>
+
+        <p class="hero-support">
+          Businesses across Wagga Wagga increasingly rely on Google Search and Google Maps to attract local customers. Fast-loading websites with strong local SEO foundations may help improve customer trust, enquiry generation and online visibility.
+        </p>
+
+        <p class="hero-support">
+          We build lightweight websites designed for real business performance across Wagga Wagga, Junee, Albury, Temora, Cootamundra and regional NSW.
+        </p>
+
+        <!-- ================= LEARN ================= -->
+        <div
+          class="hero-learn"
+          aria-label="What is included with our website design services"
+        >
+
+          <p class="hero-learn-title">
+            Designed for:
+          </p>
+
+          <div class="hero-learn-grid">
+
+            <!-- ITEM -->
+            <div class="hero-learn-item">
+
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="M20 6L9 17l-5-5"/>
+              </svg>
+
+              <span>
+                Tradies and local service businesses
+              </span>
+
+            </div>
+
+            <!-- ITEM -->
+            <div class="hero-learn-item">
+
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="M20 6L9 17l-5-5"/>
+              </svg>
+
+              <span>
+                Mobile-friendly customer experience
+              </span>
+
+            </div>
+
+            <!-- ITEM -->
+            <div class="hero-learn-item">
+
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="M20 6L9 17l-5-5"/>
+              </svg>
+
+              <span>
+                Google Maps and local SEO visibility
+              </span>
+
+            </div>
+
+            <!-- ITEM -->
+            <div class="hero-learn-item">
+
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="M20 6L9 17l-5-5"/>
+              </svg>
+
+              <span>
+                Fast-loading business websites
+              </span>
+
+            </div>
+
+            <!-- ITEM -->
+            <div class="hero-learn-item">
+
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="M20 6L9 17l-5-5"/>
+              </svg>
+
+              <span>
+                SEO-focused website structure
+              </span>
+
+            </div>
+
+            <!-- ITEM -->
+            <div class="hero-learn-item">
+
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="M20 6L9 17l-5-5"/>
+              </svg>
+
+              <span>
+                Regional NSW business growth
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- ================= FEATURES ================= -->
+        <div
+          class="hero-features"
+          aria-label="Website design features"
+        >
+
+          <div class="hero-feature">
+            <span>Fast Mobile Performance</span>
+          </div>
+
+          <div class="hero-feature">
+            <span>SEO-Focused Structure</span>
+          </div>
+
+          <div class="hero-feature">
+            <span>Google Maps Visibility</span>
+          </div>
+
+          <div class="hero-feature">
+            <span>Built For Customer Enquiries</span>
+          </div>
+
+        </div>
+
+        <!-- ================= BUTTONS ================= -->
+        <div
+          class="hero-buttons"
+          aria-label="Website enquiry actions"
+        >
+
+          <a
+            href="contact.html"
+            class="btn-primary"
+            aria-label="Request a website quote"
+          >
+            Request A Quote
+          </a>
+
+          <a
+            href="services.html"
+            class="btn-secondary"
+            aria-label="View website services"
+          >
+            View Services
+          </a>
+
+        </div>
+
+        <!-- ================= TRUST ================= -->
+        <p class="hero-powered">
+          Supporting businesses across Wagga Wagga, Junee, Albury, Griffith, Temora, Cootamundra and regional NSW.
+        </p>
+
+        <!-- ================= SMALL NOTE ================= -->
+        <p class="hero-small-note">
+          Lightweight websites designed for Google visibility, accessibility, mobile usability and customer enquiries.
+        </p>
+
+        <!-- ================= INTERNAL LINKS ================= -->
+        <nav
+          class="seo-links secondary-links"
+          aria-label="Related website design pages"
+        >
+
+          <a href="services.html">
+            Website Services
+          </a>
+
+          <a href="local-seo-regional-nsw.html">
+            Local SEO Services
+          </a>
+
+          <a href="google-business-profile-setup.html">
+            Google Business Profile Setup
+          </a>
+
+          <a href="website-builder-vs-business-website.html">
+            Website Builder vs Business Website
+          </a>
+
+        </nav>
+
+      </div>
+
+      <!-- ================= RIGHT ================= -->
+      <div class="hero-image">
+
+        <img
+          src="images/website-design-wagga-wagga.webp"
+          alt="Website design services for tradies and businesses across Wagga Wagga NSW"
+
+          width="1400"
+          height="1000"
+
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+
+          sizes="(max-width: 768px) 100vw, 50vw"
+        >
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ================= SERVICES ================= -->
+
+<section
+  class="section panel"
+  aria-labelledby="website-services-heading"
+>
+
+  <div class="container">
+
+    <!-- ================= INTRO ================= -->
+    <div class="panel-text centered">
+
+      <p class="section-tag">
+        BUSINESS WEBSITE SERVICES
+      </p>
+
+      <h2 id="website-services-heading">
+        Website Design For Wagga Wagga Businesses
+      </h2>
+
+      <p class="section-sub">
+        Crane Platform Labs builds fast, mobile-friendly and SEO-focused websites for tradies, tourism operators, cafes and local businesses across Wagga Wagga and regional NSW.
+      </p>
+
+      <p class="hero-support">
+        Modern business websites should support customer enquiries, mobile usability and Google visibility while helping businesses create stronger customer trust online.
+      </p>
+
+      <p class="hero-support">
+        Businesses across Wagga Wagga increasingly rely on Google Search and Google Maps to attract local customers, compare competitors and generate new enquiries online.
+      </p>
+
+    </div>
+
+    <!-- ================= SERVICES GRID ================= -->
+    <div
+      class="features-grid"
+      aria-label="Website design services"
+    >
+
+      <!-- ================= CARD ================= -->
+      <article class="feature-card">
+
+        <div class="icon-wrap">
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <rect x="3" y="4" width="18" height="14" rx="2"/>
+            <line x1="8" y1="20" x2="16" y2="20"/>
+            <line x1="12" y1="16" x2="12" y2="20"/>
+          </svg>
+
+        </div>
+
+        <h3>
+          Small Business Websites
+        </h3>
+
+        <p>
+          Fast-loading websites designed for local businesses across Wagga Wagga wanting stronger Google visibility, customer trust and enquiry generation online.
+        </p>
+
+        <ul class="comparison-list">
+
+          <li>
+            Mobile-friendly layouts
+          </li>
+
+          <li>
+            SEO-focused structure
+          </li>
+
+          <li>
+            Fast-loading performance
+          </li>
+
+          <li>
+            Built for customer enquiries
+          </li>
+
+        </ul>
+
+      </article>
+
+      <!-- ================= CARD ================= -->
+      <article class="feature-card">
+
+        <div class="icon-wrap">
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10"/>
+          </svg>
+
+        </div>
+
+        <h3>
+          Tradie Website Design
+        </h3>
+
+        <p>
+          Websites for plumbers, electricians, builders, landscapers, fencing contractors and local service businesses across Wagga Wagga and regional NSW.
+        </p>
+
+        <ul class="comparison-list">
+
+          <li>
+            Designed for local leads
+          </li>
+
+          <li>
+            Google Maps visibility
+          </li>
+
+          <li>
+            Fast mobile performance
+          </li>
+
+          <li>
+            Clear customer contact pathways
+          </li>
+
+        </ul>
+
+      </article>
+
+      <!-- ================= CARD ================= -->
+      <article class="feature-card">
+
+        <div class="icon-wrap">
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <circle cx="11" cy="11" r="7"/>
+            <line x1="16.5" y1="16.5" x2="21" y2="21"/>
+          </svg>
+
+        </div>
+
+        <h3>
+          Local SEO & Google Visibility
+        </h3>
+
+        <p>
+          SEO-focused websites designed to help businesses across Wagga Wagga improve Google rankings, Google Maps visibility and customer enquiries.
+        </p>
+
+        <ul class="comparison-list">
+
+          <li>
+            Local SEO structure
+          </li>
+
+          <li>
+            Google Business Profile integration
+          </li>
+
+          <li>
+            Semantic website structure
+          </li>
+
+          <li>
+            Regional NSW targeting
+          </li>
+
+        </ul>
+
+      </article>
+
+      <!-- ================= CARD ================= -->
+      <article class="feature-card">
+
+        <div class="icon-wrap">
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <rect x="7" y="2" width="10" height="20" rx="2"/>
+            <circle cx="12" cy="18" r="1"/>
+          </svg>
+
+        </div>
+
+        <h3>
+          Mobile-Friendly Websites
+        </h3>
+
+        <p>
+          Responsive websites designed to perform smoothly across mobile phones and tablets where most customers now search for businesses online.
+        </p>
+
+        <ul class="comparison-list">
+
+          <li>
+            Responsive mobile layouts
+          </li>
+
+          <li>
+            Faster mobile usability
+          </li>
+
+          <li>
+            Accessibility-focused design
+          </li>
+
+          <li>
+            Customer-friendly navigation
+          </li>
+
+        </ul>
+
+      </article>
+
+      <!-- ================= CARD ================= -->
+      <article class="feature-card">
+
+        <div class="icon-wrap">
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <path d="M12 20V10"/>
+            <path d="M18 20V4"/>
+            <path d="M6 20v-6"/>
+          </svg>
+
+        </div>
+
+        <h3>
+          Website Performance
+        </h3>
+
+        <p>
+          Lightweight websites built using clean semantic structure, optimised images and responsive layouts designed for faster loading speeds.
+        </p>
+
+        <ul class="comparison-list">
+
+          <li>
+            Lightweight code structure
+          </li>
+
+          <li>
+            Faster loading speeds
+          </li>
+
+          <li>
+            Optimised image performance
+          </li>
+
+          <li>
+            Built for modern mobile browsing
+          </li>
+
+        </ul>
+
+      </article>
+
+      <!-- ================= CARD ================= -->
+      <article class="feature-card">
+
+        <div class="icon-wrap">
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M12 7v5l3 3"/>
+          </svg>
+
+        </div>
+
+        <h3>
+          Google Business Profile Support
+        </h3>
+
+        <p>
+          Supporting businesses across Wagga Wagga with Google Business Profile optimisation, local visibility and Google Maps integration.
+        </p>
+
+        <ul class="comparison-list">
+
+          <li>
+            Google Maps visibility
+          </li>
+
+          <li>
+            Local business optimisation
+          </li>
+
+          <li>
+            Regional NSW SEO support
+          </li>
+
+          <li>
+            Better local search presence
+          </li>
+
+        </ul>
+
+      </article>
+
+    </div>
+
+    <!-- ================= SUPPORT ================= -->
+    <div class="panel-text centered">
+
+      <p class="hero-support">
+        Businesses across Wagga Wagga, Junee, Albury, Griffith, Temora and regional NSW increasingly rely on fast-loading websites, mobile usability and local SEO visibility to support customer enquiries online.
+      </p>
+
+      <p class="hero-support">
+        Crane Platform Labs builds lightweight websites designed to improve customer experience, strengthen Google visibility and help local businesses create stronger online presence across regional NSW.
+      </p>
+
+      <!-- ================= INTERNAL LINKS ================= -->
+      <nav
+        class="seo-links secondary-links"
+        aria-label="Related website services"
+      >
+
+        <a href="services.html">
+          Website Services
+        </a>
+
+        <a href="local-seo-regional-nsw.html">
+          Local SEO Services
+        </a>
+
+        <a href="google-business-profile-setup.html">
+          Google Business Profile Setup
+        </a>
+
+        <a href="website-builder-vs-business-website.html">
+          Website Builder vs Business Website
+        </a>
+
+      </nav>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= WEBSITE PERFORMANCE ================= -->
+
+<section
+  class="section panel"
+  aria-labelledby="website-performance-heading"
+>
+
+  <div class="container">
+
+    <div class="panel-inner hero-inner">
+
+      <!-- ================= IMAGE ================= -->
+      <div class="panel-image">
+
+        <img
+          src="images/google-pagespeed-testing.webp"
+          alt="Google PageSpeed website performance testing for businesses in Wagga Wagga and regional NSW"
+
+          width="1400"
+          height="1000"
+
+          loading="lazy"
+          decoding="async"
+
+          fetchpriority="low"
+
+          sizes="(max-width: 768px) 100vw, 50vw"
+        >
+
+      </div>
+
+      <!-- ================= TEXT ================= -->
+      <div class="panel-text">
+
+        <p class="section-tag">
+          WEBSITE PERFORMANCE
+        </p>
+
+        <h2 id="website-performance-heading">
+          Faster Websites Create Better Customer Experience
+        </h2>
+
+        <p class="section-sub">
+          Website speed, mobile usability and responsive design now play a major role in customer trust, Google visibility and long-term enquiry generation for businesses across Wagga Wagga and regional NSW.
+        </p>
+
+        <p>
+          Many businesses rely heavily on mobile traffic from Google Search and Google Maps, however slow-loading websites may reduce customer trust, increase bounce rates and negatively affect customer enquiries online.
+        </p>
+
+        <p>
+          Generic template websites often include unnecessary scripts, oversized images and cluttered layouts that may reduce website speed and create poor browsing experience across mobile devices and regional internet connections.
+        </p>
+
+        <p>
+          Crane Platform Labs builds lightweight business websites using responsive layouts, semantic structure and optimised performance designed for modern mobile browsing and local business visibility.
+        </p>
+
+        <p>
+          Businesses across Wagga Wagga, Junee, Albury, Griffith and regional NSW increasingly rely on fast-loading websites to support local SEO, improve customer usability and generate stronger enquiry performance online.
+        </p>
+
+        <!-- ================= FEATURES ================= -->
+        <div
+          class="hero-features"
+          aria-label="Website performance features"
+        >
+
+          <div class="hero-feature">
+            <span>Responsive Mobile Design</span>
+          </div>
+
+          <div class="hero-feature">
+            <span>Fast Loading Speeds</span>
+          </div>
+
+          <div class="hero-feature">
+            <span>Optimised Image Performance</span>
+          </div>
+
+          <div class="hero-feature">
+            <span>SEO-Friendly Structure</span>
+          </div>
+
+        </div>
+
+        <!-- ================= LEARN ================= -->
+        <div
+          class="hero-learn"
+          aria-label="Benefits of faster business websites"
+        >
+
+          <p class="hero-learn-title">
+            Benefits of lightweight websites:
+          </p>
+
+          <div class="hero-learn-grid">
+
+            <!-- ITEM -->
+            <div class="hero-learn-item">
+
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="M20 6L9 17l-5-5"/>
+              </svg>
+
+              <span>
+                Improved mobile usability
+              </span>
+
+            </div>
+
+            <!-- ITEM -->
+            <div class="hero-learn-item">
+
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="M20 6L9 17l-5-5"/>
+              </svg>
+
+              <span>
+                Faster customer access to information
+              </span>
+
+            </div>
+
+            <!-- ITEM -->
+            <div class="hero-learn-item">
+
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="M20 6L9 17l-5-5"/>
+              </svg>
+
+              <span>
+                Better Google visibility foundations
+              </span>
+
+            </div>
+
+            <!-- ITEM -->
+            <div class="hero-learn-item">
+
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="M20 6L9 17l-5-5"/>
+              </svg>
+
+              <span>
+                Improved customer experience
+              </span>
+
+            </div>
+
+            <!-- ITEM -->
+            <div class="hero-learn-item">
+
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="M20 6L9 17l-5-5"/>
+              </svg>
+
+              <span>
+                Faster performance across mobile devices
+              </span>
+
+            </div>
+
+            <!-- ITEM -->
+            <div class="hero-learn-item">
+
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="M20 6L9 17l-5-5"/>
+              </svg>
+
+              <span>
+                Stronger local SEO support
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- ================= INTERNAL LINKS ================= -->
+        <nav
+          class="seo-links secondary-links"
+          aria-label="Related website performance resources"
+        >
+
+          <a href="local-seo-regional-nsw.html">
+            Local SEO Services
+          </a>
+
+          <a href="google-business-profile-setup.html">
+            Google Business Profile Setup
+          </a>
+
+          <a href="website-builder-vs-business-website.html">
+            Website Builder vs Business Website
+          </a>
+
+          <a href="services.html">
+            Website Services
+          </a>
+
+        </nav>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= INDUSTRIES ================= -->
+
+<section
+  class="section panel"
+  aria-labelledby="industries-heading"
+>
+
+  <div class="container">
+
+    <!-- ================= INTRO ================= -->
+    <div class="panel-text centered">
+
+      <p class="section-tag">
+        INDUSTRIES
+      </p>
+
+      <h2 id="industries-heading">
+        Websites Built For Regional NSW Businesses
+      </h2>
+
+      <p class="section-sub">
+        Crane Platform Labs builds fast, mobile-friendly and SEO-focused websites for businesses across Wagga Wagga and regional NSW that rely on customer enquiries, local visibility and phone calls.
+      </p>
+
+      <p class="hero-support">
+        We work with tradies, tourism operators, cafes, contractors and local service businesses wanting stronger online presence, improved Google visibility and better customer trust online.
+      </p>
+
+    </div>
+
+    <!-- ================= INDUSTRIES GRID ================= -->
+    <div
+      class="features-grid"
+      aria-label="Industries we build websites for"
+    >
+
+      <!-- ================= CARD ================= -->
+      <article class="feature-card">
+
+        <h3>
+          Tradie Website Design
+        </h3>
+
+        <p>
+          Professional websites for plumbers, electricians, builders, landscapers, fencing contractors, earthmoving operators and local trades across Wagga Wagga and regional NSW.
+        </p>
+
+        <ul class="comparison-list">
+
+          <li>
+            Built for customer enquiries
+          </li>
+
+          <li>
+            Mobile-friendly layouts
+          </li>
+
+          <li>
+            Google Maps visibility
+          </li>
+
+          <li>
+            Fast-loading performance
+          </li>
+
+        </ul>
+
+      </article>
+
+      <!-- ================= CARD ================= -->
+      <article class="feature-card">
+
+        <h3>
+          Tourism & Hospitality Websites
+        </h3>
+
+        <p>
+          Websites for wineries, caravan parks, visitor centres, cafes, accommodation providers and tourism businesses across the Riverina and regional NSW.
+        </p>
+
+        <ul class="comparison-list">
+
+          <li>
+            Tourism-focused website structure
+          </li>
+
+          <li>
+            Mobile usability for travellers
+          </li>
+
+          <li>
+            Local SEO visibility
+          </li>
+
+          <li>
+            Fast customer access to information
+          </li>
+
+        </ul>
+
+      </article>
+
+      <!-- ================= CARD ================= -->
+      <article class="feature-card">
+
+        <h3>
+          Local Service Businesses
+        </h3>
+
+        <p>
+          Websites for cleaners, pest control businesses, mechanics, pressure washing businesses, locksmiths and local service providers across Wagga Wagga.
+        </p>
+
+        <ul class="comparison-list">
+
+          <li>
+            Built for phone enquiries
+          </li>
+
+          <li>
+            Local business SEO support
+          </li>
+
+          <li>
+            Responsive mobile design
+          </li>
+
+          <li>
+            Lightweight website structure
+          </li>
+
+        </ul>
+
+      </article>
+
+      <!-- ================= CARD ================= -->
+      <article class="feature-card">
+
+        <h3>
+          Rural & Agricultural Businesses
+        </h3>
+
+        <p>
+          Websites for agricultural contractors, rural suppliers, welding businesses, earthmoving operators and regional NSW service businesses.
+        </p>
+
+        <ul class="comparison-list">
+
+          <li>
+            Regional NSW targeting
+          </li>
+
+          <li>
+            Rural business branding
+          </li>
+
+          <li>
+            Mobile-friendly layouts
+          </li>
+
+          <li>
+            Google visibility support
+          </li>
+
+        </ul>
+
+      </article>
+
+      <!-- ================= CARD ================= -->
+      <article class="feature-card">
+
+        <h3>
+          Professional Service Businesses
+        </h3>
+
+        <p>
+          Websites for consultants, support services, accountants and professional businesses wanting stronger online credibility and customer trust.
+        </p>
+
+        <ul class="comparison-list">
+
+          <li>
+            Professional business branding
+          </li>
+
+          <li>
+            Customer-focused design
+          </li>
+
+          <li>
+            Lightweight performance
+          </li>
+
+          <li>
+            SEO-focused structure
+          </li>
+
+        </ul>
+
+      </article>
+
+      <!-- ================= CARD ================= -->
+      <article class="feature-card">
+
+        <h3>
+          Small Business Website Design
+        </h3>
+
+        <p>
+          Supporting small businesses across Wagga Wagga, Junee, Albury, Griffith and regional NSW with fast, modern business websites.
+        </p>
+
+        <ul class="comparison-list">
+
+          <li>
+            Built for local business growth
+          </li>
+
+          <li>
+            Fast loading speeds
+          </li>
+
+          <li>
+            Mobile-first design
+          </li>
+
+          <li>
+            Strong local SEO foundations
+          </li>
+
+        </ul>
+
+      </article>
+
+    </div>
+
+    <!-- ================= SUPPORT ================= -->
+    <div class="panel-text centered">
+
+      <p class="hero-support">
+        Businesses across Wagga Wagga and regional NSW increasingly rely on Google Search, Google Maps and mobile browsing to attract new customers and generate enquiries online.
+      </p>
+
+      <p class="hero-support">
+        Crane Platform Labs builds lightweight business websites designed to support local visibility, customer usability and stronger online presence for regional NSW businesses.
+      </p>
+
+      <!-- ================= INTERNAL LINKS ================= -->
+      <nav
+        class="seo-links secondary-links"
+        aria-label="Related website design services"
+      >
+
+        <a href="services.html">
+          Website Services
+        </a>
+
+        <a href="local-seo-regional-nsw.html">
+          Local SEO Services
+        </a>
+
+        <a href="google-business-profile-setup.html">
+          Google Business Profile Setup
+        </a>
+
+        <a href="website-builder-vs-business-website.html">
+          Website Builder vs Business Website
+        </a>
+
+      </nav>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= FAQ ================= -->
+
+<section
+  class="section panel"
+  aria-labelledby="faq-heading"
+>
+
+  <div class="container">
+
+    <!-- ================= INTRO ================= -->
+    <div class="panel-text centered">
+
+      <p class="section-tag">
+        FAQ
+      </p>
+
+      <h2 id="faq-heading">
+        Website Design Wagga Wagga FAQ
+      </h2>
+
+      <p class="section-sub">
+        Common questions about website design, local SEO, Google visibility and business websites across Wagga Wagga and regional NSW.
+      </p>
+
+      <p class="hero-support">
+        Businesses across Wagga Wagga increasingly rely on fast-loading websites, mobile usability and Google visibility to attract customers and generate enquiries online.
+      </p>
+
+    </div>
+
+    <!-- ================= FAQ GRID ================= -->
+    <div
+      class="faq-grid"
+      aria-label="Frequently asked questions about website design in Wagga Wagga"
+    >
+
+      <!-- ================= ITEM ================= -->
+      <article class="faq-item">
+
+        <h3>
+          Do I need a website for my business?
+        </h3>
+
+        <p>
+          Most customers now search online before contacting businesses. A professional website may help improve customer trust, Google visibility and enquiry generation across Wagga Wagga and regional NSW.
+        </p>
+
+      </article>
+
+      <!-- ================= ITEM ================= -->
+      <article class="faq-item">
+
+        <h3>
+          Does website speed affect Google rankings?
+        </h3>
+
+        <p>
+          Website speed and mobile usability play a major role in customer experience and may support stronger Google visibility. Faster websites also improve usability across mobile devices.
+        </p>
+
+      </article>
+
+      <!-- ================= ITEM ================= -->
+      <article class="faq-item">
+
+        <h3>
+          Can you help my business appear on Google Maps?
+        </h3>
+
+        <p>
+          Yes. We build websites using local SEO structure and Google Business Profile integration designed to support Google Maps visibility for businesses across regional NSW.
+        </p>
+
+      </article>
+
+      <!-- ================= ITEM ================= -->
+      <article class="faq-item">
+
+        <h3>
+          Do you build websites for tradies in Wagga Wagga?
+        </h3>
+
+        <p>
+          Yes. We build websites for plumbers, electricians, builders, landscapers, fencing contractors and local service businesses across Wagga Wagga and surrounding areas.
+        </p>
+
+      </article>
+
+      <!-- ================= ITEM ================= -->
+      <article class="faq-item">
+
+        <h3>
+          What types of businesses do you work with?
+        </h3>
+
+        <p>
+          We work with tradies, tourism operators, cafes, rural businesses, pressure washing businesses, locksmiths, caravan parks and professional service businesses across regional NSW.
+        </p>
+
+      </article>
+
+      <!-- ================= ITEM ================= -->
+      <article class="faq-item">
+
+        <h3>
+          Are your websites mobile-friendly?
+        </h3>
+
+        <p>
+          Yes. Our websites are designed using responsive layouts that work across mobile phones, tablets and desktop devices to support modern customer browsing behaviour.
+        </p>
+
+      </article>
+
+      <!-- ================= ITEM ================= -->
+      <article class="faq-item">
+
+        <h3>
+          Do small businesses in Wagga Wagga need SEO?
+        </h3>
+
+        <p>
+          Local SEO may help businesses improve Google visibility, Google Maps presence and customer enquiries. Many customers now search online before choosing local businesses.
+        </p>
+
+      </article>
+
+      <!-- ================= ITEM ================= -->
+      <article class="faq-item">
+
+        <h3>
+          Can you redesign my existing website?
+        </h3>
+
+        <p>
+          Yes. We can modernise older websites with improved mobile usability, faster performance and stronger local SEO structure designed for regional NSW businesses.
+        </p>
+
+      </article>
+
+      <!-- ================= ITEM ================= -->
+      <article class="faq-item">
+
+        <h3>
+          Do you work with businesses outside Wagga Wagga?
+        </h3>
+
+        <p>
+          Yes. We work with businesses across Junee, Albury, Griffith, Temora, Cootamundra, the Riverina and regional NSW.
+        </p>
+
+      </article>
+
+      <!-- ================= ITEM ================= -->
+      <article class="faq-item">
+
+        <h3>
+          Why do fast-loading websites matter?
+        </h3>
+
+        <p>
+          Faster websites improve customer experience, mobile usability and accessibility while helping customers access business information more quickly across all devices.
+        </p>
+
+      </article>
+
+    </div>
+
+    <!-- ================= SUPPORT ================= -->
+    <div class="panel-text centered">
+
+      <p class="hero-support">
+        Crane Platform Labs builds lightweight, SEO-focused websites designed to support Google visibility, customer usability and enquiry generation for businesses across Wagga Wagga and regional NSW.
+      </p>
+
+      <!-- ================= INTERNAL LINKS ================= -->
+      <nav
+        class="seo-links secondary-links"
+        aria-label="Related website design pages"
+      >
+
+        <a href="services.html">
+          Website Services
+        </a>
+
+        <a href="local-seo-regional-nsw.html">
+          Local SEO Services
+        </a>
+
+        <a href="google-business-profile-setup.html">
+          Google Business Profile Setup
+        </a>
+
+        <a href="website-builder-vs-business-website.html">
+          Website Builder vs Business Website
+        </a>
+
+      </nav>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= CTA ================= -->
+
+<section
+  class="section cta"
+  aria-labelledby="cta-heading"
+>
+
+  <div class="container">
+
+    <div class="cta-box">
+
+      <!-- ================= TAG ================= -->
+      <p class="section-tag">
+        READY TO IMPROVE YOUR ONLINE PRESENCE?
+      </p>
+
+      <!-- ================= HEADING ================= -->
+      <h2 id="cta-heading">
+        Website Design Built For Real Businesses
+      </h2>
+
+      <!-- ================= SUBTEXT ================= -->
+      <p class="section-sub">
+        Crane Platform Labs builds fast, lightweight and SEO-focused websites for businesses across Wagga Wagga and regional NSW designed to improve Google visibility and generate customer enquiries.
+      </p>
+
+      <p class="hero-support">
+        Modern business websites should support mobile usability, local SEO visibility and customer trust while helping businesses attract more enquiries online.
+      </p>
+
+      <p class="hero-support">
+        We work with tradies, tourism operators, cafes, rural businesses and local service businesses across Wagga Wagga, Junee, Albury, Griffith, Temora and regional NSW.
+      </p>
+
+      <!-- ================= FEATURES ================= -->
+      <div
+        class="hero-features"
+        aria-label="Website design benefits"
+      >
+
+        <div class="hero-feature">
+          <span>Fast Mobile Performance</span>
+        </div>
+
+        <div class="hero-feature">
+          <span>SEO-Focused Structure</span>
+        </div>
+
+        <div class="hero-feature">
+          <span>Google Maps Visibility</span>
+        </div>
+
+        <div class="hero-feature">
+          <span>Built For Customer Enquiries</span>
+        </div>
+
+      </div>
+
+      <!-- ================= BUTTONS ================= -->
+      <div
+        class="hero-buttons"
+        aria-label="Website enquiry actions"
+      >
+
+        <a
+          href="contact.html"
+          class="btn-primary"
+          aria-label="Request a website design quote"
+        >
+          Request A Quote
+        </a>
+
+        <a
+          href="services.html"
+          class="btn-secondary"
+          aria-label="View website design services"
+        >
+          View Website Services
+        </a>
+
+      </div>
+
+      <!-- ================= TRUST ================= -->
+      <p class="hero-powered">
+        Supporting businesses across Wagga Wagga, Junee, Albury, Griffith, Temora, Cootamundra and regional NSW.
+      </p>
+
+      <!-- ================= INTERNAL LINKS ================= -->
+      <nav
+        class="seo-links secondary-links"
+        aria-label="Related website design services"
+      >
+
+        <a href="services.html">
+          Website Services
+        </a>
+
+        <a href="local-seo-regional-nsw.html">
+          Local SEO Services
+        </a>
+
+        <a href="google-business-profile-setup.html">
+          Google Business Profile Setup
+        </a>
+
+        <a href="website-builder-vs-business-website.html">
+          Website Builder vs Business Website
+        </a>
+
+      </nav>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <!-- BRAND -->
+      <div class="footer-col">
+
+        <a href="index.html" aria-label="Crane Platform Labs Home">
+          <img 
+            src="images/logo.webp" 
+            alt="Crane Platform Labs logo" 
+            class="footer-logo"
+            loading="lazy"
+            width="220"
+            height="50"
+            decoding="async"
+          >
+        </a>
+
+        <p>
+          Crane Platform Labs builds fast, mobile-friendly and SEO-focused websites for tradies, cafes, builders and small businesses across regional NSW.
+        </p>
+
+        <p class="footer-location">
+          Based in Junee, servicing Wagga Wagga, Albury, Griffith, Temora, Cootamundra, Young, Tumut and surrounding regional NSW areas.
+        </p>
+
+        <!-- TRUST -->
+        <p class="footer-note">
+          Built for Google • Mobile-friendly • Designed to generate real enquiries
+        </p>
+
+      </div>
+
+      <!-- SERVICES -->
+      <div class="footer-col">
+
+        <p class="footer-heading">
+          Services
+        </p>
+
+        <a href="services.html">
+          Website Design
+        </a>
+
+        <a href="services.html">
+          Small Business Websites
+        </a>
+
+        <a href="services.html">
+          Mobile-Friendly Websites
+        </a>
+
+        <a href="websites-built-for-performance.html">
+          Website Performance
+        </a>
+
+        <a href="google-business-profile-setup.html">
+          Google Business Profiles
+        </a>
+
+        <a href="local-seo-regional-nsw.html">
+          Local SEO Services
+        </a>
+
+      </div>
+
+      <!-- INDUSTRIES -->
+      <div class="footer-col">
+
+        <p class="footer-heading">
+          Industries
+        </p>
+
+        <a href="industries.html">
+          Tradie Websites
+        </a>
+
+        <a href="plumber-websites.html">
+          Plumber Websites
+        </a>
+
+        <a href="electrician-websites.html">
+          Electrician Websites
+        </a>
+
+        <a href="builder-websites.html">
+          Builder Websites
+        </a>
+
+        <a href="cafe-websites.html">
+          Cafe Websites
+        </a>
+
+        <a href="mechanic-websites.html">
+          Mechanic Websites
+        </a>
+
+      </div>
+
+            <!-- TOURISM -->
+      <div class="footer-col">
+
+        <p class="footer-heading">
+          Tourism Websites
+        </p>
+
+        <a href="tourism-websites.html">
+          Tourism Websites
+        </a>
+
+        <a href="visitor-attraction-websites.html">
+          Attraction Websites
+        </a>
+
+        <a href="winery-websites.html">
+          Winery Websites
+        </a>
+
+        <a href="museum-websites.html">
+          Museum Websites
+        </a>
+
+        <a href="visitor-centre-websites.html">
+          Visitor Centre Websites
+        </a>
+
+        <a href="caravan-park-websites.html">
+          Caravan Park Websites
+        </a>
+
+      </div>
+
+      <!-- COMPANY -->
+      <div class="footer-col">
+
+        <p class="footer-heading">
+          Company
+        </p>
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="services.html">
+          Services
+        </a>
+
+        <a href="industries.html">
+          Industries
+        </a>
+
+        <a href="about.html">
+          About
+        </a>
+
+        <a href="faq.html">
+          FAQ
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+      </div>
+
+      <!-- BUSINESS WEBSITE RESOURCES -->
+      <div class="footer-col">
+
+      <p class="footer-heading">
+        Business Website Resources
+      </p>
+
+      <a href="website-builder-vs-business-website.html">
+         Website Builder vs Business Website
+      </a>
+
+      <a href="how-to-test-a-website-before-hiring-a-web-designer.html">
+        How To Test A Website Before Hiring A Web Designer
+      </a>
+
+      <a href="website-design-wagga-wagga-guide.html">
+        Wagga Wagga Website Design Guide
+      </a>
+
+      <a href="why-your-website-is-not-getting-enquiries.html">
+        Why Your Website Is Not Getting Enquiries
+      </a>
+
+      <a href="website-builder-wagga-wagga.html">
+        Website Builder Wagga Wagga Guide
+      </a>
+
+    </div>
+
+    <!-- FAQ LINKS -->
+    <div class="footer-col">
+
+      <p class="footer-heading">
+        Popular Questions
+      </p>
+
+      <a href="faq.html">
+        Why isn’t my business showing on Google?
+      </a>
+
+      <a href="faq.html">
+        How do I rank higher on Google Maps?
+      </a>
+
+      <a href="faq.html">
+        Why is my website not generating enquiries?
+      </a>
+
+      <a href="faq.html">
+        Do I need local SEO?
+      </a>
+
+      <a href="faq.html">
+        What makes a website rank on Google?
+      </a>
+
+      </div>
+
+      <!-- AREAS -->
+      <div class="footer-col">
+
+        <p class="footer-heading">
+          Areas We Service
+        </p>
+
+        <a href="website-design-junee.html">
+          Junee
+        </a>
+
+        <a href="website-design-wagga-wagga.html">
+          Wagga Wagga
+        </a>
+
+        <a href="website-design-albury.html">
+          Albury
+        </a>
+
+        <a href="website-design-griffith.html">
+          Griffith
+        </a>
+
+        <a href="website-design-temora.html">
+          Temora
+        </a>
+
+        <a href="website-design-cootamundra.html">
+          Cootamundra
+        </a>
+
+      </div>
+
+      <!-- CONTACT -->
+      <div class="footer-col">
+
+        <p class="footer-heading">
+          Contact
+        </p>
+
+        <a href="tel:+61448244223">
+          0448 244 223
+        </a>
+
+        <a href="mailto:info@craneplatformlabs.com.au">
+          info@craneplatformlabs.com.au
+        </a>
+
+        <!-- FACEBOOK -->
+        <a 
+          href="https://www.facebook.com/profile.php?id=61589315729346"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer-social"
+          aria-label="Visit Crane Platform Labs Facebook page"
+        >
+
+          <svg 
+            viewBox="0 0 24 24" 
+            fill="currentColor" 
+            width="16" 
+            height="16"
+            aria-hidden="true"
+          >
+            <path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0 0 22 12z"/>
+          </svg>
+
+          Facebook
+        </a>
+
+        <p class="footer-contact-location">
+          Junee, NSW
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+
+      <p>
+        © Crane Platform Labs — All rights reserved
+      </p>
+
+      <p class="footer-abn">
+        ABN 41 946 218 773
+      </p>
+
+    </div>
+
+  </div>
+</footer>
+
+<!-- ================= FOOTER SOCIAL CSS ================= -->
+<style>
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+</style>
+
+<script>
+/* ================= NAV MENU ================= */
+
+function toggleMenu() {
+  const nav = document.getElementById("navLinks");
+  if (!nav) return;
+  nav.classList.toggle("active");
+}
+
+/* ================= CLOSE MENU ON LINK CLICK ================= */
+
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    const nav = document.getElementById("navLinks");
+    if (nav) nav.classList.remove("active");
+  });
+});
+
+/* ================= CLOSE MENU ON OUTSIDE CLICK ================= */
+
+document.addEventListener('click', function(e) {
+  const nav = document.getElementById("navLinks");
+  const toggle = document.querySelector('.nav-toggle');
+
+  if (!nav || !toggle) return;
+
+  if (!nav.contains(e.target) && !toggle.contains(e.target)) {
+    nav.classList.remove("active");
+  }
+});
+
+/* ================= SCROLL EFFECT ================= */
+
+window.addEventListener("scroll", function() {
+  const nav = document.getElementById("nav");
+  if (!nav) return;
+
+  if (window.scrollY > 40) {
+    nav.classList.add("scrolled");
+  } else {
+    nav.classList.remove("scrolled");
+  }
+});
+</script>
+
+</body>
+</html>
