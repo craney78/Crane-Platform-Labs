@@ -4,59 +4,132 @@
 <head>
   <meta charset="UTF-8">
 
-  <title>
-    Website Design Cootamundra NSW | Small Business Websites
-  </title>
+  <!-- MOBILE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
+  <!-- PRIMARY SEO -->
+  <title>Website Design Wagga Wagga | Web Designer Wagga NSW</title>
+
+  <meta 
+    name="description" 
+    content="Website design in Wagga Wagga for tradies, cafés, local services and small businesses. Fast, mobile-friendly websites built to rank on Google and generate real enquiries."
   >
 
-  <meta
-    name="description"
-    content="Website design in Cootamundra NSW for tradies, cafés and small businesses. Fast, mobile-friendly websites built to help local businesses get found on Google and generate enquiries."
+    <!-- ========================================================= -->
+  <!-- ROBOTS -->
+  <!-- ========================================================= -->
+
+  <meta 
+    name="robots" 
+    content="index, follow, max-image-preview:large"
+  >
+
+  <!-- ========================================================= -->
+  <!-- THEME COLOR -->
+  <!-- ========================================================= -->
+
+  <meta 
+    name="theme-color" 
+    content="#2563eb"
+  >
+
+  <!-- ========================================================= -->
+  <!-- PRELOAD HERO IMAGE -->
+  <!-- ========================================================= -->
+
+  <link
+    rel="preload"
+    as="image"
+    href="images/wagga.webp"
+  >
+
+  <!-- ========================================================= -->
+  <!-- PERFORMANCE -->
+  <!-- ========================================================= -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
   >
 
   <link
-    rel="canonical"
-    href="https://www.craneplatformlabs.com.au/website-design-cootamundra.html"
+    rel="dns-prefetch"
+    href="//fonts.gstatic.com"
   >
 
-  <!-- Open Graph -->
-  <meta
-    property="og:title"
-    content="Website Design Cootamundra NSW | Crane Platform Labs"
+  <!-- ========================================================= -->
+  <!-- APPLE ICON -->
+  <!-- ========================================================= -->
+
+  <link
+    rel="apple-touch-icon"
+    href="images/favicon.webp"
   >
 
-  <meta
-    property="og:description"
-    content="Fast, mobile-friendly websites for businesses in Cootamundra NSW built to generate enquiries and improve Google visibility."
-  >
+  <!-- ========================================================= -->
+  <!-- TWITTER -->
+  <!-- ========================================================= -->
 
   <meta
-    property="og:type"
-    content="website"
-  >
-
-  <meta
-    property="og:url"
-    content="https://www.craneplatformlabs.com.au/website-design-cootamundra.html"
+    name="twitter:card"
+    content="summary_large_image"
   >
 
   <meta
-    property="og:image"
-    content="https://www.craneplatformlabs.com.au/images/og-image.webp"
+    name="twitter:title"
+    content="Website Design Wagga Wagga | Crane Platform Labs"
   >
 
-  <!-- Favicon -->
+  <meta
+    name="twitter:description"
+    content="Fast, mobile-friendly website design for Wagga Wagga businesses built for Google, SEO and real enquiries."
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://www.craneplatformlabs.com.au/images/hero.webp"
+  >
+
+  <!-- CANONICAL -->
+  <link 
+    rel="canonical" 
+    href="https://www.craneplatformlabs.com.au/website-design-wagga-wagga.html"
+  >
+
+  <!-- OPEN GRAPH / FACEBOOK -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Website Design Wagga Wagga | Crane Platform Labs">
+  <meta 
+    property="og:description" 
+    content="Fast, mobile-friendly website design for Wagga Wagga businesses. Built for Google, local search and real enquiries."
+  >
+  <meta 
+    property="og:url" 
+    content="https://www.craneplatformlabs.com.au/website-design-wagga-wagga.html"
+  >
+  <meta property="og:site_name" content="Crane Platform Labs">
+  <meta property="og:locale" content="en_AU">
+
+  <!-- SOCIAL IMAGE -->
+  <meta 
+    property="og:image" 
+    content="https://www.craneplatformlabs.com.au/images/hero.webp"
+  >
+
+  <!-- FAVICON -->
+  <link rel="icon" href="images/favicon.webp" type="image/webp">
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="styles.css">
+
+   <!-- Favicon -->
   <link
     rel="icon"
     href="images/favicon.ico"
     type="image/x-icon"
   >
 
-  <link rel="stylesheet" href="styles.css">
 <!-- ================= LOCAL BUSINESS SCHEMA ================= -->
 <script type="application/ld+json">
 {
@@ -160,21 +233,19 @@
     "Regional NSW Business Websites"
   ]
 }
-</script>  
-</head>
+</script>
 
 <style>
-
-/* ================= COOTAMUNDRA PAGE ================= */
+/* ================= WAGGA PAGE ================= */
 
 /* Center all panel layouts */
-.cootamundra-page .panel-inner {
+.wagga-page .panel-inner {
   display: flex;
   justify-content: center;
 }
 
 /* Center all text blocks */
-.cootamundra-page .panel-text {
+.wagga-page .panel-text {
   text-align: center;
   margin: 0 auto;
   max-width: 750px;
@@ -182,19 +253,19 @@
 }
 
 /* Feature grids */
-.cootamundra-page .features-grid {
+.wagga-page .features-grid {
   justify-content: center;
   margin-top: 30px;
 }
 
 /* Cards */
-.cootamundra-page .feature-card {
+.wagga-page .feature-card {
   text-align: center;
   align-items: center;
 }
 
-/* Icons (important fix — overrides global conflicts) */
-.cootamundra-page .feature-card .icon-wrap {
+/* Icons (override global conflicts) */
+.wagga-page .feature-card .icon-wrap {
   width: 40px;
   height: 40px;
   margin: 0 auto 14px;
@@ -204,28 +275,29 @@
   justify-content: center;
 }
 
-.cootamundra-page .feature-card svg {
+.wagga-page .feature-card svg {
   width: 22px;
   height: 22px;
 }
 
 /* CTA sections */
-.cootamundra-page .services-cta,
-.cootamundra-page .cta-box {
+.wagga-page .services-cta,
+.wagga-page .cta-box {
   text-align: center;
   margin: 30px auto 0;
 }
 
-/* Optional: tighten spacing */
-.cootamundra-page h2 {
+/* Spacing polish */
+.wagga-page h2 {
   margin-bottom: 20px;
 }
 
-.cootamundra-page .section-sub {
+.wagga-page .section-sub {
   margin-bottom: 25px;
 }
-
 </style>
+
+</head>
 
 <!-- ================= NAV ================= -->
 <header class="nav" id="nav">
@@ -296,25 +368,82 @@
 
 </header>
 
-<body class="cootamundra-page">
+<body class="wagga-page">
 <main>
 <!-- ================= HERO ================= -->
 <section class="section panel">
   <div class="container">
     <div class="panel-inner">
-      <div class="panel-text">
+      <div class="panel-text hero-center">
 
-        <p class="section-tag">COOTAMUNDRA NSW</p>
+        <!-- LOCATION TAG -->
+        <p class="section-tag">WAGGA WAGGA NSW</p>
 
+        <!-- HEADLINE -->
         <h1>
-          Website Design for <span class="gradient-text">Cootamundra Businesses</span>
+          Website Design for
+          <span class="gradient-text">Wagga Wagga Businesses</span>
         </h1>
 
+        <!-- MAIN SUBTEXT -->
         <p class="section-sub">
-          We build simple, high-performing websites that help businesses in Cootamundra get found on Google and turn visitors into real enquiries.
+          We design modern, high-performing websites for businesses in Wagga Wagga and regional NSW — built to help you rank on Google, build trust, and generate more enquiries from local customers.
         </p>
 
-        <a href="/contact.html" class="btn-primary">Get a Quote</a>
+        <!-- SUPPORTING SEO + TRUST COPY -->
+        <p class="hero-support">
+          Whether you're a tradie, café, health service, retail store or local business, we create fast, mobile-friendly websites designed to help your business stand out online and bring in real customers.
+        </p>
+
+        <!-- FEATURE ROW -->
+        <div class="hero-features">
+
+          <!-- GOOGLE -->
+          <div class="hero-feature">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="7"/>
+                <line x1="16.5" y1="16.5" x2="21" y2="21"/>
+              </svg>
+            </div>
+            <span>Built to rank on Google</span>
+          </div>
+
+          <!-- MOBILE -->
+          <div class="hero-feature">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="7" y="2" width="10" height="20" rx="2"/>
+                <circle cx="12" cy="18" r="1"/>
+              </svg>
+            </div>
+            <span>Mobile-first design</span>
+          </div>
+
+          <!-- SPEED -->
+          <div class="hero-feature">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10"/>
+              </svg>
+            </div>
+            <span>Fast & reliable</span>
+          </div>
+
+        </div>
+
+        <!-- CTA -->
+        <div class="hero-buttons">
+          <a href="/contact.html" class="btn-primary">Get a Quote</a>
+          <a href="tel:+61448244223" class="btn-secondary">Call Now</a>
+        </div>
+
+        <!-- TRUST LINE -->
+        <div class="hero-trust">
+          <p>
+            Website designer servicing Wagga Wagga, Junee, Temora, Gundagai and surrounding regional NSW areas
+          </p>
+        </div>
 
       </div>
     </div>
@@ -329,107 +458,31 @@
       <!-- LEFT: TEXT -->
       <div class="panel-text">
 
-        <h2>Website Design in Cootamundra NSW</h2>
+        <h2>Website Design in Wagga Wagga Built for Real Results</h2>
 
         <p class="section-sub">
-          We build fast, mobile-friendly websites for businesses in Cootamundra and surrounding regional NSW areas — designed to help local businesses get found on Google and generate real enquiries.
+          A good website should do more than look nice. It should load quickly, show up on Google, build trust with local customers, and make it easy for people to call, book, or enquire.
         </p>
 
         <p>
-          In a regional town like Cootamundra, your website often creates the first impression customers have of your business. Whether someone is searching for a tradie, café, local service or small business, they expect a website that is clear, modern and easy to use.
+          We don’t build bloated websites filled with pop-ups, oversized images, slow animations, or confusing layouts. Those things might look flashy, but they often slow the site down and make it harder for customers to take action.
         </p>
 
         <p>
-          Many small business websites struggle because they’re outdated, slow, difficult to navigate or not appearing properly in Google search results. We focus on building clean, professional websites that improve visibility, build trust and help turn website visitors into real customers.
+          For Wagga Wagga businesses, we focus on what actually matters — clear messaging, fast pages, mobile-friendly design, local SEO, and simple calls to action that help turn website visitors into real enquiries.
         </p>
 
         <p>
-          Crane Platform Labs works with local businesses across regional NSW, creating practical websites that are fast-loading, mobile-friendly and built with strong SEO foundations from the start.
+          Whether you're a tradie, café, health provider, mechanic, salon, or local service business, your website should work hard for your business — not just sit online looking pretty.
         </p>
 
       </div>
 
       <!-- RIGHT: IMAGE -->
       <div class="panel-image">
-        <img 
-          src="images/cootamundra.webp" 
-          alt="Local businesses and streetscape in Cootamundra NSW"
-        >
+        <img src="images/wagga.webp" alt="Website design in Wagga Wagga for local businesses focused on fast loading pages and real enquiries">
       </div>
 
-    </div>
-  </div>
-</section>
-
-<!-- ================= WHO WE WORK WITH ================= -->
-<section class="section panel">
-  <div class="container">
-    <div class="panel-inner">
-      <div class="panel-text">
-
-        <p class="section-tag">LOCAL BUSINESSES</p>
-
-        <h2>Websites Built for Regional NSW Businesses</h2>
-
-        <p class="section-sub">
-          We work with businesses across Cootamundra and regional NSW, creating modern websites that help local businesses build trust, improve Google visibility and generate enquiries.
-        </p>
-
-        <div class="features-grid">
-
-          <!-- TRADIES -->
-          <div class="card feature-card">
-            <div class="icon-wrap">
-              <!-- tools -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M14.7 6.3a4 4 0 1 0 3 3l-7.4 7.4a2 2 0 0 1-2.8-2.8l7.4-7.4z"/>
-              </svg>
-            </div>
-
-            <h3>Tradies</h3>
-
-            <p>
-              Websites for builders, plumbers, electricians, landscapers, concreters and local trades that rely on being found quickly online.
-            </p>
-          </div>
-
-          <!-- SMALL BUSINESS -->
-          <div class="card feature-card">
-            <div class="icon-wrap">
-              <!-- shop -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M3 9l1-5h16l1 5"/>
-                <path d="M4 9h16v11H4z"/>
-              </svg>
-            </div>
-
-            <h3>Small Businesses</h3>
-
-            <p>
-              Mobile-friendly websites for cafés, retail stores, beauty businesses and local companies across Cootamundra and surrounding areas.
-            </p>
-          </div>
-
-          <!-- SERVICE PROVIDERS -->
-          <div class="card feature-card">
-            <div class="icon-wrap">
-              <!-- users -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="7" r="4"/>
-                <path d="M5.5 21a6.5 6.5 0 0 1 13 0"/>
-              </svg>
-            </div>
-
-            <h3>Service Businesses</h3>
-
-            <p>
-              Professional websites for mechanics, cleaners, consultants, health services, trainers and other local service providers.
-            </p>
-          </div>
-
-        </div>
-
-      </div>
     </div>
   </div>
 </section>
@@ -440,17 +493,14 @@
     <div class="panel-inner">
       <div class="panel-text">
 
-        <p class="section-tag">WHAT YOU GET</p>
-
-        <h2>Websites Designed to Generate Enquiries</h2>
+        <h2>What You Get With Our Wagga Wagga Website Design</h2>
 
         <p class="section-sub">
-          Every website is built with a focus on speed, mobile usability, local SEO and helping businesses across Cootamundra build trust online.
+          We build high-performing websites for Wagga Wagga businesses that are fast, easy to use, mobile-friendly and designed to help you get found on Google.
         </p>
 
         <div class="features-grid">
 
-          <!-- GOOGLE -->
           <div class="card feature-card">
             <div class="icon-wrap">
               <!-- search -->
@@ -459,15 +509,12 @@
                 <line x1="21" y1="21" x2="16.65" y2="16.65"/>
               </svg>
             </div>
-
             <h3>Built for Google</h3>
-
             <p>
-              Clean website structure and SEO foundations designed to help your business appear in local Google searches.
+              Clean website structure, local SEO foundations and Wagga Wagga keyword targeting to help your business appear in local searches.
             </p>
           </div>
 
-          <!-- MOBILE -->
           <div class="card feature-card">
             <div class="icon-wrap">
               <!-- phone -->
@@ -476,15 +523,12 @@
                 <line x1="12" y1="18" x2="12" y2="18"/>
               </svg>
             </div>
-
-            <h3>Mobile-Friendly</h3>
-
+            <h3>Mobile-Friendly Websites</h3>
             <p>
-              Designed for phones and tablets where most customers are now searching for local businesses.
+              Designed first for phones, so customers in Wagga can quickly read your services, trust your business and contact you without frustration.
             </p>
           </div>
 
-          <!-- SPEED -->
           <div class="card feature-card">
             <div class="icon-wrap">
               <!-- speed -->
@@ -493,61 +537,9 @@
                 <line x1="12" y1="12" x2="16" y2="8"/>
               </svg>
             </div>
-
-            <h3>Fast & Professional</h3>
-
+            <h3>Fast, Clean & Not Flashy</h3>
             <p>
-              Lightweight websites that load quickly, look modern and help build trust with potential customers.
-            </p>
-          </div>
-
-          <!-- ENQUIRIES -->
-          <div class="card feature-card">
-            <div class="icon-wrap">
-              <!-- message -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-              </svg>
-            </div>
-
-            <h3>Built for Enquiries</h3>
-
-            <p>
-              Clear layouts and strong calls-to-action focused on helping customers contact your business easily.
-            </p>
-          </div>
-
-          <!-- SIMPLE -->
-          <div class="card feature-card">
-            <div class="icon-wrap">
-              <!-- check -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
-            </div>
-
-            <h3>Simple Process</h3>
-
-            <p>
-              Straightforward website design without confusing agency jargon or overly complicated systems.
-            </p>
-          </div>
-
-          <!-- LOCAL -->
-          <div class="card feature-card">
-            <div class="icon-wrap">
-              <!-- map -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polygon points="1 6 8 2 16 6 23 2 23 18 16 22 8 18 1 22 1 6"/>
-                <line x1="8" y1="2" x2="8" y2="18"/>
-                <line x1="16" y1="6" x2="16" y2="22"/>
-              </svg>
-            </div>
-
-            <h3>Regional NSW Support</h3>
-
-            <p>
-              Local support for businesses across Cootamundra and surrounding regional NSW communities.
+              We avoid bloated pages, pop-ups, oversized images and slow effects. Your website is built to load quickly and guide visitors toward enquiries.
             </p>
           </div>
 
@@ -564,31 +556,34 @@
     <div class="panel-inner">
       <div class="panel-text">
 
-        <p class="section-tag">REGIONAL NSW</p>
-
-        <h2>Local Website Design for Regional Businesses</h2>
+        <h2>Built for Regional NSW Businesses</h2>
 
         <p class="section-sub">
-          Crane Platform Labs works with businesses across regional NSW, building modern websites designed to help local businesses improve Google visibility and generate real enquiries.
+          Based in 
+          <a href="website-design-junee.html">Junee</a>, we work with businesses across 
+          <a href="website-design-wagga-wagga.html">Wagga Wagga</a>, 
+          <a href="website-design-albury.html">Albury</a>, 
+          <a href="website-design-temora.html">Temora</a> and surrounding regional NSW areas.
         </p>
 
         <p>
-          We understand how regional businesses operate and what customers expect when searching online. Whether you're a tradie, café, local service provider or small business, your website needs to be clear, fast and easy to use.
+          We understand how regional businesses operate because we live and work in regional NSW ourselves. Whether you're a tradie, café, mechanic, health service, contractor or small business owner, your website needs to do one thing well — bring in real customers.
         </p>
 
         <p>
-          Instead of complicated agency processes and bloated websites, we focus on practical websites that load quickly, work properly on mobile devices and help customers contact your business easily.
+          Unlike large agencies that focus on flashy designs, pop-ups and oversized websites, we build clean, fast and easy-to-use websites designed to perform well on Google and turn visitors into enquiries.
         </p>
 
-        <!-- INTERNAL LINKS -->
-        <p class="section-sub" style="margin-top: 20px;">
-          We work with businesses across 
-          <a href="website-design-cootamundra.html">Cootamundra</a>,
-          <a href="website-design-junee.html">Junee</a>,
-          <a href="website-design-temora.html">Temora</a>,
-          <a href="website-design-wagga-wagga.html">Wagga Wagga</a>,
-          <a href="website-design-griffith.html">Griffith</a> and surrounding regional NSW areas.
+        <p>
+          Our websites are built for local search, mobile users and real business growth — helping Wagga Wagga and regional NSW businesses compete online with a professional website that actually works.
         </p>
+
+        <!-- TRUST LINE -->
+        <div class="hero-trust" style="margin-top:25px;">
+          <p>
+            Website designer servicing Wagga Wagga, Albury, Junee, Temora, Griffith and regional NSW
+          </p>
+        </div>
 
       </div>
     </div>
@@ -604,34 +599,38 @@
       <div class="panel-text">
 
         <p class="section-tag">
-          AFFORDABLE WEBSITE DESIGN
+          WAGGA WAGGA WEBSITE DESIGN
         </p>
 
         <h2>
-          Affordable Website Design for Cootamundra Businesses
+          Affordable Website Design for Wagga Wagga Businesses
         </h2>
 
         <p class="section-sub">
-          Crane Platform Labs builds affordable, fast and mobile-friendly websites for tradies, mechanics, cafes and small businesses across Cootamundra and regional NSW.
+          Crane Platform Labs builds affordable, fast and SEO-focused websites for tradies, mechanics, cafes, builders and small businesses across Wagga Wagga and the Riverina region.
         </p>
 
         <p>
-          In smaller regional communities like Cootamundra, trust and visibility matter. Customers often search online before making contact, meaning your website needs to clearly explain your services, work properly on mobile devices and help your business appear professional online.
+          Wagga Wagga is one of the largest and fastest-growing regional business centres in NSW, meaning local businesses need strong online visibility to compete effectively. Most customers now search on Google before contacting a business, making your website one of the most important marketing tools your business has.
         </p>
 
         <p>
-          We build clean, SEO-focused websites designed to help Cootamundra businesses improve their Google visibility, generate more local enquiries and compete online without expensive agency pricing or unnecessary complexity.
+          We build professional websites designed to help Wagga Wagga businesses rank higher on Google, improve local SEO visibility, appear more trustworthy online and generate more local enquiries from customers searching for services across the Riverina.
+        </p>
+
+        <p>
+          Every website is built to load quickly, work perfectly on mobile devices and support local Google rankings for businesses across Wagga Wagga, Estella, Lake Albert, Tatton, Turvey Park, Kooringal and surrounding regional NSW areas.
         </p>
 
         <!-- ================= FEATURES GRID ================= -->
         <div class="features-grid">
 
-          <!-- PLUMBER -->
+          <!-- ================= PLUMBER ================= -->
           <div class="card feature-card">
 
             <img 
               src="images/plumber-website.webp"
-              alt="Affordable plumber website design Cootamundra NSW"
+              alt="Affordable plumber website design Wagga Wagga NSW"
               class="industry-image"
               loading="lazy"
               width="500"
@@ -639,11 +638,11 @@
             >
 
             <h3>
-              Plumber Websites
+              Plumber Websites Wagga Wagga
             </h3>
 
             <p>
-              Fast, mobile-friendly plumbing websites designed to help plumbers generate more local enquiries from Google.
+              Fast, mobile-friendly plumbing websites designed to help Wagga Wagga plumbers improve Google visibility and generate more local enquiries online.
             </p>
 
             <a href="plumber-websites.html" class="btn-secondary">
@@ -652,12 +651,12 @@
 
           </div>
 
-          <!-- ELECTRICIAN -->
+          <!-- ================= ELECTRICIAN ================= -->
           <div class="card feature-card">
 
             <img 
               src="images/electrician-website.webp"
-              alt="Affordable electrician website design Cootamundra NSW"
+              alt="Affordable electrician website design Wagga Wagga NSW"
               class="industry-image"
               loading="lazy"
               width="500"
@@ -665,11 +664,11 @@
             >
 
             <h3>
-              Electrician Websites
+              Electrician Websites Wagga Wagga
             </h3>
 
             <p>
-              Professional electrician websites built for local Google searches and regional NSW electrical businesses.
+              Professional electrician websites built for local Google searches, mobile users and electrical businesses across Wagga Wagga and regional NSW.
             </p>
 
             <a href="electrician-websites.html" class="btn-secondary">
@@ -678,12 +677,12 @@
 
           </div>
 
-          <!-- BUILDER -->
+          <!-- ================= BUILDER ================= -->
           <div class="card feature-card">
 
             <img 
               src="images/builder-website.webp"
-              alt="Affordable builder website design Cootamundra NSW"
+              alt="Affordable builder website design Wagga Wagga NSW"
               class="industry-image"
               loading="lazy"
               width="500"
@@ -691,11 +690,11 @@
             >
 
             <h3>
-              Builder Websites
+              Builder Websites Wagga Wagga
             </h3>
 
             <p>
-              Professional builder and construction websites designed to showcase projects and generate more local enquiries online.
+              Professional builder and construction websites designed to showcase projects, improve trust online and generate more local enquiries.
             </p>
 
             <a href="builder-websites.html" class="btn-secondary">
@@ -704,12 +703,12 @@
 
           </div>
 
-          <!-- MECHANIC -->
+          <!-- ================= MECHANIC ================= -->
           <div class="card feature-card">
 
             <img 
               src="images/mechanic-website.webp"
-              alt="Affordable mechanic website design Cootamundra NSW"
+              alt="Affordable mechanic website design Wagga Wagga NSW"
               class="industry-image"
               loading="lazy"
               width="500"
@@ -717,11 +716,11 @@
             >
 
             <h3>
-              Mechanic Websites
+              Mechanic Websites Wagga Wagga
             </h3>
 
             <p>
-              Automotive websites designed for mechanics and workshops wanting to improve visibility on Google and attract more local customers.
+              Automotive websites designed for mechanics and workshops wanting to improve visibility on Google and attract more Wagga Wagga customers.
             </p>
 
             <a href="mechanic-websites.html" class="btn-secondary">
@@ -730,12 +729,12 @@
 
           </div>
 
-          <!-- CAFE -->
+          <!-- ================= CAFE ================= -->
           <div class="card feature-card">
 
             <img 
               src="images/cafe-website.webp"
-              alt="Affordable cafe website design Cootamundra NSW"
+              alt="Affordable cafe website design Wagga Wagga NSW"
               class="industry-image"
               loading="lazy"
               width="500"
@@ -743,11 +742,11 @@
             >
 
             <h3>
-              Cafe Websites
+              Cafe Websites Wagga Wagga
             </h3>
 
             <p>
-              Professional cafe and hospitality websites designed to attract more local customers across regional NSW.
+              Professional cafe and hospitality websites designed to help cafes attract more local customers across Wagga Wagga and the Riverina.
             </p>
 
             <a href="cafe-websites.html" class="btn-secondary">
@@ -758,9 +757,13 @@
 
         </div>
 
-        <!-- EXTRA SEO -->
+        <!-- ================= EXTRA SEO ================= -->
         <p style="margin-top:40px;">
-          Whether you're a tradie, cafe owner, mechanic, builder or local business in Cootamundra, we build affordable websites designed to improve Google visibility, mobile usability and customer trust across regional NSW.
+          Whether you're a tradie, cafe owner, mechanic, builder or local service business in Wagga Wagga, we build affordable websites designed to improve Google rankings, mobile usability, customer trust and local SEO visibility across regional NSW.
+        </p>
+
+        <p>
+          Our websites are designed specifically for businesses wanting to improve their online presence, appear more professional and generate more local enquiries from Google searches in Wagga Wagga and the Riverina region.
         </p>
 
       </div>
@@ -905,41 +908,37 @@
 <section class="section panel">
   <div class="container">
     <div class="panel-inner">
-      <div class="panel-text hero-center">
-
-        <p class="section-tag">READY TO START?</p>
+      <div class="panel-text" style="text-align:center; max-width:800px; margin:0 auto;">
 
         <h2>
-          Get a Website That Helps Your Business Get Found
+          Get a Website That Helps Your Business
+          <span class="gradient-text">Get Found and Chosen</span>
         </h2>
 
         <p class="section-sub">
-          If you're in Cootamundra or surrounding regional NSW areas and need a fast, professional website designed to generate enquiries, get in touch for a simple, no-pressure chat.
+          Looking for website design in Wagga Wagga that focuses on real business results instead of flashy effects and bloated pages? We build fast, professional websites designed to rank on Google, build trust, and generate enquiries from local customers.
         </p>
 
-        <p>
-          Crane Platform Labs builds mobile-friendly websites for tradies, cafés, service businesses and small local companies looking to improve their online presence and Google visibility.
+        <p class="hero-support">
+          Whether you're starting a new business or replacing an outdated website, we create clean, mobile-friendly websites for tradies, cafés, service businesses and regional NSW companies that want a stronger online presence.
         </p>
 
-        <!-- BUTTONS -->
-        <div class="hero-buttons">
-
-          <a href="/contact.html" class="btn-primary">
-            Get a Quote
-          </a>
-
-          <a href="https://www.facebook.com/profile.php?id=61589315729346" class="btn-secondary" target="_blank">
-            Visit Facebook
-          </a>
-
+        <!-- CTA BUTTONS -->
+        <div class="hero-buttons" style="justify-content:center; margin-top:30px;">
+          <a href="/contact.html" class="btn-primary">Get a Quote</a>
+          <a href="tel:+61448244223" class="btn-secondary">Call Now</a>
         </div>
 
-        <p style="margin-top:20px; font-size:14px; opacity:0.65;">
-          Crane Platform Labs • Regional NSW Website Design
-        </p>
+        <!-- TRUST -->
+        <div class="hero-trust" style="margin-top:25px;">
+          <p>
+            Website designer servicing Wagga Wagga, Albury, Junee, Griffith and regional NSW
+          </p>
+        </div>
 
-        <p style="margin-top:6px; font-size:13px; opacity:0.5;">
-          ABN: 41 946 218 773
+        <!-- BUSINESS DETAILS -->
+        <p style="margin-top:25px; font-size:14px; opacity:0.6;">
+          Crane Platform Labs • ABN: 41 946 218 773
         </p>
 
       </div>
@@ -1058,7 +1057,7 @@
         Business Website Resources
       </p>
 
-      <a href="website-design-wagga-wagga.html">
+      <a href="Website-Designer-Wagga-Wagga.html">
         Website Design Wagga Wagga
       </a>
 
