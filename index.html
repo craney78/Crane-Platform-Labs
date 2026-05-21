@@ -340,111 +340,110 @@
 
 <style>
 /* =========================================================
-   INDEX PAGE — MAIN HERO
-   FULLY ISOLATED PREMIUM HERO
+   CINEMATIC HERO
 ========================================================= */
 
-.main-hero{
+.cinematic-hero{
   position:relative;
+
   overflow:hidden;
 
-  padding:90px 0 80px 0;
+  background:#f8fafc;
 
-  background:
-    linear-gradient(
-      180deg,
-      #ffffff 0%,
-      #f7f9fc 100%
-    );
+  padding-top:90px;
 }
 
 /* =========================================================
-   BACKGROUND GLOW
+   BACKGROUND IMAGE
 ========================================================= */
 
-.main-hero .hero-bg-glow{
+.cinematic-hero-image{
   position:absolute;
+  inset:0;
 
-  top:-220px;
-  right:-220px;
-
-  width:700px;
-  height:700px;
-
-  border-radius:50%;
-
-  background:
-    radial-gradient(
-      circle,
-      rgba(37,99,235,0.14) 0%,
-      rgba(37,99,235,0) 72%
-    );
-
-  pointer-events:none;
   z-index:0;
 }
 
+.cinematic-hero-image img{
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+  display:block;
+}
+
 /* =========================================================
-   LAYOUT
+   OVERLAY
 ========================================================= */
 
-.main-hero .hero-inner{
+.cinematic-hero-overlay{
+  position:absolute;
+  inset:0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(248,250,252,0.98) 0%,
+      rgba(248,250,252,0.94) 32%,
+      rgba(248,250,252,0.78) 46%,
+      rgba(248,250,252,0.10) 68%,
+      rgba(248,250,252,0.02) 100%
+    );
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.cinematic-hero-content{
   position:relative;
   z-index:2;
 
   display:grid;
-  grid-template-columns:1.05fr 0.95fr;
+  grid-template-columns:1fr auto;
 
-  gap:80px;
+  gap:60px;
 
   align-items:center;
+
+  min-height:760px;
 }
 
 /* =========================================================
    TEXT COLUMN
 ========================================================= */
 
-.main-hero .hero-text{
-  position:relative;
-  z-index:2;
+.cinematic-hero-text{
+  max-width:760px;
+
+  padding-bottom:160px;
 }
 
 /* =========================================================
    TAG
 ========================================================= */
 
-.main-hero .hero-tag{
-  display:inline-flex;
-  align-items:center;
+.cinematic-hero-tag{
+  color:#2563eb;
 
-  padding:12px 20px;
-
-  border-radius:999px;
-
-  background:
-    rgba(37,99,235,0.06);
-
-  border:
-    1px solid rgba(37,99,235,0.08);
-
-  color:#64748b;
-
-  font-size:13px;
+  font-size:14px;
   font-weight:700;
-  letter-spacing:1.4px;
+
+  letter-spacing:0.8px;
   text-transform:uppercase;
 
-  margin-bottom:28px;
+  margin-bottom:26px;
 }
 
 /* =========================================================
    HEADING
 ========================================================= */
 
-.main-hero h1{
-  font-size:clamp(58px,5vw,72px);
+.cinematic-hero h1{
+  font-size:clamp(56px,5vw,78px);
 
-  line-height:0.95;
+  line-height:1.02;
   letter-spacing:-3px;
 
   font-weight:800;
@@ -453,14 +452,12 @@
 
   margin-bottom:34px;
 
-  max-width:760px;
+  max-width:900px;
 }
 
-/* =========================================================
-   GRADIENT TEXT
-========================================================= */
+.cinematic-hero h1 span{
+  display:block;
 
-.main-hero .gradient-text{
   background:
     linear-gradient(
       90deg,
@@ -476,148 +473,138 @@
    SUBTEXT
 ========================================================= */
 
-.main-hero .hero-sub{
-  font-size:21px;
+.cinematic-hero-sub{
+  font-size:22px;
   line-height:1.8;
 
-  color:#475569;
+  color:#334155;
 
   max-width:720px;
 
-  margin-bottom:26px;
+  margin-bottom:30px;
 }
 
 /* =========================================================
    SUPPORT
 ========================================================= */
 
-.main-hero .hero-support{
-  font-size:17px;
+.cinematic-hero-support{
+  font-size:18px;
   line-height:1.9;
 
-  color:#64748b;
+  color:#475569;
 
-  max-width:720px;
+  max-width:700px;
 
-  margin-bottom:38px;
-}
-
-.main-hero .hero-support a{
-  color:#2563eb;
-  text-decoration:none;
-  font-weight:600;
-}
-
-.main-hero .hero-support a:hover{
-  text-decoration:underline;
+  margin-bottom:42px;
 }
 
 /* =========================================================
    FEATURES
 ========================================================= */
 
-.main-hero .hero-features{
+.cinematic-hero-features{
   display:flex;
   flex-wrap:wrap;
 
-  gap:28px;
+  gap:34px;
 
   margin-bottom:42px;
 }
 
 /* =========================================================
-   FORCE REMOVE ALL OLD CARD STYLES
+   FEATURE
 ========================================================= */
 
-.main-hero .hero-feature{
-  display:flex !important;
-  align-items:center !important;
+.cinematic-feature{
+  display:flex;
+  align-items:center;
 
-  gap:16px !important;
-
-  padding:0 !important;
-
-  background:transparent !important;
-  border:none !important;
-  box-shadow:none !important;
-
-  border-radius:0 !important;
-
-  min-height:auto !important;
+  gap:16px;
 }
 
 /* =========================================================
-   ICON STYLE
+   FEATURE ICON
 ========================================================= */
 
-.main-hero .hero-feature .icon-wrap{
-  width:44px !important;
-  height:44px !important;
+.cinematic-feature-icon{
+  width:58px;
+  height:58px;
 
-  min-width:44px !important;
+  min-width:58px;
 
-  border-radius:14px !important;
+  border-radius:18px;
 
-  display:flex !important;
-  align-items:center !important;
-  justify-content:center !important;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 
   background:
-    rgba(37,99,235,0.08) !important;
+    rgba(255,255,255,0.72);
 
-  color:#2563eb !important;
+  backdrop-filter:blur(10px);
 
-  box-shadow:none !important;
-  border:none !important;
+  border:
+    1px solid rgba(255,255,255,0.6);
 
-  margin:0 !important;
+  box-shadow:
+    0 10px 30px rgba(15,23,42,0.08);
+
+  color:#2563eb;
 }
 
-.main-hero .hero-feature svg{
-  width:22px !important;
-  height:22px !important;
-
-  stroke:currentColor !important;
+.cinematic-feature-icon svg{
+  width:28px;
+  height:28px;
 }
 
 /* =========================================================
    FEATURE TEXT
 ========================================================= */
 
-.main-hero .hero-feature span{
-  font-size:15px !important;
-  line-height:1.45 !important;
+.cinematic-feature-text strong{
+  display:block;
 
-  color:#081028 !important;
+  font-size:17px;
+  font-weight:700;
 
-  font-weight:600 !important;
+  color:#081028;
+
+  margin-bottom:4px;
+}
+
+.cinematic-feature-text span{
+  font-size:14px;
+  line-height:1.5;
+
+  color:#64748b;
 }
 
 /* =========================================================
    BUTTONS
 ========================================================= */
 
-.main-hero .hero-buttons{
+.cinematic-hero-buttons{
   display:flex;
   flex-wrap:wrap;
 
   gap:18px;
 
-  margin-bottom:30px;
+  margin-bottom:34px;
 }
 
 /* =========================================================
    PRIMARY BUTTON
 ========================================================= */
 
-.main-hero .btn-primary{
+.cinematic-btn-primary{
   display:inline-flex;
   align-items:center;
   justify-content:center;
 
-  min-height:60px;
+  min-height:62px;
 
-  padding:0 34px;
+  padding:0 36px;
 
   border-radius:18px;
 
@@ -635,12 +622,12 @@
   font-weight:700;
 
   box-shadow:
-    0 18px 40px rgba(37,99,235,0.28);
+    0 20px 45px rgba(37,99,235,0.28);
 
   transition:all 0.25s ease;
 }
 
-.main-hero .btn-primary:hover{
+.cinematic-btn-primary:hover{
   transform:translateY(-2px);
 }
 
@@ -648,21 +635,24 @@
    SECONDARY BUTTON
 ========================================================= */
 
-.main-hero .btn-secondary{
+.cinematic-btn-secondary{
   display:inline-flex;
   align-items:center;
   justify-content:center;
 
-  min-height:60px;
+  min-height:62px;
 
-  padding:0 32px;
+  padding:0 34px;
 
   border-radius:18px;
 
-  background:#ffffff;
+  background:
+    rgba(255,255,255,0.82);
+
+  backdrop-filter:blur(10px);
 
   border:
-    1px solid rgba(15,23,42,0.08);
+    1px solid rgba(255,255,255,0.65);
 
   color:#081028;
   text-decoration:none;
@@ -671,165 +661,129 @@
   font-weight:700;
 
   box-shadow:
-    0 10px 24px rgba(15,23,42,0.05);
+    0 10px 30px rgba(15,23,42,0.06);
 
   transition:all 0.25s ease;
 }
 
-.main-hero .btn-secondary:hover{
+.cinematic-btn-secondary:hover{
   transform:translateY(-2px);
 }
 
 /* =========================================================
-   TRUST TEXT
+   TRUST
 ========================================================= */
 
-.main-hero .hero-trust p{
+.cinematic-hero-trust{
+  display:flex;
+  align-items:center;
+
+  gap:14px;
+
+  max-width:620px;
+}
+
+.cinematic-hero-trust svg{
+  width:24px;
+  height:24px;
+
+  min-width:24px;
+
+  color:#2563eb;
+}
+
+.cinematic-hero-trust p{
   font-size:15px;
   line-height:1.7;
 
-  color:#64748b;
+  color:#475569;
 }
 
 /* =========================================================
-   IMAGE COLUMN
+   FLOATING CARD
 ========================================================= */
 
-.main-hero .hero-image-column{
-  position:relative;
-}
-
-/* =========================================================
-   IMAGE CARD
-========================================================= */
-
-.main-hero .hero-image-card{
+.cinematic-floating-card{
   position:relative;
 
-  border-radius:36px;
-  overflow:hidden;
+  width:360px;
 
-  box-shadow:
-    0 30px 80px rgba(15,23,42,0.14);
-}
+  padding:34px;
 
-/* =========================================================
-   IMAGE
-========================================================= */
-
-.main-hero .hero-main-image{
-  width:100%;
-  height:620px;
-
-  object-fit:cover;
-
-  display:block;
-}
-
-/* =========================================================
-   OVERLAY
-========================================================= */
-
-.main-hero .hero-image-overlay{
-  position:absolute;
-  inset:0;
+  border-radius:34px;
 
   background:
-    linear-gradient(
-      to top,
-      rgba(15,23,42,0.32),
-      rgba(15,23,42,0.04)
-    );
-}
-
-/* =========================================================
-   FLOATING GLASS CARD
-========================================================= */
-
-.main-hero .hero-floating-card{
-  position:absolute;
-
-  right:-30px;
-  bottom:20px;
-
-  width:320px;
-
-  padding:28px;
-
-  border-radius:30px;
-
-  background:
-    rgba(255,255,255,0.68);
+    rgba(255,255,255,0.74);
 
   backdrop-filter:blur(20px);
 
   border:
-    1px solid rgba(255,255,255,0.45);
+    1px solid rgba(255,255,255,0.5);
 
   box-shadow:
-    0 18px 40px rgba(15,23,42,0.10);
+    0 30px 80px rgba(15,23,42,0.16);
+
+  margin-right:40px;
 }
 
 /* =========================================================
    FLOATING ITEMS
 ========================================================= */
 
-.main-hero .floating-item{
+.floating-stat{
   display:flex;
   align-items:center;
 
-  gap:16px;
+  gap:18px;
 }
 
 /* =========================================================
    FLOATING ICON
 ========================================================= */
 
-.main-hero .floating-icon{
-  width:54px;
-  height:54px;
+.floating-stat-icon{
+  width:62px;
+  height:62px;
 
-  border-radius:16px;
+  min-width:62px;
+
+  border-radius:20px;
 
   display:flex;
   align-items:center;
   justify-content:center;
 
-  background:
-    linear-gradient(
-      135deg,
-      #2563eb,
-      #4f8dfd
-    );
+  background:#ffffff;
 
-  color:#ffffff;
+  color:#2563eb;
 
-  flex-shrink:0;
+  box-shadow:
+    0 10px 24px rgba(15,23,42,0.08);
 }
 
-.main-hero .floating-icon svg{
-  width:22px;
-  height:22px;
+.floating-stat-icon svg{
+  width:30px;
+  height:30px;
 }
 
 /* =========================================================
    FLOATING TEXT
 ========================================================= */
 
-.main-hero .floating-content strong{
+.floating-stat-content strong{
   display:block;
 
-  font-size:17px;
+  font-size:21px;
   font-weight:700;
 
   color:#081028;
 
-  margin-bottom:4px;
+  margin-bottom:6px;
 }
 
-.main-hero .floating-content span{
-  font-size:14px;
-  line-height:1.5;
+.floating-stat-content span{
+  font-size:15px;
+  line-height:1.6;
 
   color:#64748b;
 }
@@ -838,35 +792,98 @@
    DIVIDER
 ========================================================= */
 
-.main-hero .floating-divider{
+.floating-divider{
   width:100%;
   height:1px;
 
   background:
     rgba(15,23,42,0.08);
 
-  margin:22px 0;
+  margin:26px 0;
+}
+
+/* =========================================================
+   BOTTOM BAR
+========================================================= */
+
+.cinematic-bottom-bar{
+  position:relative;
+  z-index:3;
+
+  margin-top:-70px;
+
+  padding-bottom:60px;
+}
+
+/* =========================================================
+   BOTTOM GRID
+========================================================= */
+
+.cinematic-bottom-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+
+  gap:30px;
+
+  padding:36px 42px;
+
+  border-radius:32px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #071b52,
+      #0b256d
+    );
+
+  box-shadow:
+    0 30px 70px rgba(7,27,82,0.28);
+}
+
+/* =========================================================
+   BOTTOM ITEM
+========================================================= */
+
+.bottom-item h3{
+  font-size:22px;
+  line-height:1.3;
+
+  color:#ffffff;
+
+  margin-bottom:14px;
+}
+
+.bottom-item p{
+  font-size:15px;
+  line-height:1.8;
+
+  color:
+    rgba(255,255,255,0.78);
 }
 
 /* =========================================================
    TABLET
 ========================================================= */
 
-@media (max-width:1100px){
+@media (max-width:1200px){
 
-  .main-hero .hero-inner{
+  .cinematic-hero-content{
     grid-template-columns:1fr;
-    gap:60px;
+
+    min-height:auto;
+
+    padding-bottom:120px;
   }
 
-  .main-hero .hero-image-column{
-    max-width:760px;
+  .cinematic-floating-card{
+    width:100%;
+    max-width:520px;
+
     margin:0 auto;
   }
 
-  .main-hero .hero-floating-card{
-    right:20px;
-    bottom:20px;
+  .cinematic-bottom-grid{
+    grid-template-columns:repeat(2,1fr);
   }
 
 }
@@ -877,61 +894,69 @@
 
 @media (max-width:768px){
 
-  .main-hero{
-    padding:70px 0 60px 0;
+  .cinematic-hero{
+    padding-top:60px;
   }
 
-  .main-hero .hero-inner{
+  .cinematic-hero-content{
     gap:40px;
+
+    padding-bottom:100px;
   }
 
-  .main-hero h1{
-    font-size:50px;
+  .cinematic-hero-text{
+    padding-bottom:0;
+  }
 
-    line-height:0.98;
+  .cinematic-hero h1{
+    font-size:48px;
+
+    line-height:1.02;
     letter-spacing:-2px;
   }
 
-  .main-hero .hero-sub{
+  .cinematic-hero-sub{
     font-size:18px;
     line-height:1.7;
   }
 
-  .main-hero .hero-support{
+  .cinematic-hero-support{
     font-size:16px;
     line-height:1.8;
   }
 
-  .main-hero .hero-features{
+  .cinematic-hero-features{
     flex-direction:column;
-    align-items:flex-start;
 
     gap:22px;
   }
 
-  .main-hero .hero-buttons{
+  .cinematic-hero-buttons{
     flex-direction:column;
     align-items:stretch;
   }
 
-  .main-hero .btn-primary,
-  .main-hero .btn-secondary{
+  .cinematic-btn-primary,
+  .cinematic-btn-secondary{
     width:100%;
   }
 
-  .main-hero .hero-main-image{
-    height:480px;
-  }
-
-  .main-hero .hero-floating-card{
-    position:relative;
-
-    right:auto;
-    bottom:auto;
-
+  .cinematic-floating-card{
     width:100%;
 
-    margin-top:-60px;
+    padding:26px;
+
+    margin:0;
+  }
+
+  .floating-stat-content strong{
+    font-size:18px;
+  }
+
+  .cinematic-bottom-grid{
+    grid-template-columns:1fr;
+
+    padding:30px;
   }
 
 }
@@ -1088,63 +1113,71 @@
 </header>
 
 <main>
-<!-- ================= MAIN HERO ================= -->
+<!-- ========================================================= -->
+<!-- MAIN HERO -->
+<!-- ========================================================= -->
 
 <section
-  class="main-hero section"
+  class="cinematic-hero"
   aria-labelledby="hero-heading"
 >
 
-  <!-- BACKGROUND GLOW -->
-  <div class="hero-bg-glow"></div>
+  <!-- BACKGROUND IMAGE -->
+  <div class="cinematic-hero-image">
 
+    <img
+      src="images/regional-nsw-hero.webp"
+      alt="Regional NSW tourism and business website design"
+      loading="eager"
+      fetchpriority="high"
+      width="1800"
+      height="1200"
+    >
+
+    <!-- OVERLAY -->
+    <div class="cinematic-hero-overlay"></div>
+
+  </div>
+
+  <!-- CONTENT -->
   <div class="container">
 
-    <div class="hero-inner">
+    <div class="cinematic-hero-content">
 
-      <!-- ================= LEFT ================= -->
-      <div class="hero-text">
+      <!-- LEFT -->
+      <div class="cinematic-hero-text">
 
         <!-- TAG -->
-        <p class="hero-tag">
+        <p class="cinematic-hero-tag">
           WEBSITES THAT BRING YOU CUSTOMERS
         </p>
 
-        <!-- MAIN H1 -->
+        <!-- HEADING -->
         <h1 id="hero-heading">
-          Websites That Bring You<br>
+          Websites That Bring You
 
-          <span class="gradient-text">
+          <span>
             More Local Customers
           </span>
         </h1>
 
-        <!-- SEO SUBTEXT -->
-        <p class="hero-sub">
+        <!-- SUBTEXT -->
+        <p class="cinematic-hero-sub">
           Website design for businesses in Junee, Wagga Wagga, Albury and regional NSW — built to help you get found on Google, improve local visibility and turn visitors into real enquiries.
         </p>
 
         <!-- SUPPORT -->
-        <p class="hero-support">
+        <p class="cinematic-hero-support">
           We work with tradies, cafés and service businesses across regional NSW, building fast, mobile-friendly websites designed to generate enquiries and improve Google rankings.
-
-          Businesses looking for professional website design in the Riverina can also explore our
-          <a href="website-design-wagga-wagga.html">
-            Website Design Wagga Wagga
-          </a>
-          page.
         </p>
 
-        <!-- ================= FEATURES ================= -->
-        <div
-          class="hero-features"
-          aria-label="Website benefits"
-        >
+        <!-- FEATURES -->
+        <div class="cinematic-hero-features">
 
-          <!-- GOOGLE -->
-          <div class="hero-feature">
+          <!-- ITEM -->
+          <div class="cinematic-feature">
 
-            <div class="icon-wrap" aria-hidden="true">
+            <div class="cinematic-feature-icon">
 
               <svg
                 viewBox="0 0 24 24"
@@ -1158,16 +1191,24 @@
 
             </div>
 
-            <span>
-              Built to rank on Google
-            </span>
+            <div class="cinematic-feature-text">
+
+              <strong>
+                Built for Google
+              </strong>
+
+              <span>
+                SEO-focused websites
+              </span>
+
+            </div>
 
           </div>
 
-          <!-- MOBILE -->
-          <div class="hero-feature">
+          <!-- ITEM -->
+          <div class="cinematic-feature">
 
-            <div class="icon-wrap" aria-hidden="true">
+            <div class="cinematic-feature-icon">
 
               <svg
                 viewBox="0 0 24 24"
@@ -1181,16 +1222,24 @@
 
             </div>
 
-            <span>
-              Mobile-first design
-            </span>
+            <div class="cinematic-feature-text">
+
+              <strong>
+                Mobile-Friendly
+              </strong>
+
+              <span>
+                Responsive design
+              </span>
+
+            </div>
 
           </div>
 
-          <!-- SPEED -->
-          <div class="hero-feature">
+          <!-- ITEM -->
+          <div class="cinematic-feature">
 
-            <div class="icon-wrap" aria-hidden="true">
+            <div class="cinematic-feature-icon">
 
               <svg
                 viewBox="0 0 24 24"
@@ -1203,37 +1252,53 @@
 
             </div>
 
-            <span>
-              Fast & reliable
-            </span>
+            <div class="cinematic-feature-text">
+
+              <strong>
+                Fast Performance
+              </strong>
+
+              <span>
+                Lightweight websites
+              </span>
+
+            </div>
 
           </div>
 
         </div>
 
-        <!-- ================= BUTTONS ================= -->
-        <div class="hero-buttons">
+        <!-- BUTTONS -->
+        <div class="cinematic-hero-buttons">
 
           <a
             href="contact.html"
-            class="btn-primary"
-            aria-label="Get a quote for website design services"
+            class="cinematic-btn-primary"
           >
             Get a Quote
           </a>
 
           <a
-            href="tel:+61448244223"
-            class="btn-secondary"
-            aria-label="Call Crane Platform Labs"
+            href="services.html"
+            class="cinematic-btn-secondary"
           >
-            Call Now
+            View Services
           </a>
 
         </div>
 
-        <!-- ================= TRUST ================= -->
-        <div class="hero-trust">
+        <!-- TRUST -->
+        <div class="cinematic-hero-trust">
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M12 2l7 4v6c0 5-3.5 9-7 10-3.5-1-7-5-7-10V6l7-4z"/>
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
 
           <p>
             Serving Junee, Wagga Wagga, Albury, Griffith, Temora and regional NSW
@@ -1243,127 +1308,168 @@
 
       </div>
 
-      <!-- ================= RIGHT ================= -->
-      <div class="hero-image-column">
+      <!-- FLOATING CARD -->
+      <div class="cinematic-floating-card">
 
-        <!-- MAIN IMAGE -->
-        <div class="hero-image-card">
+        <!-- ITEM -->
+        <div class="floating-stat">
 
-          <img
-            src="images/hero.webp"
-            alt="Professional website design displayed on desktop, tablet and mobile devices for a regional NSW business"
-            width="1400"
-            height="1000"
-            loading="eager"
-            fetchpriority="high"
-            decoding="async"
-            class="hero-main-image"
-          >
+          <div class="floating-stat-icon">
 
-          <!-- OVERLAY -->
-          <div class="hero-image-overlay"></div>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M3 17l6-6 4 4 8-8"/>
+            </svg>
+
+          </div>
+
+          <div class="floating-stat-content">
+
+            <strong>
+              More Visibility
+            </strong>
+
+            <span>
+              Higher Google Rankings
+            </span>
+
+          </div>
 
         </div>
 
-        <!-- ================= FLOATING CARD ================= -->
-        <div class="hero-floating-card">
+        <!-- DIVIDER -->
+        <div class="floating-divider"></div>
 
-          <!-- ITEM -->
-          <div class="floating-item">
+        <!-- ITEM -->
+        <div class="floating-stat">
 
-            <div class="floating-icon">
+          <div class="floating-stat-icon">
 
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path d="M3 17l6-6 4 4 8-8"/>
-              </svg>
-
-            </div>
-
-            <div class="floating-content">
-
-              <strong>
-                More Visibility
-              </strong>
-
-              <span>
-                Higher Google Rankings
-              </span>
-
-            </div>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="8" r="4"/>
+              <path d="M6 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/>
+            </svg>
 
           </div>
 
-          <!-- DIVIDER -->
-          <div class="floating-divider"></div>
+          <div class="floating-stat-content">
 
-          <!-- ITEM -->
-          <div class="floating-item">
+            <strong>
+              More Enquiries
+            </strong>
 
-            <div class="floating-icon">
-
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <circle cx="12" cy="8" r="4"/>
-                <path d="M6 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/>
-              </svg>
-
-            </div>
-
-            <div class="floating-content">
-
-              <strong>
-                More Enquiries
-              </strong>
-
-              <span>
-                Better Customer Reach
-              </span>
-
-            </div>
+            <span>
+              Better Customer Reach
+            </span>
 
           </div>
 
-          <!-- DIVIDER -->
-          <div class="floating-divider"></div>
+        </div>
 
-          <!-- ITEM -->
-          <div class="floating-item">
+        <!-- DIVIDER -->
+        <div class="floating-divider"></div>
 
-            <div class="floating-icon">
+        <!-- ITEM -->
+        <div class="floating-stat">
 
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10"/>
-              </svg>
+          <div class="floating-stat-icon">
 
-            </div>
-
-            <div class="floating-content">
-
-              <strong>
-                Fast Websites
-              </strong>
-
-              <span>
-                Mobile Optimised
-              </span>
-
-            </div>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10"/>
+            </svg>
 
           </div>
+
+          <div class="floating-stat-content">
+
+            <strong>
+              Fast Websites
+            </strong>
+
+            <span>
+              Mobile Optimised
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- BOTTOM BAR -->
+  <div class="cinematic-bottom-bar">
+
+    <div class="container">
+
+      <div class="cinematic-bottom-grid">
+
+        <!-- ITEM -->
+        <div class="bottom-item">
+
+          <h3>
+            Regional NSW Focus
+          </h3>
+
+          <p>
+            Supporting local businesses across the region
+          </p>
+
+        </div>
+
+        <!-- ITEM -->
+        <div class="bottom-item">
+
+          <h3>
+            Fast & SEO-Ready
+          </h3>
+
+          <p>
+            Built for Google and modern devices
+          </p>
+
+        </div>
+
+        <!-- ITEM -->
+        <div class="bottom-item">
+
+          <h3>
+            Affordable & No-Fuss
+          </h3>
+
+          <p>
+            Straightforward pricing and support
+          </p>
+
+        </div>
+
+        <!-- ITEM -->
+        <div class="bottom-item">
+
+          <h3>
+            Local Support
+          </h3>
+
+          <p>
+            Real conversations and regional service
+          </p>
 
         </div>
 
