@@ -339,120 +339,561 @@
   </script>
 
 <style>
-/* ================= MOBILE HERO FEATURES ================= */
+/* =========================================================
+   HERO SECTION
+========================================================= */
 
-@media (max-width: 768px) {
+.hero{
+  position:relative;
+  overflow:hidden;
 
-  /* HERO TEXT */
-  .hero-text {
-    text-align: center;
+  padding:110px 0 90px 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f7f9fc 100%
+    );
+}
+
+/* =========================================================
+   BACKGROUND GLOW
+========================================================= */
+
+.hero-bg-glow{
+  position:absolute;
+
+  top:-180px;
+  right:-180px;
+
+  width:620px;
+  height:620px;
+
+  border-radius:50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(37,99,235,0.16) 0%,
+      rgba(37,99,235,0) 72%
+    );
+
+  pointer-events:none;
+  z-index:0;
+}
+
+/* =========================================================
+   INNER
+========================================================= */
+
+.hero-inner{
+  position:relative;
+  z-index:2;
+
+  display:grid;
+  grid-template-columns:1fr 1fr;
+
+  gap:70px;
+
+  align-items:center;
+}
+
+/* =========================================================
+   LEFT
+========================================================= */
+
+.hero-text{
+  position:relative;
+  z-index:2;
+}
+
+/* =========================================================
+   TAG
+========================================================= */
+
+.hero-tag{
+  display:inline-flex;
+  align-items:center;
+
+  padding:10px 18px;
+
+  border-radius:999px;
+
+  background:
+    rgba(37,99,235,0.08);
+
+  border:
+    1px solid rgba(37,99,235,0.12);
+
+  color:#2563eb;
+
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:1px;
+  text-transform:uppercase;
+
+  margin-bottom:28px;
+}
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.hero h1{
+  font-size:clamp(52px,6vw,82px);
+
+  line-height:1.02;
+  letter-spacing:-2px;
+
+  font-weight:800;
+
+  color:#0f172a;
+
+  margin-bottom:28px;
+
+  max-width:760px;
+}
+
+/* =========================================================
+   GRADIENT TEXT
+========================================================= */
+
+.gradient-text{
+  background:
+    linear-gradient(
+      90deg,
+      #2563eb 0%,
+      #60a5fa 100%
+    );
+
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* =========================================================
+   SUBTEXT
+========================================================= */
+
+.hero-sub{
+  font-size:20px;
+  line-height:1.8;
+
+  color:#475569;
+
+  max-width:700px;
+
+  margin-bottom:24px;
+}
+
+/* =========================================================
+   SUPPORT
+========================================================= */
+
+.hero-support{
+  font-size:17px;
+  line-height:1.9;
+
+  color:#64748b;
+
+  max-width:720px;
+
+  margin-bottom:34px;
+}
+
+.hero-support a{
+  color:#2563eb;
+  font-weight:600;
+  text-decoration:none;
+}
+
+.hero-support a:hover{
+  text-decoration:underline;
+}
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.hero-features{
+  display:flex;
+  flex-wrap:wrap;
+
+  gap:16px;
+
+  margin-bottom:38px;
+}
+
+/* =========================================================
+   FEATURE CARD
+========================================================= */
+
+.hero-feature{
+  display:flex;
+  align-items:center;
+  gap:12px;
+
+  padding:14px 18px;
+
+  border-radius:18px;
+
+  background:#ffffff;
+
+  border:
+    1px solid rgba(15,23,42,0.06);
+
+  box-shadow:
+    0 10px 30px rgba(15,23,42,0.05);
+}
+
+.hero-feature span{
+  font-size:15px;
+  font-weight:600;
+
+  color:#0f172a;
+}
+
+/* =========================================================
+   ICONS
+========================================================= */
+
+.hero-feature .icon-wrap{
+  width:42px;
+  height:42px;
+
+  border-radius:12px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #60a5fa
+    );
+
+  color:#ffffff;
+
+  flex-shrink:0;
+}
+
+.hero-feature svg{
+  width:20px;
+  height:20px;
+}
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.hero-buttons{
+  display:flex;
+  flex-wrap:wrap;
+
+  gap:18px;
+
+  margin-bottom:34px;
+}
+
+.btn-primary{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:18px 30px;
+
+  border-radius:16px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #1d4ed8
+    );
+
+  color:#ffffff;
+  text-decoration:none;
+
+  font-weight:700;
+
+  box-shadow:
+    0 16px 40px rgba(37,99,235,0.28);
+
+  transition:all 0.25s ease;
+}
+
+.btn-primary:hover{
+  transform:translateY(-2px);
+}
+
+.btn-secondary{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:18px 30px;
+
+  border-radius:16px;
+
+  background:#ffffff;
+
+  border:
+    1px solid rgba(15,23,42,0.08);
+
+  color:#0f172a;
+  text-decoration:none;
+
+  font-weight:700;
+
+  box-shadow:
+    0 10px 30px rgba(15,23,42,0.05);
+
+  transition:all 0.25s ease;
+}
+
+.btn-secondary:hover{
+  transform:translateY(-2px);
+}
+
+/* =========================================================
+   TRUST
+========================================================= */
+
+.hero-trust p{
+  font-size:15px;
+  line-height:1.7;
+
+  color:#64748b;
+}
+
+/* =========================================================
+   RIGHT COLUMN
+========================================================= */
+
+.hero-image-column{
+  position:relative;
+}
+
+/* =========================================================
+   MAIN IMAGE
+========================================================= */
+
+.hero-image-card{
+  position:relative;
+
+  border-radius:34px;
+  overflow:hidden;
+
+  box-shadow:
+    0 30px 80px rgba(15,23,42,0.18);
+}
+
+.hero-main-image{
+  width:100%;
+  height:720px;
+
+  object-fit:cover;
+
+  display:block;
+}
+
+/* =========================================================
+   IMAGE OVERLAY
+========================================================= */
+
+.hero-image-overlay{
+  position:absolute;
+  inset:0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(15,23,42,0.42),
+      rgba(15,23,42,0.05)
+    );
+}
+
+/* =========================================================
+   FLOATING CARD
+========================================================= */
+
+.hero-floating-card{
+  position:absolute;
+
+  left:-50px;
+  bottom:40px;
+
+  width:320px;
+
+  padding:28px;
+
+  border-radius:28px;
+
+  background:
+    rgba(255,255,255,0.82);
+
+  backdrop-filter:blur(20px);
+
+  border:
+    1px solid rgba(255,255,255,0.45);
+
+  box-shadow:
+    0 25px 60px rgba(15,23,42,0.16);
+}
+
+/* =========================================================
+   FLOATING ITEMS
+========================================================= */
+
+.floating-item{
+  display:flex;
+  align-items:center;
+
+  gap:16px;
+}
+
+.floating-icon{
+  width:52px;
+  height:52px;
+
+  border-radius:16px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #60a5fa
+    );
+
+  color:#ffffff;
+
+  flex-shrink:0;
+}
+
+.floating-icon svg{
+  width:22px;
+  height:22px;
+}
+
+.floating-content strong{
+  display:block;
+
+  font-size:16px;
+  font-weight:700;
+
+  color:#0f172a;
+
+  margin-bottom:4px;
+}
+
+.floating-content span{
+  font-size:14px;
+  line-height:1.5;
+
+  color:#64748b;
+}
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.floating-divider{
+  width:100%;
+  height:1px;
+
+  background:
+    rgba(15,23,42,0.08);
+
+  margin:22px 0;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width:1100px){
+
+  .hero-inner{
+    grid-template-columns:1fr;
+    gap:60px;
   }
 
-  /* FEATURES WRAPPER */
-  .hero-features {
-
-    display: flex;
-    flex-direction: column;
-
-    gap: 22px;
-
-    margin-top: 34px;
-
-    width: 100%;
-
-    align-items: flex-start;
+  .hero-image-column{
+    max-width:760px;
+    margin:0 auto;
   }
 
-  /* FEATURE ROW */
-  .hero-feature {
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-
-    gap: 16px;
-
-    width: 100%;
-
-    text-align: left;
+  .hero-floating-card{
+    left:24px;
+    bottom:24px;
   }
 
-  /* ICON */
-  .hero-feature .icon-wrap {
+}
 
-    width: 30px;
-    height: 30px;
+/* =========================================================
+   MOBILE
+========================================================= */
 
-    min-width: 30px;
+@media (max-width:768px){
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin: 0;
+  .hero{
+    padding:90px 0 70px 0;
   }
 
-  /* SVG */
-  .hero-feature svg {
-
-    width: 22px;
-    height: 22px;
-
-    stroke: #2563eb;
+  .hero h1{
+    font-size:48px;
+    line-height:1.08;
+    letter-spacing:-1.5px;
   }
 
-  /* TEXT */
-  .hero-feature span {
-
-    font-size: 17px;
-    line-height: 1.4;
-
-    color: #111827;
-
-    font-weight: 500;
+  .hero-sub{
+    font-size:18px;
+    line-height:1.7;
   }
 
-  /* BUTTONS */
-  .hero-buttons {
-
-    width: 100%;
-
-    margin-top: 34px;
-
-    display: flex;
-    flex-direction: column;
-
-    gap: 14px;
+  .hero-support{
+    font-size:16px;
+    line-height:1.8;
   }
 
-  .hero-buttons .btn-primary,
-  .hero-buttons .btn-secondary {
-
-    width: 100%;
-
-    min-height: 54px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 14px;
-
-    font-size: 16px;
+  .hero-features{
+    flex-direction:column;
+    align-items:stretch;
   }
 
-  /* TRUST TEXT */
-  .hero-trust {
-
-    margin-top: 22px;
+  .hero-feature{
+    width:100%;
   }
 
-  .hero-trust p {
+  .hero-buttons{
+    flex-direction:column;
+    align-items:stretch;
+  }
 
-    font-size: 14px;
-    line-height: 1.6;
+  .btn-primary,
+  .btn-secondary{
+    width:100%;
+  }
 
-    color: #64748b;
+  .hero-main-image{
+    height:520px;
+  }
+
+  .hero-floating-card{
+    position:relative;
+
+    left:auto;
+    bottom:auto;
+
+    width:100%;
+
+    margin-top:-70px;
   }
 
 }
@@ -616,6 +1057,9 @@
   aria-labelledby="hero-heading"
 >
 
+  <!-- BACKGROUND GLOW -->
+  <div class="hero-bg-glow"></div>
+
   <div class="container">
 
     <div class="hero-inner">
@@ -647,9 +1091,9 @@
           We work with tradies, cafés and service businesses across regional NSW, building fast, mobile-friendly websites designed to generate enquiries and improve Google rankings.
 
           Businesses looking for professional website design in the Riverina can also explore our
-        <a href="website-design-wagga-wagga.html">
-          Website Design Wagga Wagga
-        </a>
+          <a href="website-design-wagga-wagga.html">
+            Website Design Wagga Wagga
+          </a>
           page.
         </p>
 
@@ -762,17 +1206,128 @@
       </div>
 
       <!-- ================= RIGHT ================= -->
-      <div class="hero-image">
+      <div class="hero-image-column">
 
-        <img
-          src="images/hero.webp"
-          alt="Professional website design displayed on desktop, tablet and mobile devices for a regional NSW business"
-          width="1400"
-          height="1000"
-          loading="eager"
-          fetchpriority="high"
-          decoding="async"
-        >
+        <!-- MAIN IMAGE -->
+        <div class="hero-image-card">
+
+          <img
+            src="images/hero.webp"
+            alt="Professional website design displayed on desktop, tablet and mobile devices for a regional NSW business"
+            width="1400"
+            height="1000"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async"
+            class="hero-main-image"
+          >
+
+          <!-- DARK OVERLAY -->
+          <div class="hero-image-overlay"></div>
+
+        </div>
+
+        <!-- FLOATING GLASS CARD -->
+        <div class="hero-floating-card">
+
+          <!-- ITEM -->
+          <div class="floating-item">
+
+            <div class="floating-icon">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M3 17l6-6 4 4 8-8"/>
+              </svg>
+
+            </div>
+
+            <div class="floating-content">
+
+              <strong>
+                More Visibility
+              </strong>
+
+              <span>
+                Higher Google Rankings
+              </span>
+
+            </div>
+
+          </div>
+
+          <!-- DIVIDER -->
+          <div class="floating-divider"></div>
+
+          <!-- ITEM -->
+          <div class="floating-item">
+
+            <div class="floating-icon">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="8" r="4"/>
+                <path d="M6 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/>
+              </svg>
+
+            </div>
+
+            <div class="floating-content">
+
+              <strong>
+                More Enquiries
+              </strong>
+
+              <span>
+                Better Customer Reach
+              </span>
+
+            </div>
+
+          </div>
+
+          <!-- DIVIDER -->
+          <div class="floating-divider"></div>
+
+          <!-- ITEM -->
+          <div class="floating-item">
+
+            <div class="floating-icon">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10"/>
+              </svg>
+
+            </div>
+
+            <div class="floating-content">
+
+              <strong>
+                Fast Websites
+              </strong>
+
+              <span>
+                Mobile Optimised
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
 
       </div>
 
