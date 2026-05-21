@@ -351,6 +351,8 @@
   background:#f8fafc;
 
   padding-top:90px;
+
+  min-height:760px;
 }
 
 /* =========================================================
@@ -359,18 +361,27 @@
 
 .cinematic-hero-image{
   position:absolute;
+
   inset:0;
 
+  width:100%;
+  height:100%;
+
   z-index:0;
+
+  overflow:hidden;
 }
 
 .cinematic-hero-image img{
   width:100%;
   height:100%;
 
+  display:block;
+
   object-fit:cover;
 
-  display:block;
+  /* IMPORTANT FIX */
+  object-position:center 35%;
 }
 
 /* =========================================================
@@ -379,16 +390,19 @@
 
 .cinematic-hero-overlay{
   position:absolute;
+
   inset:0;
+
+  z-index:1;
 
   background:
     linear-gradient(
       90deg,
       rgba(248,250,252,0.98) 0%,
-      rgba(248,250,252,0.94) 32%,
-      rgba(248,250,252,0.78) 46%,
-      rgba(248,250,252,0.10) 68%,
-      rgba(248,250,252,0.02) 100%
+      rgba(248,250,252,0.96) 28%,
+      rgba(248,250,252,0.84) 42%,
+      rgba(248,250,252,0.22) 64%,
+      rgba(248,250,252,0.04) 100%
     );
 }
 
@@ -398,10 +412,11 @@
 
 .cinematic-hero-content{
   position:relative;
+
   z-index:2;
 
   display:grid;
-  grid-template-columns:1fr auto;
+  grid-template-columns:minmax(0,760px) 360px;
 
   gap:60px;
 
@@ -722,8 +737,6 @@
 
   box-shadow:
     0 30px 80px rgba(15,23,42,0.16);
-
-  margin-right:40px;
 }
 
 /* =========================================================
@@ -808,6 +821,7 @@
 
 .cinematic-bottom-bar{
   position:relative;
+
   z-index:3;
 
   margin-top:-70px;
@@ -870,6 +884,8 @@
   .cinematic-hero-content{
     grid-template-columns:1fr;
 
+    gap:50px;
+
     min-height:auto;
 
     padding-bottom:120px;
@@ -896,10 +912,14 @@
 
   .cinematic-hero{
     padding-top:60px;
+
+    min-height:auto;
   }
 
   .cinematic-hero-content{
     gap:40px;
+
+    min-height:auto;
 
     padding-bottom:100px;
   }
@@ -912,16 +932,19 @@
     font-size:48px;
 
     line-height:1.02;
+
     letter-spacing:-2px;
   }
 
   .cinematic-hero-sub{
     font-size:18px;
+
     line-height:1.7;
   }
 
   .cinematic-hero-support{
     font-size:16px;
+
     line-height:1.8;
   }
 
@@ -933,6 +956,7 @@
 
   .cinematic-hero-buttons{
     flex-direction:column;
+
     align-items:stretch;
   }
 
@@ -945,8 +969,6 @@
     width:100%;
 
     padding:26px;
-
-    margin:0;
   }
 
   .floating-stat-content strong{
@@ -957,6 +979,10 @@
     grid-template-columns:1fr;
 
     padding:30px;
+  }
+
+  .cinematic-hero-image img{
+    object-position:center center;
   }
 
 }
