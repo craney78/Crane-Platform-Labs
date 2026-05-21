@@ -339,7 +339,564 @@
   </script>
 
 <style>
+/* =========================================================
+   CINEMATIC HERO
+========================================================= */
 
+.cinematic-hero{
+  position:relative;
+  overflow:hidden;
+
+  background:#f8fafc;
+
+  padding-top:90px;
+
+  min-height:760px;
+}
+
+/* =========================================================
+   OVERLAY
+========================================================= */
+
+.cinematic-hero-overlay{
+  position:absolute;
+  inset:0;
+
+  z-index:1;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(248,250,252,0.98) 0%,
+      rgba(248,250,252,0.96) 28%,
+      rgba(248,250,252,0.84) 42%,
+      rgba(248,250,252,0.22) 64%,
+      rgba(248,250,252,0.04) 100%
+    );
+}
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.cinematic-hero-content{
+  position:relative;
+
+  z-index:2;
+
+  display:grid;
+
+  grid-template-columns:
+    minmax(0,720px)
+    minmax(320px,620px);
+
+  gap:70px;
+
+  align-items:center;
+
+  min-height:760px;
+}
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.cinematic-hero-text{
+  max-width:760px;
+
+  padding-bottom:140px;
+}
+
+/* =========================================================
+   TAG
+========================================================= */
+
+.cinematic-hero-tag{
+  color:#2563eb;
+
+  font-size:14px;
+  font-weight:700;
+
+  letter-spacing:1px;
+  text-transform:uppercase;
+
+  margin-bottom:26px;
+}
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.cinematic-hero h1{
+  font-size:clamp(56px,5vw,78px);
+
+  line-height:1.02;
+
+  letter-spacing:-3px;
+
+  font-weight:800;
+
+  color:#081028;
+
+  margin-bottom:34px;
+
+  max-width:900px;
+}
+
+.cinematic-hero h1 span{
+  display:block;
+
+  background:
+    linear-gradient(
+      90deg,
+      #2563eb 0%,
+      #60a5fa 100%
+    );
+
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* =========================================================
+   SUBTEXT
+========================================================= */
+
+.cinematic-hero-sub{
+  font-size:22px;
+
+  line-height:1.8;
+
+  color:#334155;
+
+  max-width:720px;
+
+  margin-bottom:30px;
+}
+
+/* =========================================================
+   SUPPORT
+========================================================= */
+
+.cinematic-hero-support{
+  font-size:18px;
+
+  line-height:1.9;
+
+  color:#475569;
+
+  max-width:700px;
+
+  margin-bottom:42px;
+}
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.cinematic-hero-features{
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:34px;
+
+  margin-bottom:42px;
+}
+
+/* =========================================================
+   FEATURE
+========================================================= */
+
+.cinematic-feature{
+  display:flex;
+
+  align-items:center;
+
+  gap:16px;
+}
+
+/* =========================================================
+   FEATURE ICON
+========================================================= */
+
+.cinematic-feature-icon{
+  width:58px;
+  height:58px;
+
+  min-width:58px;
+
+  border-radius:18px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  background:
+    rgba(255,255,255,0.72);
+
+  backdrop-filter:blur(10px);
+
+  border:
+    1px solid rgba(255,255,255,0.6);
+
+  box-shadow:
+    0 10px 30px rgba(15,23,42,0.08);
+
+  color:#2563eb;
+}
+
+.cinematic-feature-icon svg{
+  width:28px;
+  height:28px;
+}
+
+/* =========================================================
+   FEATURE TEXT
+========================================================= */
+
+.cinematic-feature-text strong{
+  display:block;
+
+  font-size:17px;
+  font-weight:700;
+
+  color:#081028;
+
+  margin-bottom:4px;
+}
+
+.cinematic-feature-text span{
+  font-size:14px;
+
+  line-height:1.5;
+
+  color:#64748b;
+}
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.cinematic-hero-buttons{
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:18px;
+
+  margin-bottom:34px;
+}
+
+/* =========================================================
+   PRIMARY BUTTON
+========================================================= */
+
+.cinematic-btn-primary{
+  display:inline-flex;
+
+  align-items:center;
+  justify-content:center;
+
+  min-height:62px;
+
+  padding:0 36px;
+
+  border-radius:18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #1d4ed8
+    );
+
+  color:#ffffff;
+
+  text-decoration:none;
+
+  font-size:16px;
+  font-weight:700;
+
+  box-shadow:
+    0 20px 45px rgba(37,99,235,0.28);
+
+  transition:all 0.25s ease;
+}
+
+.cinematic-btn-primary:hover{
+  transform:translateY(-2px);
+}
+
+/* =========================================================
+   SECONDARY BUTTON
+========================================================= */
+
+.cinematic-btn-secondary{
+  display:inline-flex;
+
+  align-items:center;
+  justify-content:center;
+
+  min-height:62px;
+
+  padding:0 34px;
+
+  border-radius:18px;
+
+  background:
+    rgba(255,255,255,0.82);
+
+  backdrop-filter:blur(10px);
+
+  border:
+    1px solid rgba(255,255,255,0.65);
+
+  color:#081028;
+
+  text-decoration:none;
+
+  font-size:16px;
+  font-weight:700;
+
+  box-shadow:
+    0 10px 30px rgba(15,23,42,0.06);
+
+  transition:all 0.25s ease;
+}
+
+.cinematic-btn-secondary:hover{
+  transform:translateY(-2px);
+}
+
+/* =========================================================
+   TRUST
+========================================================= */
+
+.cinematic-hero-trust{
+  display:flex;
+
+  align-items:center;
+
+  gap:14px;
+
+  max-width:620px;
+}
+
+.cinematic-hero-trust svg{
+  width:24px;
+  height:24px;
+
+  min-width:24px;
+
+  color:#2563eb;
+}
+
+.cinematic-hero-trust p{
+  font-size:15px;
+
+  line-height:1.7;
+
+  color:#475569;
+}
+
+/* =========================================================
+   HERO IMAGE
+========================================================= */
+
+.cinematic-image-wrap{
+  position:relative;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  width:100%;
+}
+
+.cinematic-hero-image{
+  width:100%;
+
+  max-width:620px;
+
+  height:auto;
+
+  display:block;
+
+  object-fit:contain;
+
+  filter:
+    drop-shadow(0 40px 70px rgba(15,23,42,0.16));
+}
+
+/* =========================================================
+   BOTTOM BAR
+========================================================= */
+
+.cinematic-bottom-bar{
+  position:relative;
+
+  z-index:3;
+
+  margin-top:-70px;
+
+  padding-bottom:60px;
+}
+
+/* =========================================================
+   BOTTOM GRID
+========================================================= */
+
+.cinematic-bottom-grid{
+  display:grid;
+
+  grid-template-columns:repeat(4,1fr);
+
+  gap:30px;
+
+  padding:36px 42px;
+
+  border-radius:32px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #071b52,
+      #0b256d
+    );
+
+  box-shadow:
+    0 30px 70px rgba(7,27,82,0.28);
+}
+
+/* =========================================================
+   BOTTOM ITEM
+========================================================= */
+
+.bottom-item h3{
+  font-size:22px;
+
+  line-height:1.3;
+
+  color:#ffffff;
+
+  margin-bottom:14px;
+}
+
+.bottom-item p{
+  font-size:15px;
+
+  line-height:1.8;
+
+  color:
+    rgba(255,255,255,0.78);
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width:1200px){
+
+  .cinematic-hero-content{
+    grid-template-columns:1fr;
+
+    gap:50px;
+
+    min-height:auto;
+
+    padding-bottom:120px;
+  }
+
+  .cinematic-hero-text{
+    padding-bottom:0;
+  }
+
+  .cinematic-image-wrap{
+    justify-content:center;
+  }
+
+  .cinematic-hero-image{
+    max-width:520px;
+  }
+
+  .cinematic-bottom-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width:768px){
+
+  .cinematic-hero{
+    padding-top:60px;
+
+    min-height:auto;
+  }
+
+  .cinematic-hero-content{
+    gap:40px;
+
+    min-height:auto;
+
+    padding-bottom:100px;
+  }
+
+  .cinematic-hero h1{
+    font-size:48px;
+
+    line-height:1.02;
+
+    letter-spacing:-2px;
+  }
+
+  .cinematic-hero-sub{
+    font-size:18px;
+
+    line-height:1.7;
+  }
+
+  .cinematic-hero-support{
+    font-size:16px;
+
+    line-height:1.8;
+  }
+
+  .cinematic-hero-features{
+    flex-direction:column;
+
+    gap:22px;
+  }
+
+  .cinematic-hero-buttons{
+    flex-direction:column;
+
+    align-items:stretch;
+  }
+
+  .cinematic-btn-primary,
+  .cinematic-btn-secondary{
+    width:100%;
+  }
+
+  .cinematic-image-wrap{
+    margin-top:10px;
+  }
+
+  .cinematic-hero-image{
+    max-width:340px;
+  }
+
+  .cinematic-bottom-grid{
+    grid-template-columns:1fr;
+
+    padding:30px;
+  }
+
+}
 
 /* ================= MOBILE IMAGE GRID FIX ================= */
 
@@ -463,7 +1020,7 @@
   <div class="cinematic-hero-overlay"></div>
 
   <!-- ========================================================= -->
-  <!-- HERO CONTENT -->
+  <!-- CONTENT -->
   <!-- ========================================================= -->
 
   <div class="container">
@@ -471,7 +1028,7 @@
     <div class="cinematic-hero-content">
 
       <!-- ========================================================= -->
-      <!-- LEFT CONTENT -->
+      <!-- LEFT -->
       <!-- ========================================================= -->
 
       <div class="cinematic-hero-text">
@@ -650,11 +1207,12 @@
       <!-- RIGHT IMAGE -->
       <!-- ========================================================= -->
 
-      <div class="hero-image">
+      <div class="cinematic-image-wrap">
 
         <img
-          src="images/regional-nsw-hero.webp"
-          alt="Regional NSW business website design"
+          src="images/website-builder.webp"
+          alt="Regional NSW website design"
+          class="cinematic-hero-image"
           loading="eager"
         >
 
