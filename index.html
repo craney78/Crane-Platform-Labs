@@ -340,12 +340,22 @@
 
 <style>
 /* =========================================================
+   CONTAINER
+========================================================= */
+
+.container{
+  width:100%;
+  max-width:1400px;
+  margin:0 auto;
+  padding:0 40px;
+}
+
+/* =========================================================
    CINEMATIC HERO
 ========================================================= */
 
 .cinematic-hero{
   position:relative;
-
   overflow:hidden;
 
   background:
@@ -355,13 +365,13 @@
       #eef4ff 100%
     );
 
-  padding-top:100px;
+  padding-top:90px;
 
   min-height:980px;
 }
 
 /* =========================================================
-   BACKGROUND GLOW
+   GLOW
 ========================================================= */
 
 .cinematic-hero::before{
@@ -369,18 +379,18 @@
 
   position:absolute;
 
-  top:-250px;
-  right:-250px;
+  top:-220px;
+  right:-220px;
 
-  width:900px;
-  height:900px;
+  width:800px;
+  height:800px;
 
   border-radius:50%;
 
   background:
     radial-gradient(
       circle,
-      rgba(37,99,235,0.18) 0%,
+      rgba(37,99,235,0.16) 0%,
       rgba(37,99,235,0) 72%
     );
 
@@ -388,12 +398,11 @@
 }
 
 /* =========================================================
-   ANGLED OVERLAY
+   OVERLAY
 ========================================================= */
 
 .cinematic-hero-overlay{
   position:absolute;
-
   inset:0;
 
   z-index:1;
@@ -411,29 +420,23 @@
 }
 
 /* =========================================================
-   CONTAINER
-========================================================= */
-
-.cinematic-hero .container{
-  position:relative;
-
-  z-index:2;
-}
-
-/* =========================================================
-   CONTENT
+   HERO CONTENT
 ========================================================= */
 
 .cinematic-hero-content{
+  position:relative;
+
+  z-index:2;
+
   display:grid;
 
   grid-template-columns:
-    minmax(0,650px)
-    1fr;
+    minmax(540px, 620px)
+    minmax(620px, 1fr);
 
   align-items:center;
 
-  gap:0;
+  gap:40px;
 
   min-height:760px;
 }
@@ -447,7 +450,9 @@
 
   z-index:5;
 
-  padding-bottom:160px;
+  max-width:620px;
+
+  padding-bottom:120px;
 }
 
 /* =========================================================
@@ -482,8 +487,6 @@
   color:#081028;
 
   margin-bottom:38px;
-
-  max-width:900px;
 }
 
 .cinematic-hero h1 span{
@@ -513,7 +516,7 @@
 
   color:#334155;
 
-  max-width:700px;
+  max-width:620px;
 
   margin-bottom:28px;
 }
@@ -529,7 +532,7 @@
 
   color:#475569;
 
-  max-width:650px;
+  max-width:620px;
 
   margin-bottom:44px;
 }
@@ -543,7 +546,7 @@
 
   flex-wrap:wrap;
 
-  gap:26px;
+  gap:24px;
 
   margin-bottom:44px;
 }
@@ -557,7 +560,7 @@
 
   align-items:center;
 
-  gap:16px;
+  gap:14px;
 }
 
 /* =========================================================
@@ -565,12 +568,12 @@
 ========================================================= */
 
 .cinematic-feature-icon{
-  width:64px;
-  height:64px;
+  width:60px;
+  height:60px;
 
-  min-width:64px;
+  min-width:60px;
 
-  border-radius:22px;
+  border-radius:20px;
 
   display:flex;
   align-items:center;
@@ -579,7 +582,7 @@
   background:
     rgba(255,255,255,0.86);
 
-  backdrop-filter:blur(14px);
+  backdrop-filter:blur(12px);
 
   border:
     1px solid rgba(255,255,255,0.7);
@@ -591,8 +594,8 @@
 }
 
 .cinematic-feature-icon svg{
-  width:30px;
-  height:30px;
+  width:28px;
+  height:28px;
 }
 
 /* =========================================================
@@ -602,7 +605,7 @@
 .cinematic-feature-text strong{
   display:block;
 
-  font-size:18px;
+  font-size:17px;
   font-weight:700;
 
   color:#081028;
@@ -625,6 +628,8 @@
 .cinematic-hero-buttons{
   display:flex;
 
+  flex-wrap:wrap;
+
   gap:18px;
 
   margin-bottom:36px;
@@ -640,9 +645,9 @@
   align-items:center;
   justify-content:center;
 
-  min-height:66px;
+  min-height:64px;
 
-  padding:0 40px;
+  padding:0 38px;
 
   border-radius:18px;
 
@@ -680,7 +685,7 @@
   align-items:center;
   justify-content:center;
 
-  min-height:66px;
+  min-height:64px;
 
   padding:0 38px;
 
@@ -696,7 +701,7 @@
   font-weight:700;
 
   box-shadow:
-    0 10px 30px rgba(15,23,42,0.08);
+    0 12px 30px rgba(15,23,42,0.08);
 
   transition:all 0.25s ease;
 }
@@ -715,11 +720,15 @@
   align-items:center;
 
   gap:14px;
+
+  max-width:520px;
 }
 
 .cinematic-hero-trust svg{
   width:24px;
   height:24px;
+
+  min-width:24px;
 
   color:#2563eb;
 }
@@ -751,22 +760,24 @@
 ========================================================= */
 
 .cinematic-hero-image{
-  width:980px;
+  width:100%;
 
-  max-width:none;
+  max-width:900px;
 
   height:auto;
 
   display:block;
 
+  object-fit:contain;
+
   position:relative;
 
-  right:-140px;
+  right:-40px;
 
-  top:20px;
+  top:0;
 
   filter:
-    drop-shadow(0 60px 120px rgba(15,23,42,0.18));
+    drop-shadow(0 50px 100px rgba(15,23,42,0.16));
 }
 
 /* =========================================================
@@ -778,7 +789,7 @@
 
   z-index:10;
 
-  margin-top:-120px;
+  margin-top:-100px;
 
   padding-bottom:70px;
 }
@@ -876,7 +887,7 @@
   .cinematic-hero-content{
     grid-template-columns:1fr;
 
-    gap:50px;
+    gap:60px;
 
     min-height:auto;
 
@@ -885,6 +896,8 @@
 
   .cinematic-hero-text{
     padding-bottom:0;
+
+    max-width:100%;
   }
 
   .cinematic-image-wrap{
@@ -892,12 +905,9 @@
   }
 
   .cinematic-hero-image{
-    width:100%;
+    right:0;
 
     max-width:720px;
-
-    right:0;
-    top:0;
   }
 
   .cinematic-bottom-grid{
@@ -912,12 +922,22 @@
 
 @media (max-width:768px){
 
+  .container{
+    padding:0 24px;
+  }
+
   .cinematic-hero{
     padding-top:60px;
+
+    min-height:auto;
   }
 
   .cinematic-hero-content{
-    padding-bottom:100px;
+    grid-template-columns:1fr;
+
+    gap:40px;
+
+    padding-bottom:110px;
   }
 
   .cinematic-hero h1{
@@ -938,6 +958,8 @@
 
   .cinematic-hero-features{
     flex-direction:column;
+
+    gap:20px;
   }
 
   .cinematic-hero-buttons{
@@ -949,16 +971,24 @@
     width:100%;
   }
 
+  .cinematic-image-wrap{
+    justify-content:center;
+  }
+
   .cinematic-hero-image{
-    width:130%;
+    max-width:100%;
 
-    max-width:none;
+    right:0;
+  }
 
-    right:-40px;
+  .cinematic-bottom-bar{
+    margin-top:-70px;
   }
 
   .cinematic-bottom-grid{
     grid-template-columns:1fr;
+
+    padding:30px;
   }
 
 }
