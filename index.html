@@ -340,14 +340,15 @@
 
 <style>
 /* =========================================================
-   HERO SECTION
+   HOMEPAGE HERO ONLY
+   SAFE SCOPED VERSION
 ========================================================= */
 
-.hero{
+.home-hero{
   position:relative;
   overflow:hidden;
 
-  padding:110px 0 90px 0;
+  padding:80px 0 70px 0;
 
   background:
     linear-gradient(
@@ -361,21 +362,21 @@
    BACKGROUND GLOW
 ========================================================= */
 
-.hero-bg-glow{
+.home-hero .hero-bg-glow{
   position:absolute;
 
-  top:-180px;
-  right:-180px;
+  top:-220px;
+  right:-220px;
 
-  width:620px;
-  height:620px;
+  width:700px;
+  height:700px;
 
   border-radius:50%;
 
   background:
     radial-gradient(
       circle,
-      rgba(37,99,235,0.16) 0%,
+      rgba(37,99,235,0.14) 0%,
       rgba(37,99,235,0) 72%
     );
 
@@ -384,15 +385,15 @@
 }
 
 /* =========================================================
-   INNER
+   INNER LAYOUT
 ========================================================= */
 
-.hero-inner{
+.home-hero .hero-inner{
   position:relative;
   z-index:2;
 
   display:grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns:1.05fr 0.95fr;
 
   gap:70px;
 
@@ -400,10 +401,10 @@
 }
 
 /* =========================================================
-   LEFT
+   LEFT SIDE
 ========================================================= */
 
-.hero-text{
+.home-hero .hero-text{
   position:relative;
   z-index:2;
 }
@@ -412,25 +413,25 @@
    TAG
 ========================================================= */
 
-.hero-tag{
+.home-hero .hero-tag{
   display:inline-flex;
   align-items:center;
 
-  padding:10px 18px;
+  padding:12px 20px;
 
   border-radius:999px;
 
   background:
-    rgba(37,99,235,0.08);
+    rgba(37,99,235,0.06);
 
   border:
-    1px solid rgba(37,99,235,0.12);
+    1px solid rgba(37,99,235,0.08);
 
-  color:#2563eb;
+  color:#64748b;
 
   font-size:13px;
   font-weight:700;
-  letter-spacing:1px;
+  letter-spacing:1.4px;
   text-transform:uppercase;
 
   margin-bottom:28px;
@@ -440,26 +441,26 @@
    HEADING
 ========================================================= */
 
-.hero h1{
-  font-size:clamp(52px,6vw,82px);
+.home-hero h1{
+  font-size:clamp(58px,5vw,68px);
 
-  line-height:1.02;
-  letter-spacing:-2px;
+  line-height:0.95;
+  letter-spacing:-3px;
 
   font-weight:800;
 
-  color:#0f172a;
+  color:#081028;
 
-  margin-bottom:28px;
+  margin-bottom:34px;
 
-  max-width:760px;
+  max-width:720px;
 }
 
 /* =========================================================
    GRADIENT TEXT
 ========================================================= */
 
-.gradient-text{
+.home-hero .gradient-text{
   background:
     linear-gradient(
       90deg,
@@ -475,22 +476,22 @@
    SUBTEXT
 ========================================================= */
 
-.hero-sub{
-  font-size:20px;
+.home-hero .hero-sub{
+  font-size:21px;
   line-height:1.8;
 
   color:#475569;
 
-  max-width:700px;
+  max-width:720px;
 
-  margin-bottom:24px;
+  margin-bottom:26px;
 }
 
 /* =========================================================
    SUPPORT
 ========================================================= */
 
-.hero-support{
+.home-hero .hero-support{
   font-size:17px;
   line-height:1.9;
 
@@ -501,13 +502,13 @@
   margin-bottom:34px;
 }
 
-.hero-support a{
+.home-hero .hero-support a{
   color:#2563eb;
-  font-weight:600;
   text-decoration:none;
+  font-weight:600;
 }
 
-.hero-support a:hover{
+.home-hero .hero-support a:hover{
   text-decoration:underline;
 }
 
@@ -515,53 +516,47 @@
    FEATURES
 ========================================================= */
 
-.hero-features{
+.home-hero .hero-features{
   display:flex;
   flex-wrap:wrap;
 
-  gap:16px;
+  gap:18px;
 
-  margin-bottom:38px;
+  margin-bottom:36px;
 }
 
 /* =========================================================
    FEATURE CARD
 ========================================================= */
 
-.hero-feature{
+.home-hero .hero-feature{
   display:flex;
   align-items:center;
-  gap:12px;
 
-  padding:14px 18px;
+  gap:14px;
 
-  border-radius:18px;
+  padding:18px 20px;
+
+  border-radius:22px;
 
   background:#ffffff;
 
   border:
-    1px solid rgba(15,23,42,0.06);
+    1px solid rgba(15,23,42,0.05);
 
   box-shadow:
     0 10px 30px rgba(15,23,42,0.05);
 }
 
-.hero-feature span{
-  font-size:15px;
-  font-weight:600;
-
-  color:#0f172a;
-}
-
 /* =========================================================
-   ICONS
+   ICON
 ========================================================= */
 
-.hero-feature .icon-wrap{
-  width:42px;
-  height:42px;
+.home-hero .hero-feature .icon-wrap{
+  width:46px;
+  height:46px;
 
-  border-radius:12px;
+  border-radius:14px;
 
   display:flex;
   align-items:center;
@@ -571,7 +566,7 @@
     linear-gradient(
       135deg,
       #2563eb,
-      #60a5fa
+      #4f8dfd
     );
 
   color:#ffffff;
@@ -579,32 +574,51 @@
   flex-shrink:0;
 }
 
-.hero-feature svg{
+.home-hero .hero-feature svg{
   width:20px;
   height:20px;
+}
+
+/* =========================================================
+   FEATURE TEXT
+========================================================= */
+
+.home-hero .hero-feature span{
+  font-size:15px;
+  line-height:1.4;
+
+  color:#081028;
+
+  font-weight:600;
 }
 
 /* =========================================================
    BUTTONS
 ========================================================= */
 
-.hero-buttons{
+.home-hero .hero-buttons{
   display:flex;
   flex-wrap:wrap;
 
   gap:18px;
 
-  margin-bottom:34px;
+  margin-bottom:28px;
 }
 
-.btn-primary{
+/* =========================================================
+   PRIMARY BUTTON
+========================================================= */
+
+.home-hero .btn-primary{
   display:inline-flex;
   align-items:center;
   justify-content:center;
 
-  padding:18px 30px;
+  min-height:60px;
 
-  border-radius:16px;
+  padding:0 32px;
+
+  border-radius:18px;
 
   background:
     linear-gradient(
@@ -616,52 +630,60 @@
   color:#ffffff;
   text-decoration:none;
 
+  font-size:16px;
   font-weight:700;
 
   box-shadow:
-    0 16px 40px rgba(37,99,235,0.28);
+    0 18px 40px rgba(37,99,235,0.28);
 
   transition:all 0.25s ease;
 }
 
-.btn-primary:hover{
+.home-hero .btn-primary:hover{
   transform:translateY(-2px);
 }
 
-.btn-secondary{
+/* =========================================================
+   SECONDARY BUTTON
+========================================================= */
+
+.home-hero .btn-secondary{
   display:inline-flex;
   align-items:center;
   justify-content:center;
 
-  padding:18px 30px;
+  min-height:60px;
 
-  border-radius:16px;
+  padding:0 30px;
+
+  border-radius:18px;
 
   background:#ffffff;
 
   border:
     1px solid rgba(15,23,42,0.08);
 
-  color:#0f172a;
+  color:#081028;
   text-decoration:none;
 
+  font-size:16px;
   font-weight:700;
 
   box-shadow:
-    0 10px 30px rgba(15,23,42,0.05);
+    0 10px 24px rgba(15,23,42,0.05);
 
   transition:all 0.25s ease;
 }
 
-.btn-secondary:hover{
+.home-hero .btn-secondary:hover{
   transform:translateY(-2px);
 }
 
 /* =========================================================
-   TRUST
+   TRUST TEXT
 ========================================================= */
 
-.hero-trust p{
+.home-hero .hero-trust p{
   font-size:15px;
   line-height:1.7;
 
@@ -672,27 +694,31 @@
    RIGHT COLUMN
 ========================================================= */
 
-.hero-image-column{
+.home-hero .hero-image-column{
   position:relative;
 }
 
 /* =========================================================
-   MAIN IMAGE
+   IMAGE CARD
 ========================================================= */
 
-.hero-image-card{
+.home-hero .hero-image-card{
   position:relative;
 
-  border-radius:34px;
+  border-radius:36px;
   overflow:hidden;
 
   box-shadow:
-    0 30px 80px rgba(15,23,42,0.18);
+    0 30px 80px rgba(15,23,42,0.14);
 }
 
-.hero-main-image{
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.home-hero .hero-main-image{
   width:100%;
-  height:720px;
+  height:620px;
 
   object-fit:cover;
 
@@ -700,18 +726,18 @@
 }
 
 /* =========================================================
-   IMAGE OVERLAY
+   OVERLAY
 ========================================================= */
 
-.hero-image-overlay{
+.home-hero .hero-image-overlay{
   position:absolute;
   inset:0;
 
   background:
     linear-gradient(
       to top,
-      rgba(15,23,42,0.42),
-      rgba(15,23,42,0.05)
+      rgba(15,23,42,0.32),
+      rgba(15,23,42,0.04)
     );
 }
 
@@ -719,17 +745,17 @@
    FLOATING CARD
 ========================================================= */
 
-.hero-floating-card{
+.home-hero .hero-floating-card{
   position:absolute;
 
-  left:-50px;
-  bottom:40px;
+  right:-30px;
+  bottom:20px;
 
   width:320px;
 
   padding:28px;
 
-  border-radius:28px;
+  border-radius:30px;
 
   background:
     rgba(255,255,255,0.82);
@@ -740,23 +766,27 @@
     1px solid rgba(255,255,255,0.45);
 
   box-shadow:
-    0 25px 60px rgba(15,23,42,0.16);
+    0 30px 70px rgba(15,23,42,0.18);
 }
 
 /* =========================================================
-   FLOATING ITEMS
+   FLOATING ITEM
 ========================================================= */
 
-.floating-item{
+.home-hero .floating-item{
   display:flex;
   align-items:center;
 
   gap:16px;
 }
 
-.floating-icon{
-  width:52px;
-  height:52px;
+/* =========================================================
+   FLOATING ICON
+========================================================= */
+
+.home-hero .floating-icon{
+  width:54px;
+  height:54px;
 
   border-radius:16px;
 
@@ -768,7 +798,7 @@
     linear-gradient(
       135deg,
       #2563eb,
-      #60a5fa
+      #4f8dfd
     );
 
   color:#ffffff;
@@ -776,23 +806,27 @@
   flex-shrink:0;
 }
 
-.floating-icon svg{
+.home-hero .floating-icon svg{
   width:22px;
   height:22px;
 }
 
-.floating-content strong{
+/* =========================================================
+   FLOATING TEXT
+========================================================= */
+
+.home-hero .floating-content strong{
   display:block;
 
-  font-size:16px;
+  font-size:17px;
   font-weight:700;
 
-  color:#0f172a;
+  color:#081028;
 
   margin-bottom:4px;
 }
 
-.floating-content span{
+.home-hero .floating-content span{
   font-size:14px;
   line-height:1.5;
 
@@ -803,7 +837,7 @@
    DIVIDER
 ========================================================= */
 
-.floating-divider{
+.home-hero .floating-divider{
   width:100%;
   height:1px;
 
@@ -819,19 +853,19 @@
 
 @media (max-width:1100px){
 
-  .hero-inner{
+  .home-hero .hero-inner{
     grid-template-columns:1fr;
     gap:60px;
   }
 
-  .hero-image-column{
+  .home-hero .hero-image-column{
     max-width:760px;
     margin:0 auto;
   }
 
-  .hero-floating-card{
-    left:24px;
-    bottom:24px;
+  .home-hero .hero-floating-card{
+    right:20px;
+    bottom:20px;
   }
 
 }
@@ -842,58 +876,63 @@
 
 @media (max-width:768px){
 
-  .hero{
-    padding:90px 0 70px 0;
+  .home-hero{
+    padding:70px 0 60px 0;
   }
 
-  .hero h1{
-    font-size:48px;
-    line-height:1.08;
-    letter-spacing:-1.5px;
+  .home-hero .hero-inner{
+    gap:40px;
   }
 
-  .hero-sub{
+  .home-hero h1{
+    font-size:50px;
+
+    line-height:0.98;
+    letter-spacing:-2px;
+  }
+
+  .home-hero .hero-sub{
     font-size:18px;
     line-height:1.7;
   }
 
-  .hero-support{
+  .home-hero .hero-support{
     font-size:16px;
     line-height:1.8;
   }
 
-  .hero-features{
+  .home-hero .hero-features{
     flex-direction:column;
     align-items:stretch;
   }
 
-  .hero-feature{
+  .home-hero .hero-feature{
     width:100%;
   }
 
-  .hero-buttons{
+  .home-hero .hero-buttons{
     flex-direction:column;
     align-items:stretch;
   }
 
-  .btn-primary,
-  .btn-secondary{
+  .home-hero .btn-primary,
+  .home-hero .btn-secondary{
     width:100%;
   }
 
-  .hero-main-image{
-    height:520px;
+  .home-hero .hero-main-image{
+    height:480px;
   }
 
-  .hero-floating-card{
+  .home-hero .hero-floating-card{
     position:relative;
 
-    left:auto;
+    right:auto;
     bottom:auto;
 
     width:100%;
 
-    margin-top:-70px;
+    margin-top:-60px;
   }
 
 }
@@ -1053,7 +1092,7 @@
 <!-- ================= HERO ================= -->
 
 <section
-  class="hero section"
+  class="hero home-hero section"
   aria-labelledby="hero-heading"
 >
 
@@ -1222,12 +1261,12 @@
             class="hero-main-image"
           >
 
-          <!-- DARK OVERLAY -->
+          <!-- OVERLAY -->
           <div class="hero-image-overlay"></div>
 
         </div>
 
-        <!-- FLOATING GLASS CARD -->
+        <!-- ================= FLOATING CARD ================= -->
         <div class="hero-floating-card">
 
           <!-- ITEM -->
