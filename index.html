@@ -350,13 +350,38 @@
   background:
     linear-gradient(
       180deg,
-      #f8fafc 0%,
-      #eef4ff 100%
+      #f7f9fc 0%,
+      #edf3ff 100%
     );
 
   padding-top:90px;
 
-  min-height:860px;
+  min-height:950px;
+}
+
+/* =========================================================
+   GLOW
+========================================================= */
+
+.cinematic-hero-glow{
+  position:absolute;
+
+  top:-200px;
+  right:-200px;
+
+  width:700px;
+  height:700px;
+
+  border-radius:50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(37,99,235,0.16) 0%,
+      rgba(37,99,235,0) 70%
+    );
+
+  z-index:0;
 }
 
 /* =========================================================
@@ -372,16 +397,16 @@
   background:
     linear-gradient(
       90deg,
-      rgba(248,250,252,0.98) 0%,
-      rgba(248,250,252,0.96) 32%,
-      rgba(248,250,252,0.88) 48%,
-      rgba(248,250,252,0.35) 70%,
-      rgba(248,250,252,0.05) 100%
+      rgba(247,249,252,1) 0%,
+      rgba(247,249,252,0.96) 35%,
+      rgba(247,249,252,0.72) 55%,
+      rgba(247,249,252,0.18) 78%,
+      rgba(247,249,252,0.04) 100%
     );
 }
 
 /* =========================================================
-   HERO CONTENT
+   CONTENT
 ========================================================= */
 
 .cinematic-hero-content{
@@ -403,17 +428,13 @@
 }
 
 /* =========================================================
-   LEFT CONTENT
+   TEXT
 ========================================================= */
 
 .cinematic-hero-text{
-  position:relative;
-
-  z-index:2;
-
   max-width:760px;
 
-  padding-bottom:140px;
+  padding-bottom:150px;
 }
 
 /* =========================================================
@@ -437,19 +458,17 @@
 ========================================================= */
 
 .cinematic-hero h1{
-  font-size:clamp(58px,5vw,84px);
+  font-size:clamp(58px,5vw,86px);
 
-  line-height:0.98;
+  line-height:0.96;
 
-  letter-spacing:-3px;
+  letter-spacing:-4px;
 
   font-weight:800;
 
   color:#081028;
 
-  margin-bottom:34px;
-
-  max-width:900px;
+  margin-bottom:36px;
 }
 
 .cinematic-hero h1 span{
@@ -497,7 +516,7 @@
 
   max-width:680px;
 
-  margin-bottom:42px;
+  margin-bottom:44px;
 }
 
 /* =========================================================
@@ -511,7 +530,7 @@
 
   gap:28px;
 
-  margin-bottom:42px;
+  margin-bottom:44px;
 }
 
 /* =========================================================
@@ -531,24 +550,21 @@
 ========================================================= */
 
 .cinematic-feature-icon{
-  width:58px;
-  height:58px;
+  width:60px;
+  height:60px;
 
-  min-width:58px;
+  min-width:60px;
 
-  border-radius:18px;
+  border-radius:20px;
 
   display:flex;
   align-items:center;
   justify-content:center;
 
   background:
-    rgba(255,255,255,0.8);
+    rgba(255,255,255,0.85);
 
-  backdrop-filter:blur(12px);
-
-  border:
-    1px solid rgba(255,255,255,0.7);
+  backdrop-filter:blur(10px);
 
   box-shadow:
     0 12px 30px rgba(15,23,42,0.08);
@@ -608,9 +624,9 @@
   align-items:center;
   justify-content:center;
 
-  min-height:62px;
+  min-height:64px;
 
-  padding:0 36px;
+  padding:0 38px;
 
   border-radius:18px;
 
@@ -629,7 +645,7 @@
   font-weight:700;
 
   box-shadow:
-    0 20px 45px rgba(37,99,235,0.28);
+    0 20px 45px rgba(37,99,235,0.26);
 
   transition:all 0.25s ease;
 }
@@ -648,19 +664,13 @@
   align-items:center;
   justify-content:center;
 
-  min-height:62px;
+  min-height:64px;
 
-  padding:0 34px;
+  padding:0 36px;
 
   border-radius:18px;
 
-  background:
-    rgba(255,255,255,0.85);
-
-  backdrop-filter:blur(10px);
-
-  border:
-    1px solid rgba(255,255,255,0.65);
+  background:#ffffff;
 
   color:#081028;
 
@@ -670,7 +680,7 @@
   font-weight:700;
 
   box-shadow:
-    0 10px 30px rgba(15,23,42,0.06);
+    0 12px 30px rgba(15,23,42,0.08);
 
   transition:all 0.25s ease;
 }
@@ -689,15 +699,11 @@
   align-items:center;
 
   gap:14px;
-
-  max-width:620px;
 }
 
 .cinematic-hero-trust svg{
   width:24px;
   height:24px;
-
-  min-width:24px;
 
   color:#2563eb;
 }
@@ -711,7 +717,7 @@
 }
 
 /* =========================================================
-   HERO IMAGE WRAP
+   IMAGE WRAP
 ========================================================= */
 
 .cinematic-image-wrap{
@@ -720,10 +726,6 @@
   display:flex;
   align-items:center;
   justify-content:center;
-
-  width:100%;
-
-  z-index:2;
 }
 
 /* =========================================================
@@ -733,7 +735,7 @@
 .cinematic-hero-image{
   width:100%;
 
-  max-width:720px;
+  max-width:760px;
 
   height:auto;
 
@@ -741,10 +743,10 @@
 
   object-fit:contain;
 
-  transform:translateX(30px);
+  transform:translateX(40px);
 
   filter:
-    drop-shadow(0 50px 90px rgba(15,23,42,0.16));
+    drop-shadow(0 50px 100px rgba(15,23,42,0.18));
 }
 
 /* =========================================================
@@ -756,9 +758,9 @@
 
   z-index:3;
 
-  margin-top:-60px;
+  margin-top:-70px;
 
-  padding-bottom:60px;
+  padding-bottom:70px;
 }
 
 /* =========================================================
@@ -784,12 +786,43 @@
     );
 
   box-shadow:
-    0 30px 70px rgba(7,27,82,0.24);
+    0 30px 70px rgba(7,27,82,0.22);
 }
 
 /* =========================================================
-   BOTTOM ITEMS
+   BOTTOM ITEM
 ========================================================= */
+
+.bottom-item{
+  display:flex;
+
+  align-items:flex-start;
+
+  gap:18px;
+}
+
+.bottom-icon{
+  width:60px;
+  height:60px;
+
+  min-width:60px;
+
+  border-radius:50%;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  background:
+    rgba(255,255,255,0.08);
+
+  color:#ffffff;
+}
+
+.bottom-icon svg{
+  width:28px;
+  height:28px;
+}
 
 .bottom-item h3{
   font-size:22px;
@@ -798,7 +831,7 @@
 
   color:#ffffff;
 
-  margin-bottom:14px;
+  margin-bottom:12px;
 }
 
 .bottom-item p{
@@ -834,10 +867,6 @@
     padding-bottom:0;
   }
 
-  .cinematic-image-wrap{
-    justify-content:center;
-  }
-
   .cinematic-hero-image{
     max-width:620px;
 
@@ -858,14 +887,10 @@
 
   .cinematic-hero{
     padding-top:60px;
-
-    min-height:auto;
   }
 
   .cinematic-hero-content{
     gap:40px;
-
-    min-height:auto;
 
     padding-bottom:100px;
   }
@@ -880,14 +905,10 @@
 
   .cinematic-hero-sub{
     font-size:18px;
-
-    line-height:1.7;
   }
 
   .cinematic-hero-support{
     font-size:16px;
-
-    line-height:1.8;
   }
 
   .cinematic-hero-features{
@@ -898,8 +919,6 @@
 
   .cinematic-hero-buttons{
     flex-direction:column;
-
-    align-items:stretch;
   }
 
   .cinematic-btn-primary,
@@ -907,12 +926,8 @@
     width:100%;
   }
 
-  .cinematic-image-wrap{
-    margin-top:10px;
-  }
-
   .cinematic-hero-image{
-    max-width:360px;
+    max-width:380px;
 
     transform:none;
   }
@@ -924,7 +939,6 @@
   }
 
 }
-
 /* ================= MOBILE IMAGE GRID FIX ================= */
 
 @media (max-width: 768px) {
@@ -1032,7 +1046,7 @@
 
 <main>
 <!-- ========================================================= -->
-<!-- MAIN HERO -->
+<!-- CINEMATIC HERO -->
 <!-- ========================================================= -->
 
 <section
@@ -1041,13 +1055,19 @@
 >
 
   <!-- ========================================================= -->
+  <!-- BACKGROUND GLOW -->
+  <!-- ========================================================= -->
+
+  <div class="cinematic-hero-glow"></div>
+
+  <!-- ========================================================= -->
   <!-- OVERLAY -->
   <!-- ========================================================= -->
 
   <div class="cinematic-hero-overlay"></div>
 
   <!-- ========================================================= -->
-  <!-- CONTENT -->
+  <!-- MAIN CONTENT -->
   <!-- ========================================================= -->
 
   <div class="container">
@@ -1055,7 +1075,7 @@
     <div class="cinematic-hero-content">
 
       <!-- ========================================================= -->
-      <!-- LEFT CONTENT -->
+      <!-- LEFT -->
       <!-- ========================================================= -->
 
       <div class="cinematic-hero-text">
@@ -1262,52 +1282,130 @@
         <!-- ITEM -->
         <div class="bottom-item">
 
-          <h3>
-            Regional NSW Focus
-          </h3>
+          <div class="bottom-icon">
 
-          <p>
-            Supporting local businesses across the region
-          </p>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M12 21s-6-5.2-6-10a6 6 0 1112 0c0 4.8-6 10-6 10z"/>
+              <circle cx="12" cy="11" r="2"/>
+            </svg>
 
-        </div>
+          </div>
 
-        <!-- ITEM -->
-        <div class="bottom-item">
+          <div>
 
-          <h3>
-            Fast & SEO-Ready
-          </h3>
+            <h3>
+              Regional NSW Focus
+            </h3>
 
-          <p>
-            Built for Google and modern devices
-          </p>
+            <p>
+              Supporting local businesses across the region
+            </p>
 
-        </div>
-
-        <!-- ITEM -->
-        <div class="bottom-item">
-
-          <h3>
-            Affordable & No-Fuss
-          </h3>
-
-          <p>
-            Straightforward pricing and support
-          </p>
+          </div>
 
         </div>
 
         <!-- ITEM -->
         <div class="bottom-item">
 
-          <h3>
-            Local Support
-          </h3>
+          <div class="bottom-icon">
 
-          <p>
-            Real conversations and regional service
-          </p>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M12 2v4"/>
+              <path d="M12 18v4"/>
+              <path d="M4.9 4.9l2.8 2.8"/>
+              <path d="M16.3 16.3l2.8 2.8"/>
+              <path d="M2 12h4"/>
+              <path d="M18 12h4"/>
+            </svg>
+
+          </div>
+
+          <div>
+
+            <h3>
+              Fast & SEO-Ready
+            </h3>
+
+            <p>
+              Built for Google and modern devices
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- ITEM -->
+        <div class="bottom-item">
+
+          <div class="bottom-icon">
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M12 7v10"/>
+              <path d="M8.5 9.5c0-1 1.2-2 3.5-2s3.5 1 3.5 2-1.2 2-3.5 2-3.5 1-3.5 2 1.2 2 3.5 2 3.5-1 3.5-2"/>
+            </svg>
+
+          </div>
+
+          <div>
+
+            <h3>
+              Affordable & No-Fuss
+            </h3>
+
+            <p>
+              Straightforward pricing and support
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- ITEM -->
+        <div class="bottom-item">
+
+          <div class="bottom-icon">
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M17 11l2 2 3-3"/>
+              <path d="M3 21c0-3.3 2.7-6 6-6"/>
+            </svg>
+
+          </div>
+
+          <div>
+
+            <h3>
+              Local Support
+            </h3>
+
+            <p>
+              Real conversations and regional service
+            </p>
+
+          </div>
 
         </div>
 
