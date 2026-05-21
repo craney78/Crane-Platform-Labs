@@ -356,32 +356,24 @@
 }
 
 /* =========================================================
-   BACKGROUND IMAGE
+   TRUE BACKGROUND IMAGE
 ========================================================= */
 
-.cinematic-hero-image{
+.cinematic-hero-bg{
   position:absolute;
 
   inset:0;
 
-  width:100%;
-  height:100%;
-
   z-index:0;
 
-  overflow:hidden;
-}
+  background-image:
+    url("images/regional-nsw-hero.webp");
 
-.cinematic-hero-image img{
-  width:100%;
-  height:100%;
+  background-size:cover;
 
-  display:block;
+  background-position:center center;
 
-  object-fit:cover;
-
-  /* IMPORTANT FIX */
-  object-position:center 35%;
+  background-repeat:no-repeat;
 }
 
 /* =========================================================
@@ -416,7 +408,10 @@
   z-index:2;
 
   display:grid;
-  grid-template-columns:minmax(0,760px) 360px;
+
+  grid-template-columns:
+    minmax(0,760px)
+    360px;
 
   gap:60px;
 
@@ -459,6 +454,7 @@
   font-size:clamp(56px,5vw,78px);
 
   line-height:1.02;
+
   letter-spacing:-3px;
 
   font-weight:800;
@@ -490,6 +486,7 @@
 
 .cinematic-hero-sub{
   font-size:22px;
+
   line-height:1.8;
 
   color:#334155;
@@ -505,6 +502,7 @@
 
 .cinematic-hero-support{
   font-size:18px;
+
   line-height:1.9;
 
   color:#475569;
@@ -520,6 +518,7 @@
 
 .cinematic-hero-features{
   display:flex;
+
   flex-wrap:wrap;
 
   gap:34px;
@@ -533,6 +532,7 @@
 
 .cinematic-feature{
   display:flex;
+
   align-items:center;
 
   gap:16px;
@@ -590,6 +590,7 @@
 
 .cinematic-feature-text span{
   font-size:14px;
+
   line-height:1.5;
 
   color:#64748b;
@@ -601,6 +602,7 @@
 
 .cinematic-hero-buttons{
   display:flex;
+
   flex-wrap:wrap;
 
   gap:18px;
@@ -614,6 +616,7 @@
 
 .cinematic-btn-primary{
   display:inline-flex;
+
   align-items:center;
   justify-content:center;
 
@@ -631,6 +634,7 @@
     );
 
   color:#ffffff;
+
   text-decoration:none;
 
   font-size:16px;
@@ -652,6 +656,7 @@
 
 .cinematic-btn-secondary{
   display:inline-flex;
+
   align-items:center;
   justify-content:center;
 
@@ -670,6 +675,7 @@
     1px solid rgba(255,255,255,0.65);
 
   color:#081028;
+
   text-decoration:none;
 
   font-size:16px;
@@ -691,6 +697,7 @@
 
 .cinematic-hero-trust{
   display:flex;
+
   align-items:center;
 
   gap:14px;
@@ -709,6 +716,7 @@
 
 .cinematic-hero-trust p{
   font-size:15px;
+
   line-height:1.7;
 
   color:#475569;
@@ -745,6 +753,7 @@
 
 .floating-stat{
   display:flex;
+
   align-items:center;
 
   gap:18px;
@@ -796,6 +805,7 @@
 
 .floating-stat-content span{
   font-size:15px;
+
   line-height:1.6;
 
   color:#64748b;
@@ -835,6 +845,7 @@
 
 .cinematic-bottom-grid{
   display:grid;
+
   grid-template-columns:repeat(4,1fr);
 
   gap:30px;
@@ -860,6 +871,7 @@
 
 .bottom-item h3{
   font-size:22px;
+
   line-height:1.3;
 
   color:#ffffff;
@@ -869,6 +881,7 @@
 
 .bottom-item p{
   font-size:15px;
+
   line-height:1.8;
 
   color:
@@ -893,6 +906,7 @@
 
   .cinematic-floating-card{
     width:100%;
+
     max-width:520px;
 
     margin:0 auto;
@@ -914,6 +928,10 @@
     padding-top:60px;
 
     min-height:auto;
+  }
+
+  .cinematic-hero-bg{
+    background-position:center center;
   }
 
   .cinematic-hero-content{
@@ -979,56 +997,6 @@
     grid-template-columns:1fr;
 
     padding:30px;
-  }
-
-  .cinematic-hero-image img{
-    object-position:center center;
-  }
-
-}
-
-/* ================= MOBILE IMAGE GRID FIX ================= */
-
-@media (max-width: 768px) {
-
-  .panel-image-grid {
-
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 18px;
-
-    width: 100%;
-  }
-
-  .image-card {
-
-    width: 100%;
-  }
-
-  .image-card img {
-
-    width: 100%;
-
-    aspect-ratio: 1 / 1;
-
-    object-fit: cover;
-
-    border-radius: 18px;
-
-    display: block;
-  }
-
-  .image-label {
-
-    margin-top: 10px;
-
-    text-align: center;
-
-    font-size: 15px;
-
-    line-height: 1.4;
   }
 
 }
@@ -1148,22 +1116,17 @@
   aria-labelledby="hero-heading"
 >
 
-  <!-- BACKGROUND IMAGE -->
-  <div class="cinematic-hero-image">
+  <!-- ========================================================= -->
+  <!-- TRUE BACKGROUND IMAGE -->
+  <!-- ========================================================= -->
 
-    <img
-      src="images/regional-nsw-hero.webp"
-      alt="Regional NSW tourism and business website design"
-      loading="eager"
-      fetchpriority="high"
-      width="1800"
-      height="1200"
-    >
+  <div class="cinematic-hero-bg"></div>
 
-    <!-- OVERLAY -->
-    <div class="cinematic-hero-overlay"></div>
+  <!-- ========================================================= -->
+  <!-- OVERLAY -->
+  <!-- ========================================================= -->
 
-  </div>
+  <div class="cinematic-hero-overlay"></div>
 
   <!-- CONTENT -->
   <div class="container">
@@ -1447,7 +1410,6 @@
 
       <div class="cinematic-bottom-grid">
 
-        <!-- ITEM -->
         <div class="bottom-item">
 
           <h3>
@@ -1460,7 +1422,6 @@
 
         </div>
 
-        <!-- ITEM -->
         <div class="bottom-item">
 
           <h3>
@@ -1473,7 +1434,6 @@
 
         </div>
 
-        <!-- ITEM -->
         <div class="bottom-item">
 
           <h3>
@@ -1486,7 +1446,6 @@
 
         </div>
 
-        <!-- ITEM -->
         <div class="bottom-item">
 
           <h3>
