@@ -347,11 +347,16 @@
   position:relative;
   overflow:hidden;
 
-  background:#f8fafc;
+  background:
+    linear-gradient(
+      180deg,
+      #f8fafc 0%,
+      #eef4ff 100%
+    );
 
   padding-top:90px;
 
-  min-height:760px;
+  min-height:860px;
 }
 
 /* =========================================================
@@ -368,10 +373,10 @@
     linear-gradient(
       90deg,
       rgba(248,250,252,0.98) 0%,
-      rgba(248,250,252,0.96) 28%,
-      rgba(248,250,252,0.84) 42%,
-      rgba(248,250,252,0.22) 64%,
-      rgba(248,250,252,0.04) 100%
+      rgba(248,250,252,0.96) 32%,
+      rgba(248,250,252,0.88) 48%,
+      rgba(248,250,252,0.35) 70%,
+      rgba(248,250,252,0.05) 100%
     );
 }
 
@@ -388,9 +393,9 @@
 
   grid-template-columns:
     minmax(0,720px)
-    minmax(320px,620px);
+    minmax(420px,720px);
 
-  gap:70px;
+  gap:80px;
 
   align-items:center;
 
@@ -402,6 +407,10 @@
 ========================================================= */
 
 .cinematic-hero-text{
+  position:relative;
+
+  z-index:2;
+
   max-width:760px;
 
   padding-bottom:140px;
@@ -420,7 +429,7 @@
   letter-spacing:1px;
   text-transform:uppercase;
 
-  margin-bottom:26px;
+  margin-bottom:28px;
 }
 
 /* =========================================================
@@ -428,9 +437,9 @@
 ========================================================= */
 
 .cinematic-hero h1{
-  font-size:clamp(56px,5vw,78px);
+  font-size:clamp(58px,5vw,84px);
 
-  line-height:1.02;
+  line-height:0.98;
 
   letter-spacing:-3px;
 
@@ -445,6 +454,8 @@
 
 .cinematic-hero h1 span{
   display:block;
+
+  margin-top:10px;
 
   background:
     linear-gradient(
@@ -470,7 +481,7 @@
 
   max-width:720px;
 
-  margin-bottom:30px;
+  margin-bottom:28px;
 }
 
 /* =========================================================
@@ -484,7 +495,7 @@
 
   color:#475569;
 
-  max-width:700px;
+  max-width:680px;
 
   margin-bottom:42px;
 }
@@ -498,7 +509,7 @@
 
   flex-wrap:wrap;
 
-  gap:34px;
+  gap:28px;
 
   margin-bottom:42px;
 }
@@ -532,15 +543,15 @@
   justify-content:center;
 
   background:
-    rgba(255,255,255,0.72);
+    rgba(255,255,255,0.8);
 
-  backdrop-filter:blur(10px);
+  backdrop-filter:blur(12px);
 
   border:
-    1px solid rgba(255,255,255,0.6);
+    1px solid rgba(255,255,255,0.7);
 
   box-shadow:
-    0 10px 30px rgba(15,23,42,0.08);
+    0 12px 30px rgba(15,23,42,0.08);
 
   color:#2563eb;
 }
@@ -644,7 +655,7 @@
   border-radius:18px;
 
   background:
-    rgba(255,255,255,0.82);
+    rgba(255,255,255,0.85);
 
   backdrop-filter:blur(10px);
 
@@ -700,7 +711,7 @@
 }
 
 /* =========================================================
-   HERO IMAGE
+   HERO IMAGE WRAP
 ========================================================= */
 
 .cinematic-image-wrap{
@@ -711,12 +722,18 @@
   justify-content:center;
 
   width:100%;
+
+  z-index:2;
 }
+
+/* =========================================================
+   HERO IMAGE
+========================================================= */
 
 .cinematic-hero-image{
   width:100%;
 
-  max-width:620px;
+  max-width:720px;
 
   height:auto;
 
@@ -724,8 +741,10 @@
 
   object-fit:contain;
 
+  transform:translateX(30px);
+
   filter:
-    drop-shadow(0 40px 70px rgba(15,23,42,0.16));
+    drop-shadow(0 50px 90px rgba(15,23,42,0.16));
 }
 
 /* =========================================================
@@ -737,7 +756,7 @@
 
   z-index:3;
 
-  margin-top:-70px;
+  margin-top:-60px;
 
   padding-bottom:60px;
 }
@@ -753,9 +772,9 @@
 
   gap:30px;
 
-  padding:36px 42px;
+  padding:38px 42px;
 
-  border-radius:32px;
+  border-radius:34px;
 
   background:
     linear-gradient(
@@ -765,11 +784,11 @@
     );
 
   box-shadow:
-    0 30px 70px rgba(7,27,82,0.28);
+    0 30px 70px rgba(7,27,82,0.24);
 }
 
 /* =========================================================
-   BOTTOM ITEM
+   BOTTOM ITEMS
 ========================================================= */
 
 .bottom-item h3{
@@ -797,10 +816,14 @@
 
 @media (max-width:1200px){
 
+  .cinematic-hero{
+    min-height:auto;
+  }
+
   .cinematic-hero-content{
     grid-template-columns:1fr;
 
-    gap:50px;
+    gap:60px;
 
     min-height:auto;
 
@@ -816,7 +839,9 @@
   }
 
   .cinematic-hero-image{
-    max-width:520px;
+    max-width:620px;
+
+    transform:none;
   }
 
   .cinematic-bottom-grid{
@@ -887,7 +912,9 @@
   }
 
   .cinematic-hero-image{
-    max-width:340px;
+    max-width:360px;
+
+    transform:none;
   }
 
   .cinematic-bottom-grid{
@@ -1028,7 +1055,7 @@
     <div class="cinematic-hero-content">
 
       <!-- ========================================================= -->
-      <!-- LEFT -->
+      <!-- LEFT CONTENT -->
       <!-- ========================================================= -->
 
       <div class="cinematic-hero-text">
@@ -1210,8 +1237,8 @@
       <div class="cinematic-image-wrap">
 
         <img
-          src="images/website-builder.webp"
-          alt="Regional NSW website design"
+          src="images/regional-nsw-hero.webp"
+          alt="Regional NSW business website design"
           class="cinematic-hero-image"
           loading="eager"
         >
