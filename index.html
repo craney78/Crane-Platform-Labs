@@ -340,11 +340,11 @@
 
 <style>
 /* =========================================================
-   HOMEPAGE HERO ONLY
-   SAFE ISOLATED HERO
+   MAIN HERO
+   FULLY ISOLATED HOMEPAGE HERO
 ========================================================= */
 
-.home-hero{
+.main-hero{
   position:relative;
   overflow:hidden;
 
@@ -362,7 +362,7 @@
    BACKGROUND GLOW
 ========================================================= */
 
-.home-hero .hero-bg-glow{
+.main-hero .hero-bg-glow{
   position:absolute;
 
   top:-220px;
@@ -388,7 +388,7 @@
    INNER
 ========================================================= */
 
-.home-hero .hero-inner{
+.main-hero .hero-inner{
   position:relative;
   z-index:2;
 
@@ -401,10 +401,10 @@
 }
 
 /* =========================================================
-   LEFT
+   TEXT SIDE
 ========================================================= */
 
-.home-hero .hero-text{
+.main-hero .hero-text{
   position:relative;
   z-index:2;
 }
@@ -413,7 +413,7 @@
    TAG
 ========================================================= */
 
-.home-hero .hero-tag{
+.main-hero .hero-tag{
   display:inline-flex;
   align-items:center;
 
@@ -441,7 +441,7 @@
    HEADING
 ========================================================= */
 
-.home-hero h1{
+.main-hero h1{
   font-size:clamp(58px,5vw,68px);
 
   line-height:0.95;
@@ -460,7 +460,7 @@
    GRADIENT TEXT
 ========================================================= */
 
-.home-hero .gradient-text{
+.main-hero .gradient-text{
   background:
     linear-gradient(
       90deg,
@@ -476,7 +476,7 @@
    SUBTEXT
 ========================================================= */
 
-.home-hero .hero-sub{
+.main-hero .hero-sub{
   font-size:21px;
   line-height:1.8;
 
@@ -491,7 +491,7 @@
    SUPPORT
 ========================================================= */
 
-.home-hero .hero-support{
+.main-hero .hero-support{
   font-size:17px;
   line-height:1.9;
 
@@ -502,38 +502,25 @@
   margin-bottom:34px;
 }
 
-.home-hero .hero-support a{
+.main-hero .hero-support a{
   color:#2563eb;
   text-decoration:none;
   font-weight:600;
 }
 
-.home-hero .hero-support a:hover{
+.main-hero .hero-support a:hover{
   text-decoration:underline;
 }
 
 /* =========================================================
-   REMOVE GLOBAL HERO STYLES
+   FEATURES
 ========================================================= */
 
-.home-hero .hero-feature{
-  background:none !important;
-  border:none !important;
-  box-shadow:none !important;
-
-  padding:0 !important;
-  border-radius:0 !important;
-}
-
-/* =========================================================
-   FEATURES GRID
-========================================================= */
-
-.home-hero .hero-features{
+.main-hero .hero-features{
   display:grid;
 
   grid-template-columns:
-    repeat(3, minmax(0,1fr));
+    repeat(3,minmax(0,1fr));
 
   gap:18px;
 
@@ -546,7 +533,7 @@
    FEATURE CARD
 ========================================================= */
 
-.home-hero .hero-feature{
+.main-hero .hero-feature{
   display:flex;
   align-items:center;
 
@@ -554,24 +541,24 @@
 
   min-height:78px;
 
-  background:#ffffff !important;
+  padding:18px 20px;
+
+  background:#ffffff;
 
   border:
-    1px solid rgba(15,23,42,0.05) !important;
+    1px solid rgba(15,23,42,0.05);
 
-  border-radius:22px !important;
-
-  padding:18px 20px !important;
+  border-radius:22px;
 
   box-shadow:
-    0 10px 24px rgba(15,23,42,0.04) !important;
+    0 10px 24px rgba(15,23,42,0.04);
 }
 
 /* =========================================================
    FEATURE ICON
 ========================================================= */
 
-.home-hero .hero-feature .icon-wrap{
+.main-hero .hero-feature .icon-wrap{
   width:50px;
   height:50px;
 
@@ -593,7 +580,7 @@
   color:#ffffff;
 }
 
-.home-hero .hero-feature svg{
+.main-hero .hero-feature svg{
   width:22px;
   height:22px;
 }
@@ -602,7 +589,7 @@
    FEATURE TEXT
 ========================================================= */
 
-.home-hero .hero-feature span{
+.main-hero .hero-feature span{
   font-size:15px;
   line-height:1.45;
 
@@ -615,7 +602,7 @@
    BUTTONS
 ========================================================= */
 
-.home-hero .hero-buttons{
+.main-hero .hero-buttons{
   display:flex;
   flex-wrap:wrap;
 
@@ -628,7 +615,7 @@
    PRIMARY BUTTON
 ========================================================= */
 
-.home-hero .btn-primary{
+.main-hero .btn-primary{
   display:inline-flex;
   align-items:center;
   justify-content:center;
@@ -658,7 +645,7 @@
   transition:all 0.25s ease;
 }
 
-.home-hero .btn-primary:hover{
+.main-hero .btn-primary:hover{
   transform:translateY(-2px);
 }
 
@@ -666,7 +653,7 @@
    SECONDARY BUTTON
 ========================================================= */
 
-.home-hero .btn-secondary{
+.main-hero .btn-secondary{
   display:inline-flex;
   align-items:center;
   justify-content:center;
@@ -694,15 +681,15 @@
   transition:all 0.25s ease;
 }
 
-.home-hero .btn-secondary:hover{
+.main-hero .btn-secondary:hover{
   transform:translateY(-2px);
 }
 
 /* =========================================================
-   TRUST TEXT
+   TRUST
 ========================================================= */
 
-.home-hero .hero-trust p{
+.main-hero .hero-trust p{
   font-size:15px;
   line-height:1.7;
 
@@ -710,10 +697,10 @@
 }
 
 /* =========================================================
-   RIGHT COLUMN
+   IMAGE COLUMN
 ========================================================= */
 
-.home-hero .hero-image-column{
+.main-hero .hero-image-column{
   position:relative;
 }
 
@@ -721,7 +708,7 @@
    IMAGE CARD
 ========================================================= */
 
-.home-hero .hero-image-card{
+.main-hero .hero-image-card{
   position:relative;
 
   border-radius:36px;
@@ -735,7 +722,7 @@
    IMAGE
 ========================================================= */
 
-.home-hero .hero-main-image{
+.main-hero .hero-main-image{
   width:100%;
   height:620px;
 
@@ -745,10 +732,10 @@
 }
 
 /* =========================================================
-   IMAGE OVERLAY
+   OVERLAY
 ========================================================= */
 
-.home-hero .hero-image-overlay{
+.main-hero .hero-image-overlay{
   position:absolute;
   inset:0;
 
@@ -761,10 +748,10 @@
 }
 
 /* =========================================================
-   FLOATING GLASS CARD
+   FLOATING CARD
 ========================================================= */
 
-.home-hero .hero-floating-card{
+.main-hero .hero-floating-card{
   position:absolute;
 
   right:-30px;
@@ -792,7 +779,7 @@
    FLOATING ITEMS
 ========================================================= */
 
-.home-hero .floating-item{
+.main-hero .floating-item{
   display:flex;
   align-items:center;
 
@@ -803,7 +790,7 @@
    FLOATING ICON
 ========================================================= */
 
-.home-hero .floating-icon{
+.main-hero .floating-icon{
   width:54px;
   height:54px;
 
@@ -825,7 +812,7 @@
   flex-shrink:0;
 }
 
-.home-hero .floating-icon svg{
+.main-hero .floating-icon svg{
   width:22px;
   height:22px;
 }
@@ -834,7 +821,7 @@
    FLOATING TEXT
 ========================================================= */
 
-.home-hero .floating-content strong{
+.main-hero .floating-content strong{
   display:block;
 
   font-size:17px;
@@ -845,7 +832,7 @@
   margin-bottom:4px;
 }
 
-.home-hero .floating-content span{
+.main-hero .floating-content span{
   font-size:14px;
   line-height:1.5;
 
@@ -856,7 +843,7 @@
    DIVIDER
 ========================================================= */
 
-.home-hero .floating-divider{
+.main-hero .floating-divider{
   width:100%;
   height:1px;
 
@@ -872,17 +859,17 @@
 
 @media (max-width:1100px){
 
-  .home-hero .hero-inner{
+  .main-hero .hero-inner{
     grid-template-columns:1fr;
     gap:60px;
   }
 
-  .home-hero .hero-image-column{
+  .main-hero .hero-image-column{
     max-width:760px;
     margin:0 auto;
   }
 
-  .home-hero .hero-floating-card{
+  .main-hero .hero-floating-card{
     right:20px;
     bottom:20px;
   }
@@ -895,50 +882,50 @@
 
 @media (max-width:768px){
 
-  .home-hero{
+  .main-hero{
     padding:70px 0 60px 0;
   }
 
-  .home-hero .hero-inner{
+  .main-hero .hero-inner{
     gap:40px;
   }
 
-  .home-hero h1{
+  .main-hero h1{
     font-size:50px;
 
     line-height:0.98;
     letter-spacing:-2px;
   }
 
-  .home-hero .hero-sub{
+  .main-hero .hero-sub{
     font-size:18px;
     line-height:1.7;
   }
 
-  .home-hero .hero-support{
+  .main-hero .hero-support{
     font-size:16px;
     line-height:1.8;
   }
 
-  .home-hero .hero-features{
+  .main-hero .hero-features{
     grid-template-columns:1fr;
   }
 
-  .home-hero .hero-buttons{
+  .main-hero .hero-buttons{
     flex-direction:column;
     align-items:stretch;
   }
 
-  .home-hero .btn-primary,
-  .home-hero .btn-secondary{
+  .main-hero .btn-primary,
+  .main-hero .btn-secondary{
     width:100%;
   }
 
-  .home-hero .hero-main-image{
+  .main-hero .hero-main-image{
     height:480px;
   }
 
-  .home-hero .hero-floating-card{
+  .main-hero .hero-floating-card{
     position:relative;
 
     right:auto;
@@ -1103,10 +1090,10 @@
 </header>
 
 <main>
-<!-- ================= HERO ================= -->
+<!-- ================= MAIN HERO ================= -->
 
 <section
-  class="hero home-hero section"
+  class="main-hero section"
   aria-labelledby="hero-heading"
 >
 
