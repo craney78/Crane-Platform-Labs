@@ -340,15 +340,15 @@
 
 <style>
 /* =========================================================
-   MAIN HERO
-   CLEAN PREMIUM HOMEPAGE HERO
+   INDEX PAGE — MAIN HERO
+   FULLY ISOLATED PREMIUM HERO
 ========================================================= */
 
 .main-hero{
   position:relative;
   overflow:hidden;
 
-  padding:80px 0 70px 0;
+  padding:90px 0 80px 0;
 
   background:
     linear-gradient(
@@ -385,7 +385,7 @@
 }
 
 /* =========================================================
-   INNER
+   LAYOUT
 ========================================================= */
 
 .main-hero .hero-inner{
@@ -395,13 +395,13 @@
   display:grid;
   grid-template-columns:1.05fr 0.95fr;
 
-  gap:70px;
+  gap:80px;
 
   align-items:center;
 }
 
 /* =========================================================
-   TEXT SIDE
+   TEXT COLUMN
 ========================================================= */
 
 .main-hero .hero-text{
@@ -442,7 +442,7 @@
 ========================================================= */
 
 .main-hero h1{
-  font-size:clamp(58px,5vw,68px);
+  font-size:clamp(58px,5vw,72px);
 
   line-height:0.95;
   letter-spacing:-3px;
@@ -453,7 +453,7 @@
 
   margin-bottom:34px;
 
-  max-width:720px;
+  max-width:760px;
 }
 
 /* =========================================================
@@ -499,7 +499,7 @@
 
   max-width:720px;
 
-  margin-bottom:34px;
+  margin-bottom:38px;
 }
 
 .main-hero .hero-support a{
@@ -513,7 +513,7 @@
 }
 
 /* =========================================================
-   FEATURES LAYOUT
+   FEATURES
 ========================================================= */
 
 .main-hero .hero-features{
@@ -526,49 +526,58 @@
 }
 
 /* =========================================================
-   CLEAN FEATURE STYLE
+   FORCE REMOVE ALL OLD CARD STYLES
 ========================================================= */
 
 .main-hero .hero-feature{
-  display:flex;
-  align-items:center;
+  display:flex !important;
+  align-items:center !important;
 
-  gap:16px;
+  gap:16px !important;
 
-  padding:0;
+  padding:0 !important;
 
-  background:none;
-  border:none;
-  box-shadow:none;
+  background:transparent !important;
+  border:none !important;
+  box-shadow:none !important;
 
-  min-height:auto;
+  border-radius:0 !important;
+
+  min-height:auto !important;
 }
 
 /* =========================================================
-   CLEAN ICON STYLE
+   ICON STYLE
 ========================================================= */
 
 .main-hero .hero-feature .icon-wrap{
-  width:44px;
-  height:44px;
+  width:44px !important;
+  height:44px !important;
 
-  min-width:44px;
+  min-width:44px !important;
 
-  border-radius:14px;
+  border-radius:14px !important;
 
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
 
   background:
-    rgba(37,99,235,0.08);
+    rgba(37,99,235,0.08) !important;
 
-  color:#2563eb;
+  color:#2563eb !important;
+
+  box-shadow:none !important;
+  border:none !important;
+
+  margin:0 !important;
 }
 
 .main-hero .hero-feature svg{
-  width:22px;
-  height:22px;
+  width:22px !important;
+  height:22px !important;
+
+  stroke:currentColor !important;
 }
 
 /* =========================================================
@@ -576,12 +585,12 @@
 ========================================================= */
 
 .main-hero .hero-feature span{
-  font-size:15px;
-  line-height:1.45;
+  font-size:15px !important;
+  line-height:1.45 !important;
 
-  color:#081028;
+  color:#081028 !important;
 
-  font-weight:600;
+  font-weight:600 !important;
 }
 
 /* =========================================================
@@ -594,7 +603,7 @@
 
   gap:18px;
 
-  margin-bottom:28px;
+  margin-bottom:30px;
 }
 
 /* =========================================================
@@ -672,7 +681,7 @@
 }
 
 /* =========================================================
-   TRUST
+   TRUST TEXT
 ========================================================= */
 
 .main-hero .hero-trust p{
@@ -734,7 +743,7 @@
 }
 
 /* =========================================================
-   FLOATING CARD
+   FLOATING GLASS CARD
 ========================================================= */
 
 .main-hero .hero-floating-card{
@@ -750,7 +759,7 @@
   border-radius:30px;
 
   background:
-    rgba(255,255,255,0.82);
+    rgba(255,255,255,0.68);
 
   backdrop-filter:blur(20px);
 
@@ -758,7 +767,7 @@
     1px solid rgba(255,255,255,0.45);
 
   box-shadow:
-    0 30px 70px rgba(15,23,42,0.18);
+    0 18px 40px rgba(15,23,42,0.10);
 }
 
 /* =========================================================
