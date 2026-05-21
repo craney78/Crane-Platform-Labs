@@ -453,7 +453,9 @@
 
   align-items:center;
 
-  min-height:760px;
+  width:100%;
+
+  min-height:860px;
 }
 
 /* =========================================================
@@ -758,14 +760,21 @@
 .cinematic-image-wrap{
   position:absolute;
 
-  top:50%;
-  right:-220px;
+  top:0;
+  right:0;
 
-  transform:translateY(-50%);
+  width:78vw;
 
-  width:1200px;
+  height:100%;
+
+  display:flex;
+
+  align-items:center;
+  justify-content:flex-end;
 
   z-index:1;
+
+  overflow:hidden;
 
   pointer-events:none;
 }
@@ -777,12 +786,13 @@
 .cinematic-hero-image{
   width:100%;
 
-  height:auto;
+  height:100%;
+
+  object-fit:cover;
+
+  object-position:center right;
 
   display:block;
-
-  filter:
-    drop-shadow(0 50px 100px rgba(15,23,42,0.18));
 }
 
 /* =========================================================
