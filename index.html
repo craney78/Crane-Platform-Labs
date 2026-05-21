@@ -339,6 +339,7 @@
   </script>
 
 <style>
+  
 /* =========================================================
    HARD RESET
 ========================================================= */
@@ -391,7 +392,7 @@
   background:
     radial-gradient(
       circle,
-      rgba(37,99,235,0.15) 0%,
+      rgba(37,99,235,0.14) 0%,
       rgba(37,99,235,0) 72%
     );
 
@@ -406,18 +407,19 @@
   position:absolute;
   inset:0;
 
-  z-index:1;
+  z-index:2;
 
   pointer-events:none;
 
   background:
     linear-gradient(
-      105deg,
+      100deg,
       rgba(247,249,252,1) 0%,
-      rgba(247,249,252,0.98) 34%,
-      rgba(247,249,252,0.92) 46%,
-      rgba(247,249,252,0.55) 60%,
-      rgba(247,249,252,0.08) 82%,
+      rgba(247,249,252,0.98) 28%,
+      rgba(247,249,252,0.95) 40%,
+      rgba(247,249,252,0.75) 52%,
+      rgba(247,249,252,0.28) 65%,
+      rgba(247,249,252,0.04) 82%,
       rgba(247,249,252,0) 100%
     );
 }
@@ -429,7 +431,7 @@
 .cinematic-hero .container{
   position:relative;
 
-  z-index:2;
+  z-index:5;
 
   width:100%;
 
@@ -447,33 +449,36 @@
 .cinematic-hero-content{
   position:relative;
 
-  display:grid;
-
-  grid-template-columns:
-    620px
-    minmax(700px, 1fr);
+  display:flex;
 
   align-items:center;
-
-  gap:0;
 
   min-height:760px;
 }
 
 /* =========================================================
-   LEFT SIDE
+   LEFT TEXT
 ========================================================= */
 
 .cinematic-hero-text{
   position:relative;
 
-  z-index:20;
+  z-index:30;
 
   width:100%;
 
   max-width:620px;
 
   padding-bottom:130px;
+}
+
+/* =========================================================
+   ENSURE ALL TEXT SITS ABOVE IMAGE
+========================================================= */
+
+.cinematic-hero-text *{
+  position:relative;
+  z-index:40;
 }
 
 /* =========================================================
@@ -587,7 +592,7 @@
 }
 
 /* =========================================================
-   ICON
+   FEATURE ICON
 ========================================================= */
 
 .cinematic-feature-icon{
@@ -682,7 +687,7 @@
 }
 
 /* =========================================================
-   PRIMARY
+   PRIMARY BUTTON
 ========================================================= */
 
 .cinematic-btn-primary{
@@ -700,7 +705,7 @@
 }
 
 /* =========================================================
-   SECONDARY
+   SECONDARY BUTTON
 ========================================================= */
 
 .cinematic-btn-secondary{
@@ -751,15 +756,18 @@
 ========================================================= */
 
 .cinematic-image-wrap{
-  position:relative;
+  position:absolute;
 
-  display:flex;
-  align-items:center;
-  justify-content:flex-end;
+  top:50%;
+  right:-220px;
 
-  height:100%;
+  transform:translateY(-50%);
 
-  flex-shrink:0;
+  width:1200px;
+
+  z-index:1;
+
+  pointer-events:none;
 }
 
 /* =========================================================
@@ -767,19 +775,11 @@
 ========================================================= */
 
 .cinematic-hero-image{
-  width:1200px;
-
-  max-width:none;
+  width:100%;
 
   height:auto;
 
   display:block;
-
-  position:relative;
-
-  right:-180px;
-
-  top:0;
 
   filter:
     drop-shadow(0 50px 100px rgba(15,23,42,0.18));
@@ -792,7 +792,7 @@
 .cinematic-bottom-bar{
   position:relative;
 
-  z-index:10;
+  z-index:50;
 
   margin-top:-90px;
 
@@ -800,7 +800,7 @@
 }
 
 /* =========================================================
-   GRID
+   BOTTOM GRID
 ========================================================= */
 
 .cinematic-bottom-grid{
@@ -826,7 +826,7 @@
 }
 
 /* =========================================================
-   ITEM
+   BOTTOM ITEM
 ========================================================= */
 
 .bottom-item{
@@ -838,7 +838,7 @@
 }
 
 /* =========================================================
-   ICON
+   BOTTOM ICON
 ========================================================= */
 
 .bottom-icon{
@@ -865,7 +865,7 @@
 }
 
 /* =========================================================
-   TEXT
+   BOTTOM TEXT
 ========================================================= */
 
 .bottom-item h3{
@@ -896,11 +896,13 @@
   }
 
   .cinematic-hero-content{
-    grid-template-columns:1fr;
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-start;
 
     gap:60px;
-
-    min-height:auto;
 
     padding-bottom:140px;
   }
@@ -912,6 +914,16 @@
   }
 
   .cinematic-image-wrap{
+    position:relative;
+
+    top:auto;
+    right:auto;
+
+    transform:none;
+
+    width:100%;
+
+    display:flex;
     justify-content:center;
   }
 
@@ -919,8 +931,6 @@
     width:100%;
 
     max-width:760px;
-
-    right:0;
   }
 
   .cinematic-bottom-grid{
@@ -946,8 +956,6 @@
   }
 
   .cinematic-hero-content{
-    grid-template-columns:1fr;
-
     gap:40px;
 
     padding-bottom:110px;
@@ -983,15 +991,13 @@
   }
 
   .cinematic-image-wrap{
-    justify-content:center;
+    width:140%;
+
+    left:-20%;
   }
 
   .cinematic-hero-image{
-    width:140%;
-
-    max-width:none;
-
-    right:-40px;
+    width:100%;
   }
 
   .cinematic-bottom-bar{
@@ -1005,6 +1011,7 @@
   }
 
 }
+
 /* ================= MOBILE IMAGE GRID FIX ================= */
 
 @media (max-width: 768px) {
