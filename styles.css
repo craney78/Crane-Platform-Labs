@@ -2102,5 +2102,169 @@ MOBILE
 
 }
 
+/* =========================================================
+   FLOATING CALL BUTTON
+========================================================= */
 
+.floating-call-btn{
+  position:fixed;
+
+  right:24px;
+  bottom:24px;
+
+  z-index:9999;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  gap:12px;
+
+  min-height:62px;
+
+  padding:0 24px;
+
+  border-radius:999px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #1d4ed8
+    );
+
+  color:#ffffff;
+  text-decoration:none;
+
+  font-size:16px;
+  font-weight:700;
+
+  letter-spacing:0.2px;
+
+  box-shadow:
+    0 18px 40px rgba(37,99,235,0.35);
+
+  backdrop-filter:blur(10px);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    opacity 0.35s ease,
+    visibility 0.35s ease;
+
+  opacity:0;
+  visibility:hidden;
+
+  transform:
+    translateY(14px);
+
+  overflow:hidden;
+}
+
+/* =========================================================
+   SHOW STATE
+========================================================= */
+
+.floating-call-btn.show{
+  opacity:1;
+  visibility:visible;
+
+  transform:
+    translateY(0);
+}
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.floating-call-btn:hover{
+  transform:
+    translateY(-3px);
+
+  box-shadow:
+    0 24px 50px rgba(37,99,235,0.42);
+}
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.floating-call-btn svg{
+  width:20px;
+  height:20px;
+
+  flex-shrink:0;
+}
+
+/* =========================================================
+   SUBTLE PULSE
+========================================================= */
+
+.floating-call-btn::after{
+  content:"";
+
+  position:absolute;
+  inset:0;
+
+  border-radius:999px;
+
+  border:
+    1px solid rgba(255,255,255,0.25);
+
+  animation:
+    floatingCallPulse 2.8s infinite;
+}
+
+/* =========================================================
+   PULSE ANIMATION
+========================================================= */
+
+@keyframes floatingCallPulse{
+
+  0%{
+    transform:scale(1);
+    opacity:0.55;
+  }
+
+  70%{
+    transform:scale(1.08);
+    opacity:0;
+  }
+
+  100%{
+    transform:scale(1.08);
+    opacity:0;
+  }
+
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width:768px){
+
+  .floating-call-btn{
+    right:16px;
+    bottom:16px;
+
+    width:calc(100% - 32px);
+
+    min-height:58px;
+
+    justify-content:center;
+
+    padding:0 22px;
+
+    font-size:15px;
+
+    border-radius:18px;
+  }
+
+  .floating-call-btn svg{
+    width:18px;
+    height:18px;
+  }
+
+}
 
