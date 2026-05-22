@@ -300,9 +300,8 @@
 </head>
 <style>
 /* =========================================================
-   HARD FIX — AUSTRALIA WIDE HERO
-   FULL WIDTH IMAGE
-   SAME BEHAVIOUR AS INDEX HERO
+   AUSTRALIA-WIDE HERO
+   FINAL FULL FIX
 ========================================================= */
 
 .cinematic-hero{
@@ -334,21 +333,21 @@
 ========================================================= */
 
 .cinematic-hero-content{
-  position:relative;
-
   display:grid;
 
   grid-template-columns:
-    minmax(420px, 620px)
-    minmax(0, 1fr);
+    42%
+    58%;
 
   align-items:center;
 
   gap:0;
+
+  min-height:820px;
 }
 
 /* =========================================================
-   LEFT TEXT
+   LEFT SIDE
 ========================================================= */
 
 .cinematic-hero-text{
@@ -360,7 +359,7 @@
 }
 
 /* =========================================================
-   HERO IMAGE SIDE
+   IMAGE SIDE
 ========================================================= */
 
 .cinematic-image-wrap{
@@ -378,11 +377,11 @@
 }
 
 /* =========================================================
-   HARD IMAGE FIX
+   HERO IMAGE
 ========================================================= */
 
 .cinematic-hero-image{
-  width:165%;
+  width:125%;
 
   max-width:none;
 
@@ -390,7 +389,7 @@
 
   display:block;
 
-  margin-left:-42%;
+  margin-left:-8%;
 }
 
 /* =========================================================
@@ -406,7 +405,7 @@
   left:0;
   bottom:0;
 
-  width:42%;
+  width:28%;
 
   z-index:2;
 
@@ -416,9 +415,7 @@
     linear-gradient(
       90deg,
       rgba(248,250,252,1) 0%,
-      rgba(248,250,252,0.98) 18%,
-      rgba(248,250,252,0.92) 38%,
-      rgba(248,250,252,0.72) 58%,
+      rgba(248,250,252,0.94) 42%,
       rgba(248,250,252,0) 100%
     );
 }
@@ -597,6 +594,8 @@
     grid-template-columns:1fr;
 
     gap:50px;
+
+    min-height:auto;
   }
 
   .cinematic-hero-text{
@@ -621,10 +620,14 @@
     font-size:17px;
   }
 
-  .cinematic-hero-image{
-    width:120%;
+  .cinematic-image-wrap{
+    justify-content:center;
+  }
 
-    margin-left:-10%;
+  .cinematic-hero-image{
+    width:100%;
+
+    margin-left:0;
   }
 
   .cinematic-image-wrap::before{
@@ -667,12 +670,6 @@
     font-size:16px;
 
     line-height:1.8;
-  }
-
-  .cinematic-hero-image{
-    width:150%;
-
-    margin-left:-25%;
   }
 
   .cinematic-hero-buttons{
