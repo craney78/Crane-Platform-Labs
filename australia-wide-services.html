@@ -299,23 +299,14 @@
 
 </head>
 <style>
-
 /* =========================================================
-   HARD RESET
+   CINEMATIC HERO - FULL REPLACEMENT CSS
 ========================================================= */
 
 .cinematic-hero,
 .cinematic-hero *{
   box-sizing:border-box;
 }
-
-.cinematic-hero img{
-  max-width:none;
-}
-
-/* =========================================================
-   HERO SECTION
-========================================================= */
 
 .cinematic-hero{
   position:relative;
@@ -329,9 +320,7 @@
       #eef4ff 100%
     );
 
-  padding-top:90px;
-
-  min-height:980px;
+  padding:120px 0 80px;
 }
 
 /* =========================================================
@@ -373,19 +362,19 @@
 
   background:
     linear-gradient(
-      100deg,
+      90deg,
       rgba(247,249,252,1) 0%,
-      rgba(247,249,252,0.98) 28%,
-      rgba(247,249,252,0.95) 40%,
-      rgba(247,249,252,0.75) 52%,
-      rgba(247,249,252,0.28) 65%,
-      rgba(247,249,252,0.04) 82%,
+      rgba(247,249,252,0.98) 22%,
+      rgba(247,249,252,0.96) 34%,
+      rgba(247,249,252,0.82) 46%,
+      rgba(247,249,252,0.45) 58%,
+      rgba(247,249,252,0.12) 74%,
       rgba(247,249,252,0) 100%
     );
 }
 
 /* =========================================================
-   HERO CONTAINER
+   CONTAINER
 ========================================================= */
 
 .cinematic-hero .container{
@@ -395,11 +384,11 @@
 
   width:100%;
 
-  max-width:none;
+  max-width:1500px;
 
-  margin:0;
+  margin:0 auto;
 
-  padding-left:60px;
+  padding:0 60px;
 }
 
 /* =========================================================
@@ -407,15 +396,16 @@
 ========================================================= */
 
 .cinematic-hero-content{
-  position:relative;
-
   display:flex;
 
   align-items:center;
+  justify-content:space-between;
 
-  width:100%;
+  gap:70px;
 
-  min-height:860px;
+  min-height:720px;
+
+  position:relative;
 }
 
 /* =========================================================
@@ -423,24 +413,17 @@
 ========================================================= */
 
 .cinematic-hero-text{
+  flex:0 0 42%;
+  max-width:42%;
+
   position:relative;
 
-  z-index:30;
-
-  width:100%;
-
-  max-width:620px;
-
-  padding-bottom:130px;
+  z-index:10;
 }
-
-/* =========================================================
-   ENSURE ALL TEXT SITS ABOVE IMAGE
-========================================================= */
 
 .cinematic-hero-text *{
   position:relative;
-  z-index:40;
+  z-index:20;
 }
 
 /* =========================================================
@@ -456,7 +439,7 @@
 
   color:#2563eb;
 
-  margin-bottom:28px;
+  margin-bottom:26px;
 }
 
 /* =========================================================
@@ -464,7 +447,7 @@
 ========================================================= */
 
 .cinematic-hero h1{
-  font-size:clamp(68px,5vw,96px);
+  font-size:clamp(60px,5vw,96px);
 
   line-height:0.92;
 
@@ -474,9 +457,7 @@
 
   color:#020b2d;
 
-  margin-bottom:36px;
-
-  max-width:620px;
+  margin-bottom:34px;
 }
 
 .cinematic-hero h1 span{
@@ -506,9 +487,7 @@
 
   color:#334155;
 
-  max-width:620px;
-
-  margin-bottom:28px;
+  margin-bottom:24px;
 }
 
 /* =========================================================
@@ -522,91 +501,7 @@
 
   color:#475569;
 
-  max-width:620px;
-
-  margin-bottom:42px;
-}
-
-/* =========================================================
-   FEATURES
-========================================================= */
-
-.cinematic-hero-features{
-  display:flex;
-
-  flex-wrap:wrap;
-
-  gap:24px;
-
-  margin-bottom:42px;
-}
-
-/* =========================================================
-   FEATURE
-========================================================= */
-
-.cinematic-feature{
-  display:flex;
-
-  align-items:center;
-
-  gap:14px;
-}
-
-/* =========================================================
-   FEATURE ICON
-========================================================= */
-
-.cinematic-feature-icon{
-  width:60px;
-  height:60px;
-
-  min-width:60px;
-
-  border-radius:20px;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  background:
-    rgba(255,255,255,0.9);
-
-  border:
-    1px solid rgba(255,255,255,0.8);
-
-  backdrop-filter:blur(12px);
-
-  box-shadow:
-    0 12px 30px rgba(15,23,42,0.08);
-
-  color:#2563eb;
-}
-
-.cinematic-feature-icon svg{
-  width:28px;
-  height:28px;
-}
-
-/* =========================================================
-   FEATURE TEXT
-========================================================= */
-
-.cinematic-feature-text strong{
-  display:block;
-
-  font-size:17px;
-  font-weight:700;
-
-  color:#081028;
-
-  margin-bottom:4px;
-}
-
-.cinematic-feature-text span{
-  font-size:14px;
-
-  color:#64748b;
+  margin-bottom:24px;
 }
 
 /* =========================================================
@@ -616,15 +511,16 @@
 .cinematic-hero-buttons{
   display:flex;
 
-  gap:18px;
-
   flex-wrap:wrap;
 
-  margin-bottom:34px;
+  gap:18px;
+
+  margin-top:40px;
+  margin-bottom:30px;
 }
 
 /* =========================================================
-   BUTTON BASE
+   BUTTONS
 ========================================================= */
 
 .cinematic-btn-primary,
@@ -634,23 +530,19 @@
   align-items:center;
   justify-content:center;
 
-  min-height:64px;
+  min-height:62px;
 
-  padding:0 38px;
+  padding:0 36px;
 
   border-radius:18px;
+
+  text-decoration:none;
 
   font-size:16px;
   font-weight:700;
 
-  text-decoration:none;
-
   transition:all .25s ease;
 }
-
-/* =========================================================
-   PRIMARY BUTTON
-========================================================= */
 
 .cinematic-btn-primary{
   background:
@@ -663,12 +555,8 @@
   color:#fff;
 
   box-shadow:
-    0 20px 45px rgba(37,99,235,0.26);
+    0 20px 45px rgba(37,99,235,0.24);
 }
-
-/* =========================================================
-   SECONDARY BUTTON
-========================================================= */
 
 .cinematic-btn-secondary{
   background:#fff;
@@ -689,26 +577,13 @@
 ========================================================= */
 
 .cinematic-hero-trust{
-  display:flex;
-
-  align-items:center;
-
-  gap:14px;
-}
-
-.cinematic-hero-trust svg{
-  width:24px;
-  height:24px;
-
-  min-width:24px;
-
-  color:#2563eb;
+  margin-top:10px;
 }
 
 .cinematic-hero-trust p{
   font-size:15px;
 
-  line-height:1.7;
+  line-height:1.8;
 
   color:#475569;
 }
@@ -718,25 +593,19 @@
 ========================================================= */
 
 .cinematic-image-wrap{
-  position:absolute;
-
-  top:0;
-  right:0;
-
-  width:78vw;
-
-  height:100%;
+  flex:0 0 58%;
+  max-width:58%;
 
   display:flex;
 
   align-items:center;
   justify-content:flex-end;
 
-  z-index:1;
+  position:relative;
 
   overflow:hidden;
 
-  pointer-events:none;
+  z-index:1;
 }
 
 /* =========================================================
@@ -746,184 +615,47 @@
 .cinematic-hero-image{
   width:100%;
 
-  height:100%;
-
-  object-fit:cover;
-
-  object-position:center right;
-
-  display:block;
-}
-
-/* =========================================================
-   BOTTOM BAR
-========================================================= */
-
-.cinematic-bottom-bar{
-  position:relative;
-
-  z-index:50;
-
-  margin-top:-90px;
-
-  padding-bottom:70px;
-}
-
-/* =========================================================
-   BOTTOM GRID
-========================================================= */
-
-.cinematic-bottom-grid{
-  display:grid;
-
-  grid-template-columns:repeat(4,1fr);
-
-  gap:30px;
-
-  padding:40px;
-
-  border-radius:32px;
-
-  background:
-    linear-gradient(
-      135deg,
-      #071b52,
-      #0b256d
-    );
-
-  box-shadow:
-    0 35px 80px rgba(7,27,82,0.24);
-}
-
-/* =========================================================
-   BOTTOM ITEM
-========================================================= */
-
-.bottom-item{
-  display:flex;
-
-  align-items:flex-start;
-
-  gap:18px;
-}
-
-/* =========================================================
-   BOTTOM ICON
-========================================================= */
-
-.bottom-icon{
-  width:62px;
-  height:62px;
-
-  min-width:62px;
-
-  border-radius:50%;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  background:
-    rgba(255,255,255,0.08);
-
-  color:#fff;
-}
-
-.bottom-icon svg{
-  width:28px;
-  height:28px;
-}
-
-/* =========================================================
-   BOTTOM TEXT
-========================================================= */
-
-.bottom-item h3{
-  font-size:22px;
-
-  color:#fff;
-
-  margin-bottom:12px;
-}
-
-.bottom-item p{
-  font-size:15px;
-
-  line-height:1.8;
-
-  color:
-    rgba(255,255,255,0.78);
-}
-
-/* =========================================================
-   TABLET
-========================================================= */
-
-@media (max-width:1300px){
-
-  .cinematic-hero{
-    min-height:auto;
-  }
-
-/* =========================================================
-   HERO CONTENT
-========================================================= */
-
-.cinematic-hero-content{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-
-  gap:60px;
-
-  width:100%;
-
-  min-height:760px;
-
-  overflow:hidden;
-
-  position:relative;
-}
-
-/* =========================================================
-   LEFT TEXT
-========================================================= */
-
-.cinematic-hero-text{
-  flex:0 0 42%;
-  max-width:42%;
-
-  position:relative;
-  z-index:30;
-
-  padding-bottom:60px;
-}
-
-/* RIGHT IMAGE */
-.cinematic-image-wrap{
-  flex:0 0 58%;
-  max-width:58%;
-
-  display:flex;
-  justify-content:flex-end;
-  align-items:center;
-
-  overflow:hidden;
-}
-
-/* IMAGE */
-.cinematic-hero-image{
-  width:100%;
   height:auto;
 
   display:block;
+
   object-fit:contain;
 
-  transform:scale(1.08);
+  transform:scale(1.02);
 }
 
-  .cinematic-bottom-grid{
-    grid-template-columns:repeat(2,1fr);
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width:1100px){
+
+  .cinematic-hero-content{
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:50px;
+
+    min-height:auto;
+  }
+
+  .cinematic-hero-text{
+    max-width:100%;
+    flex:1 1 100%;
+  }
+
+  .cinematic-image-wrap{
+    max-width:100%;
+    flex:1 1 100%;
+
+    justify-content:center;
+  }
+
+  .cinematic-hero-image{
+    max-width:760px;
+
+    transform:none;
   }
 
 }
@@ -935,19 +667,11 @@
 @media (max-width:768px){
 
   .cinematic-hero{
-    padding-top:60px;
-
-    min-height:auto;
+    padding:80px 0 60px;
   }
 
   .cinematic-hero .container{
     padding:0 24px;
-  }
-
-  .cinematic-hero-content{
-    gap:40px;
-
-    padding-bottom:110px;
   }
 
   .cinematic-hero h1{
@@ -966,10 +690,6 @@
     font-size:16px;
   }
 
-  .cinematic-hero-features{
-    flex-direction:column;
-  }
-
   .cinematic-hero-buttons{
     flex-direction:column;
   }
@@ -980,58 +700,16 @@
   }
 
   .cinematic-image-wrap{
-    width:140%;
-
-    left:-20%;
+    width:100%;
   }
 
   .cinematic-hero-image{
     width:100%;
   }
 
-  .cinematic-bottom-bar{
-    margin-top:-70px;
-  }
-
-  .cinematic-bottom-grid{
-    grid-template-columns:1fr;
-
-    padding:30px;
-  }
-
 }
+</style> 
 
-/* ================= MOBILE IMAGE GRID FIX ================= */
-
-@media (max-width: 768px) {
-
-  .panel-image-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:14px;
-
-    width:100%;
-    max-width:520px;
-
-    margin:30px auto 0 auto; /* centres the whole grid */
-    justify-content:center;
-    align-items:center;
-  }
-
-  .image-card{
-    width:100%;
-    margin:0 auto;
-  }
-
-  .image-card img{
-    width:100%;
-    display:block;
-  }
-
-}
-
-
-</style>
 <body>
 <!-- ================= NAV ================= -->
 <header class="nav" id="nav">
