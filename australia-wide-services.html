@@ -300,7 +300,7 @@
 </head>
 <style>
 /* =========================================================
-   CINEMATIC HERO — FULL FINAL VERSION
+   CINEMATIC HERO — FINAL FIXED VERSION
    DESKTOP + TABLET + MOBILE
 ========================================================= */
 
@@ -318,7 +318,7 @@
 
   overflow:hidden;
 
-  min-height:760px;
+  min-height:920px;
 
   display:flex;
   align-items:center;
@@ -351,9 +351,9 @@
   width:100%;
   height:100%;
 
-  object-fit:cover;
+  object-fit:contain;
 
-  object-position:center center;
+  object-position:right center;
 
   display:block;
 }
@@ -409,7 +409,7 @@
 .cinematic-hero-content{
   width:100%;
 
-  min-height:760px;
+  min-height:920px;
 
   display:flex;
 
@@ -640,17 +640,17 @@
 }
 
 /* =========================================================
-   LARGE LAPTOPS
+   LAPTOP
 ========================================================= */
 
 @media (max-width:1300px){
 
   .cinematic-hero{
-    min-height:700px;
+    min-height:820px;
   }
 
   .cinematic-hero-content{
-    min-height:700px;
+    min-height:820px;
   }
 
   .cinematic-hero h1{
@@ -675,6 +675,12 @@
     min-height:auto;
 
     padding-top:0;
+  }
+
+  .cinematic-hero-image{
+    object-fit:cover;
+
+    opacity:0.28;
   }
 
   .cinematic-hero-overlay{
@@ -716,6 +722,12 @@
 
   .cinematic-hero .container{
     padding:0 24px;
+  }
+
+  .cinematic-hero-image{
+    object-fit:cover;
+
+    opacity:0.18;
   }
 
   .cinematic-hero-overlay{
