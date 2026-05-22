@@ -300,7 +300,7 @@
 </head>
 <style>
 /* =========================================================
-   CINEMATIC HERO — FULL REPLACEMENT
+   CINEMATIC HERO — FULL FIXED VERSION
    DESKTOP + TABLET + MOBILE
 ========================================================= */
 
@@ -318,7 +318,7 @@
 
   overflow:hidden;
 
-  min-height:920px;
+  min-height:760px;
 
   display:flex;
   align-items:center;
@@ -333,14 +333,19 @@
 .cinematic-image-wrap{
   position:absolute;
 
-  inset:0;
+  top:0;
+  right:0;
 
-  width:100%;
+  width:72%;
   height:100%;
 
   z-index:1;
 
   overflow:hidden;
+
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
 }
 
 /* =========================================================
@@ -351,17 +356,19 @@
   width:100%;
   height:100%;
 
-  object-fit:cover;
+  object-fit:contain;
 
   object-position:center right;
 
   display:block;
+}
 
-  transform:scale(1.02);
+.cinematic-image-wrap img{
+  max-width:100%;
 }
 
 /* =========================================================
-   OVERLAY
+   OVERLAY FADE
 ========================================================= */
 
 .cinematic-hero-overlay{
@@ -369,7 +376,7 @@
 
   inset:0;
 
-  z-index:2;
+  z-index:5;
 
   pointer-events:none;
 
@@ -393,7 +400,7 @@
 .cinematic-hero .container{
   position:relative;
 
-  z-index:5;
+  z-index:20;
 
   width:100%;
 
@@ -405,16 +412,19 @@
 }
 
 /* =========================================================
-   CONTENT
+   HERO CONTENT
 ========================================================= */
 
 .cinematic-hero-content{
   width:100%;
 
-  min-height:920px;
+  min-height:760px;
 
   display:flex;
-  align-items:center;
+
+  align-items:flex-start;
+
+  padding-top:140px;
 }
 
 /* =========================================================
@@ -424,11 +434,11 @@
 .cinematic-hero-text{
   width:100%;
 
-  max-width:640px;
+  max-width:620px;
 
   position:relative;
 
-  z-index:10;
+  z-index:30;
 }
 
 /* =========================================================
@@ -453,7 +463,7 @@
 ========================================================= */
 
 .cinematic-hero h1{
-  font-size:clamp(68px,6vw,110px);
+  font-size:clamp(68px,6vw,108px);
 
   line-height:0.92;
 
@@ -579,7 +589,7 @@
 }
 
 /* =========================================================
-   TRUST
+   TRUST TEXT
 ========================================================= */
 
 .cinematic-hero-trust{
@@ -618,7 +628,7 @@
 
   border-radius:999px;
 
-  background:rgba(255,255,255,0.78);
+  background:rgba(255,255,255,0.82);
 
   backdrop-filter:blur(10px);
 
@@ -639,21 +649,17 @@
 }
 
 /* =========================================================
-   LARGE LAPTOPS
+   LAPTOP
 ========================================================= */
 
-@media (max-width:1400px){
+@media (max-width:1300px){
 
-  .cinematic-hero{
-    min-height:840px;
-  }
-
-  .cinematic-hero-content{
-    min-height:840px;
+  .cinematic-image-wrap{
+    width:68%;
   }
 
   .cinematic-hero h1{
-    font-size:92px;
+    font-size:86px;
   }
 
 }
@@ -667,11 +673,19 @@
   .cinematic-hero{
     min-height:auto;
 
-    padding:140px 0 90px;
+    padding:120px 0 80px;
   }
 
   .cinematic-hero-content{
     min-height:auto;
+
+    padding-top:0;
+  }
+
+  .cinematic-image-wrap{
+    width:100%;
+
+    opacity:0.28;
   }
 
   .cinematic-hero-overlay{
@@ -679,16 +693,12 @@
       linear-gradient(
         180deg,
         rgba(248,250,252,0.92) 0%,
-        rgba(248,250,252,0.78) 100%
+        rgba(248,250,252,0.84) 100%
       );
   }
 
-  .cinematic-hero-text{
-    max-width:760px;
-  }
-
   .cinematic-hero h1{
-    font-size:72px;
+    font-size:70px;
 
     line-height:0.96;
 
@@ -703,10 +713,6 @@
     font-size:17px;
   }
 
-  .cinematic-hero-image{
-    object-position:center;
-  }
-
 }
 
 /* =========================================================
@@ -716,25 +722,21 @@
 @media (max-width:768px){
 
   .cinematic-hero{
-    padding:120px 0 70px;
+    padding:110px 0 70px;
   }
 
   .cinematic-hero .container{
     padding:0 24px;
   }
 
-  .cinematic-hero-overlay{
-    background:
-      linear-gradient(
-        180deg,
-        rgba(248,250,252,0.96) 0%,
-        rgba(248,250,252,0.90) 35%,
-        rgba(248,250,252,0.80) 100%
-      );
+  .cinematic-image-wrap{
+    width:100%;
+
+    opacity:0.18;
   }
 
   .cinematic-hero h1{
-    font-size:54px;
+    font-size:52px;
 
     line-height:1;
 
@@ -785,7 +787,7 @@
 @media (max-width:480px){
 
   .cinematic-hero{
-    padding:110px 0 60px;
+    padding:100px 0 60px;
   }
 
   .cinematic-hero h1{
