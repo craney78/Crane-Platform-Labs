@@ -300,7 +300,9 @@
 </head>
 <style>
 /* =========================================================
-   AUSTRALIA-WIDE HERO
+   HARD FIX — AUSTRALIA WIDE HERO
+   FULL WIDTH IMAGE
+   SAME BEHAVIOUR AS INDEX HERO
 ========================================================= */
 
 .cinematic-hero{
@@ -318,6 +320,8 @@
 ========================================================= */
 
 .cinematic-hero .container{
+  width:100%;
+
   max-width:1450px;
 
   margin:0 auto;
@@ -330,6 +334,8 @@
 ========================================================= */
 
 .cinematic-hero-content{
+  position:relative;
+
   display:grid;
 
   grid-template-columns:
@@ -338,17 +344,83 @@
 
   align-items:center;
 
-  gap:40px;
+  gap:0;
 }
 
 /* =========================================================
-   LEFT SIDE
+   LEFT TEXT
 ========================================================= */
 
 .cinematic-hero-text{
   position:relative;
 
   z-index:5;
+
+  padding-right:40px;
+}
+
+/* =========================================================
+   HERO IMAGE SIDE
+========================================================= */
+
+.cinematic-image-wrap{
+  position:relative;
+
+  width:100%;
+
+  overflow:hidden;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:flex-end;
+}
+
+/* =========================================================
+   HARD IMAGE FIX
+========================================================= */
+
+.cinematic-hero-image{
+  width:165%;
+
+  max-width:none;
+
+  height:auto;
+
+  display:block;
+
+  margin-left:-42%;
+}
+
+/* =========================================================
+   LEFT FADE
+========================================================= */
+
+.cinematic-image-wrap::before{
+  content:"";
+
+  position:absolute;
+
+  top:0;
+  left:0;
+  bottom:0;
+
+  width:42%;
+
+  z-index:2;
+
+  pointer-events:none;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(248,250,252,1) 0%,
+      rgba(248,250,252,0.98) 18%,
+      rgba(248,250,252,0.92) 38%,
+      rgba(248,250,252,0.72) 58%,
+      rgba(248,250,252,0) 100%
+    );
 }
 
 /* =========================================================
@@ -370,7 +442,7 @@
 }
 
 /* =========================================================
-   HEADING
+   HEADINGS
 ========================================================= */
 
 .cinematic-hero h1{
@@ -441,7 +513,7 @@
 
   margin-top:40px;
 
-  margin-bottom:30px;
+  margin-bottom:32px;
 }
 
 /* =========================================================
@@ -512,107 +584,6 @@
 }
 
 /* =========================================================
-   IMAGE SIDE
-========================================================= */
-
-.cinematic-image-wrap{
-  position:relative;
-
-  display:flex;
-
-  align-items:center;
-
-  justify-content:flex-end;
-
-  overflow:hidden;
-}
-
-/* =========================================================
-   IMAGE
-========================================================= */
-
-.cinematic-hero-image{
-  width:100%;
-
-  height:auto;
-
-  display:block;
-
-  border-radius:0;
-}
-
-/* =========================================================
-   FADE
-========================================================= */
-
-.cinematic-image-wrap::before{
-  content:"";
-
-  position:absolute;
-
-  top:0;
-  left:0;
-  bottom:0;
-
-  width:34%;
-
-  z-index:2;
-
-  pointer-events:none;
-
-  background:
-    linear-gradient(
-      90deg,
-      rgba(248,250,252,1) 0%,
-      rgba(248,250,252,0.94) 42%,
-      rgba(248,250,252,0) 100%
-    );
-}
-
-/* =========================================================
-   SEO LINKS
-========================================================= */
-
-.seo-links{
-  display:flex;
-
-  flex-wrap:wrap;
-
-  gap:12px;
-}
-
-.seo-links a{
-  display:inline-flex;
-
-  align-items:center;
-
-  justify-content:center;
-
-  padding:10px 16px;
-
-  border-radius:999px;
-
-  background:#fff;
-
-  color:#0f172a;
-
-  text-decoration:none;
-
-  font-size:14px;
-
-  font-weight:600;
-
-  box-shadow:
-    0 10px 24px rgba(15,23,42,0.06);
-
-  transition:all .25s ease;
-}
-
-.seo-links a:hover{
-  transform:translateY(-2px);
-}
-
-/* =========================================================
    TABLET
 ========================================================= */
 
@@ -630,6 +601,8 @@
 
   .cinematic-hero-text{
     max-width:760px;
+
+    padding-right:0;
   }
 
   .cinematic-hero h1{
@@ -648,8 +621,10 @@
     font-size:17px;
   }
 
-  .cinematic-image-wrap{
-    justify-content:center;
+  .cinematic-hero-image{
+    width:120%;
+
+    margin-left:-10%;
   }
 
   .cinematic-image-wrap::before{
@@ -692,6 +667,12 @@
     font-size:16px;
 
     line-height:1.8;
+  }
+
+  .cinematic-hero-image{
+    width:150%;
+
+    margin-left:-25%;
   }
 
   .cinematic-hero-buttons{
