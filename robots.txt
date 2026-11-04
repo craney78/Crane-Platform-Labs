@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://craneplatformlabs.com.au/sitemap.xml
